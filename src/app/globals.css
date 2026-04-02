@@ -1,26 +1,120 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────
+   Honorary Consulate of Hungary — New England
+   Design Tokens — hungaryconsulne.com
+   Source: design-system.md
+   ───────────────────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand Colors */
+  --primary: #C5A55A;                         /* Antique gold — CTAs, borders, rule lines */
+  --primary-muted: rgba(197, 165, 90, 0.25);  /* Gold 25% — subtle borders, card outlines */
+  --accent: #D4AF37;                          /* Bright metallic gold — coat of arms, hover highlights */
+
+  /* Background Scale — dark theme */
+  --bg-base: #0A1628;                         /* Deep navy — page background */
+  --bg-elevated: #122040;                     /* Mid navy — alternate section backgrounds */
+  --bg-card: #1B2A4A;                         /* Card navy — service cards, testimonial blocks */
+
+  /* Text Scale */
+  --text-primary: #F5F0E8;                    /* Warm cream — all primary body text */
+  --text-secondary: rgba(245, 240, 232, 0.7); /* Cream 70% — secondary copy, subtitles */
+  --text-muted: rgba(245, 240, 232, 0.4);     /* Cream 40% — labels, micro-copy, metadata */
+
+  /* Semantic */
+  --border-subtle: rgba(197, 165, 90, 0.2);   /* Gold 20% — default card borders */
+  --border-active: #C5A55A;                   /* Gold 100% — focused inputs, active borders */
+  --surface-overlay: rgba(10, 22, 40, 0.85);  /* Navy overlay for image sections */
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-muted: var(--primary-muted);
+  --color-accent: var(--accent);
+  --color-bg-base: var(--bg-base);
+  --color-bg-elevated: var(--bg-elevated);
+  --color-bg-card: var(--bg-card);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border-subtle: var(--border-subtle);
+  --color-border-active: var(--border-active);
+
+  /* Typography — source: design-system.md §3 */
+  --font-display: var(--font-playfair), 'Playfair Display', Georgia, serif;
+  --font-body:    var(--font-lora), 'Lora', Georgia, serif;
+  --font-mono:    var(--font-dm-mono), 'DM Mono', 'Courier New', monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ── Base Styles ── */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Grain overlay — parchment texture on hero/feature sections ── */
+.grain-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url('/brand/grain.png');
+  opacity: 0.03;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+}
+
+/* ── Gold rule lines — diplomatic stationery detail ── */
+.gold-rule {
+  border: none;
+  border-top: 1px solid rgba(197, 165, 90, 0.3);
+}
+
+/* ── Breathing orbs — hero background animation ── */
+@keyframes breathe {
+  0%, 100% { transform: scale(1); opacity: 0.12; }
+  50%       { transform: scale(1.15); opacity: 0.22; }
+}
+
+@keyframes breathe-slow {
+  0%, 100% { transform: scale(1); opacity: 0.08; }
+  50%       { transform: scale(1.2); opacity: 0.18; }
+}
+
+.orb {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(80px);
+}
+
+.orb-1 {
+  width: 600px; height: 600px;
+  bottom: -200px; left: -150px;
+  background: radial-gradient(circle, var(--primary), transparent 70%);
+  animation: breathe 12s ease-in-out infinite;
+}
+
+.orb-2 {
+  width: 500px; height: 500px;
+  top: -100px; right: -100px;
+  background: radial-gradient(circle, rgba(197, 165, 90, 0.6), transparent 70%);
+  animation: breathe 14s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+.orb-3 {
+  width: 400px; height: 400px;
+  top: 30%; left: 40%;
+  background: radial-gradient(circle, var(--accent), transparent 70%);
+  animation: breathe-slow 8s ease-in-out infinite;
+  animation-delay: -2s;
 }
