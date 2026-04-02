@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Playfair_Display, Lora, DM_Mono } from "next/font/google";
 import "./globals.css";
 import { siteData } from "@/data/site";
+import { SiteHeader } from "@/components/layout/SiteHeader";
+import { SiteFooter } from "@/components/layout/SiteFooter";
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -58,7 +60,11 @@ export default function RootLayout({
       className={`${playfair.variable} ${lora.variable} ${dmMono.variable} h-full`}
     >
       <body className="min-h-full flex flex-col bg-[#0A1628] text-[#F5F0E8] antialiased">
-        {children}
+        <SiteHeader />
+        <main className="flex-1 pt-[72px]">
+          {children}
+        </main>
+        <SiteFooter />
       </body>
     </html>
   );
