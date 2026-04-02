@@ -21,7 +21,7 @@ export function SlideIn({ children, direction = "left", delay = 0, duration = 0.
       ref={ref}
       initial={{ opacity: 0, x: xInitial }}
       animate={inView ? { opacity: 1, x: 0 } : {}}
-      transition={{ duration, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
+      transition={{ duration, delay, ease: "easeOut" }}
       className={className}
     >
       {children}

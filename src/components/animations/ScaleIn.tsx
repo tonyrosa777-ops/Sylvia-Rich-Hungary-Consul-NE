@@ -18,7 +18,7 @@ export function ScaleIn({ children, delay = 0, duration = 0.5, threshold = 0.2, 
       ref={ref}
       initial={{ opacity: 0, scale: 0.92 }}
       animate={inView ? { opacity: 1, scale: 1 } : {}}
-      transition={{ duration, delay, ease: [0.21, 0.47, 0.32, 0.98] }}
+      transition={{ duration, delay, ease: "easeOut" }}
       className={className}
     >
       {children}

@@ -1,0 +1,111 @@
+"use client";
+import Image from "next/image";
+import { Eyebrow, GoldRule, Button } from "@/components/ui";
+import { SlideIn, FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
+import { motion } from "framer-motion";
+import { siteData } from "@/data/site";
+
+export function FounderStory() {
+  const { about } = siteData;
+
+  return (
+    <section
+      className="bg-[#122040] py-24 lg:py-32 overflow-hidden"
+      aria-labelledby="about-heading"
+    >
+      <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+          {/* ── Left: portrait placeholder ── */}
+          <SlideIn direction="left" threshold={0.15}>
+            <div className="relative max-w-sm mx-auto lg:mx-0">
+              {/* Gold frame border */}
+              <div className="absolute -inset-3 border border-[rgba(197,165,90,0.25)] rounded-[3px]" aria-hidden="true" />
+              <div className="absolute -inset-6 border border-[rgba(197,165,90,0.1)] rounded-[3px]" aria-hidden="true" />
+
+              {/* Portrait — placeholder until Sylvia provides photo */}
+              <div className="relative bg-[#1B2A4A] rounded-[3px] aspect-[4/5] flex items-center justify-center overflow-hidden">
+                {/* Atmospheric gradient placeholder */}
+                <div
+                  className="absolute inset-0"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at 50% 30%, rgba(197,165,90,0.12) 0%, rgba(10,22,40,0.8) 70%)",
+                  }}
+                  aria-hidden="true"
+                />
+                <div className="relative z-10 text-center px-8">
+                  <p className="font-display italic text-[rgba(245,240,232,0.3)] text-lg mb-2">
+                    Sylvia Rich
+                  </p>
+                  <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.4)]">
+                    Portrait pending
+                  </p>
+                </div>
+              </div>
+
+              {/* Name badge overlapping bottom */}
+              <div className="absolute -bottom-5 left-6 right-6 bg-[#0D1E35] border border-[rgba(197,165,90,0.3)] rounded-[3px] px-5 py-3">
+                <p className="font-display font-semibold text-[#F5F0E8] text-base">
+                  {siteData.brand.consul.name}
+                </p>
+                <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#C5A55A] mt-0.5">
+                  Honorary Consul · New England
+                </p>
+              </div>
+            </div>
+          </SlideIn>
+
+          {/* ── Right: story copy ── */}
+          <SlideIn direction="right" threshold={0.15}>
+            <div>
+              <FadeUp delay={0.15}>
+                <Eyebrow className="mb-4">{about.eyebrow}</Eyebrow>
+                <h2
+                  id="about-heading"
+                  className="font-display font-bold text-[clamp(1.8rem,3vw,2.6rem)] leading-tight text-[#F5F0E8] mb-5"
+                >
+                  {about.headline}
+                </h2>
+                <GoldRule width="sm" opacity={35} className="mb-8" />
+              </FadeUp>
+
+              <div className="space-y-5 mb-8">
+                {about.paragraphs.map((para, i) => (
+                  <FadeUp key={i} delay={0.2 + i * 0.12}>
+                    <p className="font-body text-[16px] leading-[1.8] text-[rgba(245,240,232,0.75)]">
+                      {para}
+                    </p>
+                  </FadeUp>
+                ))}
+              </div>
+
+              {/* Credentials */}
+              <StaggerContainer staggerDelay={0.08} initialDelay={0.5}>
+                <ul className="space-y-2.5 mb-8">
+                  {about.credentials.map((cred) => (
+                    <motion.li
+                      key={cred}
+                      variants={staggerItem}
+                      className="flex items-start gap-3 font-body text-[14px] text-[rgba(245,240,232,0.6)]"
+                    >
+                      <span className="text-[#C5A55A] mt-[3px] shrink-0" aria-hidden="true">—</span>
+                      {cred}
+                    </motion.li>
+                  ))}
+                </ul>
+              </StaggerContainer>
+
+              <FadeUp delay={0.8}>
+                <Button href="/about" variant="secondary" size="md">
+                  Read Sylvia&apos;s Full Story
+                </Button>
+              </FadeUp>
+            </div>
+          </SlideIn>
+
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,9 @@
+export { Hero } from "./Hero";
+export { HeroParticles } from "./HeroParticles";
+export { Challenges } from "./Challenges";
+export { FounderStory } from "./FounderStory";
+export { Services } from "./Services";
+export { Stats } from "./Stats";
+export { Testimonials } from "./Testimonials";
+export { FeeTable } from "./FeeTable";
+export { FinalCTA } from "./FinalCTA";
