@@ -1,10 +1,8 @@
+"use client";
 import { Eyebrow, GoldRule, Card } from "@/components/ui";
 import { StaggerContainer, staggerItem, FadeUp } from "@/components/animations";
 import { siteData } from "@/data/site";
 import { motion } from "framer-motion";
-
-// Section must be a client component because StaggerContainer uses framer-motion
-"use client";
 
 export function Challenges() {
   const { challenges } = siteData;
