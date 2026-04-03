@@ -12,11 +12,11 @@ interface Particle {
   glimmerMaxLife?: number;
 }
 
-// Desktop (≥1024px): double density + speed. Mobile: lighter load.
+// Desktop (≥1024px): full density. Mobile: significantly lighter load.
 const DESKTOP_BREAKPOINT = 1024;
-const MOTE_COUNT_MOBILE  = 160;
-const MOTE_COUNT_DESKTOP = 320;
-const GLIMMER_INTERVAL_MOBILE  = 65;
+const MOTE_COUNT_MOBILE  = 80;
+const MOTE_COUNT_DESKTOP = 280;
+const GLIMMER_INTERVAL_MOBILE  = 90;
 const GLIMMER_INTERVAL_DESKTOP = 32;
 
 /**
@@ -30,17 +30,26 @@ export function HeroParticles() {
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
+
+    // Respect prefers-reduced-motion
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
     let animId: number;
     let frame = 0;
+    let paused = false;
     const particles: Particle[] = [];
 
     const resize = () => {
       canvas.width = canvas.offsetWidth;
       canvas.height = canvas.offsetHeight;
     };
+
+    const isDesktop = () => window.innerWidth >= DESKTOP_BREAKPOINT;
+    const moteCount = () => isDesktop() ? MOTE_COUNT_DESKTOP : MOTE_COUNT_MOBILE;
+    const glimmerInterval = () => isDesktop() ? GLIMMER_INTERVAL_DESKTOP : GLIMMER_INTERVAL_MOBILE;
 
     const spawnMote = (): Particle => ({
       x: Math.random() * (canvas.width || 800),
@@ -65,15 +74,12 @@ export function HeroParticles() {
       glimmerMaxLife: 40 + Math.random() * 30,
     });
 
-    const isDesktop = () => window.innerWidth >= DESKTOP_BREAKPOINT;
-    const moteCount = () => isDesktop() ? MOTE_COUNT_DESKTOP : MOTE_COUNT_MOBILE;
-    const glimmerInterval = () => isDesktop() ? GLIMMER_INTERVAL_DESKTOP : GLIMMER_INTERVAL_MOBILE;
-
     const init = () => {
       resize();
+      particles.length = 0;
       for (let i = 0; i < moteCount(); i++) {
         const p = spawnMote();
-        p.y = Math.random() * (canvas.height || 600); // scatter on init
+        p.y = Math.random() * (canvas.height || 600);
         p.opacity = p.targetOpacity * Math.random();
         particles.push(p);
       }
@@ -102,7 +108,6 @@ export function HeroParticles() {
         ctx.lineTo(Math.cos(angle) * s * 2.5, Math.sin(angle) * s * 2.5);
         ctx.stroke();
       }
-      // Center dot
       ctx.fillStyle = "#D4AF37";
       ctx.beginPath();
       ctx.arc(0, 0, s * 0.3, 0, Math.PI * 2);
@@ -112,14 +117,26 @@ export function HeroParticles() {
     };
 
     const tick = () => {
-      if (!ctx || !canvas) return;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (!ctx || !canvas || paused) {
+        animId = requestAnimationFrame(tick);
+        return;
+      }
+
       frame++;
 
-      // Spawn glimmer occasionally
-      if (frame % glimmerInterval() === 0) {
-        particles.push(spawnGlimmer());
+      // Throttle to ~30fps on mobile
+      if (!isDesktop() && frame % 2 !== 0) {
+        animId = requestAnimationFrame(tick);
+        return;
       }
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      if (frame % glimmerInterval() === 0) particles.push(spawnGlimmer());
+
+      // Separate gold and cream motes to minimise fillStyle switches
+      const goldMotes: Particle[] = [];
+      const creamMotes: Particle[] = [];
 
       for (let i = particles.length - 1; i >= 0; i--) {
         const p = particles[i];
@@ -135,27 +152,35 @@ export function HeroParticles() {
           continue;
         }
 
-        // Mote
+        // Mote physics
         p.x += p.vx;
         p.y += p.vy;
         p.opacity += (p.targetOpacity - p.opacity) * 0.02;
 
-        // Gentle twinkle
         if (Math.random() < 0.004) {
           p.targetOpacity = 0.05 + Math.random() * 0.35;
         }
 
-        // Recycle when offscreen
         if (p.y < -10) {
-          const fresh = spawnMote();
-          particles[i] = fresh;
+          particles[i] = spawnMote();
           continue;
         }
 
-        // Gold/cream palette
-        const gold = Math.random() < 0.6;
+        if ((p.x + p.y) % 10 < 6) goldMotes.push(p);
+        else creamMotes.push(p);
+      }
+
+      // Batch draw gold, then cream
+      ctx.fillStyle = "#C5A55A";
+      for (const p of goldMotes) {
         ctx.globalAlpha = p.opacity;
-        ctx.fillStyle = gold ? "#C5A55A" : "#F5F0E8";
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+      ctx.fillStyle = "#F5F0E8";
+      for (const p of creamMotes) {
+        ctx.globalAlpha = p.opacity;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
         ctx.fill();
@@ -164,6 +189,10 @@ export function HeroParticles() {
       ctx.globalAlpha = 1;
       animId = requestAnimationFrame(tick);
     };
+
+    // Pause when tab is hidden
+    const onVisibility = () => { paused = document.hidden; };
+    document.addEventListener("visibilitychange", onVisibility);
 
     const ro = new ResizeObserver(resize);
     ro.observe(canvas);
@@ -174,6 +203,7 @@ export function HeroParticles() {
     return () => {
       cancelAnimationFrame(animId);
       ro.disconnect();
+      document.removeEventListener("visibilitychange", onVisibility);
     };
   }, []);
 
