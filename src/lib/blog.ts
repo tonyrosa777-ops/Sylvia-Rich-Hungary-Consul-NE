@@ -1155,6 +1155,392 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+
+  // ─── Post 11 ───────────────────────────────────────────────────────────────
+  {
+    id: "apostille-new-england-guide",
+    slug: "apostille-new-england-guide",
+    title: "Apostille in New England: When You Need One and Where to Get It",
+    excerpt:
+      "An apostille is not the same as a consular authentication — and mixing them up costs time and money. Here is exactly when you need each one and who issues them in New England.",
+    category: "Document Authentication",
+    date: "March 20, 2026",
+    readTime: "6 min read",
+    featured: true,
+    image: "/images/blog/apostille-guide.jpg",
+    body: [
+      {
+        type: "paragraph",
+        text: "One of the most common — and most expensive — mistakes in Hungarian document processing is confusing an apostille with a consular authentication. They look similar, they both involve official stamps, and Hungarian authorities sometimes request both on the same document. Understanding the difference before you start your paperwork can save you weeks of rework and, in some cases, a missed legal deadline.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains what an apostille is, what consular authentication is, when you need each one, and — practically — where to get an apostille if you live in New England.",
+      },
+      {
+        type: "heading",
+        text: "What Is an Apostille?",
+      },
+      {
+        type: "paragraph",
+        text: "An apostille is a standardized authentication certificate created by the 1961 Hague Convention on Abolishing the Requirement for Legalisation of Foreign Public Documents. When a document is issued by a government authority in one country and must be used in another country that is also a signatory to the Hague Convention, an apostille certifies that the issuing authority is legitimate and that the official who signed the document held the authority to do so.",
+      },
+      {
+        type: "paragraph",
+        text: "In New Hampshire, apostilles are issued by the New Hampshire Secretary of State. The process applies to any document issued by a New Hampshire government authority — birth certificates from the NH Bureau of Vital Records, court orders, notarized documents, and similar public documents. The apostille does not verify the contents of the document; it certifies the authenticity of the official signature and seal.",
+      },
+      {
+        type: "heading",
+        text: "What Is Consular Authentication?",
+      },
+      {
+        type: "paragraph",
+        text: "Consular authentication — also called consular legalization — is performed by a consular official and certifies that a document is genuine and suitable for use in a specific country. When this office authenticates a US document for use in Hungary, we are certifying the document's origin and legitimacy from a diplomatic standpoint. This carries the authority of the Hungarian government and is recognized by Hungarian courts, notaries, registries, and institutions.",
+      },
+      {
+        type: "paragraph",
+        text: "Consular authentication is what the Honorary Consulate of Hungary — New England performs. It is distinct from an apostille, and in many cases, Hungarian authorities require one, the other, or both — depending on the nature of the document and how it will be used.",
+      },
+      {
+        type: "heading",
+        text: "Apostille vs. Consular Authentication: When You Need Each One",
+      },
+      {
+        type: "subheading",
+        text: "Apostille only",
+      },
+      {
+        type: "paragraph",
+        text: "If Hungary is accepting a standard US public document and does not require further consular involvement, an apostille from your state Secretary of State is typically sufficient. This applies most commonly to US birth certificates submitted for Hungarian civil registry purposes, and US marriage certificates submitted in connection with Hungarian administrative proceedings. Hungary is a Hague Convention signatory, so US documents with a valid apostille are generally recognized as authentic without additional consular certification.",
+      },
+      {
+        type: "subheading",
+        text: "Consular authentication only",
+      },
+      {
+        type: "paragraph",
+        text: "When a document is being submitted to a Hungarian authority that specifically requires consular certification — for example, a power of attorney witnessed at the consulate, or a signed declaration certified by a Hungarian consular official — the apostille is not the relevant step. The consular seal and signature from this office provides the authentication the Hungarian authority needs.",
+      },
+      {
+        type: "subheading",
+        text: "Both apostille and consular authentication",
+      },
+      {
+        type: "paragraph",
+        text: "Some Hungarian proceedings require both. A common example is a US birth certificate submitted for citizenship by descent: the document typically needs an apostille first (certifying it as a genuine US public document), followed by consular review and, in some cases, an additional certification by this office that the document meets the requirements of the specific application. Your Hungarian attorney or the Hungarian authority requesting the document should specify what chain of certifications they require.",
+      },
+      {
+        type: "heading",
+        text: "Which Countries Accept Apostille — and Which Require Full Legalization",
+      },
+      {
+        type: "paragraph",
+        text: "The Hague Apostille Convention has 124 signatory countries as of 2026. For documents used in those countries, an apostille replaces the longer chain of authentication previously required. Hungary is a signatory. Most EU member states are signatories. Most of the countries where New England residents commonly need to submit documents — Hungary, Germany, France, Italy, Portugal — are covered.",
+      },
+      {
+        type: "paragraph",
+        text: "For non-Hague countries, the process is different: a full \"chain\" legalization is required, which involves the US Secretary of State, the US State Department, and then the receiving country's embassy or consulate in the US. If you are submitting a document to a country that is not on the Hague Convention list — certain Middle Eastern, African, or Asian countries — you will need a different process entirely. Contact this office or the receiving country's consulate in the US to confirm the correct procedure.",
+      },
+      {
+        type: "heading",
+        text: "Practical Examples",
+      },
+      {
+        type: "subheading",
+        text: "Selling property in Hungary",
+      },
+      {
+        type: "paragraph",
+        text: "If you are selling Hungarian real estate and need to sign documents from New England, you will typically execute a power of attorney at this consulate (consular authentication). Your Hungarian attorney will specify whether additional apostille certification on supporting documents is also required.",
+      },
+      {
+        type: "subheading",
+        text: "Document for use in the EU",
+      },
+      {
+        type: "paragraph",
+        text: "For most EU member states, a US public document with an apostille from the appropriate state Secretary of State is sufficient. Consular authentication is an additional step that may or may not be required depending on the specific institution and country.",
+      },
+      {
+        type: "subheading",
+        text: "Document for a non-Hague country",
+      },
+      {
+        type: "paragraph",
+        text: "For countries outside the Hague Convention, neither an apostille nor a consular authentication from this office will be sufficient. The chain legalization process must go through the US State Department and the receiving country's US embassy. If your matter involves a non-Hague country, contact us and we will point you in the right direction.",
+      },
+      {
+        type: "heading",
+        text: "Where to Get an Apostille in New England",
+      },
+      {
+        type: "list",
+        items: [
+          "New Hampshire: NH Secretary of State, Apostille and Authentication Division — Concord, NH. Processing times vary; expedited service available.",
+          "Massachusetts: Secretary of the Commonwealth, Apostille and Authentication Services — Boston, MA. Online and in-person requests accepted.",
+          "Vermont: Vermont Secretary of State, Authentications Office — Montpelier, VT.",
+          "Rhode Island: Rhode Island Secretary of State — Providence, RI. Requests submitted by mail.",
+          "Maine: Maine Secretary of State, Division of Corporations, Elections and Commissions — Augusta, ME.",
+          "Connecticut: Connecticut Secretary of State — Hartford, CT. In-person and mail submissions accepted.",
+        ],
+      },
+      {
+        type: "paragraph",
+        text: "Each state's Secretary of State handles apostilles only for documents issued in that state. If your document was issued in a different state than where you currently live, you must obtain the apostille from the Secretary of State of the state where the document was issued — not your current state of residence.",
+      },
+      {
+        type: "blockquote",
+        text: "The most important rule: apostille from where the document was issued, not where you live. A New Hampshire apostille cannot certify a Massachusetts birth certificate.",
+      },
+      {
+        type: "heading",
+        text: "Not Sure Which Route Applies to Your Situation?",
+      },
+      {
+        type: "paragraph",
+        text: "The correct path depends on the document type, the receiving Hungarian institution, and what they have specifically requested. If you have a letter or form from a Hungarian authority describing what they need, bring it to your appointment or send it to us via the contact form — we will review it and tell you exactly which steps are required, in what order, before you take any action.",
+      },
+    ],
+  },
+
+  // ─── Post 12 ───────────────────────────────────────────────────────────────
+  {
+    id: "inheriting-property-from-hungary",
+    slug: "inheriting-property-from-hungary",
+    title: "Inheriting Property from Hungary: A Step-by-Step Guide for Americans",
+    excerpt:
+      "If you have inherited — or expect to inherit — Hungarian real estate or assets from abroad, the paperwork crosses two legal systems. Here is what to expect.",
+    category: "Life Events",
+    date: "March 28, 2026",
+    readTime: "7 min read",
+    featured: false,
+    image: "/images/blog/hungarian-inheritance.jpg",
+    body: [
+      {
+        type: "paragraph",
+        text: "Inheriting property from Hungary as an American is one of the most procedurally complex situations a Hungarian-American family encounters. It involves two separate legal systems — Hungarian inheritance law and US legal requirements — that do not map neatly onto each other. The process is manageable, but only if you understand which country handles what, and in what order.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide explains the Hungarian inheritance process, what documents you will likely need as an American heir, what this consulate can do to assist you, and what must happen through Hungarian legal channels. Read this before contacting any authority or signing anything.",
+      },
+      {
+        type: "heading",
+        text: "The Hungarian Inheritance Process Is Not American Probate",
+      },
+      {
+        type: "paragraph",
+        text: "In the United States, inheritance of property typically goes through a state probate court. In Hungary, the process is different: Hungarian estates are administered by a Hungarian notary (közjegyző) appointed to the case based on the location of the deceased's assets. There is no probate court in the American sense. The Hungarian notary has exclusive jurisdiction over the estate proceedings (hagyatéki eljárás) and will ultimately issue the estate certificate (hagyatéki átadó végzés) that transfers title to heirs.",
+      },
+      {
+        type: "paragraph",
+        text: "This is important because American attorneys — however excellent in US law — cannot manage a Hungarian inheritance proceeding. You need a Hungarian attorney or the appointed Hungarian notary to handle the Hungarian side. The role of this consulate is to help you prepare and authenticate the US-side documents that the Hungarian proceeding requires.",
+      },
+      {
+        type: "heading",
+        text: "Documents an American Heir Typically Needs",
+      },
+      {
+        type: "paragraph",
+        text: "The Hungarian notary assigned to the estate will specify exactly what they need from each heir. The following documents are almost always required for American heirs:",
+      },
+      {
+        type: "list",
+        items: [
+          "Death certificate of the deceased — if issued in Hungary, a certified copy from the Hungarian Civil Registry; if issued in the US, an original with apostille from the relevant state Secretary of State",
+          "Proof of your relationship to the deceased — your own birth certificate (with apostille if US-issued), the deceased's birth certificate, and any marriage certificates that establish the family relationship in the chain",
+          "Your valid identification — US passport or government-issued photo ID",
+          "A power of attorney for a Hungarian representative — if you cannot appear in person in Hungary for all stages of the proceedings, you will need to authorize someone (an attorney or trusted family member in Hungary) to act on your behalf",
+          "A declaration or affidavit of heirship in some cases — confirming your legal standing as an heir under Hungarian law",
+        ],
+      },
+      {
+        type: "heading",
+        text: "What This Consulate Can Do",
+      },
+      {
+        type: "paragraph",
+        text: "The Honorary Consulate of Hungary — New England can assist American heirs in several concrete ways:",
+      },
+      {
+        type: "list",
+        items: [
+          "Authenticate your signature on a Hungarian power of attorney — authorizing a representative in Hungary to act on your behalf throughout the inheritance proceedings",
+          "Certify copies of US-issued documents (such as your birth certificate or marriage certificate) for submission to the Hungarian notary",
+          "Witness and certify declarations and affidavits of heirship that the Hungarian notary has requested",
+          "Review document packages before submission to confirm completeness",
+          "Provide guidance on the apostille process for documents that require it before consular certification",
+        ],
+      },
+      {
+        type: "blockquote",
+        text: "The most valuable thing this office can do in an inheritance situation is execute a properly certified power of attorney — so the process in Hungary can proceed without requiring you to fly to Budapest for each stage.",
+      },
+      {
+        type: "heading",
+        text: "What Must Happen in Hungary",
+      },
+      {
+        type: "paragraph",
+        text: "The following steps can only be completed through Hungarian legal channels — they cannot be handled or accelerated from New England:",
+      },
+      {
+        type: "list",
+        items: [
+          "The Hungarian notary's inventory of estate assets (hagyatéki leltár)",
+          "The inheritance hearing (hagyatéki tárgyalás) — which your representative in Hungary can attend on your behalf with a properly executed power of attorney",
+          "The estate certificate (hagyatéki átadó végzés) issued by the notary — this is the document that legally transfers the estate to the heirs",
+          "Property registry updates (ingatlan-nyilvántartás) reflecting the change of ownership — handled through the Hungarian land registry after the estate certificate is issued",
+          "Any Hungarian tax filings related to the inheritance — Hungarian inheritance tax rules apply to assets located in Hungary, regardless of the heir's nationality",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Realistic Timeline",
+      },
+      {
+        type: "paragraph",
+        text: "Hungarian inheritance proceedings vary significantly in duration depending on the complexity of the estate, the number of heirs, and whether all documents arrive promptly. A straightforward case with one heir, clear title, and complete documentation can resolve in four to eight months. Cases involving multiple heirs across different countries, contested claims, or missing documentation can extend to two years or more.",
+      },
+      {
+        type: "paragraph",
+        text: "The most common delay on the American side is a slow document-gathering process — apostilles that take six weeks, translations that take another four weeks, and a power of attorney that sits unsigned for months because the heir is uncertain what to do. Moving quickly on the US side is one of the few variables you can control.",
+      },
+      {
+        type: "heading",
+        text: "Cost Considerations",
+      },
+      {
+        type: "paragraph",
+        text: "You should budget for several categories of costs. On the Hungarian side: Hungarian notary fees (legally regulated, based on estate value), Hungarian attorney fees if you hire a private attorney to represent your interests (recommended for complex estates), and Hungarian inheritance tax if applicable. On the American side: apostille fees for each document (typically $10–$30 per document depending on the state), certified translation costs for all US documents submitted to the Hungarian notary, and consular service fees at this office for document certifications and power of attorney execution.",
+      },
+      {
+        type: "paragraph",
+        text: "Real estate transfer taxes and registration fees in Hungary are also a consideration if property is being transferred into your name. A Hungarian attorney can provide a realistic cost estimate based on the estate value and structure.",
+      },
+      {
+        type: "heading",
+        text: "Where to Start",
+      },
+      {
+        type: "paragraph",
+        text: "If you have recently learned of an inheritance situation, contact this office using the contact form. Describe the situation: the location of the deceased, the type of assets involved (real estate, bank accounts, personal property), and whether a Hungarian notary has already been assigned. If proceedings are already underway, send us any correspondence you have received from the Hungarian notary — even if you cannot read it. We will review it and tell you exactly what documents you need from the US side and what steps to take first.",
+      },
+    ],
+  },
+
+  // ─── Post 13 ───────────────────────────────────────────────────────────────
+  {
+    id: "us-documents-valid-in-hungary",
+    slug: "us-documents-valid-in-hungary",
+    title: "Which US Documents Need Authentication to Be Valid in Hungary",
+    excerpt:
+      "Not every American document needs a consular stamp to be accepted in Hungary — but many do. Here is the complete breakdown by document type.",
+    category: "Document Authentication",
+    date: "April 2, 2026",
+    readTime: "5 min read",
+    featured: false,
+    image: "/images/blog/us-documents-valid-hungary.jpg",
+    body: [
+      {
+        type: "paragraph",
+        text: "When a Hungarian institution, court, notary, or registry asks you to submit an American document, they are not asking for the document as it exists in the US. They are asking for that document authenticated in a way that makes it legally recognizable under Hungarian law. What that means in practice depends on the document type — and getting the process wrong means rejection, re-submission, and delay.",
+      },
+      {
+        type: "paragraph",
+        text: "This guide breaks down the most common categories of US documents submitted in Hungarian proceedings, and for each: whether it needs an apostille, consular authentication, or both — and in what order.",
+      },
+      {
+        type: "heading",
+        text: "The Two-Step Rule",
+      },
+      {
+        type: "paragraph",
+        text: "The general principle for US documents used in Hungary is: apostille first, consular certification second (if required). An apostille from your state Secretary of State certifies that the document is a genuine US public document issued by a recognized authority. Consular authentication by this office provides the additional Hungarian diplomatic certification that some proceedings require. When both are needed, you cannot reverse the order — the apostille must be in place before consular review.",
+      },
+      {
+        type: "heading",
+        text: "Vital Records: Birth, Marriage, and Death Certificates",
+      },
+      {
+        type: "list",
+        items: [
+          "US birth certificate: Apostille required from the Secretary of State of the state where the birth occurred. For Hungarian citizenship applications, civil registry submissions, and child birth registrations in Hungary, the apostilled birth certificate is typically the primary document. Certified Hungarian translation also required.",
+          "US marriage certificate: Apostille from the Secretary of State of the state where the marriage was registered. Required for Hungarian civil registry updates, name change proceedings, and as supporting documentation in inheritance or citizenship matters.",
+          "US death certificate: Apostille from the Secretary of State of the state where death was registered. Required when the death of a US-based person triggers Hungarian legal proceedings (inheritance, pension claim closure, civil registry update).",
+          "For all vital records: certified Hungarian translation of the apostilled document is required before submission to any Hungarian institution.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Legal Documents: Wills, Powers of Attorney, Affidavits",
+      },
+      {
+        type: "list",
+        items: [
+          "US will or testament: If a US-issued will is submitted in a Hungarian inheritance proceeding, it will need apostille and, depending on the Hungarian notary's requirements, certified translation. A US will does not automatically govern Hungarian assets — Hungarian succession law applies to property located in Hungary. Consult a Hungarian attorney.",
+          "Power of attorney executed in the US: If signed before a US notary (not at this consulate), it needs a notarial apostille chain — the document is notarized, the notary's signature is apostilled by the state. If executed at this consulate, the consular certification replaces the apostille chain for Hungarian purposes.",
+          "Affidavits and sworn declarations: Notarized by a US notary, then apostilled. For declarations specifically requested by a Hungarian authority or court, execution at this consulate (rather than before a US notary) provides more direct legal weight.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Educational Credentials: Diplomas and Transcripts",
+      },
+      {
+        type: "list",
+        items: [
+          "University diplomas: Must be apostilled (by the Secretary of State of the state where the university is located) for recognition by Hungarian educational authorities or employers. Certified Hungarian translation required.",
+          "Official transcripts: Same process — apostille from the relevant state, certified translation. Some Hungarian universities and credentialing bodies have additional verification steps; confirm with the receiving institution before submitting.",
+          "Professional certifications: Apostille plus certified translation. For regulated professions in Hungary, there may be additional recognition procedures through the relevant Hungarian professional body.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Financial Documents: Bank Statements and Account Verifications",
+      },
+      {
+        type: "list",
+        items: [
+          "Bank statements and account letters: These are typically not public documents and therefore not eligible for apostille in the same way. They are usually accepted with a notarized certification that they are genuine, followed by an apostille on the notarization. Certified Hungarian translation required.",
+          "Financial affidavits (for visa or residency applications): Notarize with a US notary, apostille the notarization, translate. For some Hungarian residency or investment-related proceedings, this office can certify the affidavit directly.",
+          "Tax documents and income verification: Same process as financial affidavits. Hungarian authorities requesting these as part of a legal or administrative proceeding will specify the format they need.",
+        ],
+      },
+      {
+        type: "heading",
+        text: "Business Documents",
+      },
+      {
+        type: "list",
+        items: [
+          "Corporate resolutions and articles of incorporation: Issued by a state authority (Secretary of State), these can typically be apostilled directly. Certified translation required.",
+          "US court orders and judgments: Apostille from the state court's certifying authority. For a US court order to have effect in Hungary, a separate Hungarian recognition proceeding (a bírósági határozat elismerése) may be required — this is a legal process distinct from document authentication.",
+          "Contracts executed in the US: Not public documents, so not apostillable directly. Notarize the signatures, apostille the notarization, translate. Some Hungarian contract situations require that the entire document be notarized, not just the signatures.",
+        ],
+      },
+      {
+        type: "blockquote",
+        text: "The single most useful thing you can do before gathering any documents: send this office the letter or request from the Hungarian authority. They will specify exactly what they need. We will map it to the correct authentication process — apostille, consular, or both — before you waste a trip to the Secretary of State.",
+      },
+      {
+        type: "heading",
+        text: "The Correct Order of Steps",
+      },
+      {
+        type: "paragraph",
+        text: "When both apostille and consular certification are required, the sequence is always: (1) obtain the original document from the issuing US authority, (2) obtain an apostille from the Secretary of State of the issuing state, (3) obtain a certified Hungarian translation, (4) bring the apostilled original and translation to this consulate for consular certification. Steps performed out of order require restarting from the beginning.",
+      },
+      {
+        type: "heading",
+        text: "When You Are Not Sure What Is Needed",
+      },
+      {
+        type: "paragraph",
+        text: "If a Hungarian authority has sent you a document request and you are not certain which authentication steps apply, use the contact form on this site. Share the request you received — including the name of the Hungarian institution and the purpose of the submission. We will confirm the correct path before you take any steps.",
+      },
+    ],
+  },
 ];
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
