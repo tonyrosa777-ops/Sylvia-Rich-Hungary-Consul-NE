@@ -4,64 +4,81 @@
     "headline": "Registering Vital Events in Hungary",
     "description": "Birth, marriage, divorce, and death — any life event involving Hungarian citizens may require registration with Hungarian civil authorities. Here's what the Honorary Consul can help with."
   },
-  "intro": "Hungarian citizens living abroad are required to register major life events (birth, marriage, divorce, death) with Hungarian civil registry authorities. The Honorary Consul can authenticate the American documents needed to support these registrations.",
-  "records": {
-    "birth": {
-      "name": "Birth Registration",
-      "consulRole": "Document authentication",
-      "body": "A child born abroad to a Hungarian parent must be registered in the Hungarian civil registry. The Honorary Consul authenticates American birth certificates and supporting documents for submission to Hungarian authorities.",
-      "whatToBring": [
-        "Original American birth certificate",
-        "Parents' Hungarian passports or ID cards",
-        "Marriage certificate (if parents are married)",
-        "Valid government-issued photo ID"
-      ]
+  "handledLabel": "Handled in Derry",
+  "requiresNYLabel": "Requires NY Consulate",
+  "consulRoleLabel": "Consul's Role",
+  "whatToBringLabel": "What to Bring",
+  "records": [
+    {
+      "type": "Birth Registration",
+      "hu": "Születés anyakönyvezése",
+      "summary": "If a child is born in the US to a Hungarian parent, the birth must be registered with the Hungarian civil registry within a specific timeframe. This establishes the child's Hungarian citizenship and their right to a Hungarian passport.",
+      "consulRole": "The honorary consul can authenticate the consent letter if one parent cannot attend the registration appointment in person. Bring the completed consent document to a Monday appointment — do not sign it in advance.",
+      "whatBring": [
+        "Both parents' Hungarian passports or ID cards",
+        "US birth certificate (original)",
+        "Marriage certificate of parents (if applicable)",
+        "Completed consent letter for absent parent (unsigned — must be signed in Sylvia's presence)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "marriage": {
-      "name": "Marriage Registration",
-      "consulRole": "Document authentication",
-      "body": "Marriages abroad involving Hungarian citizens must be registered in Hungary. The Honorary Consul authenticates American marriage certificates and related documents.",
-      "whatToBring": [
-        "Original American marriage certificate (apostilled if available)",
-        "Both spouses' valid ID or passport",
-        "Divorce decree if either party was previously married",
-        "Cash or check for authentication fees"
-      ]
+    {
+      "type": "Marriage Registration",
+      "hu": "Házasságkötés anyakönyvezése",
+      "summary": "Hungarian citizens married in the US must register the marriage with the Hungarian civil registry to have the marriage legally recognized in Hungary. This is often required for property transactions, inheritance, and name changes in official Hungarian records.",
+      "consulRole": "Authentication of the marriage certificate and supporting documents for submission. A certified translation of the American marriage certificate into Hungarian is typically required before submission.",
+      "whatBring": [
+        "US marriage certificate (original)",
+        "Both spouses' Hungarian passports or ID cards",
+        "Certified Hungarian translation of the marriage certificate",
+        "Any previous divorce decrees (if applicable)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "divorce": {
-      "name": "Divorce Registration",
-      "consulRole": "Document authentication",
-      "body": "Divorce decrees from American courts must be authenticated for recognition by Hungarian authorities. The Honorary Consul can authenticate the American court order.",
-      "whatToBring": [
-        "Final divorce decree from the American court",
-        "Valid government-issued photo ID",
-        "Cash or check for authentication fees"
-      ]
+    {
+      "type": "Divorce Registration",
+      "hu": "Válás anyakönyvezése",
+      "summary": "A divorce granted by an American court may need to be recognized by Hungarian authorities — particularly for remarriage, name changes, or property matters in Hungary. Recognition requires certified translation and consular authentication of the divorce decree.",
+      "consulRole": "Authentication of the American divorce decree and supporting documents. The decree must typically be translated into Hungarian by a certified translator before authentication.",
+      "whatBring": [
+        "Final divorce decree from the American court (certified copy)",
+        "Certified Hungarian translation of the divorce decree",
+        "Your Hungarian passport or ID",
+        "Marriage certificate (original or certified copy)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "death": {
-      "name": "Death Registration",
-      "consulRole": "Emergency coordination + authentication",
-      "body": "The death of a Hungarian citizen abroad must be reported to Hungarian authorities. In addition to authentication, the Honorary Consul can assist with emergency coordination — contacting next of kin, the Embassy, and relevant agencies.",
-      "whatToBring": [
-        "American death certificate",
-        "Deceased's Hungarian passport or national ID",
-        "Your own valid government-issued ID",
-        "Cash or check for authentication fees"
-      ]
+    {
+      "type": "Death Registration",
+      "hu": "Haláleset anyakönyvezése",
+      "summary": "The death of a Hungarian citizen in the US must be reported to the Hungarian civil registry. This is required for inheritance proceedings, pension cancellation, and official record updates. The honorary consul can authenticate the necessary documents locally.",
+      "consulRole": "Authentication of the American death certificate for submission to Hungarian authorities. Certified translation is typically required.",
+      "whatBring": [
+        "US death certificate (original or certified copy)",
+        "Certified Hungarian translation of the death certificate",
+        "Deceased's Hungarian passport or identity document (if available)",
+        "Your relationship documentation (if registering on behalf of family)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "passport": {
-      "name": "Passport-Related Documentation",
-      "consulRole": "Guidance only",
-      "body": "Hungarian passport renewals and issuance require biometric equipment available only at the Consulate General in New York. The Honorary Consul can authenticate supporting documents and explain the process.",
+    {
+      "type": "Passport Renewal",
+      "hu": "Útlevél megújítása",
+      "summary": "Hungarian passport applications and renewals require biometric data collection, which cannot be done at an honorary consulate. All passport services are handled by the Consulate General of Hungary in New York.",
+      "consulRole": "The honorary consul cannot process passport applications or renewals. Sylvia can provide guidance on the process and authenticate supporting documents if needed beforehand.",
+      "whatBring": [],
       "requiresNY": true,
-      "whatToBring": [
-        "Contact the NY Consulate General directly for passport appointments"
-      ]
+      "nyNote": "Contact the Consulate General of Hungary — 223 East 52nd Street, New York, NY 10022. Allow 5–6 weeks processing time. Do not book travel until the passport arrives."
     }
-  },
+  ],
   "cta": {
-    "heading": "Need to Register a Vital Event?",
-    "body": "Book an appointment to authenticate supporting documents and receive guidance on the registration process.",
-    "button": "Book Your Appointment"
+    "eyebrow": "Need documents authenticated?",
+    "body": "Monday appointments in Derry, NH. Bring your originals, copies, and valid ID.",
+    "primary": "Book Appointment",
+    "secondary": "What We Handle"
   }
 }

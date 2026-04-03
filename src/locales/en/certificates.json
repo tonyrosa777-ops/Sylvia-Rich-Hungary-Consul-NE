@@ -5,61 +5,80 @@
     "description": "Life certificates, good conduct certificates, civil status certificates, and proof of citizenship — this guide explains each one and the consul's role."
   },
   "freeCallout": {
-    "label": "Free Service",
-    "text": "Life certificates (életbizonyítvány) are provided at no charge to Hungarian pension recipients."
+    "badge": "Free Service",
+    "headline": "Life Certificates for Pension Recipients — No Charge",
+    "body": "If you receive a Hungarian pension, your annual life certificate is signed by Sylvia at no fee. Monday appointment required. Bring your pension documentation and photo ID."
   },
+  "sectionEyebrow": "Certificate Types",
+  "whatToBringLabel": "What to Bring",
+  "feeLabel": "Fee",
+  "frequencyLabel": "Frequency",
+  "embassyBadge": "Embassy Issued",
   "certificates": [
     {
       "name": "Life Certificate",
-      "nameHu": "Életbizonyítvány",
-      "free": true,
-      "body": "Required annually by Hungarian pension authorities (NYUFIG) to confirm that the recipient is still living. Without it, pension payments may be suspended. The Honorary Consul signs the certificate in your presence — it is then submitted directly to Hungarian pension authorities.",
-      "whatToBring": [
-        "Valid government-issued photo ID",
-        "Hungarian pension documentation showing your recipient number (nyugdíjtörzs-számodra)"
+      "hu": "Életbizonyítvány",
+      "badge": "Free Service",
+      "summary": "An annual certificate confirming that a Hungarian pension recipient is living. Required by the Hungarian pension authority (NYUFIG) to continue pension payments. This is one of the most frequently requested consular services.",
+      "detail": "If you receive a Hungarian pension and live in New England, you must submit a life certificate to Hungarian authorities every year. Failure to submit results in suspension of pension payments. Sylvia signs these certificates at no charge — the only free consular service.",
+      "whatBring": [
+        "Valid government-issued photo ID (passport or driver's license)",
+        "Hungarian pension documentation showing your recipient number",
+        "The life certificate form (download from NYUFIG website, or Sylvia may have forms available)"
       ],
-      "processingNote": "Completed same-day at your appointment. Submit directly to NYUFIG or your pension office."
+      "cost": "No charge",
+      "frequency": "Annual",
+      "requiresNY": false,
+      "note": ""
     },
     {
       "name": "Certificate of Good Conduct",
-      "nameHu": "Erkölcsi Bizonyítvány",
-      "free": false,
-      "body": "A criminal background certification issued by Hungarian authorities. Required for certain employment, immigration, and citizenship applications. The Honorary Consul authenticates supporting documents for the application — the certificate itself is issued by the Hungarian Criminal Records Office (Igazságügyi Minisztérium).",
-      "whatToBring": [
-        "Valid government-issued photo ID",
-        "Application form from the Hungarian Ministry of Justice (if requesting authentication of supporting documents)",
-        "Cash or check for authentication fees"
+      "hu": "Erkölcsi bizonyítvány",
+      "badge": null,
+      "summary": "A certificate confirming that a person has no criminal record in Hungary. Required for employment, immigration applications, visa purposes, and certain citizenship and property transactions.",
+      "detail": "A Hungarian certificate of good conduct is issued by the Hungarian National Police (ORFK). The honorary consul cannot issue this certificate, but can authenticate supporting documents required for the application. The application itself is submitted through Hungarian government channels.",
+      "whatBring": [
+        "Valid Hungarian identity document or passport",
+        "Completed ORFK application form",
+        "Payment for any applicable fees"
       ],
-      "processingNote": "The certificate is issued by Hungary, not the consulate. The consul authenticates supporting documents only."
+      "cost": "Authentication fee if documents require consul authentication",
+      "frequency": "As needed",
+      "requiresNY": false,
+      "note": "The certificate itself is issued by ORFK (Hungarian Police), not by the consul. Sylvia can authenticate supporting documents and advise on the process."
     },
     {
-      "name": "Civil Status Certificate",
-      "nameHu": "Anyakönyvi kivonat",
-      "free": false,
-      "body": "Certified extracts from Hungarian civil registry records — birth, marriage, or death. Issued by Hungarian municipal offices. The Honorary Consul can authenticate copies of these documents for use in the US or for re-submission to Hungarian authorities.",
-      "whatToBring": [
-        "Original Hungarian civil status certificate",
-        "Valid government-issued photo ID",
-        "Cash or check for authentication fees"
+      "name": "Certificate of Civil Status",
+      "hu": "Anyakönyvi kivonat",
+      "badge": null,
+      "summary": "Certified extracts from Hungarian civil registry records — birth, marriage, or death certificates issued by Hungarian civil authorities. Required for citizenship applications, marriage, divorce proceedings, and inheritance.",
+      "detail": "Civil status certificates are issued by Hungarian vital records offices (anyakönyvi hivatal), not by the consul. However, the honorary consul can authenticate American vital records documents for submission to Hungarian authorities, and can certify copies of Hungarian documents.",
+      "whatBring": [
+        "The original Hungarian document (if authenticating a copy)",
+        "Your government-issued photo ID",
+        "Any supporting documents relevant to your specific need"
       ],
-      "processingNote": "Original certificates are issued by Hungarian municipal offices. The consul certifies copies."
+      "cost": "$24 per certified copy / $36 per signature authentication",
+      "frequency": "As needed",
+      "requiresNY": false,
+      "note": ""
     },
     {
       "name": "Proof of Citizenship",
-      "nameHu": "Állampolgársági igazolás",
-      "free": false,
-      "body": "Confirmation of Hungarian citizenship status. May be required for employment, travel, or legal proceedings in the US. The Honorary Consul can authenticate Hungarian citizenship documents and provide supporting letters where appropriate.",
-      "whatToBring": [
-        "Hungarian passport or certificate of citizenship",
-        "Valid government-issued photo ID",
-        "Cash or check for authentication fees"
-      ],
-      "processingNote": "Citizenship is determined by Hungary. The consul authenticates existing citizenship documentation."
+      "hu": "Állampolgársági igazolás",
+      "badge": null,
+      "summary": "A document confirming Hungarian citizenship status, used in conjunction with simplified naturalization applications, EU benefit claims, and certain employment or immigration contexts.",
+      "detail": "Proof of citizenship is issued by the Embassy of Hungary in Washington DC, not by the honorary consul. Sylvia can authenticate supporting documents for the application and provide guidance on the process.",
+      "whatBring": [],
+      "cost": "Authentication of supporting documents as needed",
+      "frequency": "As needed",
+      "requiresNY": true,
+      "note": "Issued by the Embassy in Washington DC. Contact: washington.mfa.gov.hu"
     }
   ],
   "cta": {
-    "heading": "Need a Certificate?",
-    "body": "Book an appointment for life certificates, authentication of supporting documents, or guidance on the certificate process.",
-    "button": "Book Your Appointment"
+    "eyebrow": "Ready for your appointment?",
+    "body": "Pension life certificates are free. All other certificate-related services are completed in a single Monday visit.",
+    "primary": "Book Your Appointment"
   }
 }

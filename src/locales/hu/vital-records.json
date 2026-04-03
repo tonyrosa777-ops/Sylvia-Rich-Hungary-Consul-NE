@@ -4,64 +4,81 @@
     "headline": "Anyakönyvi Események Regisztrálása Magyarországon",
     "description": "Születés, házasság, válás és haláleset — minden Magyar állampolgárokat érintő életesemény regisztrálást igényelhet a Magyar polgári anyakönyvi hatóságoknál. Íme, miben tud segíteni a Tiszteletbeli Konzul."
   },
-  "intro": "A külföldön élő Magyar állampolgároknak kötelező a főbb életesemények (születés, házasság, válás, haláleset) bejegyzése a Magyar anyakönyvi hatóságoknál. A Tiszteletbeli Konzul hitelesíteni tudja azokat az amerikai iratokat, amelyek szükségesek e bejegyzések alátámasztásához.",
-  "records": {
-    "birth": {
-      "name": "Születés Anyakönyvezése",
-      "consulRole": "Irathitelesítés",
-      "body": "Külföldön született, Magyar szülővel rendelkező gyermeket be kell jegyezni a Magyar anyakönyvbe. A Tiszteletbeli Konzul hitelesíti az amerikai születési anyakönyvi kivonatokat és a Magyar hatóságokhoz benyújtáshoz szükséges mellékelt iratokat.",
-      "whatToBring": [
-        "Eredeti amerikai születési anyakönyvi kivonat",
-        "Szülők Magyar útlevele vagy személyazonosító igazolványa",
-        "Házassági anyakönyvi kivonat (ha a szülők házasok)",
-        "Érvényes fényképes személyazonosító okmány"
-      ]
+  "handledLabel": "Derryből Intézhető",
+  "requiresNYLabel": "New York-i Főkonzulátus Szükséges",
+  "consulRoleLabel": "A Konzul Szerepe",
+  "whatToBringLabel": "Mit Hozzon Magával",
+  "records": [
+    {
+      "type": "Születés Anyakönyvezése",
+      "hu": "Születés anyakönyvezése",
+      "summary": "Ha Magyar szülővel rendelkező gyermek az USA-ban születik, a születést meghatározott határidőn belül be kell jegyezni a Magyar anyakönyvbe. Ez megalapozza a gyermek Magyar állampolgárságát és a Magyar útlevélhez való jogát.",
+      "consulRole": "A Tiszteletbeli Konzul hitelesítheti a beleegyező nyilatkozatot, ha az egyik szülő nem tud személyesen megjelenni az anyakönyvezési időponton. Hozza el a kitöltött beleegyező nyilatkozatot egy hétfői időpontra — ne írja alá előre.",
+      "whatBring": [
+        "Mindkét szülő Magyar útlevele vagy személyazonosító igazolványa",
+        "Amerikai születési anyakönyvi kivonat (eredeti)",
+        "Szülők házassági anyakönyvi kivonata (ha alkalmazható)",
+        "Kitöltött beleegyező nyilatkozat a távolmaradó szülő részéről (aláíratlanul — Sylvia jelenlétében kell aláírni)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "marriage": {
-      "name": "Házasság Anyakönyvezése",
-      "consulRole": "Irathitelesítés",
-      "body": "Magyar állampolgárokat érintő külföldi házasságkötéseket Magyarországon kell anyakönyvezni. A Tiszteletbeli Konzul hitelesíti az amerikai házassági anyakönyvi kivonatokat és a kapcsolódó iratokat.",
-      "whatToBring": [
-        "Eredeti amerikai házassági anyakönyvi kivonat (ha lehetséges, apostille-lel ellátva)",
-        "Mindkét házastárs érvényes személyazonosító okmánya vagy útlevele",
-        "Válási ítélet, ha valamelyik fél korábban házas volt",
-        "Készpénz vagy csekk a hitelesítési díjakhoz"
-      ]
+    {
+      "type": "Házasság Anyakönyvezése",
+      "hu": "Házasságkötés anyakönyvezése",
+      "summary": "Az USA-ban házasságot kötő Magyar állampolgároknak be kell jegyeztetniük a házasságot a Magyar anyakönyvbe, hogy azt Magyarország jogilag elismerje. Ez gyakran szükséges ingatlan-tranzakciókhoz, örökösödéshez és a hivatalos Magyar nyilvántartásokban való névváltoztatáshoz.",
+      "consulRole": "A házassági anyakönyvi kivonat és a mellékelt iratok hitelesítése benyújtáshoz. Általában szükséges az amerikai házassági anyakönyvi kivonat hitelesített Magyar fordítása is a benyújtás előtt.",
+      "whatBring": [
+        "Amerikai házassági anyakönyvi kivonat (eredeti)",
+        "Mindkét házastárs Magyar útlevele vagy személyazonosító igazolványa",
+        "A házassági anyakönyvi kivonat hitelesített Magyar fordítása",
+        "Korábbi válási ítéletek (ha alkalmazható)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "divorce": {
-      "name": "Válás Anyakönyvezése",
-      "consulRole": "Irathitelesítés",
-      "body": "Az amerikai bíróságok által hozott válási ítéleteket hitelesíteni kell a Magyar hatóságok általi elismerés céljából. A Tiszteletbeli Konzul hitelesítheti az amerikai bírósági határozatot.",
-      "whatToBring": [
-        "Jogerős válási ítélet az amerikai bíróságtól",
-        "Érvényes fényképes személyazonosító okmány",
-        "Készpénz vagy csekk a hitelesítési díjakhoz"
-      ]
+    {
+      "type": "Válás Anyakönyvezése",
+      "hu": "Válás anyakönyvezése",
+      "summary": "Egy amerikai bíróság által kimondott válást esetleg el kell ismertetni a Magyar hatóságokkal — különösen újraházasodás, névváltoztatás vagy magyarországi vagyoni ügyek esetén. Az elismeréshez hitelesített fordítás és a válási ítélet konzuli hitelesítése szükséges.",
+      "consulRole": "Az amerikai válási ítélet és a mellékelt iratok hitelesítése. Az ítéletet általában hitelesített fordítóval Magyar nyelvre kell lefordíttatni a hitelesítés előtt.",
+      "whatBring": [
+        "Jogerős válási ítélet az amerikai bíróságtól (hitelesített másolat)",
+        "A válási ítélet hitelesített Magyar fordítása",
+        "Magyar útlevele vagy személyazonosító igazolványa",
+        "Házassági anyakönyvi kivonat (eredeti vagy hitelesített másolat)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "death": {
-      "name": "Haláleset Anyakönyvezése",
-      "consulRole": "Vészhelyzeti koordináció + hitelesítés",
-      "body": "Magyar állampolgár külföldi halálát be kell jelenteni a Magyar hatóságoknak. A hitelesítés mellett a Tiszteletbeli Konzul segíthet a vészhelyzeti koordinációban is — kapcsolatfelvétel a hozzátartozókkal, a Nagykövetséggel és az illetékes hatóságokkal.",
-      "whatToBring": [
-        "Amerikai halotti anyakönyvi kivonat",
-        "Elhunyt Magyar útlevele vagy személyazonosító igazolványa",
-        "Saját érvényes személyazonosító okmány",
-        "Készpénz vagy csekk a hitelesítési díjakhoz"
-      ]
+    {
+      "type": "Haláleset Anyakönyvezése",
+      "hu": "Haláleset anyakönyvezése",
+      "summary": "Az USA-ban elhunyt Magyar állampolgár halálát be kell jelenteni a Magyar anyakönyvi hatóságoknak. Ez szükséges az örökösödési eljáráshoz, a nyugdíj megszüntetéséhez és a hivatalos nyilvántartások frissítéséhez. A Tiszteletbeli Konzul helyben hitelesítheti a szükséges iratokat.",
+      "consulRole": "Az amerikai halotti anyakönyvi kivonat hitelesítése a Magyar hatóságokhoz való benyújtáshoz. Általában hitelesített fordítás is szükséges.",
+      "whatBring": [
+        "Amerikai halotti anyakönyvi kivonat (eredeti vagy hitelesített másolat)",
+        "A halotti anyakönyvi kivonat hitelesített Magyar fordítása",
+        "Az elhunyt Magyar útlevele vagy személyazonosító okmánya (ha rendelkezésre áll)",
+        "Rokonsági igazolás (ha a nyilvántartást hozzátartozó nevében kezdeményezi)"
+      ],
+      "requiresNY": false,
+      "nyNote": ""
     },
-    "passport": {
-      "name": "Útlevéllel Kapcsolatos Iratok",
-      "consulRole": "Csak tájékoztatás",
-      "body": "Magyar útlevél megújítása és kiállítása biometrikus berendezést igényel, amely csak a New York-i Főkonzulátuson érhető el. A Tiszteletbeli Konzul hitelesítheti a mellékelt iratokat és ismertetheti az eljárást.",
+    {
+      "type": "Útlevél Megújítása",
+      "hu": "Útlevél megújítása",
+      "summary": "A Magyar útlevélkérelmekhez és megújításhoz biometrikus adatfelvétel szükséges, amelyre a Tiszteletbeli Konzulátuson nincs lehetőség. Minden útlevélügyet a New York-i Magyar Főkonzulátus intéz.",
+      "consulRole": "A Tiszteletbeli Konzul nem tud útlevélkérelmeket vagy megújításokat feldolgozni. Sylvia tájékoztatást tud nyújtani az eljárásról, és szükség esetén előzetesen hitelesítheti a mellékelt iratokat.",
+      "whatBring": [],
       "requiresNY": true,
-      "whatToBring": [
-        "Útlevél-időpontfoglaláshoz forduljon közvetlenül a NY-i Főkonzulátushoz"
-      ]
+      "nyNote": "Vegye fel a kapcsolatot a Magyar Főkonzulátussal — 223 East 52nd Street, New York, NY 10022. Számoljon 5–6 hét ügyintézési idővel. Ne foglaljon utazást, amíg az útlevél meg nem érkezik."
     }
-  },
+  ],
   "cta": {
-    "heading": "Anyakönyvi Eseményt Kell Bejegyezni?",
-    "body": "Foglaljon időpontot a mellékelt iratok hitelesítéséhez és a regisztrációs folyamattal kapcsolatos tájékoztatáshoz.",
-    "button": "Időpontot Foglalok"
+    "eyebrow": "Iratokat kell hitelesíteni?",
+    "body": "Hétfői időpontok Derry, NH-ban. Hozza el az eredeti iratokat, másolatokat és érvényes személyazonosítót.",
+    "primary": "Időpontot Foglalok",
+    "secondary": "Mit Intézünk"
   }
 }

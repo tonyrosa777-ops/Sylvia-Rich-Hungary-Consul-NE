@@ -4,70 +4,81 @@
     "headline": "Diplomáciai Legalizáció: Három Útvonal",
     "description": "A helyes legalizációs útvonal attól függ, melyik ország kapja a dokumentumot. Ezzel az útmutatóval azonosíthatja, melyik eljárás vonatkozik az Ön helyzetére."
   },
-  "intro": "Az iratok legalizációja az a folyamat, amelynek során a dokumentumot hivatalosan elismertetik külföldi felhasználás céljából. Az eljárás attól függően változik, hogy a fogadó ország tagja-e a Hágai Egyezménynek.",
+  "section1": {
+    "eyebrow": "A Legalizáció Három Útja",
+    "heading": "Melyik Eljárás Vonatkozik Önre?",
+    "recommendedBadge": "Ügyfeleink Körében a Leggyakoribb"
+  },
   "paths": [
     {
-      "name": "Konzuli Hitelesítés",
-      "subtitle": "Magyarországra küldendő dokumentumokhoz",
-      "cost": "$36 dokumentumonként",
-      "timeframe": "Ugyanazon a napon",
-      "usedFor": "Magyar hatóságok, ingatlan-tranzakciók, jogi beadványok",
+      "title": "Konzuli Hitelesítés",
+      "subtitle": "Magyarországon használandó dokumentumokhoz",
+      "description": "A Tiszteletbeli Konzul a Konzuli Kapcsolatokról szóló Bécsi Egyezmény alapján ellenőrzi és hitelesíti az aláírásokat vagy másolatokat. Az eredmény egy olyan dokumentum, amelyet valamennyi Magyar kormányzati hatóság elismer.",
+      "cost": "$36 aláírásonként / $24 oldalanként (másolat)",
+      "timeframe": "Ugyanazon az időponton",
+      "usedFor": "Meghatalmazások, ingatlan-tranzakciók, üzleti iratok, örökösödési beadványok",
       "steps": [
-        "Dokumentum közjegyzői hitelesítése (ha amerikai)",
-        "Apostille az NH Secretary of State-től",
-        "Konzuli hitelesítés a Tiszteletbeli Konzultól"
+        "Készítse elő a dokumentumot — ne írja alá előre",
+        "Foglaljon hétfői időpontot Derry, NH-ban",
+        "Írja alá Sylvia jelenlétében",
+        "A konzul rávezeti a hitelesítési pecsétet",
+        "A dokumentum készen áll a Magyar benyújtáshoz"
       ]
     },
     {
-      "name": "Apostille + Hitelesítés",
-      "subtitle": "Hágai Egyezményes országok számára",
-      "cost": "Apostille díja + konzuli díj",
-      "timeframe": "1–3 hét (apostille) + időpont",
-      "usedFor": "EU-tagállamok, Európa nagy része, 120+ ország",
+      "title": "Apostille + Hitelesítés",
+      "subtitle": "Magyarországra küldendő amerikai dokumentumokhoz",
+      "description": "A Magyarországra szánt, amerikai kiállítású dokumentumokhoz általában először apostille szükséges (az NH Secretary of State-től), majd a dokumentum típusától függően konzuli hitelesítés is kellhet.",
+      "cost": "$10 NH közjegyző + $10 NH apostille díj",
+      "timeframe": "Napok – hetek",
+      "usedFor": "Amerikai születési/házassági/halotti anyakönyvi kivonatok, diplomák, bírósági iratok",
       "steps": [
-        "Dokumentum közjegyzői hitelesítése vagy tanúsítása",
-        "Apostille a kiállító állam Secretary of State-jétől",
-        "Konzuli hitelesítés, ha a célország megköveteli"
+        "Közjegyzői hitelesítés (ha szükséges)",
+        "Benyújtás az NH Secretary of State-hez apostille-ért",
+        "Visszatérés a Tiszteletbeli Konzulhoz, ha további hitelesítés szükséges"
       ]
     },
     {
-      "name": "Teljes Legalizációs Lánc",
-      "subtitle": "Nem Hágai Egyezményes országok számára",
-      "cost": "Több díj is felmerül",
-      "timeframe": "Több hét",
-      "usedFor": "A Hágai Egyezményen kívüli országok (egyes közel-keleti, ázsiai, afrikai nemzetek)",
+      "title": "Teljes Legalizációs Lánc",
+      "subtitle": "A Hágai Egyezményen kívüli országok számára",
+      "description": "Olyan országokba küldendő dokumentumokhoz, amelyek nem tagjai a Hágai Egyezménynek (Magyarország esetén nem alkalmazandó, mivel az tagállam). Sorrendben: közjegyzői hitelesítés → állami hitelesítés → szövetségi hitelesítés → nagykövetségi pecsét. Kérdés esetén forduljon Sylviához.",
+      "cost": "Változó — több díj és hatóság érintett",
+      "timeframe": "Hetek – hónapok",
+      "usedFor": "Nem Hágai Egyezményes országok számára — Magyarország esetén általában NEM szükséges",
       "steps": [
-        "Közjegyzői hitelesítés",
-        "Állami hitelesítés (Secretary of State)",
-        "Szövetségi hitelesítés (US Dept. of State)",
-        "A célország nagykövetségének konzuli hitelesítése"
+        "Közjegyzői hitelesítés (USA)",
+        "Állami Secretary of State hitelesítése",
+        "US Department of State szövetségi hitelesítése",
+        "Nagykövetségi vagy konzuli pecsét"
       ]
     }
   ],
-  "faq": {
-    "heading": "Gyakran Ismételt Kérdések",
-    "items": [
-      {
-        "question": "Magyarország apostille-t kér az amerikai dokumentumokra?",
-        "answer": "Igen — Magyarország tagja a Hágai Egyezménynek, így a legtöbb amerikai dokumentumhoz apostille szükséges a konzuli hitelesítés előtt. Az apostille-t a dokumentumot kiállító állam Secretary of State irodájától kell beszerezni."
-      },
-      {
-        "question": "A Tiszteletbeli Konzul el tudja végezni az apostille-t?",
-        "answer": "Nem. Az apostille-t az állam Secretary of State irodája állítja ki (New Hampshire-i dokumentumokhoz az NH Secretary of State). A Tiszteletbeli Konzul az apostille megszerzése után végzi el a hitelesítést."
-      },
-      {
-        "question": "Szükséges-e legalizáció a Magyar dokumentumokhoz az USA-ban való felhasználáshoz?",
-        "answer": "Az USA-ban felhasználandó Magyar dokumentumokhoz konzuli hitelesítésre lehet szükség. Mivel Magyarország tagja a Hágai Egyezménynek, az USA-ba szánt Magyar dokumentumokhoz jellemzően Magyar hatóságok által kiállított apostille szükséges."
-      },
-      {
-        "question": "Mennyi ideig tart a teljes legalizációs folyamat?",
-        "answer": "Magyarország esetén: az apostille a Secretary of State-től 1–3 hétig tart, majd a konzuli időpont ugyanazon a napon intézhető. Számoljon összesen 2–4 héttel. Nem Hágai Egyezményes országok esetén 4–8 hétre vagy tovább is."
-      }
-    ]
+  "section2": {
+    "eyebrow": "Gyakori Kérdések",
+    "heading": "Legalizációs GYIK"
   },
+  "faq": [
+    {
+      "q": "Mi a különbség a hitelesítés és a legalizáció között?",
+      "a": "A gyakorlatban e két fogalmat sokszor felváltva használják, de technikailag: a hitelesítés egy egylépéses ellenőrzés konzul vagy kormányzati hatóság által. A legalizáció különböző kormányzati szinteken keresztüli, többlépéses hitelesítési lánc. Magyarország esetén, amely Hágai Egyezményes tagállam, a konzuli hitelesítés általában elegendő — a teljes legalizációs lánc ritkán szükséges."
+    },
+    {
+      "q": "Magyarország tagja a Hágai Egyezménynek — akkor is kell apostille?",
+      "a": "A Magyarországra küldendő amerikai dokumentumokhoz igen — az apostille a Hágai Egyezmény keretében alkalmazott nemzetközi hitelesítési forma. Az apostille-t az NH Secretary of State állítja ki, nem a konzul. A konzuli hitelesítés más célra szolgál: Sylvia jelenlétében aláírt dokumentumokon szereplő aláírások hitelesítésére."
+    },
+    {
+      "q": "Magyar dokumentumot kaptam. Hitelesíteni kell az USA-ban való felhasználáshoz?",
+      "a": "Az amerikai eljárásokban (bíróságokon, munkáltatóknál, egyetemeken) felhasznált Magyar dokumentumokhoz általában hitelesített angol fordítás szükséges. Az eredeti Magyar dokumentum hitelesítését időnként szintén kérik — Sylvia ezt $36/dokumentum díjért végzi."
+    },
+    {
+      "q": "Sylvia bármilyen dokumentumot legalizálhat vagy hitelesíthet?",
+      "a": "Sylvia a Bécsi Egyezmény szerinti tiszteletbeli konzuli hatáskörön belül hitelesíthet aláírásokat és tanúsíthat másolatokat. Az útlevelekhez és biometrikus dokumentumokhoz a New York-i Főkonzulátus szükséges. Jogi tanácsadás nem tartozik a konzuli hatáskörbe."
+    }
+  ],
   "cta": {
-    "heading": "Irathitelesítésre Van Szüksége?",
-    "body": "Foglaljon időpontot konzuli hitelesítéshez — ez a legtöbb Magyar beadványnál a legalizációs lánc utolsó lépése.",
-    "button": "Időpontot Foglalok"
+    "eyebrow": "Nem tudja, melyik útvonal vonatkozik Önre?",
+    "body": "Hozza el iratait a hétfői időpontra, és Sylvia pontosan meghatározza, mire van szükség — és ha lehetséges, ugyanazon az alkalmon el is végzi.",
+    "primary": "Időpontot Foglalok",
+    "secondary": "Teljes Hitelesítési Útmutató"
   }
 }

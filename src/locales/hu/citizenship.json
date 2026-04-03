@@ -5,62 +5,88 @@
     "description": "Egyszerűsített útmutató a honosítás (egyszerűsített honosítás) folyamatához és ahhoz, hogyan támogatja a Tiszteletbeli Konzulátus az Ön kérelmét."
   },
   "intro": {
-    "heading": "Mi az Egyszerűsített Honosítás?",
-    "body": "Magyarország egyszerűsített honosítási programja (honosítás egyszerűsített eljárással) lehetővé teszi a Magyarországon kívül élő etnikai magyarok és leszármazottaik számára, hogy lakóhelyi követelmény nélkül kérjék a Magyar állampolgárságot. Ha szülei, nagyszülei vagy korábbi felmenői Magyar állampolgárok voltak, Ön jogosult lehet rá."
+    "eyebrow": "Egyszerűsített Honosítás",
+    "headline": "Honosítás — Leszármazáson Alapuló Állampolgárság",
+    "paragraphs": [
+      "2011 óta Magyarország egyszerűsített honosítást kínál — egyszerűsített honosítás — mindenkinek, aki Magyar felmenőit igazolni tudja, és valamilyen kapcsolatot ápol a Magyar nyelvvel. Több százezer magyar-amerikai élt már ezzel a lehetőséggel az állampolgárság visszaszerzésére, EU-s útlevél megszerzésére és örökségéhez való formális kötődés fenntartására.",
+      "A folyamatot a Washington DC-i Magyar Nagykövetség kezeli. A Tiszteletbeli Konzul szerepe az iratkészítés: Sylvia helyben, Derry-beli hétfői időponton hitelesítheti a benyújtáshoz szükséges mellékelt iratokat."
+    ]
+  },
+  "processingTime": {
+    "label": "Ügyintézési Idő",
+    "value": "8–10",
+    "unit": "hónap (jellemzően)",
+    "noExpeditingLabel": "Nem gyorsítható",
+    "noExpeditingBody": "A folyamatot nem lehet felgyorsítani. Nyújtsa be az iratokat jóval határidő előtt."
   },
   "steps": {
     "heading": "A Kérelem Folyamata",
-    "consulRole": "A konzul segítséget nyújt",
+    "consulBadge": "Konzul segít",
     "items": [
       {
-        "title": "Gyűjtse Össze a Felmenőkre Vonatkozó Iratokat",
-        "body": "Gyűjtse össze a születési anyakönyvi kivonatokat, házassági anyakönyvi kivonatokat és minden olyan iratot, amely Magyar felmenőjéig vezeti a leszármazási sort. Az iratoknak Öntől egy Magyar ős felé kell mutatniuk az összefüggést.",
-        "consulAssists": true
+        "step": "01",
+        "title": "Ellenőrizze Jogosultságát",
+        "body": "Az egyszerűsített honosítás — honosítás — mindenki számára elérhető, aki igazolni tudja Magyar felmenőit (szülő, nagyszülő vagy dédszülő), és bizonyos kapcsolatot mutat a Magyar nyelvvel vagy kultúrával. Nem szükséges Magyarországon élni.",
+        "consul": false,
+        "consulNote": ""
       },
       {
-        "title": "Hitelesítse Iratait",
-        "body": "Az amerikal iratokat (születési, házassági anyakönyvi kivonatokat) a Tiszteletbeli Konzulnak kell hitelesítenie benyújtás előtt. Magyar iratokhoz másolat-hitelesítésre lehet szükség.",
-        "consulAssists": true
+        "step": "02",
+        "title": "Gyűjtse Össze az Iratokat",
+        "body": "Szükséges lesz a születési anyakönyvi kivonatok, házassági anyakönyvi kivonatok és a Magyar felmenőket igazoló iratok hitelesített másolata. Előfordulhat, hogy ezeket hitelesíteni kell, ha Magyarországon kívül állították ki őket.",
+        "consul": true,
+        "consulNote": "Sylvia helyben hitelesítheti e dokumentumokat. Hozza el az eredetieket és a másolatokat egy hétfői időpontra."
       },
       {
-        "title": "Nyújtsa Be a Washington DC-i Nagykövetségre",
-        "body": "Az állampolgársági kérelmeket a Washington DC-i Magyar Nagykövetségre kell benyújtani — nem a tiszteletbeli konzulhoz. A Nagykövetség kezeli a teljes eljárást.",
-        "consulAssists": false
+        "step": "03",
+        "title": "Hitelesítse a Mellékelt Iratokat",
+        "body": "A Magyar állampolgársági kérelemhez szánt, az USA-ban kiállított dokumentumokhoz konzuli hitelesítés vagy apostille szükséges. A vonatkozó eljárás az irat típusától függ.",
+        "consul": true,
+        "consulNote": "A hitelesítés és apostille közötti választáshoz tekintse meg a Hitelesítési vs. Apostille Útmutatót."
       },
       {
-        "title": "Magyar Nyelv és Alkotmányos Ismeretek",
-        "body": "A kérelmezőknek alapszintű Magyar nyelvtudást és a Magyar történelemre és alkotmányra vonatkozó ismereteket kell bizonyítaniuk. A Tiszteletbeli Konzul útmutatást nyújthat, de nem ő vezeti a vizsgát.",
-        "consulAssists": false
+        "step": "04",
+        "title": "Nyújtsa Be a Nagykövetségre",
+        "body": "Az állampolgársági kérelmeket a Washington DC-i Magyar Nagykövetségre kell benyújtani — nem a Tiszteletbeli Konzulhoz. Sylvia segíthet a folyamat megértésében és az iratok hitelesítésében, de nem fogadhat és nem továbbíthat kérelmeket.",
+        "consul": false,
+        "consulNote": ""
       },
       {
-        "title": "Állampolgársági Eskü",
-        "body": "Jóváhagyás esetén az állampolgársági esküt kell tennie — vagy Magyarországon, vagy valamely Magyar diplomáciai képviseleten. Sylvia tanácsot tud adni a folyamatról, de nem ő végzi az eskütételt.",
-        "consulAssists": false
+        "step": "05",
+        "title": "Várja a Döntést",
+        "body": "Az állampolgárság elbírálása jellemzően 8–10 hónapig tart. Nincs gyorsítási lehetőség. A Nagykövetség az eredményről tájékoztatja Önt.",
+        "consul": false,
+        "consulNote": ""
       }
     ]
   },
-  "cannotDo": {
-    "heading": "Amit a Tiszteletbeli Konzul Nem Tud Elvégezni",
-    "items": [
-      "Állampolgársági kérelmek fogadása vagy feldolgozása",
-      "Állampolgársági döntések megadása, megtagadása vagy fellebbezése",
-      "Nyelvi vagy alkotmányos vizsgák levezetése",
-      "Állampolgársági eskütétel levezetése",
-      "Jogi tanácsadás az állampolgárságra való jogosultsággal kapcsolatban"
-    ]
+  "roleClarity": {
+    "eyebrow": "Szerepek Tisztázása",
+    "heading": "Mit Tud és Mit Nem Tud Elvégezni a Tiszteletbeli Konzul"
   },
   "canDo": {
-    "heading": "Hogyan Tud Segíteni a Tiszteletbeli Konzul",
+    "heading": "Miben Tud Segíteni",
     "items": [
-      "Születési és házassági anyakönyvi kivonatok hitelesítése benyújtáshoz",
-      "Magyar felmenőkre vonatkozó iratok másolatainak hitelesítése",
-      "Az általános folyamat és a szükséges iratok magyarázata",
-      "Információ és kapcsolattartók megadása a Nagykövetségnél"
+      "Állampolgársági kérelmekhez szükséges mellékelt iratok hitelesítése",
+      "Születési, házassági és halotti anyakönyvi kivonatok másolatainak tanúsítása",
+      "Az állampolgársági ügyekhez kapcsolódó meghatalmazások hitelesítése",
+      "Útmutatás az iratkészítési folyamathoz",
+      "Utalás Magyar nyelvi forrásokra és jogi kapcsolattartókra"
+    ]
+  },
+  "cannotDo": {
+    "heading": "Mit Nem Tud Elvégezni",
+    "items": [
+      "Állampolgársági kérelmek fogadása (azokat a Washington DC-i Nagykövetségre kell benyújtani)",
+      "Kérelmek gyorsítása vagy státuszának ellenőrzése",
+      "Jogi tanácsadás a jogosultsági feltételekről",
+      "Magyar személyazonosító okmányok kiadása"
     ]
   },
   "cta": {
-    "heading": "Készen Áll a Kezdésre?",
-    "body": "Foglaljon időpontot felmenőkre vonatkozó iratainak hitelesítéséhez és a kérelmi folyamattal kapcsolatos tájékoztatáshoz.",
-    "button": "Időpontot Foglalok"
+    "eyebrow": "Készen áll az iratok hitelesítésére?",
+    "body": "Hétfői időpontok Derry, NH-ban. Hozza el az eredeti iratokat és másolatokat. Sylvia megállapítja, mi igényel hitelesítést, és ugyanazon az alkalmon el is végzi.",
+    "primary": "Időpontot Foglalok",
+    "secondary": "Hitelesítési Útmutató"
   }
 }

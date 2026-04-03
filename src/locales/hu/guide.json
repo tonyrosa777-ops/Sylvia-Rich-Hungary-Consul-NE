@@ -5,66 +5,65 @@
     "description": "A válasz két dologtól függ: mi a dokumentum, és hova kerül. Ezt az útmutatót használja az útvonala meghatározásához a foglalás előtt."
   },
   "tree": {
-    "question": "Mi jellemzi az Ön helyzetét?",
+    "sectionLabel": "Kezdje itt",
+    "question": "Milyen dokumentuma van?",
     "branches": [
       {
-        "label": "Amerikai dokumentum → Magyarországra megy",
-        "service": "Apostille + Konzuli Hitelesítés",
-        "cost": "Secretary of State díja + $36",
-        "detail": "1. lépés: Apostille az NH Secretary of State-től. 2. lépés: Konzuli hitelesítés Sylvia Rich által.",
-        "cta": "Aláírás-hitelesítés Foglalása"
+        "label": "Amerikai dokumentum — az USA-ban marad",
+        "answer": "Közjegyzői hitelesítésre van szüksége.",
+        "detail": "Végrendeletek, iratok, nyilatkozatok, szerződések és egyéb, közjegyző előtt aláírt, amerikai jog szerinti dokumentumok. Sylvia $10/aktáért közjegyzi ezeket — ez az NH állami maximum.",
+        "actionLabel": "Közjegyző Foglalása"
       },
       {
-        "label": "Amerikai dokumentum → az USA-ban marad",
-        "service": "Közjegyzői Hitelesítés",
-        "cost": "$10 aktánként",
-        "detail": "Szokásos közjegyzői hitelesítés NH-i jog alapján. Nincs szükség konzuli eljárásra.",
-        "cta": "Közjegyző Foglalása"
+        "label": "Amerikai dokumentum — Magyarországra megy",
+        "answer": "Valószínűleg apostille-re, majd hitelesítésre van szüksége.",
+        "detail": "Az apostille-t az NH Secretary of State állítja ki (nem a konzul), és igazolja, hogy a dokumentum érvényes a Hágai Egyezményes tagállamokban való felhasználáshoz. Magyarország tagállam, ezért a Magyarországra szánt legtöbb amerikai dokumentumhoz először apostille szükséges. Az apostille után Sylvia szükség esetén hitelesítheti az aláírást.",
+        "actionLabel": "NH Secretary of State →"
       },
       {
-        "label": "Magyar dokumentum → Magyarországon marad",
-        "service": "Nincs szükség konzuli intézkedésre",
-        "cost": "—",
-        "detail": "A Magyarországon belül használt Magyar dokumentumok nem igényelnek konzuli hitelesítést.",
-        "cta": "Vegye fel velünk a kapcsolatot, ha bizonytalan"
+        "label": "Magyar dokumentum — Magyarországon marad",
+        "answer": "Konzuli hitelesítésre van szüksége.",
+        "detail": "A Magyarországon kívül keletkezett, de Magyar hatóságok általi elismerést igénylő dokumentumokhoz — meghatalmazásokhoz, aláírás-igazolásokhoz, hitelesített másolatokhoz — a Tiszteletbeli Konzul konzuli hitelesítése szükséges. Sylvia ezt $36/dokumentum díjért végzi.",
+        "actionLabel": "Időpontot Foglalok"
       },
       {
-        "label": "Magyar dokumentum → az USA-ba kerül",
-        "service": "Konzuli Hitelesítés",
-        "cost": "$36 dokumentumonként",
-        "detail": "A tiszteletbeli konzul hitelesítése révén a Magyar dokumentumok érvényessé válnak az Egyesült Államokban.",
-        "cta": "Aláírás-hitelesítés Foglalása"
+        "label": "Magyar dokumentum — az USA-ba kerül",
+        "answer": "Valószínűleg fordításra, esetleg közjegyzői hitelesítésre van szüksége.",
+        "detail": "Az amerikai bíróságokon vagy hivatalos eljárásokban felhasznált Magyar dokumentumokhoz általában hitelesített angol fordítás szükséges. Forduljon hitelesített fordítóhoz. Ha a fordított dokumentumon aláírás-igazolás szükséges, Sylvia közjegyzihez a fordító aláírását.",
+        "actionLabel": "Kapcsolatfelvétel"
       }
     ]
   },
   "glossary": {
-    "heading": "Kulcsfogalmak",
+    "eyebrow": "Szószedet",
+    "heading": "Az Öt Kulcsfogalom, Amelyet Tudnia Kell",
     "terms": [
       {
         "term": "Közjegyzői Hitelesítés",
-        "definition": "Egy amerikai közjegyző ellenőrzi személyazonosságát és tanúsítja aláírását. Az USA-ban felhasználandó amerikai dokumentumokhoz szükséges. Magyar hatóságokhoz való benyújtáshoz önmagában nem elegendő."
+        "definition": "Az a folyamat, amelynek során egy engedéllyel rendelkező közjegyző tanúsítja az irat aláírását, ellenőrzi az aláíró személyazonosságát, és hitelességet igazoló pecsétet vezet rá. Érvényes az amerikai jog szerinti dokumentumokon. Önmagában nem ad a dokumentumnak magyarországi jogi érvényt."
       },
       {
         "term": "Konzuli Hitelesítés",
-        "definition": "A tiszteletbeli konzul tanúsítja egy aláírás vagy dokumentum hitelességét Magyarországon való felhasználáshoz. Ez az a hivatalos lépés, amely az amerikai dokumentumokat érvényessé teszi Magyar hatóságoknál való benyújtáshoz."
+        "definition": "A Bécsi Egyezmény alapján a Tiszteletbeli Konzul által végzett aláírás- vagy másolat-hitelesítés. Ez az a lépés, amelytől egy dokumentumot a Magyar kormányzati hatóságok jogilag elismernek. Sylvia $36/dokumentum díjért végzi."
       },
       {
         "term": "Apostille",
-        "definition": "Szabványosított nemzetközi tanúsítás (Hágai Egyezmény), amely érvényesít egy dokumentumot a tagállamokban való felhasználáshoz. A Magyarországra küldendő legtöbb amerikai dokumentum esetén konzuli hitelesítés előtt szükséges."
+        "definition": "Az 1961-es Hágai Egyezmény szerinti egyszerűsített hitelesítési forma. A kiállítás országa illetékes hatóságától szerezhető be (NH-ban: Secretary of State). A Magyarországra küldendő amerikai dokumentumokhoz apostille szükséges. NEM a konzul állítja ki — az állam adja ki."
       },
       {
         "term": "Másolat-hitelesítés",
-        "definition": "A tiszteletbeli konzul tanúsítja, hogy egy másolat az eredeti dokumentum hiteles és pontos másolata. Abban az esetben használják, ha az eredeti dokumentum nem nyújtható be a Magyar hatóságokhoz."
+        "definition": "A konzuli tisztviselő tanúsítja, hogy a másolat az eredeti dokumentum hiteles és pontos reprodukciója. Akkor szükséges, ha az eredeti dokumentum nem nyújtható be a Magyar hatóságokhoz. Sylvia $24/oldal díjért végzi."
       },
       {
         "term": "Legalizáció",
-        "definition": "A nem Hágai Egyezményes országokba küldendő dokumentumok teljes hitelesítési lánca. Sorrendben magában foglalja a közjegyzői hitelesítést, állami hitelesítést és konzuli hitelesítést."
+        "definition": "A Hágai Egyezményen kívüli országokba küldendő dokumentumok hitelesítési lánca. Több hitelesítési szintet foglal magában: közjegyzői hitelesítés → Secretary of State tanúsítása → szövetségi hitelesítés → nagykövetségi vagy konzuli pecsét. Magyarország esetén kevésbé szokásos, mivel az tagállam."
       }
     ]
   },
   "cta": {
-    "stillUnsure": "Még Mindig Bizonytalan?",
-    "body": "Foglalásakor ismertesse helyzetét, és Sylvia az időpontja előtt megerősíti a helyes szolgáltatást.",
-    "button": "Konzultációt Foglalok"
+    "eyebrow": "Még mindig bizonytalan?",
+    "body": "Foglaljon hétfői időpontot és hozza el az iratait. Sylvia pontosan megmondja, mire van szüksége, és ha lehetséges, ugyanazon az alkalmon el is végzi a szolgáltatást.",
+    "primary": "Időpontot Foglalok",
+    "secondary": "Mit Intézünk"
   }
 }

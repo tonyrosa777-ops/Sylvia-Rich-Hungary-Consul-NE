@@ -5,62 +5,88 @@
     "description": "A simplified guide to the honosítás (simplified naturalization) process and how the Honorary Consulate supports your application."
   },
   "intro": {
-    "heading": "What Is Simplified Naturalization?",
-    "body": "Hungary's simplified naturalization program (honosítás egyszerűsített eljárással) allows ethnic Hungarians and their descendants outside Hungary to apply for Hungarian citizenship without a residency requirement. If your parents, grandparents, or earlier ancestors were Hungarian citizens, you may be eligible."
+    "eyebrow": "Simplified Naturalization",
+    "headline": "Honosítás — Citizenship by Descent",
+    "paragraphs": [
+      "Since 2011, Hungary has offered simplified naturalization — egyszerűsített honosítás — to anyone who can demonstrate Hungarian ancestry and has some connection to the Hungarian language. Hundreds of thousands of Hungarian-Americans have used this pathway to reclaim citizenship, secure an EU passport, and maintain a formal connection to their heritage.",
+      "The process is managed by the Embassy of Hungary in Washington DC. The honorary consul's role is document preparation: Sylvia can authenticate the supporting documents you need before submission — locally, at a Monday appointment in Derry, NH."
+    ]
+  },
+  "processingTime": {
+    "label": "Processing Time",
+    "value": "8–10",
+    "unit": "months typical",
+    "noExpeditingLabel": "No expediting",
+    "noExpeditingBody": "There is no way to accelerate the process. Submit well before any deadline."
   },
   "steps": {
     "heading": "The Application Process",
-    "consulRole": "Consul assists",
+    "consulBadge": "Consul assists",
     "items": [
       {
-        "title": "Gather Ancestry Documentation",
-        "body": "Collect birth certificates, marriage certificates, and any documents that trace your Hungarian lineage. Documents must show the chain from you to a Hungarian ancestor.",
-        "consulAssists": true
+        "step": "01",
+        "title": "Confirm Your Eligibility",
+        "body": "Simplified naturalization — honosítás — is available to anyone who can prove Hungarian ancestry (parent, grandparent, or great-grandparent) and demonstrates some connection to Hungarian language or culture. You do not need to have lived in Hungary.",
+        "consul": false,
+        "consulNote": ""
       },
       {
-        "title": "Authenticate Your Documents",
-        "body": "American documents (birth, marriage certificates) must be authenticated by the Honorary Consul before submission. Hungarian documents may need copy authentication.",
-        "consulAssists": true
+        "step": "02",
+        "title": "Gather Your Documents",
+        "body": "You will need certified copies of birth certificates, marriage certificates, and any documents tracing your Hungarian lineage. These may need to be authenticated if they were issued outside Hungary.",
+        "consul": true,
+        "consulNote": "Sylvia can authenticate these documents locally. Bring the originals and copies to a Monday appointment."
       },
       {
-        "title": "Submit to the Embassy in Washington DC",
-        "body": "Citizenship applications are submitted to the Embassy of Hungary in Washington DC — not to the honorary consul. The Embassy handles all processing.",
-        "consulAssists": false
+        "step": "03",
+        "title": "Authenticate Supporting Documents",
+        "body": "American-issued documents destined for the Hungarian citizenship application require consular authentication or apostille. Which process applies depends on the document type.",
+        "consul": true,
+        "consulNote": "See the Authentication vs. Apostille guide for which process applies to each document."
       },
       {
-        "title": "Language and Constitutional Knowledge",
-        "body": "Applicants must demonstrate basic Hungarian language ability and knowledge of Hungarian history and constitution. The Honorary Consul can provide guidance but does not administer the test.",
-        "consulAssists": false
+        "step": "04",
+        "title": "Submit to the Embassy",
+        "body": "Citizenship applications are submitted to the Embassy of Hungary in Washington DC — not to the honorary consul. Sylvia can help you understand the process and authenticate documents, but cannot accept or forward applications.",
+        "consul": false,
+        "consulNote": ""
       },
       {
-        "title": "Oath of Citizenship",
-        "body": "If approved, you will take the oath of citizenship — either in Hungary or at a Hungarian diplomatic mission. Sylvia can advise on the process but does not administer oaths.",
-        "consulAssists": false
+        "step": "05",
+        "title": "Wait for Decision",
+        "body": "Citizenship verification typically takes 8–10 months. There is no expediting process. The Embassy will contact you with the outcome.",
+        "consul": false,
+        "consulNote": ""
       }
     ]
   },
-  "cannotDo": {
-    "heading": "What the Honorary Consul Cannot Do",
-    "items": [
-      "Accept or process citizenship applications",
-      "Grant, deny, or appeal citizenship decisions",
-      "Administer language or constitutional tests",
-      "Administer oaths of citizenship",
-      "Provide legal advice on citizenship eligibility"
-    ]
+  "roleClarity": {
+    "eyebrow": "Role Clarity",
+    "heading": "What the Honorary Consul Can and Cannot Do"
   },
   "canDo": {
-    "heading": "How the Honorary Consul Can Help",
+    "heading": "Can Help With",
     "items": [
-      "Authenticate birth and marriage certificates for submission",
-      "Certify copies of Hungarian ancestry documents",
-      "Explain the general process and required documents",
-      "Refer you to resources and contacts at the Embassy"
+      "Authenticate supporting documents for citizenship applications",
+      "Certify copies of birth, marriage, and death certificates",
+      "Authenticate powers of attorney related to citizenship matters",
+      "Provide guidance on the document preparation process",
+      "Refer you to Hungarian language resources and legal contacts"
+    ]
+  },
+  "cannotDo": {
+    "heading": "Cannot Do",
+    "items": [
+      "Accept citizenship applications (submitted to the Embassy in Washington DC)",
+      "Expedite or check the status of applications",
+      "Provide legal advice on eligibility",
+      "Issue Hungarian identity documents"
     ]
   },
   "cta": {
-    "heading": "Ready to Start?",
-    "body": "Book an appointment to authenticate your ancestry documents and receive guidance on the application process.",
-    "button": "Book Your Appointment"
+    "eyebrow": "Ready to authenticate your documents?",
+    "body": "Monday appointments in Derry, NH. Bring your original documents and copies. Sylvia will verify what needs authentication and perform it in the same visit.",
+    "primary": "Book Appointment",
+    "secondary": "Authentication Guide"
   }
 }

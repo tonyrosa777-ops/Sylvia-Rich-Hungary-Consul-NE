@@ -5,66 +5,65 @@
     "description": "The answer depends on two things: what the document is, and where it's going. Use this guide to find your path before booking."
   },
   "tree": {
-    "question": "What describes your situation?",
+    "sectionLabel": "Start here",
+    "question": "Is your document American or Hungarian?",
     "branches": [
       {
-        "label": "American document → going to Hungary",
-        "service": "Apostille + Consular Authentication",
-        "cost": "Secretary of State fee + $36",
-        "detail": "Step 1: Apostille from NH Secretary of State. Step 2: Consular authentication by Sylvia Rich.",
-        "cta": "Book Signature Authentication"
+        "label": "American document — to be used in the U.S.",
+        "answer": "You need a Notary Public.",
+        "detail": "Wills, deeds, affidavits, contracts, and other American-law documents signed in the presence of a notary. Sylvia can notarize these for $10 per notarial act — the NH state maximum.",
+        "actionLabel": "Book Notary Appointment"
       },
       {
-        "label": "American document → staying in the US",
-        "service": "Notary Public",
-        "cost": "$10 per act",
-        "detail": "Standard notarization under NH law. No consular involvement needed.",
-        "cta": "Book Notary Public"
+        "label": "American document — to be used in Hungary",
+        "answer": "You may need an Apostille, then authentication.",
+        "detail": "An apostille is issued by the NH Secretary of State (not the consul) and confirms the document is legitimate for use in a country that is a member of the Hague Convention. Hungary is a member, so most American documents destined for Hungary require an apostille first. After apostille, Sylvia can authenticate your signature if required.",
+        "actionLabel": "NH Secretary of State →"
       },
       {
-        "label": "Hungarian document → staying in Hungary",
-        "service": "No consular action needed",
-        "cost": "—",
-        "detail": "Hungarian documents used within Hungary do not require consular authentication.",
-        "cta": "Contact us if you're unsure"
+        "label": "Hungarian document — to be used in Hungary",
+        "answer": "You need Consular Authentication.",
+        "detail": "Documents produced outside Hungary that need to be recognized by Hungarian authorities — powers of attorney, signature confirmations, certified copies — require consular authentication by the Honorary Consul. Sylvia performs this for $36 per document.",
+        "actionLabel": "Book Authentication"
       },
       {
-        "label": "Hungarian document → coming to the US",
-        "service": "Consular Authentication",
-        "cost": "$36 per document",
-        "detail": "Authentication by the Honorary Consul makes Hungarian documents valid for US purposes.",
-        "cta": "Book Signature Authentication"
+        "label": "Hungarian document — to be used in the U.S.",
+        "answer": "You likely need translation + possible notarization.",
+        "detail": "Hungarian documents used in American courts or official processes typically require certified translation into English. Contact a certified translator. If signature verification is needed on the translated document, Sylvia can notarize the translator's certification.",
+        "actionLabel": "Contact for Guidance"
       }
     ]
   },
   "glossary": {
-    "heading": "Key Terms",
+    "eyebrow": "Glossary",
+    "heading": "The Five Terms You Need to Know",
     "terms": [
       {
         "term": "Notarization",
-        "definition": "A US notary public verifies your identity and witnesses your signature. Required for American documents used in the US. Does not make documents valid in Hungary without additional steps."
+        "definition": "The process by which a licensed notary public witnesses the signing of a document, verifies the signer's identity, and affixes a seal confirming authenticity. Valid for American documents under American law. Does not give a document legal standing in Hungary without additional steps."
       },
       {
         "term": "Consular Authentication",
-        "definition": "The honorary consul certifies the authenticity of a signature or document for use in Hungary. This is the official step that makes American documents valid for Hungarian government submissions."
+        "definition": "The official verification of a signature or copy by an honorary consul, carried under the authority of the Vienna Convention on Consular Relations. This is the service that makes a document legally recognized by Hungarian government authorities. Performed by Sylvia for $36/document."
       },
       {
         "term": "Apostille",
-        "definition": "A standardized international certification (Hague Convention) that validates a document for use in member countries. Required before consular authentication for most American documents going to Hungary."
+        "definition": "A simplified form of authentication under the 1961 Hague Convention. Issued by the government authority of the originating country (in NH: the Secretary of State). An apostille is required for American documents used in Hungary. It is NOT issued by the consul — it is issued by the state."
       },
       {
         "term": "Copy Authentication",
-        "definition": "The honorary consul certifies that a copy is a true and accurate reproduction of the original. Used when originals cannot be submitted to Hungarian authorities."
+        "definition": "A consular officer certifies that a copy is a true and accurate reproduction of the original. Required when originals cannot be submitted to Hungarian authorities. Performed by Sylvia for $24/page."
       },
       {
         "term": "Legalization",
-        "definition": "The full authentication chain for documents going to non-Hague countries. Involves notarization, state authentication, and consular authentication in sequence."
+        "definition": "A chain-of-authentication process for documents used in countries not party to the Hague Convention. Involves multiple layers of verification: notarization → Secretary of State certification → federal authentication → embassy or consulate stamp. Less common for Hungary, which is a Hague member."
       }
     ]
   },
   "cta": {
-    "stillUnsure": "Still Not Sure?",
-    "body": "Describe your situation at booking and Sylvia will confirm the correct service before your appointment.",
-    "button": "Book a Consultation"
+    "eyebrow": "Still not sure?",
+    "body": "Book a Monday appointment and bring your documents. Sylvia will tell you exactly what you need and perform the service in the same visit if possible.",
+    "primary": "Book Appointment",
+    "secondary": "What We Handle"
   }
 }

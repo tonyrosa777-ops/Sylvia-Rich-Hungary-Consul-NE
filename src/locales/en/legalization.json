@@ -4,70 +4,81 @@
     "headline": "Diplomatic Legalization: Three Paths",
     "description": "The correct legalization path depends on the country receiving the document. Use this guide to identify which process applies to your situation."
   },
-  "intro": "Document legalization is the process of having a document officially recognized for use in a foreign country. The process varies depending on whether the receiving country is a member of the Hague Convention.",
+  "section1": {
+    "eyebrow": "Three Paths to Legitimacy",
+    "heading": "Which Process Applies to You",
+    "recommendedBadge": "Most Common for Our Clients"
+  },
   "paths": [
     {
-      "name": "Consular Authentication",
-      "subtitle": "For documents going to Hungary",
-      "cost": "$36 per document",
+      "title": "Consular Authentication",
+      "subtitle": "For documents used in Hungary",
+      "description": "The Honorary Consul verifies and authenticates signatures or copies under the authority of the Vienna Convention on Consular Relations. The result is a document recognized by all Hungarian government authorities.",
+      "cost": "$36 per signature / $24 per copy page",
       "timeframe": "Same appointment",
-      "usedFor": "Hungarian authorities, property transactions, legal submissions",
+      "usedFor": "Powers of attorney, property transactions, business documents, inheritance submissions",
       "steps": [
-        "Document notarized (if American)",
-        "Apostille from NH Secretary of State",
-        "Consular authentication by Honorary Consul"
+        "Prepare your document — do not sign in advance",
+        "Book a Monday appointment in Derry, NH",
+        "Sign in Sylvia's presence",
+        "Consul affixes authentication seal",
+        "Document is ready for Hungarian submission"
       ]
     },
     {
-      "name": "Apostille + Authentication",
-      "subtitle": "For Hague Convention countries",
-      "cost": "Apostille fee + consular fee",
-      "timeframe": "1–3 weeks (apostille) + appointment",
-      "usedFor": "EU countries, most of Europe, 120+ countries",
+      "title": "Apostille + Authentication",
+      "subtitle": "For American documents going to Hungary",
+      "description": "American-origin documents destined for Hungary generally need an apostille first (from the NH Secretary of State), then may need additional consular authentication depending on the document type.",
+      "cost": "$10 NH notary + $10 NH apostille fee",
+      "timeframe": "Days to weeks",
+      "usedFor": "American birth/marriage/death certificates, academic diplomas, court documents",
       "steps": [
-        "Document notarized or certified",
-        "Apostille from the Secretary of State of the issuing state",
-        "Consular authentication if required by destination country"
+        "Get the document notarized (if required)",
+        "Submit to NH Secretary of State for apostille",
+        "Return to honorary consul if additional authentication needed"
       ]
     },
     {
-      "name": "Full Chain Legalization",
-      "subtitle": "For non-Hague countries",
-      "cost": "Multiple fees apply",
-      "timeframe": "Several weeks",
-      "usedFor": "Countries not party to the Hague Convention (certain Middle East, Asian, African nations)",
+      "title": "Full Legalization Chain",
+      "subtitle": "For countries not in the Hague Convention",
+      "description": "For documents used in countries that are not Hague Convention members (not applicable for Hungary, which is a member). Requires: notarization → state authentication → federal authentication → embassy or consulate stamp. Mention this to Sylvia if you are unsure which chain applies.",
+      "cost": "Varies — multiple fees and agency steps",
+      "timeframe": "Weeks to months",
+      "usedFor": "Documents for non-Hague countries — NOT typically required for Hungary",
       "steps": [
-        "Notarization",
-        "State authentication (Secretary of State)",
-        "Federal authentication (US Dept. of State)",
-        "Consular authentication by destination country's embassy"
+        "US notarization",
+        "State Secretary of State authentication",
+        "US Department of State federal authentication",
+        "Embassy or Consulate stamp"
       ]
     }
   ],
-  "faq": {
-    "heading": "Frequently Asked Questions",
-    "items": [
-      {
-        "question": "Does Hungary require an apostille on American documents?",
-        "answer": "Yes — Hungary is a party to the Hague Convention, so most American documents require an apostille before consular authentication. Get the apostille from the Secretary of State of the state where the document was issued."
-      },
-      {
-        "question": "Can the Honorary Consul do the apostille?",
-        "answer": "No. Apostille is issued by the state Secretary of State (NH Secretary of State for New Hampshire documents). The Honorary Consul authenticates after the apostille is obtained."
-      },
-      {
-        "question": "Do Hungarian documents need legalization for use in the US?",
-        "answer": "Hungarian documents used in the US may need consular authentication. Since Hungary is a Hague Convention member, Hungarian documents for the US typically require an apostille issued by Hungarian authorities."
-      },
-      {
-        "question": "How long does the full legalization process take?",
-        "answer": "For Hungary: apostille takes 1–3 weeks from the Secretary of State, then the consular appointment is same-day. Plan for 2–4 weeks total. For non-Hague countries, allow 4–8 weeks or more."
-      }
-    ]
+  "section2": {
+    "eyebrow": "Common Questions",
+    "heading": "Legalization FAQ"
   },
+  "faq": [
+    {
+      "q": "What is the difference between authentication and legalization?",
+      "a": "In practice, they are often used interchangeably, but technically: authentication is a single-step verification by a consul or government authority. Legalization is a chain of multiple authentications through different government levels. For Hungary, which is a Hague Convention member, consular authentication is usually sufficient — the full legalization chain is rarely needed."
+    },
+    {
+      "q": "Hungary is a Hague Convention member — do I still need an apostille?",
+      "a": "For American documents going to Hungary, yes — an apostille is the appropriate form of international authentication under the Hague Convention. The apostille is issued by the NH Secretary of State, not by the consul. Consular authentication is used for a different purpose: authenticating signatures on documents signed by someone in Sylvia's presence."
+    },
+    {
+      "q": "My document was issued in Hungary. Does it need to be authenticated to use in the US?",
+      "a": "Hungarian documents used in American proceedings (courts, employers, universities) typically need certified English translation. Authentication of the original Hungarian document is sometimes also requested — Sylvia can provide this for $36 per document."
+    },
+    {
+      "q": "Can Sylvia legalize or authenticate any document?",
+      "a": "Sylvia can authenticate signatures and certify copies within the scope of the honorary consul's authority under the Vienna Convention. Passports and biometric documents require the NY Consulate General. Legal advice falls outside the consul's scope."
+    }
+  ],
   "cta": {
-    "heading": "Need Document Legalization?",
-    "body": "Book an appointment for consular authentication — the final step in the legalization chain for most Hungarian submissions.",
-    "button": "Book Your Appointment"
+    "eyebrow": "Not sure which path applies?",
+    "body": "Bring your documents to a Monday appointment and Sylvia will identify exactly what is needed — and perform it in the same visit.",
+    "primary": "Book Appointment",
+    "secondary": "Full Authentication Guide"
   }
 }
