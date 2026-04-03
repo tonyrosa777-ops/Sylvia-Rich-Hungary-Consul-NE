@@ -12,8 +12,8 @@ interface Particle {
   glimmerMaxLife?: number;
 }
 
-const MOTE_COUNT = 90;
-const GLIMMER_INTERVAL = 120; // frames between glimmer spawns
+const MOTE_COUNT = 160;
+const GLIMMER_INTERVAL = 65; // frames between glimmer spawns
 
 /**
  * Subtle gold particle field — floating motes + brief glints.

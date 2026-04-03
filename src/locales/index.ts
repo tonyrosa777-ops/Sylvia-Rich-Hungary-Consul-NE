@@ -20,6 +20,7 @@ import enContact from "./en/contact.json";
 import enStates from "./en/states.json";
 import enBlog from "./en/blog.json";
 import enShop from "./en/shop.json";
+import enPricing from "./en/pricing.json";
 
 import huCommon from "./hu/common.json";
 import huHome from "./hu/home.json";
@@ -37,6 +38,7 @@ import huContact from "./hu/contact.json";
 import huStates from "./hu/states.json";
 import huBlog from "./hu/blog.json";
 import huShop from "./hu/shop.json";
+import huPricing from "./hu/pricing.json";
 
 const en = {
   common: enCommon,
@@ -55,6 +57,7 @@ const en = {
   states: enStates,
   blog: enBlog,
   shop: enShop,
+  pricing: enPricing,
 };
 
 const hu = {
@@ -74,6 +77,7 @@ const hu = {
   states: huStates,
   blog: huBlog,
   shop: huShop,
+  pricing: huPricing,
 };
 
 export const translations = { en, hu } as const;

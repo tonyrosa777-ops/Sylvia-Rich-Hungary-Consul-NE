@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Weboldalcsomagok | Magyarország Tiszteletbeli Konzulátusa — Új-Anglia",
+    "description": "Három átlátható webdesign-csomag konzuli irodák, bevándorlási ügyvédek és szakmai szolgáltatók számára. Starter, Pro és Prémium — mindegyik valódi eredményekre tervezve."
+  },
+  "hero": {
+    "eyebrow": "Weboldalcsomagok",
+    "headline": "Azoknak Készült, Akik Nem Engedhetik Meg Maguknak a Rossz Weboldalt",
+    "subheadline": "Minden csomag egy gyártásra kész weboldalt tartalmaz. A különbség az, hogy melyik növekedési eszközöket aktiválja."
+  },
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": "$1,500",
+      "tagline": "Minden, ami ahhoz kell, hogy megtalálják és megbízzanak Önben.",
+      "cta": "Kezdjük el",
+      "highlight": false
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": "$3,000",
+      "tagline": "A teljes ügyfélszerzési gépezet — akár alvás közben is foglalnak időpontot.",
+      "cta": "Pro csomagot kérek",
+      "highlight": true
+    },
+    {
+      "id": "premium",
+      "name": "Prémium",
+      "price": "$5,500",
+      "tagline": "Bevétel a szolgáltatásokon túl — termékek, digitális tartalmak és visszatérő jövedelem.",
+      "cta": "Építsünk valami nagyobbat",
+      "highlight": false
+    }
+  ],
+  "features": {
+    "starter": [
+      "Animált hero szekció",
+      "Bemutatkozó / hitelesség szekció",
+      "Szolgáltatások áttekintő oldal",
+      "Referenciák szekció",
+      "Kapcsolati űrlap",
+      "Mobilbarát reszponzív dizájn",
+      "SEO metaadatok + oldaltérkép",
+      "Vercel-telepítés"
+    ],
+    "pro": [
+      "Minden a Starter csomagból",
+      "Kétnyelvű EN + magyar nyelvváltó",
+      "Automatizált időpontfoglaló (Cal.com, hétfői slotok)",
+      "Blog + tudásbázis (kereshető, kategorizált)",
+      "Interaktív kvíz alapú ügyfélszerzés",
+      "Részletes szolgáltatásoldalak",
+      "Sémajelölés (LocalBusiness + GovernmentOffice)",
+      "Lighthouse-pontszám ≥ 90 garancia"
+    ],
+    "premium": [
+      "Minden a Pro csomagból",
+      "E-kereskedelmi architektúra (Printful + Stripe)",
+      "Termékkatalógus kosárral és fizetéssel",
+      "Rendelésfeldolgozás-automatizálás",
+      "Egyedi merchandise közösségi eseményekhez",
+      "Bevételi irányítópult beállítása",
+      "Elsőbbségi támogatás + 60 napos indulás utáni fedezet",
+      "Negyedéves teljesítményelemzés"
+    ]
+  },
+  "comparison": {
+    "heading": "Mit kap az egyes csomagokban",
+    "rows": [
+      { "feature": "Animált hero", "starter": true, "pro": true, "premium": true },
+      { "feature": "Bemutatkozó + szolgáltatások + referenciák", "starter": true, "pro": true, "premium": true },
+      { "feature": "Kapcsolati űrlap", "starter": true, "pro": true, "premium": true },
+      { "feature": "SEO + oldaltérkép", "starter": true, "pro": true, "premium": true },
+      { "feature": "EN + magyar nyelvváltó", "starter": false, "pro": true, "premium": true },
+      { "feature": "Automatizált foglalás (hétfői slotok)", "starter": false, "pro": true, "premium": true },
+      { "feature": "Blog + tudásbázis", "starter": false, "pro": true, "premium": true },
+      { "feature": "Interaktív kvíz / ügyfélszerzés", "starter": false, "pro": true, "premium": true },
+      { "feature": "Sémajelölés", "starter": false, "pro": true, "premium": true },
+      { "feature": "E-kereskedelem (Printful + Stripe)", "starter": false, "pro": false, "premium": true },
+      { "feature": "Rendelésfeldolgozás-automatizálás", "starter": false, "pro": false, "premium": true },
+      { "feature": "60 napos indulás utáni támogatás", "starter": false, "pro": false, "premium": true }
+    ]
+  },
+  "faq": {
+    "heading": "Gyakori kérdések",
+    "items": [
+      {
+        "q": "Mennyi ideig tart egy fejlesztés?",
+        "a": "Starter: 2–3 hét. Pro: 4–6 hét. Prémium: 6–10 hét. Az ütemterv attól függ, milyen gyorsan adja meg a tartalmakat és visszajelzéseket."
+      },
+      {
+        "q": "Mit kell biztosítanom?",
+        "a": "Logó, fejlövés vagy szakmai fotó, szolgáltatások leírása és meglévő szövegek. Minden projekt elején egy strukturált kérdőívvel segítjük Önt."
+      },
+      {
+        "q": "Valóban automatizált a foglalási rendszer?",
+        "a": "Igen. A Pro csomag tartalmaz egy Cal.com-integrációt, amely hétfői időpontokra van előre konfigurálva. Az ügyfelek maguktól foglalnak — nincs szükség e-mail-váltásra."
+      },
+      {
+        "q": "Mi a magyar nyelvváltó?",
+        "a": "Minden oldal az első naptól kétnyelvű. A navigációban lévő kapcsoló azonnal vált az angol és a magyar között. Minden tartalom — fejlécek, szövegtörzs, gombok, feliratok — le van fordítva."
+      },
+      {
+        "q": "Önök kezelik a tárhelyet?",
+        "a": "Igen. Minden weboldal Vercelre kerül telepítésre. A domaint az indulás napján csatlakoztatjuk. A tárhelyköltségek az Öné (~$0–20/hó a forgalomtól függően)."
+      },
+      {
+        "q": "Később frissíthetek?",
+        "a": "Igen — a Starter és Pro csomagok ugyanazon kódbázis-architektúrán épülnek. A frissítés funkciókat ad hozzá újraépítés nélkül. A különbözetet árazzuk be, nem a teljes árat."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Készen áll a kezdésre",
+    "headline": "Építsük fel együtt",
+    "body": "Nem biztos, melyik csomag megfelelő? Küldjön üzenetet, és írja le a helyzetét. Őszintén elmondjuk, melyik csomag illik Önhöz — és mit hagyjon ki.",
+    "button": "Kezdjük el a beszélgetést"
+  },
+  "badge": {
+    "recommended": "Ajánlott"
+  }
+}

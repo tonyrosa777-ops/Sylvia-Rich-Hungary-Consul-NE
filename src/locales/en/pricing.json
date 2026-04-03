@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "title": "Website Packages | Honorary Consulate of Hungary — New England",
+    "description": "Three transparent web design packages built for consular offices, immigration practices, and professional services. Starter, Pro, and Premium — each scoped to deliver real results."
+  },
+  "hero": {
+    "eyebrow": "Website Packages",
+    "headline": "Built for Practices That Cannot Afford a Bad Website",
+    "subheadline": "Every tier delivers a production-ready website. The difference is which growth levers you activate."
+  },
+  "tiers": [
+    {
+      "id": "starter",
+      "name": "Starter",
+      "price": "$1,500",
+      "tagline": "Everything you need to be found and trusted.",
+      "cta": "Get Started",
+      "highlight": false
+    },
+    {
+      "id": "pro",
+      "name": "Pro",
+      "price": "$3,000",
+      "tagline": "The full acquisition engine — book clients in their sleep.",
+      "cta": "Get the Pro Package",
+      "highlight": true
+    },
+    {
+      "id": "premium",
+      "name": "Premium",
+      "price": "$5,500",
+      "tagline": "Revenue beyond services — merchandise, digital products, and recurring income.",
+      "cta": "Build Something Bigger",
+      "highlight": false
+    }
+  ],
+  "features": {
+    "starter": [
+      "Animated hero section",
+      "About / credibility section",
+      "Services overview page",
+      "Testimonials section",
+      "Contact form",
+      "Mobile-first responsive design",
+      "SEO metadata + sitemap",
+      "Deployment to Vercel"
+    ],
+    "pro": [
+      "Everything in Starter",
+      "Bilingual EN + Hungarian toggle",
+      "Automated booking form (Cal.com, Monday-only slots)",
+      "Blog + knowledge base (searchable, categorized)",
+      "Interactive quiz lead capture",
+      "Service detail pages",
+      "Schema markup (LocalBusiness + GovernmentOffice)",
+      "Lighthouse score ≥ 90 guarantee"
+    ],
+    "premium": [
+      "Everything in Pro",
+      "E-commerce architecture (Printful + Stripe)",
+      "Product catalog with cart + checkout",
+      "Order fulfillment automation",
+      "Custom merch for community events",
+      "Revenue dashboard setup",
+      "Priority support + 60-day post-launch coverage",
+      "Quarterly performance review"
+    ]
+  },
+  "comparison": {
+    "heading": "What You Get at Each Tier",
+    "rows": [
+      { "feature": "Animated hero", "starter": true, "pro": true, "premium": true },
+      { "feature": "About + services + testimonials", "starter": true, "pro": true, "premium": true },
+      { "feature": "Contact form", "starter": true, "pro": true, "premium": true },
+      { "feature": "SEO + sitemap", "starter": true, "pro": true, "premium": true },
+      { "feature": "EN + Hungarian language toggle", "starter": false, "pro": true, "premium": true },
+      { "feature": "Automated booking (Mon-only slots)", "starter": false, "pro": true, "premium": true },
+      { "feature": "Blog + knowledge base", "starter": false, "pro": true, "premium": true },
+      { "feature": "Interactive quiz / lead capture", "starter": false, "pro": true, "premium": true },
+      { "feature": "Schema markup", "starter": false, "pro": true, "premium": true },
+      { "feature": "E-commerce (Printful + Stripe)", "starter": false, "pro": false, "premium": true },
+      { "feature": "Order fulfillment automation", "starter": false, "pro": false, "premium": true },
+      { "feature": "60-day post-launch support", "starter": false, "pro": false, "premium": true }
+    ]
+  },
+  "faq": {
+    "heading": "Common Questions",
+    "items": [
+      {
+        "q": "How long does a build take?",
+        "a": "Starter in 2–3 weeks. Pro in 4–6 weeks. Premium in 6–10 weeks. Timeline depends on how quickly you provide content and feedback."
+      },
+      {
+        "q": "What do I need to provide?",
+        "a": "Logo, headshot or professional photo, service descriptions, and any existing copy. We guide you through a structured intake form at the start of every project."
+      },
+      {
+        "q": "Is the booking system really automated?",
+        "a": "Yes. The Pro tier includes a Cal.com integration pre-configured for Monday-only appointment slots. Clients book themselves — no back-and-forth email needed."
+      },
+      {
+        "q": "What is the Hungarian language toggle?",
+        "a": "Every page is built bilingual from day one. A toggle in the nav switches between English and Hungarian instantly. All content — headings, body, CTAs, labels — is translated."
+      },
+      {
+        "q": "Do you handle hosting?",
+        "a": "Yes. All sites deploy to Vercel. Your domain is connected on launch day. Hosting costs are yours (~$0–20/month depending on traffic)."
+      },
+      {
+        "q": "Can I upgrade later?",
+        "a": "Yes — Starter and Pro tiers are built on the same codebase architecture. Upgrading adds features on top without rebuilding. We will quote the delta, not the full price."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Ready to Start",
+    "headline": "Let's Build It",
+    "body": "Not sure which tier is right? Send a message and describe your situation. We will tell you honestly which package fits — and what to skip.",
+    "button": "Start the Conversation"
+  },
+  "badge": {
+    "recommended": "Recommended"
+  }
+}

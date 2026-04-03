@@ -33,5 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/serving-vermont`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/serving-maine`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/shop`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.65 },
+    { url: `${base}/pricing`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
   ];
 }
