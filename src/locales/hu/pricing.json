@@ -48,7 +48,7 @@
     "pro": [
       "Minden a Starter csomagból",
       "Kétnyelvű EN + magyar nyelvváltó",
-      "Automatizált időpontfoglaló (Cal.com, hétfői slotok)",
+      "Automatizált időpontfoglaló (Calendly, hétfői slotok)",
       "Blog + tudásbázis (kereshető, kategorizált)",
       "Interaktív kvíz alapú ügyfélszerzés",
       "Részletes szolgáltatásoldalak",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Valóban automatizált a foglalási rendszer?",
-        "a": "Igen. A Pro csomag tartalmaz egy Cal.com-integrációt, amely hétfői időpontokra van előre konfigurálva. Az ügyfelek maguktól foglalnak — nincs szükség e-mail-váltásra."
+        "a": "Igen. A Pro csomag tartalmaz egy Calendly-integrációt, amely hétfői időpontokra van előre konfigurálva. Az ügyfelek maguktól foglalnak — nincs szükség e-mail-váltásra."
       },
       {
         "q": "Mi a magyar nyelvváltó?",

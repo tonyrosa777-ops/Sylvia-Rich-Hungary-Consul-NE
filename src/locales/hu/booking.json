@@ -1,83 +1,19 @@
 {
   "header": {
-    "eyebrow": "Időpontfoglalás",
-    "headline": "Konzuli Időpont Egyeztetése",
-    "description": "Személyesen, Derry, NH. Válasszon szolgáltatást, foglaljon hétfői időpontot — e-mailben visszaigazoljuk."
-  },
-  "steps": {
-    "selectService": "Szolgáltatás",
-    "selectDate": "Dátum",
-    "yourInfo": "Adatok",
-    "confirm": "Megerősítés",
-    "done": "Visszaigazolva"
-  },
-  "serviceStep": {
-    "heading": "Milyen szolgáltatásra van szüksége?",
-    "subheading": "Válassza ki a szükséges szolgáltatást. Hozza magával az összes szükséges iratot a hétfői időpontra.",
-    "continueButton": "Tovább a dátumhoz →"
-  },
-  "dateStep": {
-    "heading": "Válasszon Hétfőt",
-    "subheading": "Az időpontok kizárólag hétfő délután érhetők el. Válasszon dátumot, majd időpontot.",
-    "availableTimesLabel": "Elérhető Időpontok",
-    "continueButton": "Tovább az adatokhoz →",
-    "sunday": "V",
-    "monday": "H",
-    "tuesday": "K",
-    "wednesday": "Sz",
-    "thursday": "Cs",
-    "friday": "P",
-    "saturday": "Szo"
-  },
-  "infoStep": {
-    "heading": "Kapcsolatfelvételi Adatok",
-    "subheading": "Visszaigazolást küldünk az e-mail-címére az időpont részleteivel és az elvárt iratokkal.",
-    "fullName": "Teljes Név",
-    "emailAddress": "E-mail Cím",
-    "notes": "Megjegyzések (nem kötelező)",
-    "namePlaceholder": "Az Ön teljes neve",
-    "emailPlaceholder": "on@pelda.hu",
-    "notesPlaceholder": "Iratok, kérdések vagy különleges körülmények részletei... (nem kötelező)",
-    "continueButton": "Foglalás Ellenőrzése →"
-  },
-  "confirmStep": {
-    "heading": "Foglalas Ellenőrzése",
-    "subheading": "Ellenőrizze az alábbi adatokat. Visszaigazoló e-mailt küldünk Önnek.",
-    "service": "Szolgáltatás",
-    "date": "Dátum",
-    "time": "Időpont",
-    "name": "Név",
-    "email": "E-mail",
-    "fee": "Díj",
-    "payment": "Fizetés",
-    "location": "Helyszín",
-    "notes": "Megjegyzések",
-    "bringLabel": "Hozza Magával az Időpontra",
-    "confirmButton": "Időpont Megerősítése"
-  },
-  "doneStep": {
-    "heading": "Időpontfoglalás Elküldve",
-    "confirmationPrefix": "Visszaigazolást küldünk erre a címre:",
-    "confirmationSuffix": "az időpont részleteivel és a szükséges iratokkal.",
-    "serviceLabel": "Szolgáltatás",
-    "whenLabel": "Mikor",
-    "whereLabel": "Hol",
-    "paymentLabel": "Fizetés",
-    "viewServices": "Szolgáltatások",
-    "backToHome": "Vissza a Főoldalra"
-  },
-  "buttons": {
-    "next": "Tovább →",
-    "back": "← Vissza",
-    "confirm": "Időpont Megerősítése",
-    "bookAnother": "Új Időpontot Foglalok"
+    "eyebrow": "Hétfői Időpontok",
+    "headline": "Időpontfoglalás",
+    "description": "Válasszon hétfői időpontot az alábbi naptárban. Calendly visszaigazolást kap e-mailben az iroda címével és a szükséges iratokkal."
   },
   "reminders": {
     "paymentLabel": "Fizetés",
-    "hoursLabel": "Nyitvatartás"
+    "hoursLabel": "Nyitvatartás",
+    "bringLabel": "Hozza Magával az Időpontra",
+    "disclaimer": "Csak készpénz vagy csekk fogadható el. Az iratokat ne írja alá előre. Bejelentkezés nélküli látogatás nem lehetséges."
   },
-  "demo": {
-    "notice": "Ez a foglalási rendszer bemutató módban működik. Foglalási kérelmére e-mailben válaszolunk.",
-    "noticeShort": "Bemutató mód — nem csatlakoztatott élő naptárhoz"
+  "bring": {
+    "id": "Érvényes fényképes személyazonosító",
+    "documents": "Kitöltött, de alá nem írt iratok",
+    "payment": "Pontos összeg készpénzben vagy csekk (Sylvia Rich nevére)",
+    "unsigned": "A foglalási megjegyzéseiben hivatkozott mellékiratok"
   }
 }

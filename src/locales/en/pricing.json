@@ -48,7 +48,7 @@
     "pro": [
       "Everything in Starter",
       "Bilingual EN + Hungarian toggle",
-      "Automated booking form (Cal.com, Monday-only slots)",
+      "Automated booking form (Calendly, Monday-only slots)",
       "Blog + knowledge base (searchable, categorized)",
       "Interactive quiz lead capture",
       "Service detail pages",
@@ -96,7 +96,7 @@
       },
       {
         "q": "Is the booking system really automated?",
-        "a": "Yes. The Pro tier includes a Cal.com integration pre-configured for Monday-only appointment slots. Clients book themselves — no back-and-forth email needed."
+        "a": "Yes. The Pro tier includes a Calendly integration pre-configured for Monday-only appointment slots. Clients book themselves — no back-and-forth email needed."
       },
       {
         "q": "What is the Hungarian language toggle?",
