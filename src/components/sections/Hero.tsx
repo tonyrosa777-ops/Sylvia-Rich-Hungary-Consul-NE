@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { HeroParticles } from "./HeroParticles";
-import { MagneticSeal } from "./MagneticSeal";
+import { FiveStatesOne } from "./FiveStatesOne";
 import { Button, Eyebrow, GoldRule } from "@/components/ui";
 import { siteData } from "@/data/site";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -100,7 +100,7 @@ export function Hero() {
           {/* ── Right: magnetic seal animation ── */}
           <div className="hidden lg:flex flex-col items-center justify-center">
             <div className="relative w-[320px] h-[360px]">
-              <MagneticSeal />
+              <FiveStatesOne />
             </div>
 
             {/* Official appointment badge */}
