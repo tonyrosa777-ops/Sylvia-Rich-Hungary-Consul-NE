@@ -1,0 +1,16 @@
+{
+  "shared": {
+    "drivingFrom": "Driving from",
+    "toOurOffice": "to our Derry, NH office",
+    "toNYConsulate": "to NY Consulate General",
+    "vs": "vs.",
+    "minutesDrive": "drive",
+    "servicesAvailable": "Services Available at Our Office",
+    "featuredTestimonial": "From the Community",
+    "scopeHeading": "Not Sure if We Can Help?",
+    "scopeBody": "Some needs require the Consulate General in New York. See the full scope before making the trip.",
+    "scopeCTA": "What We Handle vs. New York →",
+    "bookCTA": "Book Your Monday Appointment",
+    "disclaimer": "Honorary consuls do not work in a formal office, nor do they have fixed working hours or schedules. They do not receive compensation from Hungary for their duties and therefore cannot be held accountable for their work schedules."
+  }
+}

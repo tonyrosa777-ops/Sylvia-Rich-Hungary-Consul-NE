@@ -3,6 +3,7 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const CERTIFICATE_TYPES = [
   {
@@ -71,12 +72,13 @@ const CERTIFICATE_TYPES = [
 
 export default function CertificatesPage() {
   const { scope } = siteData;
+  const { t } = useTranslation("certificates");
   return (
     <>
       <PageHeader
-        eyebrow="Certificates"
-        headline="Life Certificates & Certificates of Good Conduct"
-        description="Annual life certificates for Hungarian pension recipients — signed free of charge. Plus: certificates of good conduct, civil status, and proof of citizenship — a guide to each."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Highlight: life certificate free service */}

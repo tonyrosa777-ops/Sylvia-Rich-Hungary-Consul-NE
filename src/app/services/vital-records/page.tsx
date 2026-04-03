@@ -3,6 +3,7 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const VITAL_RECORDS = [
   {
@@ -79,12 +80,13 @@ const VITAL_RECORDS = [
 
 export default function VitalRecordsPage() {
   const { scope } = siteData;
+  const { t } = useTranslation("vital-records");
   return (
     <>
       <PageHeader
-        eyebrow="Vital Records"
-        headline="Birth, Marriage, Divorce & Death Registration"
-        description="Life events that cross borders require documentation in both countries. A guide to registering vital records with Hungarian civil authorities — and where the honorary consul fits in each process."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Records list */}

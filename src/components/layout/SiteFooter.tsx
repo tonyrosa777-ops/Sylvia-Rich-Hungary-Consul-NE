@@ -1,12 +1,33 @@
+"use client";
 import Link from "next/link";
 import Image from "next/image";
 import { GoldRule } from "@/components/ui";
 import { siteData } from "@/data/site";
-
-const stateLinks = siteData.footer.links.filter((l) => l.href.startsWith("/serving-"));
-const siteLinks = siteData.footer.links.filter((l) => !l.href.startsWith("/serving-"));
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function SiteFooter() {
+  const { t } = useTranslation("common");
+
+  const stateLinks = siteData.footer.links.filter((l) => l.href.startsWith("/serving-"));
+  const siteLinks = siteData.footer.links.filter((l) => !l.href.startsWith("/serving-"));
+
+  const siteLinkLabels: Record<string, string> = {
+    "/services": t("footer.links.services"),
+    "/services/scope": t("footer.links.whatWeHandle"),
+    "/about": t("footer.links.aboutSylvia"),
+    "/booking": t("footer.links.bookAppointment"),
+    "/contact": t("footer.links.contact"),
+    "/testimonials": t("footer.links.testimonials"),
+  };
+
+  const guideLinkLabels: Record<string, string> = {
+    "/services/citizenship": t("footer.guides.citizenship"),
+    "/services/vital-records": t("footer.guides.vitalRecords"),
+    "/services/legalization": t("footer.guides.legalization"),
+    "/services/certificates": t("footer.guides.certificates"),
+    "/services/guide": t("footer.guides.guide"),
+  };
+
   return (
     <footer className="bg-[#071020] border-t border-[rgba(197,165,90,0.15)] pt-16 pb-10">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
@@ -34,14 +55,14 @@ export function SiteFooter() {
               {siteData.brand.address.city}, {siteData.brand.address.state} {siteData.brand.address.zip}
             </p>
             <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#C5A55A] mt-3">
-              {siteData.brand.hours.display}
+              {t("hours.display")}
             </p>
           </div>
 
           {/* Site links */}
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.4)] mb-4">
-              Services
+              {t("footer.services")}
             </p>
             <ul className="space-y-2.5">
               {siteLinks.slice(0, 5).map((link) => (
@@ -50,7 +71,7 @@ export function SiteFooter() {
                     href={link.href}
                     className="font-body text-sm text-[rgba(245,240,232,0.6)] hover:text-[#C5A55A] transition-colors duration-150"
                   >
-                    {link.label}
+                    {siteLinkLabels[link.href] ?? link.label}
                   </Link>
                 </li>
               ))}
@@ -60,7 +81,7 @@ export function SiteFooter() {
           {/* Guides */}
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.4)] mb-4">
-              Guides
+              {t("footer.guides")}
             </p>
             <ul className="space-y-2.5">
               {siteData.footer.guideLinks.map((link) => (
@@ -69,7 +90,7 @@ export function SiteFooter() {
                     href={link.href}
                     className="font-body text-sm text-[rgba(245,240,232,0.6)] hover:text-[#C5A55A] transition-colors duration-150"
                   >
-                    {link.label}
+                    {guideLinkLabels[link.href] ?? link.label}
                   </Link>
                 </li>
               ))}
@@ -79,7 +100,7 @@ export function SiteFooter() {
           {/* States served */}
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.4)] mb-4">
-              States Served
+              {t("footer.statesServed")}
             </p>
             <ul className="space-y-2.5">
               {stateLinks.map((link) => (
@@ -98,7 +119,7 @@ export function SiteFooter() {
           {/* External links */}
           <div>
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.4)] mb-4">
-              Official Resources
+              {t("footer.officialResources")}
             </p>
             <ul className="space-y-2.5">
               {siteData.footer.externalLinks.map((link) => (
@@ -125,7 +146,7 @@ export function SiteFooter() {
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.25)]">
-            Vienna Convention on Consular Relations · Derry, NH
+            {t("footer.viennaLine")}
           </p>
           <p className="font-body text-xs text-[rgba(245,240,232,0.25)] max-w-xl text-right">
             {siteData.footer.legal}

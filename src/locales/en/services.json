@@ -1,0 +1,65 @@
+{
+  "header": {
+    "eyebrow": "Consular Services",
+    "headline": "What the Honorary Consulate Provides",
+    "description": "Five services. Monday appointments. Derry, NH. No drive to New York required for most consular needs."
+  },
+  "services": {
+    "notary-public": {
+      "name": "Notary Public",
+      "tagline": "For American documents requiring a notarial seal",
+      "description": "Wills, trusts, deeds, contracts, affidavits, and any American document requiring notarization under New Hampshire law.",
+      "whatToBring": [
+        "The completed document (do not sign in advance)",
+        "Valid government-issued photo ID",
+        "Cash or check for $10 per notarial act"
+      ]
+    },
+    "signature-authentication": {
+      "name": "Signature Authentication",
+      "tagline": "For Hungarian government documents",
+      "description": "Official consular authentication of signatures on documents destined for Hungary. Required for property transactions, legal affairs, and official submissions to Hungarian authorities.",
+      "whatToBring": [
+        "The completed document, ready to sign",
+        "Valid government-issued photo ID",
+        "Cash or check for $36 per document"
+      ]
+    },
+    "copy-authentication": {
+      "name": "Copy Authentication",
+      "tagline": "Certified true copies for official use",
+      "description": "Official consular certification that a copy is a true and accurate reproduction of an original document. Required when originals cannot be submitted.",
+      "whatToBring": [
+        "The original document",
+        "A clean, legible copy of the document",
+        "Valid government-issued photo ID",
+        "Cash or check for $24 per page"
+      ]
+    },
+    "official-copy": {
+      "name": "Official Copy",
+      "tagline": "Consular-issued official copies",
+      "description": "An officially presented copy issued directly by the consulate. Used when a document must be submitted as a consular exhibit.",
+      "whatToBring": [
+        "The original document",
+        "Valid government-issued photo ID",
+        "Cash or check for $18 per page"
+      ]
+    },
+    "life-certificate": {
+      "name": "Life Certificate",
+      "tagline": "For Hungarian pension recipients",
+      "description": "Required annually by Hungarian pension authorities to confirm that the recipient is living. Signed by the Honorary Consul.",
+      "whatToBring": [
+        "Valid government-issued photo ID",
+        "Hungarian pension documentation showing your recipient number"
+      ]
+    }
+  },
+  "scopeCallout": {
+    "eyebrow": "Not Sure if We Can Help?",
+    "headline": "See the full scope of services before you book.",
+    "cta": "What We Handle vs. New York →"
+  },
+  "disclaimer": "Honorary consuls do not work in a formal office, nor do they have fixed working hours or schedules. They do not receive compensation from Hungary for their duties and therefore cannot be held accountable for their work schedules."
+}

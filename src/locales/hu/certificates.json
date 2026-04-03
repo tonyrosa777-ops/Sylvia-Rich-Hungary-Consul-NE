@@ -1,0 +1,65 @@
+{
+  "header": {
+    "eyebrow": "Tanúsítványok Útmutatója",
+    "headline": "Magyar Tanúsítványok: Mire Van Szüksége és Hogyan Szerezheti Meg",
+    "description": "Életbizonyítvány, erkölcsi bizonyítvány, anyakönyvi kivonatok és állampolgársági igazolás — ez az útmutató mindegyiket ismerteti és bemutatja a konzul szerepét."
+  },
+  "freeCallout": {
+    "label": "Ingyenes Szolgáltatás",
+    "text": "Az életbizonyítványok (életbizonyítvány) kiállítása díjmentes a Magyar nyugdíjasok számára."
+  },
+  "certificates": [
+    {
+      "name": "Életbizonyítvány",
+      "nameHu": "Életbizonyítvány",
+      "free": true,
+      "body": "A Magyar nyugdíjhatóság (NYUFIG) évente kéri az életbizonyítványt annak igazolására, hogy a járadék jogosultja él. Nélküle a nyugdíjfolyósítás szünetelhet. A Tiszteletbeli Konzul az Ön jelenlétében írja alá az életbizonyítványt — ezt Ön ezután közvetlenül a Magyar nyugdíjhatósághoz nyújtja be.",
+      "whatToBring": [
+        "Érvényes fényképes személyazonosító okmány",
+        "Magyar nyugdíj-dokumentáció a jogosulti számmal (nyugdíjtörzs-szám)"
+      ],
+      "processingNote": "Az időponton azonnal elkészül. Közvetlenül a NYUFIG-hoz vagy a nyugdíjirodájához nyújtja be."
+    },
+    {
+      "name": "Erkölcsi Bizonyítvány",
+      "nameHu": "Erkölcsi Bizonyítvány",
+      "free": false,
+      "body": "A Magyar hatóságok által kiállított büntetőjogi előélet-tanúsítvány. Bizonyos munkaviszony, bevándorlási és állampolgársági kérelmekhez szükséges. A Tiszteletbeli Konzul hitelesíti a kérelemhez szükséges mellékelt iratokat — magát a tanúsítványt a Magyar Igazságügyi Minisztérium (Büntetőjogi Nyilvántartó) állítja ki.",
+      "whatToBring": [
+        "Érvényes fényképes személyazonosító okmány",
+        "Kérelmezési nyomtatvány a Magyar Igazságügyi Minisztériumtól (ha mellékelt iratok hitelesítését kéri)",
+        "Készpénz vagy csekk a hitelesítési díjakhoz"
+      ],
+      "processingNote": "A tanúsítványt Magyarország állítja ki, nem a konzulátus. A konzul csak a mellékelt iratokat hitelesíti."
+    },
+    {
+      "name": "Anyakönyvi Kivonat",
+      "nameHu": "Anyakönyvi kivonat",
+      "free": false,
+      "body": "Hitelesített kivonatok a Magyar anyakönyvi nyilvántartásból — születési, házassági vagy halotti anyakönyvi kivonatok. Magyar önkormányzati irodák állítják ki. A Tiszteletbeli Konzul hitelesítheti e dokumentumok másolatait az USA-ban való felhasználáshoz vagy a Magyar hatóságokhoz való újbóli benyújtáshoz.",
+      "whatToBring": [
+        "Eredeti Magyar anyakönyvi kivonat",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk a hitelesítési díjakhoz"
+      ],
+      "processingNote": "Az eredeti anyakönyvi kivonatokat Magyar önkormányzati irodák állítják ki. A konzul másolatokat hitelesít."
+    },
+    {
+      "name": "Állampolgársági Igazolás",
+      "nameHu": "Állampolgársági igazolás",
+      "free": false,
+      "body": "A Magyar állampolgárság igazolása. Az USA-ban való foglalkoztatáshoz, utazáshoz vagy jogi eljárásokhoz lehet szükség rá. A Tiszteletbeli Konzul hitelesítheti a Magyar állampolgársági iratokat és szükség esetén támogató leveleket állíthat ki.",
+      "whatToBring": [
+        "Magyar útlevél vagy állampolgársági bizonyítvány",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk a hitelesítési díjakhoz"
+      ],
+      "processingNote": "Az állampolgárságot Magyarország határozza meg. A konzul a meglévő állampolgársági iratokat hitelesíti."
+    }
+  ],
+  "cta": {
+    "heading": "Tanúsítványra Van Szüksége?",
+    "body": "Foglaljon időpontot életbizonyítványhoz, mellékelt iratok hitelesítéséhez vagy a tanúsítványi eljárással kapcsolatos útmutatáshoz.",
+    "button": "Időpontot Foglalok"
+  }
+}

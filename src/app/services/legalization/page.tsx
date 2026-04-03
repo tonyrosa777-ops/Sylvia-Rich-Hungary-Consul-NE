@@ -3,6 +3,7 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const LEGALIZATION_PATHS = [
   {
@@ -73,12 +74,13 @@ const FAQ = [
 
 export default function LegalizationPage() {
   const { scope } = siteData;
+  const { t } = useTranslation("legalization");
   return (
     <>
       <PageHeader
-        eyebrow="Diplomatic Legalization"
-        headline="Document Legalization Explained"
-        description="Authentication, legalization, apostille — the same goal, three different processes. Here is which one applies to your document and why."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Paths */}

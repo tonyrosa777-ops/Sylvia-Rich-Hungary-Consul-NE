@@ -3,24 +3,26 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function TestimonialsPage() {
   const { testimonials } = siteData;
+  const { t } = useTranslation("testimonials");
 
   return (
     <>
       <PageHeader
-        eyebrow="What Clients Say"
-        headline="Testimonials"
-        description="Hungarian-Americans and dual nationals across New England, sharing their experience. Names withheld — the community values discretion."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Testimonial cards */}
       <section className="bg-[#0A1628] py-20 lg:py-28">
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <StaggerContainer staggerDelay={0.1}>
-            {testimonials.map((t) => (
-              <motion.div key={t.id} variants={staggerItem} className="mb-8">
+            {testimonials.map((item) => (
+              <motion.div key={item.id} variants={staggerItem} className="mb-8">
                 <figure className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] p-8 relative overflow-hidden hover:border-[rgba(197,165,90,0.4)] transition-colors duration-300">
                   <span
                     aria-hidden="true"
@@ -29,17 +31,17 @@ export default function TestimonialsPage() {
                     &#8220;
                   </span>
                   <blockquote
-                    lang={t.lang}
+                    lang={item.lang}
                     className="relative font-body text-[17px] leading-[1.85] text-[rgba(245,240,232,0.8)] mb-5 italic"
                   >
-                    &ldquo;{t.quote}&rdquo;
+                    &ldquo;{item.quote}&rdquo;
                   </blockquote>
                   <GoldRule width="sm" opacity={25} className="mb-4" />
                   <figcaption className="flex items-center gap-3">
                     <span className="font-mono text-[11px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.6)]">
-                      {t.attribution}
+                      {item.attribution}
                     </span>
-                    {t.lang === "hu" && (
+                    {item.lang === "hu" && (
                       <span className="font-body italic text-[11px] text-[rgba(245,240,232,0.25)]">
                         Hungarian
                       </span>
@@ -57,12 +59,12 @@ export default function TestimonialsPage() {
         <div className="max-w-4xl mx-auto px-6 lg:px-8">
           <FadeUp className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <div>
-              <Eyebrow className="mb-3">Have you visited?</Eyebrow>
+              <Eyebrow className="mb-3">{t("googleCTA.label")}</Eyebrow>
               <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-3">
-                Share Your Experience
+                {t("googleCTA.text")}
               </h2>
               <p className="font-body text-[15px] leading-relaxed text-[rgba(245,240,232,0.6)]">
-                Your review helps other Hungarian-Americans in New England find these services. A five-star review on Google takes thirty seconds and makes a real difference for the community.
+                Your review helps other Hungarian-Americans in New England find these services.
               </p>
             </div>
             <div>
@@ -91,19 +93,19 @@ export default function TestimonialsPage() {
                 A note on privacy
               </p>
               <p className="font-body text-[13px] leading-relaxed text-[rgba(245,240,232,0.4)]">
-                Consular clients often prefer discretion about their document needs. All testimonials on this page omit surnames and specific location details — in keeping with the community&apos;s expectation of confidentiality.
+                {t("discretionNote")}
               </p>
             </div>
           </FadeUp>
           <FadeUp delay={0.1} className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-              <Eyebrow className="mb-2">Ready to book?</Eyebrow>
+              <Eyebrow className="mb-2">{t("bookCTA.heading")}</Eyebrow>
               <p className="font-body text-[15px] text-[rgba(245,240,232,0.6)] max-w-sm">
-                Monday appointments in Derry, NH. Documents authenticated and returned same visit.
+                {t("bookCTA.body")}
               </p>
             </div>
             <Button href="/booking" variant="primary" size="md" className="shrink-0">
-              Book Your Appointment
+              {t("bookCTA.button")}
             </Button>
           </FadeUp>
         </div>

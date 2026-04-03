@@ -4,9 +4,12 @@ import { Eyebrow, GoldRule, Button } from "@/components/ui";
 import { SlideIn, FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function FounderStory() {
-  const { about } = siteData;
+  const { t, ta } = useTranslation("about");
+  const paragraphs = ta<string[]>("story.paragraphs") ?? siteData.about.paragraphs;
+  const credentials = ta<string[]>("credentials.items") ?? siteData.about.credentials;
 
   return (
     <section
@@ -60,18 +63,18 @@ export function FounderStory() {
           <SlideIn direction="right" threshold={0.15}>
             <div>
               <FadeUp delay={0.15}>
-                <Eyebrow className="mb-4">{about.eyebrow}</Eyebrow>
+                <Eyebrow className="mb-4">{t("header.eyebrow")}</Eyebrow>
                 <h2
                   id="about-heading"
                   className="font-display font-bold text-[clamp(1.8rem,3vw,2.6rem)] leading-tight text-[#F5F0E8] mb-5"
                 >
-                  {about.headline}
+                  {t("header.headline")}
                 </h2>
                 <GoldRule width="sm" opacity={35} className="mb-8" />
               </FadeUp>
 
               <div className="space-y-5 mb-8">
-                {about.paragraphs.map((para, i) => (
+                {paragraphs.map((para, i) => (
                   <FadeUp key={i} delay={0.2 + i * 0.12}>
                     <p className="font-body text-[16px] leading-[1.8] text-[rgba(245,240,232,0.75)]">
                       {para}
@@ -83,9 +86,9 @@ export function FounderStory() {
               {/* Credentials */}
               <StaggerContainer staggerDelay={0.08} initialDelay={0.5}>
                 <ul className="space-y-2.5 mb-8">
-                  {about.credentials.map((cred) => (
+                  {credentials.map((cred, i) => (
                     <motion.li
-                      key={cred}
+                      key={i}
                       variants={staggerItem}
                       className="flex items-start gap-3 font-body text-[14px] text-[rgba(245,240,232,0.6)]"
                     >
@@ -98,7 +101,7 @@ export function FounderStory() {
 
               <FadeUp delay={0.8}>
                 <Button href="/about" variant="secondary" size="md">
-                  Read Sylvia&apos;s Full Story
+                  {t("readStory")}
                 </Button>
               </FadeUp>
             </div>

@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { HeroParticles } from "./HeroParticles";
 import { Button, Eyebrow, GoldRule } from "@/components/ui";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // Animation sequence per design-system.md §1 / website-build-template.md §1
 const seq = {
@@ -25,7 +26,8 @@ function fadeUp(delay: number, duration: number) {
 }
 
 export function Hero() {
-  const { hero, brand } = siteData;
+  const { hero } = siteData;
+  const { t } = useTranslation("home");
 
   return (
     <section
@@ -48,7 +50,7 @@ export function Hero() {
           <div>
             {/* Eyebrow */}
             <motion.div {...fadeUp(seq.eyebrow.delay, seq.eyebrow.duration)} className="mb-5">
-              <Eyebrow>{hero.eyebrow}</Eyebrow>
+              <Eyebrow>{t("hero.eyebrow")}</Eyebrow>
             </motion.div>
 
             {/* H1 */}
@@ -56,19 +58,19 @@ export function Hero() {
               {...fadeUp(seq.headline.delay, seq.headline.duration)}
               className="font-display font-black text-[clamp(2.4rem,5vw,4.5rem)] leading-[1.05] text-[#F5F0E8] mb-2"
             >
-              {hero.headline}
+              {t("hero.headline")}
             </motion.h1>
 
             <motion.div {...fadeUp(seq.sub.delay, seq.sub.duration)} className="mb-3">
               <span className="font-display font-black italic text-[clamp(2rem,4vw,3.8rem)] leading-[1.05] text-[#C5A55A]">
-                {hero.headlineSub}
+                {t("hero.headlineSub")}
               </span>
             </motion.div>
 
             <motion.div {...fadeUp(seq.tagline.delay, seq.tagline.duration)} className="mb-2">
               <GoldRule width="sm" opacity={40} className="mb-5" />
               <p className="font-body text-[clamp(1rem,1.5vw,1.2rem)] leading-relaxed text-[rgba(245,240,232,0.75)] max-w-lg">
-                {hero.tagline}
+                {t("hero.tagline")}
               </p>
             </motion.div>
 
@@ -78,10 +80,10 @@ export function Hero() {
               className="flex flex-wrap gap-4 mt-8"
             >
               <Button href={hero.ctaPrimary.href} variant="primary" size="lg">
-                {hero.ctaPrimary.label}
+                {t("hero.ctaPrimary")}
               </Button>
               <Button href={hero.ctaSecondary.href} variant="secondary" size="lg">
-                {hero.ctaSecondary.label}
+                {t("hero.ctaSecondary")}
               </Button>
             </motion.div>
 
@@ -90,9 +92,9 @@ export function Hero() {
               {...fadeUp(seq.trust.delay, seq.trust.duration)}
               className="font-mono text-[11px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.35)] mt-5"
             >
-              {hero.trustCopy}
+              {t("hero.trustCopy")}
               <span className="mx-2 text-[#C5A55A] opacity-50">·</span>
-              {hero.paymentNote}
+              {t("hero.paymentNote")}
             </motion.p>
           </div>
 

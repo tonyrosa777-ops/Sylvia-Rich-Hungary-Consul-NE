@@ -1,0 +1,65 @@
+{
+  "header": {
+    "eyebrow": "Konzuli Szolgáltatások",
+    "headline": "A Tiszteletbeli Konzulátus Által Nyújtott Szolgáltatások",
+    "description": "Öt szolgáltatás. Hétfői időpontok. Derry, NH. A legtöbb konzuli ügyintézéshez nem szükséges New Yorkba utazni."
+  },
+  "services": {
+    "notary-public": {
+      "name": "Közjegyzői Hitelesítés",
+      "tagline": "Közjegyzői pecsétet igénylő amerikai dokumentumokhoz",
+      "description": "Végrendeletek, vagyonkezelési okiratok, ingatlan-adásvételi szerződések, megállapodások, nyilatkozatok és minden olyan amerikai dokumentum, amely New Hampshire-i jog szerinti közjegyzői hitelesítést igényel.",
+      "whatToBring": [
+        "A kitöltött dokumentum (ne írja alá előre)",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk — $10 közjegyzői aktánként"
+      ]
+    },
+    "signature-authentication": {
+      "name": "Aláírás-hitelesítés",
+      "tagline": "Magyar hatóságoknak szóló dokumentumokhoz",
+      "description": "Magyarországra küldendő dokumentumokon szereplő aláírások hivatalos konzuli hitelesítése. Ingatlan-tranzakciókhoz, jogi ügyekhez és Magyar hatóságokhoz benyújtott beadványokhoz szükséges.",
+      "whatToBring": [
+        "A kitöltött dokumentum, aláírásra készen",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk — $36 dokumentumonként"
+      ]
+    },
+    "copy-authentication": {
+      "name": "Másolat-hitelesítés",
+      "tagline": "Hitelesített hiteles másolatok hivatalos felhasználásra",
+      "description": "Hivatalos konzuli tanúsítás arról, hogy egy másolat az eredeti dokumentum hiteles és pontos másolata. Abban az esetben szükséges, ha az eredeti dokumentum nem nyújtható be.",
+      "whatToBring": [
+        "Az eredeti dokumentum",
+        "A dokumentum tiszta, olvasható másolata",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk — $24 oldalanként"
+      ]
+    },
+    "official-copy": {
+      "name": "Hivatalos Másolat",
+      "tagline": "Konzulátus által kibocsátott hivatalos másolatok",
+      "description": "A konzulátus által közvetlenül kibocsátott, hivatalosan bemutatott másolat. Abban az esetben használják, ha egy dokumentumot konzuli mellékletként kell benyújtani.",
+      "whatToBring": [
+        "Az eredeti dokumentum",
+        "Érvényes fényképes személyazonosító okmány",
+        "Készpénz vagy csekk — $18 oldalanként"
+      ]
+    },
+    "life-certificate": {
+      "name": "Életbizonyítvány",
+      "tagline": "Magyar nyugdíjasok számára",
+      "description": "A Magyar nyugdíjhatóság évente kéri az életbizonyítványt annak igazolására, hogy a járadék jogosultja él. A tiszteletbeli konzul írja alá.",
+      "whatToBring": [
+        "Érvényes fényképes személyazonosító okmány",
+        "Magyar nyugdíj-dokumentáció a jogosulti számmal"
+      ]
+    }
+  },
+  "scopeCallout": {
+    "eyebrow": "Nem Biztos Benne, Hogy Tudunk Segíteni?",
+    "headline": "A foglalás előtt tekintse meg a teljes szolgáltatási kört.",
+    "cta": "Mivel Foglalkozunk vs. New York →"
+  },
+  "disclaimer": "A tiszteletbeli konzulok nem rendelkeznek állandó irodai munkakörrel, és nincsenek rögzített munkaidejük vagy munkarendjük. Nem kapnak javadalmazást Magyarországtól kötelességeik teljesítéséért, ezért nem kérhetők számon munkabeosztásukat illetően."
+}

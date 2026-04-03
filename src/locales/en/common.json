@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Book Appointment",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "openMenu": "Open navigation menu"
+  },
+  "footer": {
+    "services": "Services",
+    "guides": "Guides",
+    "statesServed": "States Served",
+    "officialResources": "Official Resources",
+    "viennaLine": "Vienna Convention on Consular Relations · Derry, NH",
+    "links": {
+      "services": "Services",
+      "whatWeHandle": "What We Handle",
+      "aboutSylvia": "About Sylvia",
+      "bookAppointment": "Book Appointment",
+      "contact": "Contact",
+      "testimonials": "Testimonials"
+    },
+    "guides": {
+      "citizenship": "Citizenship & Naturalization",
+      "vitalRecords": "Vital Records Registration",
+      "legalization": "Diplomatic Legalization",
+      "certificates": "Certificates of Good Conduct",
+      "guide": "Authentication vs. Apostille Guide"
+    }
+  },
+  "labels": {
+    "mondayOnly": "Monday Appointments Only",
+    "bookAppointment": "Book Your Monday Appointment",
+    "bookNow": "Book Your Appointment",
+    "seeScope": "See What We Handle",
+    "learnMore": "Learn More",
+    "cashCheckOnly": "Cash or check only",
+    "appointmentRequired": "Appointments required. Walk-ins not accepted.",
+    "paymentNote": "Cash & Check Only · In-Person · Appointment Required",
+    "inPersonDerry": "In-person at 16 Route 111, Suite 5, Derry, NH.",
+    "bringDocuments": "Bring your documents, valid ID, and payment by cash or check.",
+    "freeService": "Free Service",
+    "mostRequested": "Most Requested",
+    "perDocument": "per document",
+    "perPage": "per page",
+    "perAct": "per notarial act",
+    "noCharge": "No charge",
+    "whatToBring": "What to Bring",
+    "bookThisService": "Book This Service",
+    "scopeQuestion": "Not sure if we handle your case?",
+    "scopeCTA": "See the full scope of services"
+  },
+  "disclaimer": {
+    "text": "Honorary consuls do not work in a formal office, nor do they have fixed working hours or schedules. They do not receive compensation from Hungary for their duties and therefore cannot be held accountable for their work schedules."
+  },
+  "hours": {
+    "display": "Monday Appointments Only",
+    "detail": "Monday afternoons — by appointment"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "header": {
+    "eyebrow": "Certificates Guide",
+    "headline": "Hungarian Certificates: What You Need and How to Get It",
+    "description": "Life certificates, good conduct certificates, civil status certificates, and proof of citizenship — this guide explains each one and the consul's role."
+  },
+  "freeCallout": {
+    "label": "Free Service",
+    "text": "Life certificates (életbizonyítvány) are provided at no charge to Hungarian pension recipients."
+  },
+  "certificates": [
+    {
+      "name": "Life Certificate",
+      "nameHu": "Életbizonyítvány",
+      "free": true,
+      "body": "Required annually by Hungarian pension authorities (NYUFIG) to confirm that the recipient is still living. Without it, pension payments may be suspended. The Honorary Consul signs the certificate in your presence — it is then submitted directly to Hungarian pension authorities.",
+      "whatToBring": [
+        "Valid government-issued photo ID",
+        "Hungarian pension documentation showing your recipient number (nyugdíjtörzs-számodra)"
+      ],
+      "processingNote": "Completed same-day at your appointment. Submit directly to NYUFIG or your pension office."
+    },
+    {
+      "name": "Certificate of Good Conduct",
+      "nameHu": "Erkölcsi Bizonyítvány",
+      "free": false,
+      "body": "A criminal background certification issued by Hungarian authorities. Required for certain employment, immigration, and citizenship applications. The Honorary Consul authenticates supporting documents for the application — the certificate itself is issued by the Hungarian Criminal Records Office (Igazságügyi Minisztérium).",
+      "whatToBring": [
+        "Valid government-issued photo ID",
+        "Application form from the Hungarian Ministry of Justice (if requesting authentication of supporting documents)",
+        "Cash or check for authentication fees"
+      ],
+      "processingNote": "The certificate is issued by Hungary, not the consulate. The consul authenticates supporting documents only."
+    },
+    {
+      "name": "Civil Status Certificate",
+      "nameHu": "Anyakönyvi kivonat",
+      "free": false,
+      "body": "Certified extracts from Hungarian civil registry records — birth, marriage, or death. Issued by Hungarian municipal offices. The Honorary Consul can authenticate copies of these documents for use in the US or for re-submission to Hungarian authorities.",
+      "whatToBring": [
+        "Original Hungarian civil status certificate",
+        "Valid government-issued photo ID",
+        "Cash or check for authentication fees"
+      ],
+      "processingNote": "Original certificates are issued by Hungarian municipal offices. The consul certifies copies."
+    },
+    {
+      "name": "Proof of Citizenship",
+      "nameHu": "Állampolgársági igazolás",
+      "free": false,
+      "body": "Confirmation of Hungarian citizenship status. May be required for employment, travel, or legal proceedings in the US. The Honorary Consul can authenticate Hungarian citizenship documents and provide supporting letters where appropriate.",
+      "whatToBring": [
+        "Hungarian passport or certificate of citizenship",
+        "Valid government-issued photo ID",
+        "Cash or check for authentication fees"
+      ],
+      "processingNote": "Citizenship is determined by Hungary. The consul authenticates existing citizenship documentation."
+    }
+  ],
+  "cta": {
+    "heading": "Need a Certificate?",
+    "body": "Book an appointment for life certificates, authentication of supporting documents, or guidance on the certificate process.",
+    "button": "Book Your Appointment"
+  }
+}

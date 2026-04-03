@@ -1,0 +1,66 @@
+{
+  "header": {
+    "eyebrow": "Állampolgársági Útmutató",
+    "headline": "Magyar Állampolgárság és Honosítás",
+    "description": "Egyszerűsített útmutató a honosítás (egyszerűsített honosítás) folyamatához és ahhoz, hogyan támogatja a Tiszteletbeli Konzulátus az Ön kérelmét."
+  },
+  "intro": {
+    "heading": "Mi az Egyszerűsített Honosítás?",
+    "body": "Magyarország egyszerűsített honosítási programja (honosítás egyszerűsített eljárással) lehetővé teszi a Magyarországon kívül élő etnikai magyarok és leszármazottaik számára, hogy lakóhelyi követelmény nélkül kérjék a Magyar állampolgárságot. Ha szülei, nagyszülei vagy korábbi felmenői Magyar állampolgárok voltak, Ön jogosult lehet rá."
+  },
+  "steps": {
+    "heading": "A Kérelem Folyamata",
+    "consulRole": "A konzul segítséget nyújt",
+    "items": [
+      {
+        "title": "Gyűjtse Össze a Felmenőkre Vonatkozó Iratokat",
+        "body": "Gyűjtse össze a születési anyakönyvi kivonatokat, házassági anyakönyvi kivonatokat és minden olyan iratot, amely Magyar felmenőjéig vezeti a leszármazási sort. Az iratoknak Öntől egy Magyar ős felé kell mutatniuk az összefüggést.",
+        "consulAssists": true
+      },
+      {
+        "title": "Hitelesítse Iratait",
+        "body": "Az amerikal iratokat (születési, házassági anyakönyvi kivonatokat) a Tiszteletbeli Konzulnak kell hitelesítenie benyújtás előtt. Magyar iratokhoz másolat-hitelesítésre lehet szükség.",
+        "consulAssists": true
+      },
+      {
+        "title": "Nyújtsa Be a Washington DC-i Nagykövetségre",
+        "body": "Az állampolgársági kérelmeket a Washington DC-i Magyar Nagykövetségre kell benyújtani — nem a tiszteletbeli konzulhoz. A Nagykövetség kezeli a teljes eljárást.",
+        "consulAssists": false
+      },
+      {
+        "title": "Magyar Nyelv és Alkotmányos Ismeretek",
+        "body": "A kérelmezőknek alapszintű Magyar nyelvtudást és a Magyar történelemre és alkotmányra vonatkozó ismereteket kell bizonyítaniuk. A Tiszteletbeli Konzul útmutatást nyújthat, de nem ő vezeti a vizsgát.",
+        "consulAssists": false
+      },
+      {
+        "title": "Állampolgársági Eskü",
+        "body": "Jóváhagyás esetén az állampolgársági esküt kell tennie — vagy Magyarországon, vagy valamely Magyar diplomáciai képviseleten. Sylvia tanácsot tud adni a folyamatról, de nem ő végzi az eskütételt.",
+        "consulAssists": false
+      }
+    ]
+  },
+  "cannotDo": {
+    "heading": "Amit a Tiszteletbeli Konzul Nem Tud Elvégezni",
+    "items": [
+      "Állampolgársági kérelmek fogadása vagy feldolgozása",
+      "Állampolgársági döntések megadása, megtagadása vagy fellebbezése",
+      "Nyelvi vagy alkotmányos vizsgák levezetése",
+      "Állampolgársági eskütétel levezetése",
+      "Jogi tanácsadás az állampolgárságra való jogosultsággal kapcsolatban"
+    ]
+  },
+  "canDo": {
+    "heading": "Hogyan Tud Segíteni a Tiszteletbeli Konzul",
+    "items": [
+      "Születési és házassági anyakönyvi kivonatok hitelesítése benyújtáshoz",
+      "Magyar felmenőkre vonatkozó iratok másolatainak hitelesítése",
+      "Az általános folyamat és a szükséges iratok magyarázata",
+      "Információ és kapcsolattartók megadása a Nagykövetségnél"
+    ]
+  },
+  "cta": {
+    "heading": "Készen Áll a Kezdésre?",
+    "body": "Foglaljon időpontot felmenőkre vonatkozó iratainak hitelesítéséhez és a kérelmi folyamattal kapcsolatos tájékoztatáshoz.",
+    "button": "Időpontot Foglalok"
+  }
+}

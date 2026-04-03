@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "services": "Szolgáltatások",
+    "about": "Rólam",
+    "contact": "Kapcsolat",
+    "cta": "Időpontfoglalás",
+    "menu": "Menü",
+    "closeMenu": "Menü bezárása",
+    "openMenu": "Navigációs menü megnyitása"
+  },
+  "footer": {
+    "services": "Szolgáltatások",
+    "guides": "Útmutatók",
+    "statesServed": "Kiszolgált Államok",
+    "officialResources": "Hivatalos Erőforrások",
+    "viennaLine": "Bécsi Egyezmény a Konzuli Kapcsolatokról · Derry, NH",
+    "links": {
+      "services": "Szolgáltatások",
+      "whatWeHandle": "Mivel Foglalkozunk",
+      "aboutSylvia": "Sylvia Rich",
+      "bookAppointment": "Időpontfoglalás",
+      "contact": "Kapcsolat",
+      "testimonials": "Vélemények"
+    },
+    "guides": {
+      "citizenship": "Állampolgárság és Honosítás",
+      "vitalRecords": "Anyakönyvi Iratok",
+      "legalization": "Diplomáciai Hitelesítés",
+      "certificates": "Erkölcsi Bizonyítvány",
+      "guide": "Hitelesítés vs. Apostille — Útmutató"
+    }
+  },
+  "labels": {
+    "mondayOnly": "Kizárólag Hétfői Időpontok",
+    "bookAppointment": "Foglaljon Hétfői Időpontot",
+    "bookNow": "Időpontot Foglalok",
+    "seeScope": "Megtudja, Mivel Foglalkozunk",
+    "learnMore": "Tudjon Meg Többet",
+    "cashCheckOnly": "Csak készpénz vagy csekk",
+    "appointmentRequired": "Előzetes időpontfoglalás szükséges. Bejelentkezés nélkül nem fogadunk ügyfeleket.",
+    "paymentNote": "Csak Készpénz és Csekk · Személyesen · Előzetes Egyeztetés Szükséges",
+    "inPersonDerry": "Személyesen: 16 Route 111, Suite 5, Derry, NH.",
+    "bringDocuments": "Hozza magával iratait, érvényes személyazonosító okmányát és a fizetési összeget készpénzben vagy csekkel.",
+    "freeService": "Ingyenes Szolgáltatás",
+    "mostRequested": "Leggyakrabban Kért",
+    "perDocument": "dokumentumonként",
+    "perPage": "oldalanként",
+    "perAct": "közjegyzői aktánként",
+    "noCharge": "Ingyenes",
+    "whatToBring": "Mit Hozzon Magával",
+    "bookThisService": "Időpontot Foglalok",
+    "scopeQuestion": "Nem biztos benne, hogy az Ön ügyével foglalkozunk?",
+    "scopeCTA": "Tekintse meg a teljes szolgáltatási kört"
+  },
+  "disclaimer": {
+    "text": "A tiszteletbeli konzulok nem rendelkeznek állandó irodai munkakörrel, és nincsenek rögzített munkaidejük vagy munkarendjük. Nem kapnak javadalmazást Magyarországtól kötelességeik teljesítéséért, ezért nem kérhetők számon munkabeosztásukat illetően."
+  },
+  "hours": {
+    "display": "Kizárólag Hétfői Időpontok",
+    "detail": "Hétfő délután — előzetes bejelentkezéssel"
+  }
+}

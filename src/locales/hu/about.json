@@ -1,0 +1,60 @@
+{
+  "header": {
+    "eyebrow": "Bemutatkozás: Sylvia Rich",
+    "headline": "Két Ország Között Született. Mindkettőt Szolgálja.",
+    "description": "A Magyar Nagykövetség által kinevezve. Új-Anglia szolgálatában — hatáskörrel, nyelvtudással és személyes tapasztalattal."
+  },
+  "story": {
+    "paragraphs": [
+      "Sylvia Rich egész életében Magyarország és Amerika között navigált — nem átvitt értelemben, hanem szó szerint. Szülei 1969-ben menekültek el a kommunista Magyarországról. Ő Budapesten épített karriert. Évtizedeket töltött mindkét világban, mindkét nyelvet folyékonyan beszéli, mindkét rendszerben otthon van.",
+      "A tiszteletbeli konzuli pozíció nem puszta cím. Ez egy vállalt felelősség — amelyet a Magyar Nagykövetség azért bízott rá, amit ő képvisel: mély magyar kulturális jártasságot, egy öt államon átívelő, orvosi, jogi és kormányzati kapcsolatokat magában foglaló amerikai polgári hálózatot, valamint annak a személynek a gyakorlati tudását, aki személyesen megjárta mindazokat az irodákat, nyomtatványokat és határidőket, amelyekkel ügyfelei most szembesülnek.",
+      "Sylvia nem kap fizetést ezért a munkáért. Kizárólag aktív konzuli feladatok ellátásakor részesül díjazásban. Ez egy önkéntes, közszolgálati pozíció — és pontosan ezért olyan teljes a közösség belé vetett bizalma."
+    ]
+  },
+  "credentials": {
+    "eyebrow": "Megbízatás",
+    "headline": "A Cím Mögötti Hatáskör",
+    "items": [
+      "A Magyar Nagykövetség (Washington DC) által hivatalosan kinevezve",
+      "A konzuli kapcsolatokról szóló Bécsi Egyezmény alapján jogosítva",
+      "Illetékességi területe: Maine, Vermont, New Hampshire, Rhode Island és Massachusetts",
+      "Kétnyelvű: angol és magyar",
+      "Kapcsolati hálója orvosi, jogi, pszichológiai és diplomáciai területeket fed le Új-Angliában"
+    ]
+  },
+  "appointment": {
+    "eyebrow": "Az Ön Időpontja",
+    "headline": "Mire Számíthat, Amikor Eljön",
+    "steps": [
+      {
+        "title": "Foglaljon Időpontot Online",
+        "body": "Válasszon egy hétfői időpontot a foglalási rendszeren keresztül. Visszaigazolást kap az iroda címével és a szükséges dokumentumok listájával."
+      },
+      {
+        "title": "Készítse Elő Iratait",
+        "body": "Hozza magával a kitöltött dokumentumokat, érvényes személyazonosító okmányát és pontos összeget készpénzben vagy csekket. A dokumentumokat ne írja alá előre — az aláírásra Sylvia jelenlétében kerül sor."
+      },
+      {
+        "title": "Érkezzen a Derry-i Irodába",
+        "body": "Az iroda a 16 Route 111, Suite 5, Derry, NH 03038 címen található — a LaBelle Winery közelében. Számoljon kb. 15 perccel."
+      },
+      {
+        "title": "Felülvizsgálat és Hitelesítés",
+        "body": "Sylvia megvizsgálja iratait, ellenőrzi személyazonosságát, és jelenlétében elvégzi a közjegyzői hitelesítést vagy konzuli hitelesítést."
+      },
+      {
+        "title": "Fizetés és Befejezés",
+        "body": "Fizessen készpénzzel vagy csekkel. A hitelesített dokumentumokat visszakapja, készen a Magyar hatóságokhoz való benyújtásra."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Kizárólag hétfői időpontok",
+    "body": "Személyesen: 16 Route 111, Suite 5, Derry, NH. Hozza magával iratait, érvényes személyazonosító okmányát és a fizetési összeget készpénzben vagy csekkel.",
+    "button": "Időpontot Foglalok"
+  },
+  "portrait": {
+    "appointedBy": "Kinevezve:"
+  },
+  "readStory": "Sylvia Rich Teljes Történetét Olvasom"
+}

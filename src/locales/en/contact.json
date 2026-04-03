@@ -1,0 +1,45 @@
+{
+  "header": {
+    "eyebrow": "Contact & Location",
+    "headline": "Come to Derry, NH",
+    "description": "By appointment only. Monday afternoons. No walk-ins accepted."
+  },
+  "cards": {
+    "location": {
+      "heading": "Office Location",
+      "landmark": "Near LaBelle Winery on Route 111",
+      "directionsLabel": "Get Directions →"
+    },
+    "hours": {
+      "heading": "Hours & Availability",
+      "mondayLabel": "Monday",
+      "mondayHours": "Afternoon appointments",
+      "tuesdayFriday": "Tuesday – Friday",
+      "tuesdayFridayHours": "Not available",
+      "weekends": "Weekends",
+      "weekendsHours": "Not available",
+      "note": "All visits by appointment only. Book through the online system."
+    },
+    "payment": {
+      "heading": "Payment",
+      "accepted": "Cash or check only",
+      "notAccepted": "No credit cards",
+      "checkPayable": "Checks payable to: Sylvia Rich"
+    }
+  },
+  "mapLabel": "Office location map",
+  "whatToBring": {
+    "heading": "What to Bring to Your Appointment",
+    "items": [
+      "Your completed documents (do not sign in advance)",
+      "Valid government-issued photo ID",
+      "Exact cash or a check for the service fee",
+      "Any supporting documents referenced in your booking notes"
+    ]
+  },
+  "ctaScope": {
+    "text": "Not sure if we handle your need?",
+    "link": "See the full scope of services →"
+  },
+  "ctaBook": "Book Your Appointment"
+}

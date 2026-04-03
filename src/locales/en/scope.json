@@ -1,0 +1,68 @@
+{
+  "header": {
+    "eyebrow": "Know Before You Book",
+    "headline": "What We Handle. What Requires New York.",
+    "description": "The Honorary Consulate in Derry, NH can handle more than most people realize — and less than a full consulate. This page exists so you know exactly where to go before you make the trip.",
+    "intro": "The Honorary Consulate in Derry, NH can handle more than most people realize — and less than a full consulate. This page exists so you know exactly where to go before you make the trip."
+  },
+  "canDo": {
+    "heading": "What We Handle Here",
+    "items": [
+      "Notarize American documents (wills, deeds, contracts, affidavits)",
+      "Authenticate signatures on Hungarian documents",
+      "Certify copies of documents for use in Hungary",
+      "Issue life certificates for Hungarian pension recipients (free)",
+      "Provide emergency coordination for Hungarian citizens in distress",
+      "Serve as a bilingual liaison to New England hospitals, universities, and government offices",
+      "Assist with birth, marriage, and death registration documentation (authentication only)",
+      "Authenticate powers of attorney for Hungarian property transactions",
+      "Provide guidance on citizenship and passport renewal processes"
+    ]
+  },
+  "cannotDo": {
+    "heading": "What Requires New York",
+    "items": [
+      "Issue or renew Hungarian passports (requires biometric equipment at the NY Consulate General)",
+      "Process visa applications",
+      "Accept citizenship applications (submitted to the Embassy in Washington DC)",
+      "Provide legal advice",
+      "Apostille American documents for use outside Hungary (contact the NH Secretary of State)"
+    ]
+  },
+  "nyContact": {
+    "heading": "Consulate General of Hungary — New York",
+    "address": "223 East 52nd Street, New York, NY 10022",
+    "note": "Manhattan handles passports, biometrics, visa applications, and citizenship submissions. Average travel cost from New England: $80–$300+ plus a full day.",
+    "visitSite": "Visit their website"
+  },
+  "faq": {
+    "heading": "Common Questions",
+    "items": [
+      {
+        "question": "Can the honorary consul apostille a document?",
+        "answer": "No — apostille is handled by the New Hampshire Secretary of State (for NH documents) or the Secretary of State of the issuing state. The honorary consul can authenticate after apostille if the document is destined for Hungary."
+      },
+      {
+        "question": "Can I get a Hungarian passport here?",
+        "answer": "No. Hungarian passport issuance and renewal requires biometric equipment available only at the Consulate General in New York. Sylvia can provide guidance on the process and required documents."
+      },
+      {
+        "question": "Can I apply for Hungarian citizenship here?",
+        "answer": "Citizenship applications are accepted by the Embassy of Hungary in Washington DC. The honorary consul can authenticate supporting documents and provide procedural guidance."
+      },
+      {
+        "question": "Is there a language requirement?",
+        "answer": "No. Sylvia is fully bilingual in English and Hungarian. Bring documents in either language — no translator required."
+      },
+      {
+        "question": "Do I need an appointment?",
+        "answer": "Yes. All visits are by appointment only, Monday afternoons. Walk-ins are not accepted. Book through the online system."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to Book?",
+    "body": "Most document needs in New England can be handled right here in Derry, NH.",
+    "button": "Book Your Monday Appointment"
+  }
+}

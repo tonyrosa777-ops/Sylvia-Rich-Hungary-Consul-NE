@@ -3,6 +3,7 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const DECISION_TREE = [
   {
@@ -65,12 +66,13 @@ const GLOSSARY = [
 
 export default function GuidePage() {
   const { scope } = siteData;
+  const { t } = useTranslation("guide");
   return (
     <>
       <PageHeader
-        eyebrow="Authentication vs. Apostille"
-        headline="Which Service Do You Need?"
-        description="Authentication, apostille, notarization, legalization — four different things. This guide tells you which one applies to your specific situation before you book or drive anywhere."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Decision tree */}

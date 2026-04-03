@@ -2,14 +2,17 @@
 import { FadeUp, CountUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { GoldRule } from "@/components/ui";
 import { motion } from "framer-motion";
-
-const stats = [
-  { value: 5,  suffix: "",  label: "States Served",            sub: "ME · VT · NH · RI · MA" },
-  { value: 4,  suffix: "",  label: "Consular Services",        sub: "Authentication · Notarization · Certification · Life Certificates" },
-  { value: 0,  suffix: "",  label: "Cost to Reach New York",   sub: "vs. $80–$300+ from New England" },
-];
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function Stats() {
+  const { t } = useTranslation("home");
+
+  const stats = [
+    { value: 5,  suffix: "",  label: t("stats.statesServed"),      sub: "ME · VT · NH · RI · MA" },
+    { value: 4,  suffix: "",  label: t("stats.servicesAvailable"),  sub: "Authentication · Notarization · Certification · Life Certificates" },
+    { value: 0,  suffix: "",  label: t("stats.zeroDrive"),          sub: `vs. $80–$300+ ${t("stats.zeroLabel")}` },
+  ];
+
   return (
     <section className="bg-[#071020] py-20 lg:py-28 border-y border-[rgba(197,165,90,0.12)]" aria-label="By the numbers">
       <div className="max-w-5xl mx-auto px-6 lg:px-8">

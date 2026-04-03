@@ -1,0 +1,16 @@
+{
+  "shared": {
+    "drivingFrom": "Utazási idő innen:",
+    "toOurOffice": "a Derry-i (NH) irodánkba",
+    "toNYConsulate": "a NY-i Főkonzulátusra",
+    "vs": "vs.",
+    "minutesDrive": "autóút",
+    "servicesAvailable": "Irodánkban Elérhető Szolgáltatások",
+    "featuredTestimonial": "A Közösség Véleménye",
+    "scopeHeading": "Nem Biztos Benne, Hogy Tudunk Segíteni?",
+    "scopeBody": "Egyes ügyekhez a New York-i Főkonzulátusra van szükség. Az utazás előtt tekintse meg a teljes szolgáltatási kört.",
+    "scopeCTA": "Mivel Foglalkozunk vs. New York →",
+    "bookCTA": "Foglaljon Hétfői Időpontot",
+    "disclaimer": "A tiszteletbeli konzulok nem rendelkeznek állandó irodai munkakörrel, és nincsenek rögzített munkaidejük vagy munkarendjük. Nem kapnak javadalmazást Magyarországtól kötelességeik teljesítéséért, ezért nem kérhetők számon munkabeosztásukat illetően."
+  }
+}

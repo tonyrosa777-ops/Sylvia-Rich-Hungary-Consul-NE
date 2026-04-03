@@ -3,13 +3,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui";
+import { Button, LanguageToggle } from "@/components/ui";
 import { MobileNav } from "./MobileNav";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const { t } = useTranslation("common");
 
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 20);
@@ -25,6 +27,12 @@ export function SiteHeader() {
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, []);
+
+  const navLabels: Record<string, string> = {
+    "/services": t("nav.services"),
+    "/about": t("nav.about"),
+    "/contact": t("nav.contact"),
+  };
 
   return (
     <>
@@ -61,27 +69,29 @@ export function SiteHeader() {
                 href={link.href}
                 className="font-mono text-xs uppercase tracking-[0.1em] text-[rgba(245,240,232,0.75)] hover:text-[#C5A55A] transition-colors duration-150"
               >
-                {link.label}
+                {navLabels[link.href] ?? link.label}
               </Link>
             ))}
           </nav>
 
-          {/* Right: CTA + mobile hamburger */}
+          {/* Right: language toggle + CTA + mobile hamburger */}
           <div className="flex items-center gap-4">
+            <LanguageToggle />
+
             <Button
               href={siteData.nav.cta.href}
               variant="primary"
               size="sm"
               className="hidden sm:inline-flex"
             >
-              {siteData.nav.cta.label}
+              {t("nav.cta")}
             </Button>
 
             {/* Hamburger — mobile only */}
             <button
               onClick={() => setMobileOpen(true)}
               className="md:hidden flex flex-col gap-[5px] p-2 -mr-2"
-              aria-label="Open navigation menu"
+              aria-label={t("nav.openMenu")}
               aria-expanded={mobileOpen}
             >
               <span className="w-5 h-px bg-[#F5F0E8] block transition-all duration-200" />

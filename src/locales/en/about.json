@@ -1,0 +1,60 @@
+{
+  "header": {
+    "eyebrow": "Meet Sylvia Rich",
+    "headline": "Born Between Two Countries. Here to Serve Both.",
+    "description": "Appointed by the Embassy of Hungary. Serving New England with authority, language, and lived experience."
+  },
+  "story": {
+    "paragraphs": [
+      "Sylvia Rich grew up navigating the space between Hungary and America — not metaphorically, but literally. Her parents escaped communist Hungary in 1969. She built a career in Budapest. She has spent decades in both worlds, fluent in both languages, at home in both systems.",
+      "The Honorary Consul position is not a title she holds. It's a responsibility she chose — and one the Embassy of Hungary entrusted to her because of what she brings: deep Hungarian cultural fluency, an American civic network spanning medicine, law, and government across five states, and the practical knowledge of someone who has personally navigated every form, office, and deadline that her clients now face.",
+      "Sylvia does not receive a salary for this work. She is compensated only when performing active consular duties. This is a voluntary position of service — which is precisely why her community's trust in her is so complete."
+    ]
+  },
+  "credentials": {
+    "eyebrow": "Credentials",
+    "headline": "The Authority Behind the Title",
+    "items": [
+      "Officially appointed by the Embassy of Hungary in Washington DC",
+      "Authorized under the Vienna Convention on Consular Relations",
+      "Covers Maine, Vermont, New Hampshire, Rhode Island, and Massachusetts",
+      "Bilingual: English and Hungarian",
+      "Network spans medical, legal, psychological, and diplomatic contacts across New England"
+    ]
+  },
+  "appointment": {
+    "eyebrow": "Your Appointment",
+    "headline": "What to Expect When You Come",
+    "steps": [
+      {
+        "title": "Book Online",
+        "body": "Select a Monday time slot through the booking system. You'll receive a confirmation with the office address and what to bring."
+      },
+      {
+        "title": "Prepare Your Documents",
+        "body": "Bring your completed documents, your government-issued ID, and exact cash or a check. Documents should not be signed in advance — you'll sign in Sylvia's presence."
+      },
+      {
+        "title": "Arrive at the Derry Office",
+        "body": "The office is at 16 Route 111, Suite 5, Derry, NH 03038 — near LaBelle Winery. Plan for approximately 15 minutes."
+      },
+      {
+        "title": "Review and Authentication",
+        "body": "Sylvia reviews your documents, verifies your identity, and performs the notarization or authentication in your presence."
+      },
+      {
+        "title": "Payment and Completion",
+        "body": "Pay by cash or check. Your authenticated documents are returned to you, ready for submission to Hungarian authorities."
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Monday appointments only",
+    "body": "In-person at 16 Route 111, Suite 5, Derry, NH. Bring your documents, valid ID, and payment by cash or check.",
+    "button": "Book Your Appointment"
+  },
+  "portrait": {
+    "appointedBy": "Appointed by"
+  },
+  "readStory": "Read Sylvia\u2019s Full Story"
+}

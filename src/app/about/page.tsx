@@ -3,16 +3,21 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, SlideIn, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export default function AboutPage() {
-  const { about, whatToExpect, brand } = siteData;
+  const { brand } = siteData;
+  const { t, ta } = useTranslation("about");
+  const paragraphs = ta<string[]>("story.paragraphs") ?? siteData.about.paragraphs;
+  const credentials = ta<string[]>("credentials.items") ?? siteData.about.credentials;
+  const steps = ta<Array<{ title: string; body: string }>>("appointment.steps") ?? siteData.whatToExpect.steps.map(s => ({ title: s.title, body: s.body }));
 
   return (
     <>
       <PageHeader
-        eyebrow={about.eyebrow}
-        headline={about.headline}
-        description="Appointed by the Embassy of Hungary. Serving New England with authority, language, and lived experience."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Origin story */}
@@ -29,7 +34,7 @@ export default function AboutPage() {
                     <p className="font-display font-bold text-[#F5F0E8]">{brand.consul.name}</p>
                     <p className="font-body text-[12px] text-[rgba(245,240,232,0.5)] mt-0.5">{brand.consul.title}</p>
                     <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[#C5A55A] mt-2">
-                      Appointed by {brand.consul.appointedBy}
+                      {t("portrait.appointedBy")} {brand.consul.appointedBy}
                     </p>
                   </div>
                 </div>
@@ -41,7 +46,7 @@ export default function AboutPage() {
             {/* Story column */}
             <SlideIn direction="right" delay={0.1} className="lg:col-span-3">
               <div className="space-y-6">
-                {about.paragraphs.map((para, i) => (
+                {paragraphs.map((para, i) => (
                   <p key={i} className="font-body text-[16px] leading-[1.85] text-[rgba(245,240,232,0.75)]">
                     {para}
                   </p>
@@ -56,15 +61,15 @@ export default function AboutPage() {
       <section className="bg-[#071020] py-16 border-y border-[rgba(197,165,90,0.12)]">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <FadeUp className="mb-10">
-            <Eyebrow className="mb-3">Credentials</Eyebrow>
+            <Eyebrow className="mb-3">{t("credentials.eyebrow")}</Eyebrow>
             <h2 className="font-display font-bold text-2xl text-[#F5F0E8]">
-              The Authority Behind the Title
+              {t("credentials.headline")}
             </h2>
           </FadeUp>
           <StaggerContainer staggerDelay={0.08}>
-            {about.credentials.map((cred) => (
+            {credentials.map((cred, i) => (
               <motion.div
-                key={cred}
+                key={i}
                 variants={staggerItem}
                 className="flex gap-4 py-4 border-b border-[rgba(197,165,90,0.1)]"
               >
@@ -80,19 +85,19 @@ export default function AboutPage() {
       <section className="bg-[#0A1628] py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <FadeUp className="mb-12">
-            <Eyebrow className="mb-3">{whatToExpect.eyebrow}</Eyebrow>
+            <Eyebrow className="mb-3">{t("appointment.eyebrow")}</Eyebrow>
             <h2 className="font-display font-bold text-[clamp(1.6rem,3vw,2.4rem)] text-[#F5F0E8] max-w-lg">
-              {whatToExpect.headline}
+              {t("appointment.headline")}
             </h2>
           </FadeUp>
 
           <div className="space-y-0">
-            {whatToExpect.steps.map((step, i) => (
-              <FadeUp key={step.number} delay={i * 0.08}>
+            {steps.map((step, i) => (
+              <FadeUp key={i} delay={i * 0.08}>
                 <div className="grid grid-cols-[auto_1fr] gap-6 py-8 border-b border-[rgba(197,165,90,0.1)] last:border-b-0">
                   <div className="pt-0.5">
                     <span className="font-mono font-bold text-[2rem] leading-none text-[rgba(197,165,90,0.25)]">
-                      {step.number}
+                      {String(i + 1).padStart(2, "0")}
                     </span>
                   </div>
                   <div>
@@ -111,13 +116,13 @@ export default function AboutPage() {
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <FadeUp className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-              <Eyebrow className="mb-2">Monday appointments only</Eyebrow>
+              <Eyebrow className="mb-2">{t("cta.eyebrow")}</Eyebrow>
               <p className="font-body text-[16px] text-[rgba(245,240,232,0.65)] max-w-md">
-                In-person at 16 Route 111, Suite 5, Derry, NH. Bring your documents, valid ID, and payment by cash or check.
+                {t("cta.body")}
               </p>
             </div>
             <Button href="/booking" variant="primary" size="md" className="shrink-0">
-              Book Your Appointment
+              {t("cta.button")}
             </Button>
           </FadeUp>
         </div>

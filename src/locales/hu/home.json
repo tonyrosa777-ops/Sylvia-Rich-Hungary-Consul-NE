@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "eyebrow": "A Magyar Nagykövetség által hivatalosan kinevezve",
+    "headline": "Magyarország Tiszteletbeli Konzulátusa",
+    "headlineSub": "Új-Anglia",
+    "tagline": "Magyar állampolgárok, kettős állampolgárok és családjaik szolgálatában Maine, Vermont, New Hampshire, Rhode Island és Massachusetts területén.",
+    "ctaPrimary": "Foglaljon Hétfői Időpontot",
+    "ctaSecondary": "Mivel Foglalkozunk",
+    "trustCopy": "Derry, NH · Hétfői Időpontok · 5 Állam",
+    "paymentNote": "Csak Készpénz és Csekk · Személyesen · Előzetes Egyeztetés Szükséges"
+  },
+  "challenges": {
+    "eyebrow": "Ismerős a Helyzet?",
+    "headline": "Amikor Két Ország Papírmunkája Összeütközik",
+    "items": [
+      {
+        "headline": "Magyarországra küldendő dokumentumok",
+        "body": "Egy okirat, végrendelet, bankdokumentum — és mindehhez hivataos magyar konzuli pecsét szükséges, mielőtt Budapesten érvényes lenne."
+      },
+      {
+        "headline": "Bizonytalanság a helyes eljárásban",
+        "body": "Apostille-t kell kérni? Hitelesítést? A Nagykövetségre kell menni? A válasz a dokumentumtól függ — és ha rosszul dönt, elölről kell kezdeni."
+      },
+      {
+        "headline": "Nem kellene New Yorkba utaznia",
+        "body": "A manhattani Magyar Főkonzulátus kezeli, amit mi nem tudunk. De a legtöbb embernek nem New York kell — hanem Derry, NH, ami tényleg elérhető távolságra van."
+      },
+      {
+        "headline": "Kit is kell tulajdonképpen felhívni?",
+        "body": "Új-Angliai kórházaknak, egyetemeknek és bíróságoknak nincs magyar nyelvű kapcsolattartójuk. Magyar állampolgárokat érintő vészhelyzetekben Sylvia az a személy, akit hívni kell."
+      }
+    ]
+  },
+  "stats": {
+    "statesServed": "Kiszolgált Állam",
+    "yearsServing": "Év Új-Angliai Szolgálat",
+    "servicesAvailable": "Elérhető Konzuli Szolgáltatás",
+    "zeroDrive": "Mérföld New Yorkba",
+    "zeroLabel": "a legtöbb ügyhöz"
+  },
+  "feeTable": {
+    "eyebrow": "Átlátható Díjszabás",
+    "headline": "Konzuli Díjak",
+    "intro": "A díjakat a Magyar Minisztérium rendelete szabályozza. Minden szolgáltatás személyes megjelenéssel, előzetes bejelentkezéssel, kizárólag hétfőn igénybe vehető.",
+    "savingsNote": "Egy New York-i út a Főkonzulátusra csak utazással $80–$300+ költséget jelent — plusz egy egész nap. Ugyanolyan konzuli hatáskör, helyben.",
+    "paymentNote": "Csak készpénz vagy csekk. Hitelkártya nem fogadható el. A csekket Sylvia Rich nevére kell kiállítani.",
+    "priceUnconfirmed": "⚠ Árak megerősítés alatt"
+  },
+  "finalCTA": {
+    "eyebrow": "New Yorkba Utazás Nem Szükséges",
+    "headline": "Nem Kell New Yorkba Mennie",
+    "body": "Ugyanolyan konzuli hatáskör. Ugyanolyan hivatalos pecsét. Közvetlenül itt, New Hampshire-ben — a legtöbb ügyintézéshez.",
+    "cta": "Foglaljon Hétfői Időpontot",
+    "secondary": "Mivel Foglalkozunk →"
+  }
+}

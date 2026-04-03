@@ -1,0 +1,83 @@
+{
+  "header": {
+    "eyebrow": "Monday Appointments",
+    "headline": "Book Your Appointment",
+    "description": "In-person, Derry NH. Select a service, choose a Monday slot, and we'll confirm your appointment by email."
+  },
+  "steps": {
+    "selectService": "Service",
+    "selectDate": "Date & Time",
+    "yourInfo": "Your Info",
+    "confirm": "Confirm",
+    "done": "Confirmed"
+  },
+  "serviceStep": {
+    "heading": "Select a Service",
+    "subheading": "Choose the service you need. Bring all required documents to your Monday appointment.",
+    "continueButton": "Continue to Date →"
+  },
+  "dateStep": {
+    "heading": "Choose a Monday",
+    "subheading": "Appointments are available Monday afternoons only. Select a date, then choose a time slot.",
+    "availableTimesLabel": "Available Times",
+    "continueButton": "Continue to Info →",
+    "sunday": "Su",
+    "monday": "Mo",
+    "tuesday": "Tu",
+    "wednesday": "We",
+    "thursday": "Th",
+    "friday": "Fr",
+    "saturday": "Sa"
+  },
+  "infoStep": {
+    "heading": "Your Information",
+    "subheading": "We'll send a confirmation to your email with the appointment details and what to bring.",
+    "fullName": "Full Name",
+    "emailAddress": "Email Address",
+    "notes": "Notes (optional)",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "you@example.com",
+    "notesPlaceholder": "Any specific documents or questions? (optional)",
+    "continueButton": "Review Booking →"
+  },
+  "confirmStep": {
+    "heading": "Review Your Booking",
+    "subheading": "Confirm the details below. A confirmation email will be sent to you.",
+    "service": "Service",
+    "date": "Date",
+    "time": "Time",
+    "name": "Name",
+    "email": "Email",
+    "fee": "Fee",
+    "payment": "Payment",
+    "location": "Location",
+    "notes": "Notes",
+    "bringLabel": "Bring to Your Appointment",
+    "confirmButton": "Confirm Appointment"
+  },
+  "doneStep": {
+    "heading": "Appointment Requested",
+    "confirmationPrefix": "A confirmation will be sent to",
+    "confirmationSuffix": "with your appointment details and everything you need to bring.",
+    "serviceLabel": "Service",
+    "whenLabel": "When",
+    "whereLabel": "Where",
+    "paymentLabel": "Payment",
+    "viewServices": "View Services",
+    "backToHome": "Back to Home"
+  },
+  "buttons": {
+    "next": "Continue →",
+    "back": "← Back",
+    "confirm": "Confirm Appointment",
+    "bookAnother": "Book Another Appointment"
+  },
+  "reminders": {
+    "paymentLabel": "Payment",
+    "hoursLabel": "Hours"
+  },
+  "demo": {
+    "notice": "This booking system is in demo mode. Your appointment request will be followed up by email.",
+    "noticeShort": "Demo mode — not yet connected to live calendar"
+  }
+}

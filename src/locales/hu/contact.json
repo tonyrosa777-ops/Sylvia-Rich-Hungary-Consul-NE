@@ -1,0 +1,45 @@
+{
+  "header": {
+    "eyebrow": "Kapcsolat és Helyszín",
+    "headline": "Látogasson el Derry-be, NH",
+    "description": "Kizárólag előzetes bejelentkezéssel. Hétfő délután. Bejelentkezés nélküli látogatások nem fogadhatók el."
+  },
+  "cards": {
+    "location": {
+      "heading": "Irodai Helyszín",
+      "landmark": "A LaBelle Winery közelében, a Route 111-en",
+      "directionsLabel": "Útvonaltervezés →"
+    },
+    "hours": {
+      "heading": "Nyitvatartás és Elérhetőség",
+      "mondayLabel": "Hétfő",
+      "mondayHours": "Délutáni időpontok",
+      "tuesdayFriday": "Kedd – Péntek",
+      "tuesdayFridayHours": "Nem elérhető",
+      "weekends": "Hétvégén",
+      "weekendsHours": "Nem elérhető",
+      "note": "Minden látogatás kizárólag előzetes bejelentkezéssel. Foglaljon az online rendszeren keresztül."
+    },
+    "payment": {
+      "heading": "Fizetés",
+      "accepted": "Csak készpénz vagy csekk",
+      "notAccepted": "Hitelkártya nem fogadható el",
+      "checkPayable": "A csekket Sylvia Rich nevére kell kiállítani"
+    }
+  },
+  "mapLabel": "Irodai helyszín térképe",
+  "whatToBring": {
+    "heading": "Mit Hozzon Magával az Időpontra",
+    "items": [
+      "A kitöltött iratok (ne írja alá előre)",
+      "Érvényes fényképes személyazonosító okmány",
+      "Pontos összeget készpénzben vagy csekket a szolgáltatási díjhoz",
+      "A foglalási megjegyzéseiben hivatkozott mellékelt iratok"
+    ]
+  },
+  "ctaScope": {
+    "text": "Nem biztos benne, hogy az Ön ügyével foglalkozunk?",
+    "link": "Tekintse meg a teljes szolgáltatási kört →"
+  },
+  "ctaBook": "Időpontot Foglalok"
+}

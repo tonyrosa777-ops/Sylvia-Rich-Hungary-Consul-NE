@@ -3,6 +3,7 @@ import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
+import { useTranslation } from "@/hooks/useTranslation";
 
 const NATURALIZATION_STEPS = [
   {
@@ -56,12 +57,13 @@ const WHAT_CONSUL_CANNOT = [
 
 export default function CitizenshipPage() {
   const { scope } = siteData;
+  const { t } = useTranslation("citizenship");
   return (
     <>
       <PageHeader
-        eyebrow="Citizenship & Naturalization"
-        headline="Claiming Hungarian Citizenship"
-        description="A guide to simplified naturalization — what it involves, what documents you need, and where the Honorary Consul fits in the process."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       {/* Intro */}

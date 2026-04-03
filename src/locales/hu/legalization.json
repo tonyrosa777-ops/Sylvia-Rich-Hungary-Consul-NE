@@ -1,0 +1,73 @@
+{
+  "header": {
+    "eyebrow": "Legalizációs Útmutató",
+    "headline": "Diplomáciai Legalizáció: Három Útvonal",
+    "description": "A helyes legalizációs útvonal attól függ, melyik ország kapja a dokumentumot. Ezzel az útmutatóval azonosíthatja, melyik eljárás vonatkozik az Ön helyzetére."
+  },
+  "intro": "Az iratok legalizációja az a folyamat, amelynek során a dokumentumot hivatalosan elismertetik külföldi felhasználás céljából. Az eljárás attól függően változik, hogy a fogadó ország tagja-e a Hágai Egyezménynek.",
+  "paths": [
+    {
+      "name": "Konzuli Hitelesítés",
+      "subtitle": "Magyarországra küldendő dokumentumokhoz",
+      "cost": "$36 dokumentumonként",
+      "timeframe": "Ugyanazon a napon",
+      "usedFor": "Magyar hatóságok, ingatlan-tranzakciók, jogi beadványok",
+      "steps": [
+        "Dokumentum közjegyzői hitelesítése (ha amerikai)",
+        "Apostille az NH Secretary of State-től",
+        "Konzuli hitelesítés a Tiszteletbeli Konzultól"
+      ]
+    },
+    {
+      "name": "Apostille + Hitelesítés",
+      "subtitle": "Hágai Egyezményes országok számára",
+      "cost": "Apostille díja + konzuli díj",
+      "timeframe": "1–3 hét (apostille) + időpont",
+      "usedFor": "EU-tagállamok, Európa nagy része, 120+ ország",
+      "steps": [
+        "Dokumentum közjegyzői hitelesítése vagy tanúsítása",
+        "Apostille a kiállító állam Secretary of State-jétől",
+        "Konzuli hitelesítés, ha a célország megköveteli"
+      ]
+    },
+    {
+      "name": "Teljes Legalizációs Lánc",
+      "subtitle": "Nem Hágai Egyezményes országok számára",
+      "cost": "Több díj is felmerül",
+      "timeframe": "Több hét",
+      "usedFor": "A Hágai Egyezményen kívüli országok (egyes közel-keleti, ázsiai, afrikai nemzetek)",
+      "steps": [
+        "Közjegyzői hitelesítés",
+        "Állami hitelesítés (Secretary of State)",
+        "Szövetségi hitelesítés (US Dept. of State)",
+        "A célország nagykövetségének konzuli hitelesítése"
+      ]
+    }
+  ],
+  "faq": {
+    "heading": "Gyakran Ismételt Kérdések",
+    "items": [
+      {
+        "question": "Magyarország apostille-t kér az amerikai dokumentumokra?",
+        "answer": "Igen — Magyarország tagja a Hágai Egyezménynek, így a legtöbb amerikai dokumentumhoz apostille szükséges a konzuli hitelesítés előtt. Az apostille-t a dokumentumot kiállító állam Secretary of State irodájától kell beszerezni."
+      },
+      {
+        "question": "A Tiszteletbeli Konzul el tudja végezni az apostille-t?",
+        "answer": "Nem. Az apostille-t az állam Secretary of State irodája állítja ki (New Hampshire-i dokumentumokhoz az NH Secretary of State). A Tiszteletbeli Konzul az apostille megszerzése után végzi el a hitelesítést."
+      },
+      {
+        "question": "Szükséges-e legalizáció a Magyar dokumentumokhoz az USA-ban való felhasználáshoz?",
+        "answer": "Az USA-ban felhasználandó Magyar dokumentumokhoz konzuli hitelesítésre lehet szükség. Mivel Magyarország tagja a Hágai Egyezménynek, az USA-ba szánt Magyar dokumentumokhoz jellemzően Magyar hatóságok által kiállított apostille szükséges."
+      },
+      {
+        "question": "Mennyi ideig tart a teljes legalizációs folyamat?",
+        "answer": "Magyarország esetén: az apostille a Secretary of State-től 1–3 hétig tart, majd a konzuli időpont ugyanazon a napon intézhető. Számoljon összesen 2–4 héttel. Nem Hágai Egyezményes országok esetén 4–8 hétre vagy tovább is."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Irathitelesítésre Van Szüksége?",
+    "body": "Foglaljon időpontot konzuli hitelesítéshez — ez a legtöbb Magyar beadványnál a legalizációs lánc utolsó lépése.",
+    "button": "Időpontot Foglalok"
+  }
+}

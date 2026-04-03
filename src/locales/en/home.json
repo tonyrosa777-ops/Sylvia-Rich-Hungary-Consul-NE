@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "eyebrow": "Officially Appointed by the Embassy of Hungary",
+    "headline": "Honorary Consulate of Hungary",
+    "headlineSub": "New England",
+    "tagline": "Serving Hungarian citizens, dual nationals, and families across Maine, Vermont, New Hampshire, Rhode Island, and Massachusetts.",
+    "ctaPrimary": "Book Your Monday Appointment",
+    "ctaSecondary": "See What We Handle",
+    "trustCopy": "Derry, NH · Monday Appointments · 5 States Served",
+    "paymentNote": "Cash & Check Only · In-Person · Appointment Required"
+  },
+  "challenges": {
+    "eyebrow": "Sound Familiar?",
+    "headline": "When Two Countries' Paperwork Collide",
+    "items": [
+      {
+        "headline": "Documents that need to go to Hungary",
+        "body": "A deed, a will, a bank document — and it must carry an official Hungarian consular seal before it's valid in Budapest."
+      },
+      {
+        "headline": "Uncertainty about the right process",
+        "body": "Should you apostille it? Authenticate it? Go to the Embassy? The answer depends on the document — and getting it wrong means starting over."
+      },
+      {
+        "headline": "You shouldn't have to fly to New York",
+        "body": "The Hungarian Consulate General in Manhattan handles what we can't. But most people don't need Manhattan — they need Derry, NH, which is actually reachable."
+      },
+      {
+        "headline": "Who do you even call?",
+        "body": "Hospitals, universities, and courts in New England have no Hungarian-speaking liaison. For emergencies involving Hungarian citizens, Sylvia is the contact."
+      }
+    ]
+  },
+  "stats": {
+    "statesServed": "States Served",
+    "yearsServing": "Years Serving New England",
+    "servicesAvailable": "Consular Services Available",
+    "zeroDrive": "Miles to Drive to New York",
+    "zeroLabel": "for most services"
+  },
+  "feeTable": {
+    "eyebrow": "Transparent Pricing",
+    "headline": "Consular Fees",
+    "intro": "Fees are established by Hungarian Ministry decree. All services are in-person, by appointment, Monday only.",
+    "savingsNote": "A trip to the Consulate General in New York costs $80–$300+ in transportation alone — plus a full day of travel. The same consular authority, locally.",
+    "paymentNote": "Cash or check only. No credit cards accepted. Make checks payable to Sylvia Rich.",
+    "priceUnconfirmed": "⚠ Prices pending client confirmation"
+  },
+  "finalCTA": {
+    "eyebrow": "No Drive to New York Required",
+    "headline": "You Don't Have to Drive to New York",
+    "body": "The same consular authority. The same official seal. Right here in New Hampshire — for most of what you need.",
+    "cta": "Book Your Monday Appointment",
+    "secondary": "See What We Handle →"
+  }
+}

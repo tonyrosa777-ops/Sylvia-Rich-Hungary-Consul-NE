@@ -1,0 +1,70 @@
+{
+  "header": {
+    "eyebrow": "Dokumentum-döntési Útmutató",
+    "headline": "Hitelesítés vs. Apostille: Melyikre Van Szüksége?",
+    "description": "A válasz két dologtól függ: mi a dokumentum, és hova kerül. Ezt az útmutatót használja az útvonala meghatározásához a foglalás előtt."
+  },
+  "tree": {
+    "question": "Mi jellemzi az Ön helyzetét?",
+    "branches": [
+      {
+        "label": "Amerikai dokumentum → Magyarországra megy",
+        "service": "Apostille + Konzuli Hitelesítés",
+        "cost": "Secretary of State díja + $36",
+        "detail": "1. lépés: Apostille az NH Secretary of State-től. 2. lépés: Konzuli hitelesítés Sylvia Rich által.",
+        "cta": "Aláírás-hitelesítés Foglalása"
+      },
+      {
+        "label": "Amerikai dokumentum → az USA-ban marad",
+        "service": "Közjegyzői Hitelesítés",
+        "cost": "$10 aktánként",
+        "detail": "Szokásos közjegyzői hitelesítés NH-i jog alapján. Nincs szükség konzuli eljárásra.",
+        "cta": "Közjegyző Foglalása"
+      },
+      {
+        "label": "Magyar dokumentum → Magyarországon marad",
+        "service": "Nincs szükség konzuli intézkedésre",
+        "cost": "—",
+        "detail": "A Magyarországon belül használt Magyar dokumentumok nem igényelnek konzuli hitelesítést.",
+        "cta": "Vegye fel velünk a kapcsolatot, ha bizonytalan"
+      },
+      {
+        "label": "Magyar dokumentum → az USA-ba kerül",
+        "service": "Konzuli Hitelesítés",
+        "cost": "$36 dokumentumonként",
+        "detail": "A tiszteletbeli konzul hitelesítése révén a Magyar dokumentumok érvényessé válnak az Egyesült Államokban.",
+        "cta": "Aláírás-hitelesítés Foglalása"
+      }
+    ]
+  },
+  "glossary": {
+    "heading": "Kulcsfogalmak",
+    "terms": [
+      {
+        "term": "Közjegyzői Hitelesítés",
+        "definition": "Egy amerikai közjegyző ellenőrzi személyazonosságát és tanúsítja aláírását. Az USA-ban felhasználandó amerikai dokumentumokhoz szükséges. Magyar hatóságokhoz való benyújtáshoz önmagában nem elegendő."
+      },
+      {
+        "term": "Konzuli Hitelesítés",
+        "definition": "A tiszteletbeli konzul tanúsítja egy aláírás vagy dokumentum hitelességét Magyarországon való felhasználáshoz. Ez az a hivatalos lépés, amely az amerikai dokumentumokat érvényessé teszi Magyar hatóságoknál való benyújtáshoz."
+      },
+      {
+        "term": "Apostille",
+        "definition": "Szabványosított nemzetközi tanúsítás (Hágai Egyezmény), amely érvényesít egy dokumentumot a tagállamokban való felhasználáshoz. A Magyarországra küldendő legtöbb amerikai dokumentum esetén konzuli hitelesítés előtt szükséges."
+      },
+      {
+        "term": "Másolat-hitelesítés",
+        "definition": "A tiszteletbeli konzul tanúsítja, hogy egy másolat az eredeti dokumentum hiteles és pontos másolata. Abban az esetben használják, ha az eredeti dokumentum nem nyújtható be a Magyar hatóságokhoz."
+      },
+      {
+        "term": "Legalizáció",
+        "definition": "A nem Hágai Egyezményes országokba küldendő dokumentumok teljes hitelesítési lánca. Sorrendben magában foglalja a közjegyzői hitelesítést, állami hitelesítést és konzuli hitelesítést."
+      }
+    ]
+  },
+  "cta": {
+    "stillUnsure": "Még Mindig Bizonytalan?",
+    "body": "Foglalásakor ismertesse helyzetét, és Sylvia az időpontja előtt megerősíti a helyes szolgáltatást.",
+    "button": "Konzultációt Foglalok"
+  }
+}

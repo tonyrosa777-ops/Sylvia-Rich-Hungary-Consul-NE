@@ -2,8 +2,11 @@
 import { FadeUp, FadeIn } from "@/components/animations";
 import { Button, GoldRule } from "@/components/ui";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function FinalCTA() {
+  const { t } = useTranslation("home");
+
   return (
     <section
       className="relative bg-[#071020] py-24 lg:py-32 overflow-hidden border-t border-[rgba(197,165,90,0.15)]"
@@ -25,13 +28,13 @@ export function FinalCTA() {
 
         <FadeUp>
           <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[rgba(197,165,90,0.6)] mb-5">
-            Monday Appointments · Derry, NH
+            {t("finalCTA.eyebrow")}
           </p>
         </FadeUp>
 
         <FadeUp delay={0.1}>
           <h2 className="font-display font-black text-[clamp(2rem,4vw,3.2rem)] leading-tight text-[#F5F0E8] mb-5">
-            You Don&apos;t Have to Drive to New York.
+            {t("finalCTA.headline")}
           </h2>
         </FadeUp>
 
@@ -41,16 +44,16 @@ export function FinalCTA() {
 
         <FadeUp delay={0.3}>
           <p className="font-body text-[17px] leading-relaxed text-[rgba(245,240,232,0.65)] mb-10 max-w-xl mx-auto">
-            The same Hungarian consular authority — document authentication, notarization, and consular services — is available locally. Book your Monday appointment in Derry, NH.
+            {t("finalCTA.body")}
           </p>
         </FadeUp>
 
         <FadeUp delay={0.4} className="flex flex-wrap gap-4 justify-center">
           <Button href="/booking" variant="primary" size="lg">
-            Book Your Monday Appointment
+            {t("finalCTA.cta")}
           </Button>
           <Button href="/services/scope" variant="secondary" size="lg">
-            See What We Handle
+            {t("finalCTA.secondary")}
           </Button>
         </FadeUp>
 

@@ -5,6 +5,8 @@ import { PageHeader, Button, Eyebrow, GoldRule } from "@/components/ui";
 import { FadeUp } from "@/components/animations";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { useTranslation } from "@/hooks/useTranslation";
+import { type Locale } from "@/lib/i18n";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -40,12 +42,6 @@ const TIME_SLOTS = [
   "4:30 PM",
 ];
 
-const DAYS_SHORT = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-const MONTHS = [
-  "January","February","March","April","May","June",
-  "July","August","September","October","November","December",
-];
-
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 
 function isSameDay(a: Date, b: Date) {
@@ -73,18 +69,20 @@ function getCalendarDays(year: number, month: number): (Date | null)[] {
   return cells;
 }
 
-function formatDate(d: Date) {
-  return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", year: "numeric" });
+function formatDate(d: Date, locale: Locale) {
+  const jsLocale = locale === "hu" ? "hu-HU" : "en-US";
+  return d.toLocaleDateString(jsLocale, { weekday: "long", month: "long", day: "numeric", year: "numeric" });
 }
 
 // ─── Sub-components ───────────────────────────────────────────────────────────
 
 function StepIndicator({ step }: { step: Step }) {
+  const { t } = useTranslation("booking");
   const steps: { id: Step; label: string }[] = [
-    { id: "select-service", label: "Service" },
-    { id: "select-date", label: "Date & Time" },
-    { id: "your-info", label: "Your Info" },
-    { id: "confirm", label: "Confirm" },
+    { id: "select-service", label: t("steps.selectService") },
+    { id: "select-date", label: t("steps.selectDate") },
+    { id: "your-info", label: t("steps.yourInfo") },
+    { id: "confirm", label: t("steps.confirm") },
   ];
   const order: Step[] = ["select-service", "select-date", "your-info", "confirm", "done"];
   const currentIdx = order.indexOf(step);
@@ -146,12 +144,13 @@ function ServiceStep({
   onChange: (k: keyof BookingState, v: string) => void;
   onNext: () => void;
 }) {
+  const { t } = useTranslation("booking");
   const { services } = siteData;
   return (
     <div>
-      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">Select a Service</h2>
+      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">{t("serviceStep.heading")}</h2>
       <p className="font-body text-[14px] text-[rgba(245,240,232,0.5)] mb-8">
-        Choose the service you need. Bring all required documents to your Monday appointment.
+        {t("serviceStep.subheading")}
       </p>
       <div className="space-y-3 mb-8">
         {services.map((svc) => (
@@ -193,7 +192,7 @@ function ServiceStep({
       </div>
       <div className="flex justify-end">
         <Button variant="primary" size="md" disabled={!booking.service} onClick={onNext}>
-          Continue to Date →
+          {t("serviceStep.continueButton")}
         </Button>
       </div>
     </div>
@@ -211,11 +210,29 @@ function DateStep({
   onNext: () => void;
   onBack: () => void;
 }) {
+  const { t, locale } = useTranslation("booking");
   const today = new Date();
   const [viewYear, setViewYear] = useState(today.getFullYear());
   const [viewMonth, setViewMonth] = useState(today.getMonth());
 
   const cells = useMemo(() => getCalendarDays(viewYear, viewMonth), [viewYear, viewMonth]);
+
+  // Day abbreviations ordered Sun=0 through Sat=6
+  const daysShort = [
+    t("dateStep.sunday"),
+    t("dateStep.monday"),
+    t("dateStep.tuesday"),
+    t("dateStep.wednesday"),
+    t("dateStep.thursday"),
+    t("dateStep.friday"),
+    t("dateStep.saturday"),
+  ];
+
+  // Month name from locale-aware formatting
+  const monthLabel = new Date(viewYear, viewMonth, 1).toLocaleDateString(
+    locale === "hu" ? "hu-HU" : "en-US",
+    { month: "long" }
+  );
 
   function prevMonth() {
     if (viewMonth === 0) { setViewMonth(11); setViewYear(y => y - 1); }
@@ -230,9 +247,9 @@ function DateStep({
 
   return (
     <div>
-      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">Choose a Monday</h2>
+      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">{t("dateStep.heading")}</h2>
       <p className="font-body text-[14px] text-[rgba(245,240,232,0.5)] mb-8">
-        Appointments are available Monday afternoons only. Select a date, then choose a time slot.
+        {t("dateStep.subheading")}
       </p>
 
       {/* Calendar */}
@@ -248,7 +265,7 @@ function DateStep({
             ‹
           </button>
           <span className="font-display font-bold text-[15px] text-[#F5F0E8]">
-            {MONTHS[viewMonth]} {viewYear}
+            {monthLabel} {viewYear}
           </span>
           <button
             type="button"
@@ -261,10 +278,10 @@ function DateStep({
 
         {/* Day labels */}
         <div className="grid grid-cols-7 mb-2">
-          {DAYS_SHORT.map((d) => (
-            <div key={d} className={cn(
+          {daysShort.map((d, i) => (
+            <div key={i} className={cn(
               "text-center font-mono text-[9px] uppercase tracking-[0.1em] py-1",
-              d === "Mo" ? "text-[#C5A55A]" : "text-[rgba(245,240,232,0.25)]"
+              i === 1 ? "text-[#C5A55A]" : "text-[rgba(245,240,232,0.25)]"
             )}>{d}</div>
           ))}
         </div>
@@ -311,7 +328,7 @@ function DateStep({
             className="mb-8"
           >
             <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#C5A55A] mb-3">
-              Available Times — {formatDate(booking.date)}
+              {t("dateStep.availableTimesLabel")} — {formatDate(booking.date, locale)}
             </p>
             <div className="grid grid-cols-4 sm:grid-cols-8 gap-2">
               {TIME_SLOTS.map((slot) => (
@@ -335,9 +352,9 @@ function DateStep({
       </AnimatePresence>
 
       <div className="flex justify-between">
-        <Button variant="ghost" size="md" onClick={onBack}>← Back</Button>
+        <Button variant="ghost" size="md" onClick={onBack}>{t("buttons.back")}</Button>
         <Button variant="primary" size="md" disabled={!booking.date || !booking.timeSlot} onClick={onNext}>
-          Continue to Info →
+          {t("dateStep.continueButton")}
         </Button>
       </div>
     </div>
@@ -355,6 +372,7 @@ function InfoStep({
   onNext: () => void;
   onBack: () => void;
 }) {
+  const { t } = useTranslation("booking");
   const labelClass = "block font-mono text-[10px] uppercase tracking-[0.12em] text-[#C5A55A] mb-2";
   const inputClass = cn(
     "w-full bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px]",
@@ -364,51 +382,51 @@ function InfoStep({
 
   return (
     <div>
-      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">Your Information</h2>
+      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">{t("infoStep.heading")}</h2>
       <p className="font-body text-[14px] text-[rgba(245,240,232,0.5)] mb-8">
-        We'll send a confirmation to your email with the appointment details and what to bring.
+        {t("infoStep.subheading")}
       </p>
       <div className="space-y-5 mb-8">
         <div>
-          <label className={labelClass}>Full Name</label>
+          <label className={labelClass}>{t("infoStep.fullName")}</label>
           <input
             type="text"
             value={booking.name}
             onChange={(e) => onChange("name", e.target.value)}
-            placeholder="Your full name"
+            placeholder={t("infoStep.namePlaceholder")}
             className={inputClass}
           />
         </div>
         <div>
-          <label className={labelClass}>Email Address</label>
+          <label className={labelClass}>{t("infoStep.emailAddress")}</label>
           <input
             type="email"
             value={booking.email}
             onChange={(e) => onChange("email", e.target.value)}
-            placeholder="you@example.com"
+            placeholder={t("infoStep.emailPlaceholder")}
             className={inputClass}
           />
         </div>
         <div>
-          <label className={labelClass}>Notes (optional)</label>
+          <label className={labelClass}>{t("infoStep.notes")}</label>
           <textarea
             rows={3}
             value={booking.notes}
             onChange={(e) => onChange("notes", e.target.value)}
-            placeholder="Any specific documents or questions? (optional)"
+            placeholder={t("infoStep.notesPlaceholder")}
             className={cn(inputClass, "resize-none")}
           />
         </div>
       </div>
       <div className="flex justify-between">
-        <Button variant="ghost" size="md" onClick={onBack}>← Back</Button>
+        <Button variant="ghost" size="md" onClick={onBack}>{t("buttons.back")}</Button>
         <Button
           variant="primary"
           size="md"
           disabled={!booking.name.trim() || !booking.email.trim()}
           onClick={onNext}
         >
-          Review Booking →
+          {t("infoStep.continueButton")}
         </Button>
       </div>
     </div>
@@ -424,27 +442,30 @@ function ConfirmStep({
   onConfirm: () => void;
   onBack: () => void;
 }) {
+  const { t, locale } = useTranslation("booking");
   const { services, brand } = siteData;
   const service = services.find((s) => s.slug === booking.service);
 
+  const rows = [
+    { label: t("confirmStep.service"), value: service ? `${service.name}${service.nameHu ? ` (${service.nameHu})` : ""}` : "" },
+    { label: t("confirmStep.date"), value: booking.date ? formatDate(booking.date, locale) : "" },
+    { label: t("confirmStep.time"), value: booking.timeSlot },
+    { label: t("confirmStep.name"), value: booking.name },
+    { label: t("confirmStep.email"), value: booking.email },
+    { label: t("confirmStep.fee"), value: service?.priceDisplay ?? "" },
+    { label: t("confirmStep.payment"), value: brand.payment },
+    { label: t("confirmStep.location"), value: brand.address.full },
+  ];
+
   return (
     <div>
-      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">Review Your Booking</h2>
+      <h2 className="font-display font-bold text-2xl text-[#F5F0E8] mb-2">{t("confirmStep.heading")}</h2>
       <p className="font-body text-[14px] text-[rgba(245,240,232,0.5)] mb-8">
-        Confirm the details below. A confirmation email will be sent to you.
+        {t("confirmStep.subheading")}
       </p>
 
       <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.25)] rounded-[3px] p-6 mb-6 space-y-4">
-        {[
-          { label: "Service", value: service ? `${service.name}${service.nameHu ? ` (${service.nameHu})` : ""}` : "" },
-          { label: "Date", value: booking.date ? formatDate(booking.date) : "" },
-          { label: "Time", value: booking.timeSlot },
-          { label: "Name", value: booking.name },
-          { label: "Email", value: booking.email },
-          { label: "Fee", value: service?.priceDisplay ?? "" },
-          { label: "Payment", value: brand.payment },
-          { label: "Location", value: brand.address.full },
-        ].map(({ label, value }) => (
+        {rows.map(({ label, value }) => (
           <div key={label} className="flex gap-4">
             <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[rgba(197,165,90,0.6)] w-20 shrink-0 pt-0.5">{label}</span>
             <span className="font-body text-[14px] text-[rgba(245,240,232,0.75)]">{value}</span>
@@ -452,7 +473,7 @@ function ConfirmStep({
         ))}
         {booking.notes && (
           <div className="flex gap-4">
-            <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[rgba(197,165,90,0.6)] w-20 shrink-0 pt-0.5">Notes</span>
+            <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-[rgba(197,165,90,0.6)] w-20 shrink-0 pt-0.5">{t("confirmStep.notes")}</span>
             <span className="font-body text-[14px] text-[rgba(245,240,232,0.75)]">{booking.notes}</span>
           </div>
         )}
@@ -461,7 +482,7 @@ function ConfirmStep({
       {/* What to bring */}
       {service && (
         <div className="border border-[rgba(197,165,90,0.12)] rounded-[3px] p-5 mb-8">
-          <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#C5A55A] mb-3">Bring to Your Appointment</p>
+          <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#C5A55A] mb-3">{t("confirmStep.bringLabel")}</p>
           <ul className="space-y-1.5">
             {service.whatToBring.map((item) => (
               <li key={item} className="flex gap-2 font-body text-[13px] text-[rgba(245,240,232,0.55)]">
@@ -473,9 +494,9 @@ function ConfirmStep({
       )}
 
       <div className="flex justify-between">
-        <Button variant="ghost" size="md" onClick={onBack}>← Back</Button>
+        <Button variant="ghost" size="md" onClick={onBack}>{t("buttons.back")}</Button>
         <Button variant="primary" size="lg" onClick={onConfirm}>
-          Confirm Appointment
+          {t("confirmStep.confirmButton")}
         </Button>
       </div>
     </div>
@@ -483,6 +504,7 @@ function ConfirmStep({
 }
 
 function DoneStep({ booking }: { booking: BookingState }) {
+  const { t, locale } = useTranslation("booking");
   const { services, brand } = siteData;
   const service = services.find((s) => s.slug === booking.service);
 
@@ -493,37 +515,39 @@ function DoneStep({ booking }: { booking: BookingState }) {
           <path d="M2 11L10 19L26 3" stroke="#C5A55A" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
-      <h2 className="font-display font-bold text-3xl text-[#F5F0E8] mb-3">Appointment Requested</h2>
+      <h2 className="font-display font-bold text-3xl text-[#F5F0E8] mb-3">{t("doneStep.heading")}</h2>
       <p className="font-body text-[15px] text-[rgba(245,240,232,0.6)] mb-8 max-w-md mx-auto">
-        A confirmation will be sent to <strong className="text-[rgba(245,240,232,0.85)]">{booking.email}</strong> with your appointment details and everything you need to bring.
+        {t("doneStep.confirmationPrefix")}{" "}
+        <strong className="text-[rgba(245,240,232,0.85)]">{booking.email}</strong>{" "}
+        {t("doneStep.confirmationSuffix")}
       </p>
 
       <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] p-6 text-left max-w-sm mx-auto mb-8">
         <div className="space-y-3">
           <div>
-            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">Service</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{t("doneStep.serviceLabel")}</p>
             <p className="font-body text-[14px] text-[#F5F0E8]">{service?.name}</p>
           </div>
           <div>
-            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">When</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{t("doneStep.whenLabel")}</p>
             <p className="font-body text-[14px] text-[#F5F0E8]">
-              {booking.date ? formatDate(booking.date) : ""} at {booking.timeSlot}
+              {booking.date ? formatDate(booking.date, locale) : ""} at {booking.timeSlot}
             </p>
           </div>
           <div>
-            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">Where</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{t("doneStep.whereLabel")}</p>
             <p className="font-body text-[14px] text-[#F5F0E8]">{brand.address.full}</p>
           </div>
           <div>
-            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">Payment</p>
+            <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{t("doneStep.paymentLabel")}</p>
             <p className="font-body text-[14px] text-[rgba(245,240,232,0.6)]">{brand.payment}</p>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col sm:flex-row gap-3 justify-center">
-        <Button href="/services" variant="secondary" size="md">View Services</Button>
-        <Button href="/" variant="ghost" size="md">Back to Home</Button>
+        <Button href="/services" variant="secondary" size="md">{t("doneStep.viewServices")}</Button>
+        <Button href="/" variant="ghost" size="md">{t("doneStep.backToHome")}</Button>
       </div>
     </div>
   );
@@ -534,6 +558,7 @@ function DoneStep({ booking }: { booking: BookingState }) {
 const STEP_ORDER: Step[] = ["select-service", "select-date", "your-info", "confirm", "done"];
 
 export default function BookingPage() {
+  const { t } = useTranslation("booking");
   const [step, setStep] = useState<Step>("select-service");
   const [booking, setBooking] = useState<BookingState>(INITIAL_STATE);
 
@@ -553,9 +578,9 @@ export default function BookingPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Monday Appointments"
-        headline="Book Your Appointment"
-        description="In-person, Derry NH. Select a service, choose a Monday slot, and we'll confirm your appointment by email."
+        eyebrow={t("header.eyebrow")}
+        headline={t("header.headline")}
+        description={t("header.description")}
       />
 
       <section className="bg-[#0A1628] py-20 lg:py-28">
@@ -596,8 +621,8 @@ export default function BookingPage() {
           {step !== "done" && (
             <FadeUp delay={0.2} className="mt-8 flex flex-col sm:flex-row gap-6 sm:gap-10">
               {[
-                { label: "Payment", value: siteData.brand.payment },
-                { label: "Hours", value: siteData.brand.hours.detail },
+                { label: t("reminders.paymentLabel"), value: siteData.brand.payment },
+                { label: t("reminders.hoursLabel"), value: siteData.brand.hours.detail },
               ].map(({ label, value }) => (
                 <div key={label}>
                   <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{label}</p>

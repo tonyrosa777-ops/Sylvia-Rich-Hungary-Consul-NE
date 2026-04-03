@@ -1,0 +1,68 @@
+{
+  "header": {
+    "eyebrow": "Tudjon Meg Mindent a Foglalás Előtt",
+    "headline": "Mivel Foglalkozunk. Mi Igényel New Yorkot.",
+    "description": "A Derry-i (NH) Tiszteletbeli Konzulátus több ügyet tud intézni, mint ahogy azt sokan gondolják — és kevesebbet, mint egy teljes konzulátus. Ez az oldal azért készült, hogy pontosan tudja, hova forduljon, mielőtt elindul.",
+    "intro": "A Derry-i (NH) Tiszteletbeli Konzulátus több ügyet tud intézni, mint ahogy azt sokan gondolják — és kevesebbet, mint egy teljes konzulátus. Ez az oldal azért készült, hogy pontosan tudja, hova forduljon, mielőtt elindul."
+  },
+  "canDo": {
+    "heading": "Amit Itt Intézhetünk",
+    "items": [
+      "Amerikai dokumentumok közjegyzői hitelesítése (végrendeletek, ingatlan-adásvételi szerződések, megállapodások, nyilatkozatok)",
+      "Magyarországra küldendő dokumentumokon szereplő aláírások hitelesítése",
+      "Magyarországon felhasználandó dokumentumok másolatainak hitelesítése",
+      "Életbizonyítvány kiállítása Magyar nyugdíjasok számára (ingyenes)",
+      "Vészhelyzeti koordináció bajba jutott Magyar állampolgárok számára",
+      "Kétnyelvű kapcsolattartás Új-Anglia kórházaival, egyetemeivel és kormányzati szervekkel",
+      "Anyakönyvi iratokhoz (születési, házassági és halotti) szükséges hitelesítési segítség",
+      "Meghatalmazások hitelesítése Magyar ingatlan-tranzakciókhoz",
+      "Tájékoztatás az állampolgársági és útlevél-megújítási eljárásokról"
+    ]
+  },
+  "cannotDo": {
+    "heading": "Ami New Yorkot Igényel",
+    "items": [
+      "Magyar útlevél kiállítása vagy megújítása (biometrikus berendezés csak a NY-i Főkonzulátuson érhető el)",
+      "Vízumkérelmek feldolgozása",
+      "Állampolgársági kérelmek fogadása (ezeket a Washington DC-i Nagykövetséghez kell benyújtani)",
+      "Jogi tanácsadás",
+      "Magyarországon kívül felhasználandó amerikai dokumentumok apostille-lel való ellátása (forduljon a NH Secretary of State irodájához)"
+    ]
+  },
+  "nyContact": {
+    "heading": "Magyarország Főkonzulátusa — New York",
+    "address": "223 East 52nd Street, New York, NY 10022",
+    "note": "Manhattan kezeli az útlevél-ügyeket, biometriát, vízumkérelmeket és állampolgársági kérelmeket. Új-Angliából az átlagos utazási költség: $80–$300+, plusz egy teljes nap.",
+    "visitSite": "Látogassa meg weboldalukat"
+  },
+  "faq": {
+    "heading": "Gyakori Kérdések",
+    "items": [
+      {
+        "question": "A tiszteletbeli konzul tud apostille-t adni egy dokumentumra?",
+        "answer": "Nem — az apostille-t a New Hampshire Secretary of State (NH dokumentumokra) vagy a kiállító állam Secretary of State irodája kezeli. A tiszteletbeli konzul akkor tud hitelesíteni, ha a dokumentumot apostille után Magyarországra küldik."
+      },
+      {
+        "question": "Kaphatok itt Magyar útlevelet?",
+        "answer": "Nem. Magyar útlevél kiállításához és megújításához biometrikus berendezés szükséges, amely csak a New York-i Főkonzulátuson érhető el. Sylvia tájékoztatást tud nyújtani az eljárásról és a szükséges dokumentumokról."
+      },
+      {
+        "question": "Kérhetek itt Magyar állampolgárságot?",
+        "answer": "Az állampolgársági kérelmeket a Washington DC-i Magyar Nagykövetség fogadja. A tiszteletbeli konzul hitelesítheti a mellékelt iratokat és eljárási útmutatást nyújthat."
+      },
+      {
+        "question": "Van-e nyelvi követelmény?",
+        "answer": "Nem. Sylvia teljesen kétnyelvű: angolul és magyarul is folyékonyan kommunikál. A dokumentumokat bármelyik nyelven hozhatja — tolmácsra nincs szükség."
+      },
+      {
+        "question": "Kötelező az előzetes bejelentkezés?",
+        "answer": "Igen. Minden látogatás kizárólag előzetes bejelentkezéssel, hétfő délután lehetséges. Bejelentkezés nélkül nem fogadunk ügyfeleket. Foglaljon az online rendszeren keresztül."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Foglaljon Időpontot",
+    "body": "Az Új-Angliai dokumentum-ügyek többsége itt, Derry-ben (NH) intézhető.",
+    "button": "Foglaljon Hétfői Időpontot"
+  }
+}

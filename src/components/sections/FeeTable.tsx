@@ -3,9 +3,12 @@ import { Eyebrow, GoldRule, Button } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function FeeTable() {
-  const { services, feeTable } = siteData;
+  const { services } = siteData;
+  const { t } = useTranslation("home");
+  const { t: tCommon } = useTranslation("common");
 
   return (
     <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="fees-heading">
@@ -13,16 +16,16 @@ export function FeeTable() {
 
         {/* Header */}
         <FadeUp className="mb-12 max-w-xl">
-          <Eyebrow className="mb-4">{feeTable.eyebrow}</Eyebrow>
+          <Eyebrow className="mb-4">{t("feeTable.eyebrow")}</Eyebrow>
           <h2
             id="fees-heading"
             className="font-display font-bold text-[clamp(1.8rem,3.5vw,2.75rem)] leading-tight text-[#F5F0E8]"
           >
-            {feeTable.headline}
+            {t("feeTable.headline")}
           </h2>
           <GoldRule width="sm" opacity={35} className="mt-5 mb-5" />
           <p className="font-body text-[15px] text-[rgba(245,240,232,0.6)] leading-relaxed">
-            {feeTable.intro}
+            {t("feeTable.intro")}
           </p>
         </FadeUp>
 
@@ -56,9 +59,13 @@ export function FeeTable() {
                   <p className="font-mono font-medium text-[1.5rem] leading-none text-[#C5A55A]">
                     {service.priceDisplay}
                   </p>
-                  {service.badge && (
+                  {(service.badge as string | null) && (
                     <span className="inline-block mt-1 font-mono text-[8px] uppercase tracking-[0.1em] bg-[rgba(197,165,90,0.15)] text-[#C5A55A] px-2 py-0.5 rounded-[2px]">
-                      {service.badge}
+                      {(service.badge as string) === "Free Service"
+                        ? tCommon("labels.freeService")
+                        : (service.badge as string) === "Most Requested"
+                        ? tCommon("labels.mostRequested")
+                        : (service.badge as string)}
                     </span>
                   )}
                 </div>
@@ -71,7 +78,7 @@ export function FeeTable() {
         <FadeUp delay={0.3} className="mt-6 flex items-center gap-3">
           <span className="text-[#C5A55A] text-lg" aria-hidden="true">$</span>
           <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-[rgba(245,240,232,0.4)]">
-            {siteData.brand.payment}
+            {tCommon("labels.cashCheckOnly")}
           </p>
         </FadeUp>
 
@@ -79,7 +86,7 @@ export function FeeTable() {
         <FadeUp delay={0.4} className="mt-8">
           <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.25)] rounded-[3px] px-7 py-5">
             <p className="font-display italic text-base text-[rgba(245,240,232,0.7)] leading-relaxed">
-              "{feeTable.savingsNote}"
+              &ldquo;{t("feeTable.savingsNote")}&rdquo;
             </p>
           </div>
         </FadeUp>
@@ -87,13 +94,13 @@ export function FeeTable() {
         {/* Disclaimer */}
         <FadeUp delay={0.5} className="mt-6">
           <p className="font-body text-[12px] text-[rgba(245,240,232,0.25)] italic leading-relaxed">
-            {siteData.scope.disclaimer}
+            {tCommon("disclaimer.text")}
           </p>
         </FadeUp>
 
         <FadeUp delay={0.6} className="mt-8">
           <Button href="/booking" variant="primary" size="lg">
-            Book Your Monday Appointment
+            {tCommon("labels.bookAppointment")}
           </Button>
         </FadeUp>
 

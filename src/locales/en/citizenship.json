@@ -1,0 +1,66 @@
+{
+  "header": {
+    "eyebrow": "Citizenship Guide",
+    "headline": "Hungarian Citizenship & Naturalization",
+    "description": "A simplified guide to the honosítás (simplified naturalization) process and how the Honorary Consulate supports your application."
+  },
+  "intro": {
+    "heading": "What Is Simplified Naturalization?",
+    "body": "Hungary's simplified naturalization program (honosítás egyszerűsített eljárással) allows ethnic Hungarians and their descendants outside Hungary to apply for Hungarian citizenship without a residency requirement. If your parents, grandparents, or earlier ancestors were Hungarian citizens, you may be eligible."
+  },
+  "steps": {
+    "heading": "The Application Process",
+    "consulRole": "Consul assists",
+    "items": [
+      {
+        "title": "Gather Ancestry Documentation",
+        "body": "Collect birth certificates, marriage certificates, and any documents that trace your Hungarian lineage. Documents must show the chain from you to a Hungarian ancestor.",
+        "consulAssists": true
+      },
+      {
+        "title": "Authenticate Your Documents",
+        "body": "American documents (birth, marriage certificates) must be authenticated by the Honorary Consul before submission. Hungarian documents may need copy authentication.",
+        "consulAssists": true
+      },
+      {
+        "title": "Submit to the Embassy in Washington DC",
+        "body": "Citizenship applications are submitted to the Embassy of Hungary in Washington DC — not to the honorary consul. The Embassy handles all processing.",
+        "consulAssists": false
+      },
+      {
+        "title": "Language and Constitutional Knowledge",
+        "body": "Applicants must demonstrate basic Hungarian language ability and knowledge of Hungarian history and constitution. The Honorary Consul can provide guidance but does not administer the test.",
+        "consulAssists": false
+      },
+      {
+        "title": "Oath of Citizenship",
+        "body": "If approved, you will take the oath of citizenship — either in Hungary or at a Hungarian diplomatic mission. Sylvia can advise on the process but does not administer oaths.",
+        "consulAssists": false
+      }
+    ]
+  },
+  "cannotDo": {
+    "heading": "What the Honorary Consul Cannot Do",
+    "items": [
+      "Accept or process citizenship applications",
+      "Grant, deny, or appeal citizenship decisions",
+      "Administer language or constitutional tests",
+      "Administer oaths of citizenship",
+      "Provide legal advice on citizenship eligibility"
+    ]
+  },
+  "canDo": {
+    "heading": "How the Honorary Consul Can Help",
+    "items": [
+      "Authenticate birth and marriage certificates for submission",
+      "Certify copies of Hungarian ancestry documents",
+      "Explain the general process and required documents",
+      "Refer you to resources and contacts at the Embassy"
+    ]
+  },
+  "cta": {
+    "heading": "Ready to Start?",
+    "body": "Book an appointment to authenticate your ancestry documents and receive guidance on the application process.",
+    "button": "Book Your Appointment"
+  }
+}
