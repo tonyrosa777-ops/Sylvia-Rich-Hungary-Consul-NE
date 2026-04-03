@@ -1,7 +1,7 @@
 "use client";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { HeroParticles } from "./HeroParticles";
-import { FiveStatesOne } from "./FiveStatesOne";
 import { Button, Eyebrow, GoldRule } from "@/components/ui";
 import { siteData } from "@/data/site";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -14,6 +14,7 @@ const seq = {
   tagline:  { delay: 0.8,  duration: 0.7 },
   ctas:     { delay: 1.1,  duration: 0.6 },
   trust:    { delay: 1.35, duration: 0.5 },
+  crest:    { delay: 0.2,  duration: 1.0 },
 };
 
 function fadeUp(delay: number, duration: number) {
@@ -97,10 +98,34 @@ export function Hero() {
             </motion.p>
           </div>
 
-          {/* ── Right: magnetic seal animation ── */}
-          <div className="hidden lg:flex flex-col items-center justify-center">
-            <div className="relative w-[320px] h-[360px]">
-              <FiveStatesOne />
+          {/* ── Right: crest ── */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: seq.crest.delay, duration: seq.crest.duration, ease: "easeOut" }}
+            className="hidden lg:flex flex-col items-center justify-center"
+          >
+            {/* Crest container — gold ring glow */}
+            <div className="relative">
+              {/* Glow ring */}
+              <div
+                className="absolute inset-[-20px] rounded-full"
+                style={{
+                  background: "radial-gradient(circle, rgba(197,165,90,0.08) 0%, transparent 70%)",
+                }}
+                aria-hidden="true"
+              />
+              {/* Thin gold circle border */}
+              <div className="absolute inset-0 rounded-full border border-[rgba(197,165,90,0.2)]" aria-hidden="true" />
+
+              <Image
+                src="/brand/crest-placeholder.svg"
+                alt="Hungarian coat of arms"
+                width={240}
+                height={270}
+                className="relative z-10 opacity-90"
+                priority
+              />
             </div>
 
             {/* Official appointment badge */}
@@ -116,7 +141,7 @@ export function Hero() {
                 Vienna Convention on Consular Relations
               </p>
             </div>
-          </div>
+          </motion.div>
 
         </div>
       </div>
