@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Tudástár | Magyar Tiszteletbeli Konzulátus — Új-Anglia",
+    "description": "Útmutatók a magyar okmányok hitelesítéséről, apostille-ről, állampolgárságról és konzuli szolgáltatásokról az új-angliai magyarok számára."
+  },
+  "hero": {
+    "eyebrow": "Konzuli Tudástár",
+    "headline": "Válaszok az időpontfoglalás előtt",
+    "subheadline": "Közérthető útmutatók a magyar okmányokról, hitelesítésről, állampolgárságról és a konzuli ügyintézésről — azoktól, akik minden héten válaszolnak az Ön kérdéseire.",
+    "searchPlaceholder": "Keresés a cikkek között..."
+  },
+  "categories": {
+    "all": "Összes cikk",
+    "documentAuthentication": "Okmányhitelesítés",
+    "citizenshipNationality": "Állampolgárság",
+    "lifeEvents": "Életesemények",
+    "community": "Közösség",
+    "consularUpdates": "Konzuli hírek"
+  },
+  "card": {
+    "readMore": "Cikk olvasása",
+    "minRead": "perc olvasás"
+  },
+  "featured": {
+    "label": "Kiemelt"
+  },
+  "post": {
+    "backToList": "← Vissza a tudástárhoz",
+    "bookCta": "Időpontfoglalás",
+    "bookCtaNote": "Kérdése van olvasás után? Minden megkeresésre válaszolunk, mielőtt Ön útra kel.",
+    "relatedArticles": "Kapcsolódó cikkek"
+  },
+  "empty": {
+    "heading": "Nem találtunk cikkeket",
+    "body": "Próbáljon más keresési kifejezést, vagy böngésszen az összes kategória között."
+  },
+  "cta": {
+    "eyebrow": "Még mindig van kérdése?",
+    "headline": "Előbb válaszolunk. Ön akkor foglal, amikor készen áll.",
+    "body": "Írjon nekünk üzenetet, amelyben leírja helyzetét. Érthetően megerősítjük, mit tudunk tenni, milyen okmányokra lesz szüksége, és mire számíthat — mielőtt időpontot foglalna.",
+    "button": "Kapcsolat"
+  }
+}

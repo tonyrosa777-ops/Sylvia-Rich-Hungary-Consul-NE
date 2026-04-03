@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "title": "Bolt | Magyar Tiszteletbeli Konzulátus — Új-Anglia",
+    "description": "Magyar témájú ruházat és kiegészítők az új-angliai magyaroknak. Kék, arany és apostoli kereszt — kétidentitású embereknek tervezve."
+  },
+  "hero": {
+    "eyebrow": "Konzuli Bolt",
+    "headline": "Viselje mindkét identitását",
+    "subheadline": "Ruházat és kiegészítők az új-angliai magyaroknak, akik pontosan tudják, honnan jöttek. Tengerészkék és arany. Szerif és kettős kereszt. Új-angliai telekre tervezve."
+  },
+  "categories": {
+    "all": "Összes termék",
+    "apparel": "Ruházat",
+    "accessories": "Kiegészítők",
+    "drinkware": "Bögrék"
+  },
+  "product": {
+    "selectSize": "Válasszon méretet",
+    "selectColor": "Szín",
+    "addToCart": "Kosárba",
+    "addedToCart": "Hozzáadva",
+    "outOfStock": "Nem elérhető",
+    "featured": "Kiemelt",
+    "viewProduct": "Termék megtekintése",
+    "shippingNote": "Szállítás Printful-on keresztül. 5–10 munkanap."
+  },
+  "cart": {
+    "title": "Kosár",
+    "empty": "A kosara üres.",
+    "emptyNote": "Böngésszen a boltban és adjon hozzá valamit.",
+    "subtotal": "Részösszeg",
+    "shippingNote": "A szállítási költség a fizetésnél kerül kiszámításra",
+    "checkout": "Fizetés",
+    "continueShopping": "Vásárlás folytatása",
+    "remove": "Eltávolítás",
+    "quantity": "Db"
+  },
+  "checkout": {
+    "processing": "Feldolgozás...",
+    "error": "A fizetés sikertelen. Kérjük, próbálja újra.",
+    "success": "Rendelés leadva — köszönjük. Hamarosan visszaigazoló e-mailt kap."
+  },
+  "empty": {
+    "heading": "Nem találtunk termékeket",
+    "body": "Próbáljon más kategóriát."
+  },
+  "cta": {
+    "eyebrow": "Egyedi megrendelések",
+    "headline": "Mást szeretne?",
+    "body": "Egyedi tervezés, csoportos rendelés magyarok közösségi szervezete számára, vagy egyedi darab eseményre? Írjon nekünk, és megoldást találunk.",
+    "button": "Lépjen kapcsolatba velünk"
+  }
+}

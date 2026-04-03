@@ -18,6 +18,8 @@ import enBooking from "./en/booking.json";
 import enTestimonials from "./en/testimonials.json";
 import enContact from "./en/contact.json";
 import enStates from "./en/states.json";
+import enBlog from "./en/blog.json";
+import enShop from "./en/shop.json";
 
 import huCommon from "./hu/common.json";
 import huHome from "./hu/home.json";
@@ -33,6 +35,8 @@ import huBooking from "./hu/booking.json";
 import huTestimonials from "./hu/testimonials.json";
 import huContact from "./hu/contact.json";
 import huStates from "./hu/states.json";
+import huBlog from "./hu/blog.json";
+import huShop from "./hu/shop.json";
 
 const en = {
   common: enCommon,
@@ -49,6 +53,8 @@ const en = {
   testimonials: enTestimonials,
   contact: enContact,
   states: enStates,
+  blog: enBlog,
+  shop: enShop,
 };
 
 const hu = {
@@ -66,6 +72,8 @@ const hu = {
   testimonials: huTestimonials,
   contact: huContact,
   states: huStates,
+  blog: huBlog,
+  shop: huShop,
 };
 
 export const translations = { en, hu } as const;

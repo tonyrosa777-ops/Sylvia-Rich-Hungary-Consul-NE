@@ -31,6 +31,8 @@ export function SiteHeader() {
   const navLabels: Record<string, string> = {
     "/services": t("nav.services"),
     "/about": t("nav.about"),
+    "/blog": t("nav.blog"),
+    "/shop": t("nav.shop"),
     "/contact": t("nav.contact"),
   };
 

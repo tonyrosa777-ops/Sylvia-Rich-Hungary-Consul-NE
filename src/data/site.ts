@@ -45,6 +45,8 @@ export const siteData = {
     links: [
       { label: "Services", href: "/services" },
       { label: "About", href: "/about" },
+      { label: "Knowledge Base", href: "/blog" },
+      { label: "Shop", href: "/shop" },
       { label: "Contact", href: "/contact" },
     ],
     cta: { label: "Book Appointment", href: "/booking" },

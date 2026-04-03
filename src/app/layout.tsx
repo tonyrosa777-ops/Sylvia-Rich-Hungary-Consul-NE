@@ -6,6 +6,8 @@ import { siteData } from "@/data/site";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
 import { I18nProvider } from "@/contexts/I18nContext";
+import { CartProvider } from "@/lib/cart";
+import { CartDrawer } from "@/components/sections/CartDrawer";
 import type { Locale } from "@/lib/i18n";
 
 const playfair = Playfair_Display({
@@ -68,11 +70,14 @@ export default async function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-[#0A1628] text-[#F5F0E8] antialiased">
         <I18nProvider initialLocale={locale}>
-          <SiteHeader />
-          <main className="flex-1 pt-[72px]">
-            {children}
-          </main>
-          <SiteFooter />
+          <CartProvider>
+            <SiteHeader />
+            <CartDrawer />
+            <main className="flex-1 pt-[72px]">
+              {children}
+            </main>
+            <SiteFooter />
+          </CartProvider>
         </I18nProvider>
       </body>
     </html>

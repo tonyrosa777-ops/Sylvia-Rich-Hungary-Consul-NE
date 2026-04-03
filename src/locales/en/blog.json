@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Knowledge Base | Honorary Consulate of Hungary — New England",
+    "description": "Guides on Hungarian document authentication, apostille, citizenship, and consular services for Hungarian-Americans in New England. Written by the Honorary Consul."
+  },
+  "hero": {
+    "eyebrow": "Consular Knowledge Base",
+    "headline": "Answers Before the Appointment",
+    "subheadline": "Plain-English guides on Hungarian documents, authentication, citizenship, and what to expect — written by the people who answer your questions every week.",
+    "searchPlaceholder": "Search articles..."
+  },
+  "categories": {
+    "all": "All Articles",
+    "documentAuthentication": "Document Authentication",
+    "citizenshipNationality": "Citizenship & Nationality",
+    "lifeEvents": "Life Events",
+    "community": "Community",
+    "consularUpdates": "Consular Updates"
+  },
+  "card": {
+    "readMore": "Read Article",
+    "minRead": "min read"
+  },
+  "featured": {
+    "label": "Featured"
+  },
+  "post": {
+    "backToList": "← Back to Knowledge Base",
+    "bookCta": "Book an Appointment",
+    "bookCtaNote": "Have a question after reading? We answer every inquiry before you make the trip.",
+    "relatedArticles": "Related Articles"
+  },
+  "empty": {
+    "heading": "No articles found",
+    "body": "Try a different search term or browse all categories."
+  },
+  "cta": {
+    "eyebrow": "Still Have Questions?",
+    "headline": "We Answer First. You Book When You're Ready.",
+    "body": "Send us a message describing your situation. We will confirm in plain English what we can do, what documents you will need, and what to expect — before you make the appointment.",
+    "button": "Contact Us"
+  }
+}
