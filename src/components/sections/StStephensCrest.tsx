@@ -5,19 +5,21 @@ import { motion } from "framer-motion";
  * St. Stephen's Crown — animated hero crest.
  * Inline SVG so Framer Motion can drive per-element animations.
  *
- * Crown features accurate to the Holy Crown of Hungary (Szent Korona):
- *   - Tilted/bent apostolic double cross (the crown's defining characteristic)
- *   - Byzantine enamel panels on lower band
- *   - Pendilia (hanging chain ornaments) on both sides
- * Shield features Hungarian heraldic arms:
- *   - Left (dexter): 8 alternating silver / red horizontal stripes
- *   - Right (sinister): red field, three green hills, apostolic double cross
+ * Crown accurate to the Holy Crown of Hungary (Szent Korona):
+ *   - Tilted apostolic double cross (~22° clockwise lean)
+ *   - Blue enamel circular medallions on outer arch peaks
+ *   - Alternating blue/red enamel on base band
+ *   - Pendilia on both sides
+ * Shield (Hungarian heraldic arms):
+ *   - Left: 8 alternating silver/red horizontal stripes
+ *   - Right: red field, apostolic double cross in white (prominent),
+ *     gold footing at cross base, three green hills
  */
 export function StStephensCrest() {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
 
-      {/* Breathing glow behind crest */}
+      {/* Breathing glow */}
       <motion.div
         className="absolute inset-0"
         style={{
@@ -28,13 +30,12 @@ export function StStephensCrest() {
         aria-hidden="true"
       />
 
-      {/* Thin gold ring border */}
+      {/* Thin gold ring */}
       <div
         className="absolute inset-[-10px] rounded-full border border-[rgba(197,165,90,0.15)]"
         aria-hidden="true"
       />
 
-      {/* Crest SVG — fades and scales in on mount */}
       <motion.svg
         viewBox="0 0 80 100"
         fill="none"
@@ -54,65 +55,64 @@ export function StStephensCrest() {
 
         {/* ════ ST. STEPHEN'S CROWN ════ */}
 
-        {/* Crown base band */}
+        {/* Base band */}
         <motion.rect
           x="18" y="20" width="44" height="7" rx="1.5" fill="#C5A55A"
           initial={{ scaleX: 0 }} animate={{ scaleX: 1 }}
           style={{ transformOrigin: "40px 23.5px" }}
-          transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+          transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
         />
 
-        {/* Enamel panels */}
-        <rect x="20"  y="21.5" width="6"  height="4" rx="0.5" fill="#0D1A2E" stroke="#D4AF37" strokeWidth="0.3"/>
-        <rect x="28"  y="21.5" width="5"  height="4" rx="0.5" fill="#CE2939" stroke="#D4AF37" strokeWidth="0.3"/>
-        <rect x="35"  y="21.5" width="10" height="4" rx="0.5" fill="#0D1A2E" stroke="#D4AF37" strokeWidth="0.3"/>
-        <rect x="47"  y="21.5" width="5"  height="4" rx="0.5" fill="#CE2939" stroke="#D4AF37" strokeWidth="0.3"/>
-        <rect x="54"  y="21.5" width="6"  height="4" rx="0.5" fill="#0D1A2E" stroke="#D4AF37" strokeWidth="0.3"/>
+        {/* Enamel circular medallions on band */}
+        <circle cx="23"  cy="23.5" r="2.5" fill="#1A3F7A" stroke="#D4AF37" strokeWidth="0.4"/>
+        <circle cx="31"  cy="23.5" r="2.5" fill="#CE2939" stroke="#D4AF37" strokeWidth="0.4"/>
+        <circle cx="40"  cy="23.5" r="2.5" fill="#1A3F7A" stroke="#D4AF37" strokeWidth="0.4"/>
+        <circle cx="49"  cy="23.5" r="2.5" fill="#CE2939" stroke="#D4AF37" strokeWidth="0.4"/>
+        <circle cx="57"  cy="23.5" r="2.5" fill="#1A3F7A" stroke="#D4AF37" strokeWidth="0.4"/>
 
         {/* Left arch */}
         <motion.path
-          d="M22,20 C22,20 19,13 24,9 C29,5 33,9 31,14 C30,17 30,20 30,20 Z"
-          fill="#C5A55A"
+          d="M22,20 C23,14 21,8 26,7 C31,6 30,14 30,20 Z"
+          fill="#D4AF37"
           initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+          transition={{ duration: 0.45, delay: 0.65, ease: "easeOut" }}
         />
-        <circle cx="24" cy="8.5" r="2.5" fill="#D4AF37"/>
-        <circle cx="24" cy="8.5" r="1"   fill="#C5A55A"/>
+        {/* Left arch gem — blue enamel */}
+        <circle cx="26" cy="7" r="3.2" fill="#D4AF37"/>
+        <circle cx="26" cy="7" r="2.5" fill="#1A3F7A"/>
+        <circle cx="26" cy="7" r="1"   fill="#3A68B8"/>
 
-        {/* Center arch */}
+        {/* Center arch (tallest) */}
         <motion.path
-          d="M32,20 C32,20 30,9 36,4 C38,2 42,2 44,4 C50,9 48,20 48,20 Z"
+          d="M32,20 C33,11 36,1 40,1 C44,1 47,11 48,20 Z"
           fill="#D4AF37"
           initial={{ opacity: 0, y: 6 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.55, delay: 0.6, ease: "easeOut" }}
+          transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
         />
-        <circle cx="40" cy="3.5" r="2.5" fill="#D4AF37" stroke="#F5F0E8" strokeWidth="0.5"/>
 
         {/* Right arch */}
         <motion.path
-          d="M50,20 C50,20 50,17 49,14 C47,9 51,5 56,9 C61,13 58,20 58,20 Z"
-          fill="#C5A55A"
+          d="M50,20 C50,14 49,6 54,7 C59,8 57,14 58,20 Z"
+          fill="#D4AF37"
           initial={{ opacity: 0, y: 4 }} animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.65, ease: "easeOut" }}
+          transition={{ duration: 0.45, delay: 0.65, ease: "easeOut" }}
         />
-        <circle cx="56" cy="8.5" r="2.5" fill="#D4AF37"/>
-        <circle cx="56" cy="8.5" r="1"   fill="#C5A55A"/>
+        {/* Right arch gem — blue enamel */}
+        <circle cx="54" cy="7" r="3.2" fill="#D4AF37"/>
+        <circle cx="54" cy="7" r="2.5" fill="#1A3F7A"/>
+        <circle cx="54" cy="7" r="1"   fill="#3A68B8"/>
 
-        {/*
-          TILTED CROSS — defining feature of St. Stephen's Crown.
-          The apostolic double cross is bent ~22° clockwise (historically
-          the cross was knocked and left bent — it became the crown's signature).
-        */}
+        {/* Tilted cross — ~22° clockwise, St. Stephen's Crown signature */}
         <motion.g
-          transform="rotate(22, 40, 3)"
-          initial={{ opacity: 0, scale: 0.5 }}
+          transform="rotate(22, 40, 1)"
+          initial={{ opacity: 0, scale: 0.4 }}
           animate={{ opacity: 1, scale: 1 }}
-          style={{ transformOrigin: "40px 3px" }}
-          transition={{ duration: 0.5, delay: 0.85, ease: "easeOut" }}
+          style={{ transformOrigin: "40px 1px" }}
+          transition={{ duration: 0.45, delay: 0.85, ease: "easeOut" }}
         >
-          <rect x="38.8" y="-5"   width="2.4" height="13" rx="0.7" fill="#D4AF37"/>
-          <rect x="35.5" y="-2.5" width="9"   height="2"  rx="0.6" fill="#D4AF37"/>
-          <rect x="33.5" y="2.5"  width="13"  height="2"  rx="0.6" fill="#D4AF37"/>
+          <rect x="38.8" y="-8"  width="2.4" height="14"  rx="0.7" fill="#D4AF37"/>
+          <rect x="35"   y="-5"  width="10"  height="2.2" rx="0.6" fill="#D4AF37"/>
+          <rect x="33"   y="0.5" width="14"  height="2.2" rx="0.6" fill="#D4AF37"/>
         </motion.g>
 
         {/* Pendilia — left */}
@@ -129,13 +129,12 @@ export function StStephensCrest() {
 
         {/* ════ HERALDIC SHIELD ════ */}
 
-        {/* Shield base fill */}
+        {/* Shield base */}
         <path d="M12,26 H68 V65 C68,83 40,97 40,97 C40,97 12,83 12,65 Z" fill="#0D1A2E"/>
 
-        {/* Shield contents — clipped */}
         <g clipPath="url(#ssc-hero-shield)">
 
-          {/* LEFT: 8 alternating silver / red horizontal stripes */}
+          {/* LEFT: 8 alternating silver / red stripes */}
           <rect x="12" y="26" width="28" height="9" fill="#E8E3D5"/>
           <rect x="12" y="35" width="28" height="9" fill="#CE2939"/>
           <rect x="12" y="44" width="28" height="9" fill="#E8E3D5"/>
@@ -146,21 +145,28 @@ export function StStephensCrest() {
           <rect x="12" y="89" width="28" height="9" fill="#CE2939"/>
 
           {/* RIGHT: red field */}
-          <rect x="40" y="26" width="28" height="60" fill="#CE2939"/>
+          <rect x="40" y="26" width="28" height="71" fill="#CE2939"/>
+
+          {/* Apostolic double cross — white, prominent in red field */}
+          {/* Vertical bar */}
+          <rect x="52.5" y="44"   width="3"   height="32" rx="0.6" fill="#FFFFFF"/>
+          {/* Upper arm (shorter) */}
+          <rect x="47.5" y="50.5" width="11"  height="2.5" rx="0.5" fill="#FFFFFF"/>
+          {/* Lower arm (longer) */}
+          <rect x="45.5" y="58"   width="15"  height="2.5" rx="0.5" fill="#FFFFFF"/>
+
+          {/* Gold footing — pedestal at base of cross, sitting on center hill */}
+          <rect x="50"   y="72" width="8" height="5" rx="0.5" fill="#D4AF37"/>
+          <rect x="51.5" y="69" width="5" height="4" rx="0.3" fill="#C5A55A"/>
 
           {/* Three green hills */}
-          <ellipse cx="44" cy="85" rx="7"  ry="12" fill="#477050"/>
-          <ellipse cx="54" cy="79" rx="9"  ry="15" fill="#477050"/>
-          <ellipse cx="65" cy="85" rx="7"  ry="12" fill="#477050"/>
-
-          {/* Apostolic double cross on center hill */}
-          <rect x="53"   y="55"   width="2.2"  height="23" rx="0.6" fill="#E8E3D5"/>
-          <rect x="49.5" y="59"   width="9.2"  height="2"  rx="0.5" fill="#E8E3D5"/>
-          <rect x="48"   y="65.5" width="12.2" height="2"  rx="0.5" fill="#E8E3D5"/>
+          <ellipse cx="43" cy="90" rx="8"  ry="13" fill="#477050"/>
+          <ellipse cx="54" cy="85" rx="10" ry="15" fill="#477050"/>
+          <ellipse cx="65" cy="90" rx="8"  ry="13" fill="#477050"/>
 
         </g>
 
-        {/* Vertical center divider */}
+        {/* Center divider */}
         <line x1="40" y1="26" x2="40" y2="90" stroke="#C5A55A" strokeWidth="0.8" opacity="0.9"/>
 
         {/* Shield border */}
