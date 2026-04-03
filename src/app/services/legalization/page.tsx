@@ -1,6 +1,6 @@
 "use client";
 import { siteData } from "@/data/site";
-import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
+import { PageHeader, Button, GoldRule, Eyebrow, FaqSchema } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -34,8 +34,17 @@ export default function LegalizationPage() {
   const paths = ta<PathTranslation[]>("paths");
   const faq = ta<FaqTranslation[]>("faq");
 
+  const legalizationFaqs = [
+    { q: "What is the difference between an apostille and legalization?", a: "An apostille is a simplified form of authentication used between countries that have signed the Hague Convention, including the US and Hungary. Legalization (full consular legalization) is required for documents going to or coming from countries that are not Hague Convention members. Hungary is a member, so most US–Hungary document workflows use apostille." },
+    { q: "Can the Honorary Consulate apostille a document?", a: "Honorary consulates authenticate documents but do not issue apostilles — that is done by the Secretary of State of the state where the document originated. The Honorary Consulate prepares your document package and advises on the correct state office to obtain the apostille, then performs any additional consular authentication required." },
+    { q: "I need to legalize a Hungarian document for use in the United States. Where do I start?", a: "Hungarian documents intended for US legal use typically need to be apostilled by the Hungarian Ministry of Foreign Affairs in Budapest, then translated by a certified translator in the US. The Honorary Consulate can authenticate translations and advise on the correct sequence for your specific document type." },
+    { q: "How long does document legalization take?", a: "Timelines vary. US state apostilles typically take 1–10 business days. Hungarian apostilles from the Ministry of Foreign Affairs typically take 5–15 business days. The Honorary Consulate appointment itself is completed the same day — document preparation is the variable." },
+    { q: "Where do I get a document legalized for Hungary in New England?", a: "The Honorary Consulate of Hungary in Derry, New Hampshire serves all of New England for document legalization and authentication. Monday afternoon appointments are required. Book online through the consulate website." },
+  ];
+
   return (
     <>
+      <FaqSchema faqs={legalizationFaqs} />
       <PageHeader
         eyebrow={t("header.eyebrow")}
         headline={t("header.headline")}

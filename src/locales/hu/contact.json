@@ -37,6 +37,32 @@
       "A foglalási megjegyzéseiben hivatkozott mellékelt iratok"
     ]
   },
+  "form": {
+    "eyebrow": "Üzenet Küldése",
+    "heading": "Kérdése Van Foglalás Előtt?",
+    "subheading": "Még nem áll készen időpontot foglalni? Küldjön üzenetet, és Sylvia egy munkanapon belül válaszol.",
+    "fields": {
+      "name": "Az Ön Neve",
+      "email": "E-mail Cím",
+      "subject": "Tárgy",
+      "message": "Üzenet",
+      "messagePlaceholder": "Röviden írja le, miben van szüksége segítségre…"
+    },
+    "subjects": [
+      "Dokumentumhitelesítés",
+      "Állampolgárság / Kettős Állampolgárság",
+      "Anyakönyvi Kivonatok",
+      "Legalizálás / Apostille",
+      "Általános Kérdés",
+      "Egyéb"
+    ],
+    "submit": "Üzenet Küldése",
+    "sending": "Küldés…",
+    "successHeading": "Üzenet Megérkezett",
+    "successBody": "Köszönjük — Sylvia egy munkanapon belül felveszi Önnel a kapcsolatot. Ha az ügye sürgős, kérjük, foglaljon időpontot közvetlenül.",
+    "errorBody": "Valami hiba történt. Kérjük, próbálja újra, vagy írjon nekünk közvetlenül e-mailben.",
+    "required": "Kötelező"
+  },
   "ctaScope": {
     "text": "Nem biztos benne, hogy az Ön ügyével foglalkozunk?",
     "link": "Tekintse meg a teljes szolgáltatási kört →"

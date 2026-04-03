@@ -1,6 +1,6 @@
 "use client";
 import { siteData } from "@/data/site";
-import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
+import { PageHeader, Button, GoldRule, Eyebrow, FaqSchema } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -23,8 +23,17 @@ export default function CertificatesPage() {
   const { t, ta } = useTranslation("certificates");
   const certs = ta<CertificateTranslation[]>("certificates");
 
+  const certificateFaqs = [
+    { q: "Can I get a certificate of no criminal record from Hungary through the Honorary Consulate?", a: "Yes. The Honorary Consulate facilitates requests for Hungarian criminal record certificates (erkölcsi bizonyítvány). This document is commonly required for immigration, employment, and dual citizenship applications. Processing is handled through the Hungarian authorities." },
+    { q: "What is a certificate of civil status and when do I need one?", a: "A certificate of civil status (from the Hungarian civil registry) confirms your marital status, birth registration, or identity information as recorded in Hungary. It is commonly required for US immigration applications, foreign marriage procedures, and Hungarian inheritance matters." },
+    { q: "I need proof of Hungarian residency history for an immigration application. Can you help?", a: "The Honorary Consulate can assist with obtaining documentation related to your Hungarian residential and civil status history. The specific document required depends on the immigration authority's request — bring the formal requirement to your appointment." },
+    { q: "Can the Honorary Consulate certify a document is a true copy?", a: "Yes. Certification of true copies (copy authentication) is a standard Honorary Consulate service. You bring the original document and the consul certifies that the copy is a true and accurate reproduction of the original." },
+    { q: "Where do I get Hungarian certificates and civil documents in New England?", a: "The Honorary Consulate of Hungary — New England in Derry, NH is the regional point of contact for all Hungarian civil documentation needs. Monday appointments only. All of New England is served from this single office." },
+  ];
+
   return (
     <>
+      <FaqSchema faqs={certificateFaqs} />
       <PageHeader
         eyebrow={t("header.eyebrow")}
         headline={t("header.headline")}

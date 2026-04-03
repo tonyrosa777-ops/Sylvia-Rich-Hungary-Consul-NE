@@ -1,6 +1,6 @@
 "use client";
 import { siteData } from "@/data/site";
-import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
+import { PageHeader, Button, GoldRule, Eyebrow, FaqSchema } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -20,8 +20,17 @@ export default function VitalRecordsPage() {
   const { t, ta } = useTranslation("vital-records");
   const records = ta<VitalRecord[]>("records");
 
+  const vitalRecordsFaqs = [
+    { q: "Can I get a Hungarian birth certificate in the United States?", a: "The Honorary Consulate can facilitate requests for Hungarian birth certificates through the Hungarian civil registry. Sylvia Rich submits the request to the appropriate Hungarian authority. Processing time depends on the Hungarian registry office and is typically 4–8 weeks." },
+    { q: "How do I get a certified copy of a Hungarian marriage certificate?", a: "You can request a certified copy of a Hungarian marriage certificate through the Honorary Consulate. You will need to provide the names of the parties, the date and location of the marriage, and your relationship to the individuals named on the certificate." },
+    { q: "My ancestor died in Hungary and I need a death certificate for an inheritance matter. Can you help?", a: "Yes. The Honorary Consulate assists with obtaining Hungarian death certificates for inheritance, estate, and genealogical purposes. Depending on when the death occurred and where records are held, the timeline may vary from 4 to 12 weeks." },
+    { q: "Can you translate a Hungarian vital record into English?", a: "The Honorary Consulate can refer you to certified translators and authenticate translations of Hungarian vital records (birth, marriage, death certificates) for use in US legal proceedings, including immigration matters." },
+    { q: "I was born in Hungary — how do I get a copy of my birth certificate for US immigration purposes?", a: "The Honorary Consulate can request your Hungarian birth certificate from the civil registry. Once received, it must be apostilled and translated for USCIS. Sylvia advises on the full sequence and can authenticate the translated document." },
+  ];
+
   return (
     <>
+      <FaqSchema faqs={vitalRecordsFaqs} />
       <PageHeader
         eyebrow={t("header.eyebrow")}
         headline={t("header.headline")}

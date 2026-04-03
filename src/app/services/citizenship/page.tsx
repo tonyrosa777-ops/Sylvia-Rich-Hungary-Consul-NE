@@ -1,6 +1,6 @@
 "use client";
 import { siteData } from "@/data/site";
-import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
+import { PageHeader, Button, GoldRule, Eyebrow, FaqSchema } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/hooks/useTranslation";
@@ -21,8 +21,17 @@ export default function CitizenshipPage() {
   const canDoItems = ta<string[]>("canDo.items");
   const cannotDoItems = ta<string[]>("cannotDo.items");
 
+  const citizenshipFaqs = [
+    { q: "Can the Honorary Consulate help me apply for Hungarian citizenship?", a: "Yes. The Honorary Consulate of Hungary in New England assists with citizenship applications under the simplified naturalization process. Sylvia Rich prepares and authenticates the required documentation and submits the application on your behalf to the Hungarian authorities." },
+    { q: "What is the simplified naturalization process for Hungarian citizenship?", a: "Hungary's simplified naturalization process allows ethnic Hungarians and descendants to apply for citizenship without a continuous residency requirement in Hungary. You must demonstrate Hungarian ancestry and basic proficiency in the Hungarian language." },
+    { q: "How long does a Hungarian citizenship application take?", a: "Processing times are set by the Hungarian authorities and typically range from 6 to 18 months. The Honorary Consulate cannot expedite the process but ensures your application is complete and correctly submitted to avoid delays." },
+    { q: "Can I have dual Hungarian and American citizenship?", a: "Yes. Hungary permits dual citizenship. Naturalizing as a Hungarian citizen does not automatically affect your US citizenship. However, you should consult a US attorney if you have concerns about your specific situation." },
+    { q: "Where do I go for a Hungarian citizenship appointment in New England?", a: "The Honorary Consulate of Hungary serves all of New England from Derry, New Hampshire. Monday afternoon appointments are required. There is no consulate in Boston, Providence, or Hartford — Derry, NH is the closest official consular presence for New England residents." },
+  ];
+
   return (
     <>
+      <FaqSchema faqs={citizenshipFaqs} />
       <PageHeader
         eyebrow={t("header.eyebrow")}
         headline={t("header.headline")}

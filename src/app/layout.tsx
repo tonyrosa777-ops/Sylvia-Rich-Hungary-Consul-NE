@@ -5,6 +5,7 @@ import "./globals.css";
 import { siteData } from "@/data/site";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { GlobalParticles } from "@/components/layout/GlobalParticles";
 import { I18nProvider } from "@/contexts/I18nContext";
 import { CartProvider } from "@/lib/cart";
 import { CartDrawer } from "@/components/sections/CartDrawer";
@@ -71,6 +72,7 @@ export default async function RootLayout({
       <body className="min-h-full flex flex-col bg-[#0A1628] text-[#F5F0E8] antialiased">
         <I18nProvider initialLocale={locale}>
           <CartProvider>
+            <GlobalParticles />
             <SiteHeader />
             <CartDrawer />
             <main className="flex-1 pt-[72px]">

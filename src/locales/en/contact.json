@@ -37,6 +37,32 @@
       "Any supporting documents referenced in your booking notes"
     ]
   },
+  "form": {
+    "eyebrow": "Send a Message",
+    "heading": "Have a Question Before Booking?",
+    "subheading": "Not ready to book an appointment yet? Send a message and Sylvia will respond within one business day.",
+    "fields": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us briefly what you need help with…"
+    },
+    "subjects": [
+      "Document Authentication",
+      "Citizenship / Dual Nationality",
+      "Vital Records",
+      "Legalization / Apostille",
+      "General Question",
+      "Other"
+    ],
+    "submit": "Send Message",
+    "sending": "Sending…",
+    "successHeading": "Message Received",
+    "successBody": "Thank you — Sylvia will be in touch within one business day. If your matter is urgent, please book an appointment directly.",
+    "errorBody": "Something went wrong. Please try again or email us directly.",
+    "required": "Required"
+  },
   "ctaScope": {
     "text": "Not sure if we handle your need?",
     "link": "See the full scope of services →"
