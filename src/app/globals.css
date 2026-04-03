@@ -78,7 +78,7 @@ body {
   border-top: 1px solid rgba(197, 165, 90, 0.3);
 }
 
-/* ── Gold shimmer — "New England" hero text ── */
+/* ── Gold shimmer — generic utility ── */
 @keyframes gold-shimmer {
   0%   { background-position: 200% center; }
   100% { background-position: -200% center; }
@@ -99,6 +99,31 @@ body {
   -webkit-text-fill-color: transparent;
   color: transparent;
   animation: gold-shimmer 5s linear infinite;
+}
+
+/* ── Hungarian flag shimmer — "New England" hero text ── */
+/* Colors in flag order: red → white → green (top to bottom = left to right) */
+@keyframes hungary-shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.shimmer-hungary {
+  background: linear-gradient(
+    90deg,
+    #CE2939 0%,
+    #CE2939 15%,
+    #FFFFFF 38%,
+    #477050 62%,
+    #FFFFFF 85%,
+    #CE2939 100%
+  );
+  background-size: 250% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: hungary-shimmer 6s linear infinite;
 }
 
 /* ── Breathing orbs — hero background animation ── */

@@ -62,7 +62,7 @@ export function Hero() {
             </motion.h1>
 
             <motion.div {...fadeUp(seq.sub.delay, seq.sub.duration)} className="mb-3">
-              <span className="shimmer-gold font-display font-black italic text-[clamp(2rem,4vw,3.8rem)] leading-[1.05]">
+              <span className="shimmer-hungary font-display font-black italic text-[clamp(2rem,4vw,3.8rem)] leading-[1.05]">
                 {t("hero.headlineSub")}
               </span>
             </motion.div>
