@@ -50,6 +50,16 @@ const RESULT_HREFS: Record<ResultKey, { primary: string; secondary: string }> = 
 const STEPS: Step[] = ["q0", "q1", "q2", "contact"];
 const TOTAL = STEPS.length;
 
+// ─── Build booking URL with quiz answers as params ────────────────────────────
+
+function buildBookingHref(answers: Answers, resultKey: ResultKey): string {
+  const params = new URLSearchParams({ from: "quiz", service: resultKey });
+  if (answers.q0) params.set("q0", answers.q0);
+  if (answers.q1) params.set("q1", answers.q1);
+  if (answers.q2) params.set("q2", answers.q2);
+  return `/booking?${params.toString()}`;
+}
+
 // ─── Result logic ─────────────────────────────────────────────────────────────
 
 function getResult(answers: Answers): ResultKey {
@@ -377,10 +387,16 @@ export function QuizWizard() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3">
-                  <Button href={hrefs.primary} variant="primary" size="md" className="flex-1 justify-center">
+                  <Button
+                    href={hrefs.primary === "/booking" ? buildBookingHref(answers, resultKey) : hrefs.primary}
+                    variant="primary" size="md" className="flex-1 justify-center"
+                  >
                     {result.cta}
                   </Button>
-                  <Button href={hrefs.secondary} variant="secondary" size="md" className="flex-1 justify-center">
+                  <Button
+                    href={hrefs.secondary === "/booking" ? buildBookingHref(answers, resultKey) : hrefs.secondary}
+                    variant="secondary" size="md" className="flex-1 justify-center"
+                  >
                     {result.secondary}
                   </Button>
                 </div>
