@@ -78,9 +78,9 @@ export function SiteHeader() {
                 </Link>
               ))}
             </nav>
-            {/* Mobile: language toggle centered */}
+            {/* Mobile: language toggle centered — size="md" forces flex at all widths */}
             <div className="md:hidden">
-              <LanguageToggle />
+              <LanguageToggle size="md" />
             </div>
           </div>
 
