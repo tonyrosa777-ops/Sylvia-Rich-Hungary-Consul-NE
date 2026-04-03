@@ -51,8 +51,8 @@ export function SiteHeader() {
           {/* ── Slot 1: Logo ── */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group" aria-label="Homepage">
             <Image
-              src="/brand/crest-placeholder.svg"
-              alt="Hungarian coat of arms"
+              src="/brand/st-stephens-crest.svg"
+              alt="St. Stephen's Crown — Holy Crown of Hungary"
               width={36}
               height={36}
               className="opacity-90 group-hover:opacity-100 transition-opacity duration-200"

@@ -39,8 +39,8 @@ export function SiteFooter() {
           <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
               <Image
-                src="/brand/crest-placeholder.svg"
-                alt="Hungarian coat of arms"
+                src="/brand/st-stephens-crest.svg"
+                alt="St. Stephen's Crown — Holy Crown of Hungary"
                 width={32}
                 height={32}
                 className="opacity-80"
