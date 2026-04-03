@@ -47,9 +47,9 @@ export function SiteHeader() {
             : "bg-transparent"
         )}
       >
-        <div className="max-w-6xl mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 h-[72px] flex items-center gap-4">
 
-          {/* Logo / wordmark */}
+          {/* ── Slot 1: Logo ── */}
           <Link href="/" className="flex items-center gap-3 shrink-0 group" aria-label="Homepage">
             <Image
               src="/brand/crest-placeholder.svg"
@@ -64,22 +64,31 @@ export function SiteHeader() {
             </span>
           </Link>
 
-          {/* Desktop nav — max 4 links per design-system.md §5 */}
-          <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
-            {siteData.nav.links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="font-mono text-xs uppercase tracking-[0.1em] text-[rgba(245,240,232,0.75)] hover:text-[#C5A55A] transition-colors duration-150"
-              >
-                {navLabels[link.href] ?? link.label}
-              </Link>
-            ))}
-          </nav>
+          {/* ── Slot 2: Center — desktop nav / mobile language toggle ── */}
+          <div className="flex-1 flex items-center justify-center">
+            {/* Desktop nav */}
+            <nav className="hidden md:flex items-center gap-8" aria-label="Main navigation">
+              {siteData.nav.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="font-mono text-xs uppercase tracking-[0.1em] text-[rgba(245,240,232,0.75)] hover:text-[#C5A55A] transition-colors duration-150"
+                >
+                  {navLabels[link.href] ?? link.label}
+                </Link>
+              ))}
+            </nav>
+            {/* Mobile: language toggle centered */}
+            <div className="md:hidden">
+              <LanguageToggle />
+            </div>
+          </div>
 
-          {/* Right: language toggle + CTA + mobile hamburger */}
-          <div className="flex items-center gap-4">
-            <LanguageToggle />
+          {/* ── Slot 3: Right — desktop toggle + Book CTA + hamburger ── */}
+          <div className="flex items-center gap-4 shrink-0">
+            <div className="hidden md:flex">
+              <LanguageToggle />
+            </div>
 
             <Button
               href={siteData.nav.cta.href}
