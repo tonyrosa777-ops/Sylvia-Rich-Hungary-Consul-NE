@@ -99,14 +99,6 @@ export default function ContactPage() {
                 >
                   {brand.email}
                 </a>
-                <GoldRule width="sm" opacity={20} className="mt-4 mb-4" />
-                <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[rgba(245,240,232,0.4)] mb-1">{t("cards.direct.phoneLabel")}</p>
-                <a
-                  href={`tel:${brand.phone}`}
-                  className="font-body text-[15px] text-[#F5F0E8] hover:text-[#C5A55A] transition-colors duration-150"
-                >
-                  {brand.phone}
-                </a>
                 <p className="font-body text-[11px] text-[rgba(245,240,232,0.3)] mt-3">{t("cards.direct.responseNote")}</p>
               </div>
             </FadeUp>

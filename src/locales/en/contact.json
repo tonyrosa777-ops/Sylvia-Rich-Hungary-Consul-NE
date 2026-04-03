@@ -29,7 +29,6 @@
     "direct": {
       "heading": "Direct Contact",
       "emailLabel": "Email",
-      "phoneLabel": "Phone",
       "responseNote": "Response within one business day"
     }
   },
