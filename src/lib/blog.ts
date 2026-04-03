@@ -5,7 +5,12 @@
  * because blog bodies are authored prose, not UI labels.
  * Post metadata (titles for nav/lists) lives in the component and pulls
  * from this structure; categories are mapped via shop.json translations.
+ *
+ * Hungarian body translations live in blog-translations.ts and are merged
+ * at the bottom of this file via bodyHuMap.
  */
+
+import { bodyHuMap } from "./blog-translations";
 
 export type ContentBlock =
   | { type: "paragraph"; text: string }
@@ -28,6 +33,7 @@ export interface BlogPost {
   featured: boolean;
   image?: string;
   body: ContentBlock[];
+  bodyHu?: ContentBlock[];
 }
 
 export type BlogCategory =
@@ -45,7 +51,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
   "Consular Updates",
 ];
 
-export const posts: BlogPost[] = [
+const rawPosts: Omit<BlogPost, "bodyHu">[] = [
   // ─── Post 1 ────────────────────────────────────────────────────────────────
   {
     id: "what-does-honorary-consul-do",
@@ -1583,6 +1589,12 @@ export const posts: BlogPost[] = [
     ],
   },
 ];
+
+// Merge Hungarian body translations into each post
+export const posts: BlogPost[] = rawPosts.map((p) => ({
+  ...p,
+  bodyHu: bodyHuMap[p.id],
+}));
 
 export function getPostBySlug(slug: string): BlogPost | undefined {
   return posts.find((p) => p.slug === slug);

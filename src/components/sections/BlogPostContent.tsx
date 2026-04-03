@@ -191,7 +191,9 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
               transition={{ duration: 0.6, delay: 0.25, ease: "easeOut" }}
               className="space-y-5"
             >
-              {post.body.map((block, i) => renderBlock(block, i))}
+              {(locale === "hu" && post.bodyHu ? post.bodyHu : post.body).map(
+                (block, i) => renderBlock(block, i)
+              )}
             </motion.div>
           </div>
         </div>
