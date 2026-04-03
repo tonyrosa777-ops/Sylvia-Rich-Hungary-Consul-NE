@@ -12,10 +12,10 @@ export function SiteFooter() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
 
         {/* Top row — brand + columns */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
 
           {/* Brand column */}
-          <div className="md:col-span-1">
+          <div className="sm:col-span-2 lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
               <Image
                 src="/brand/crest-placeholder.svg"
@@ -45,6 +45,25 @@ export function SiteFooter() {
             </p>
             <ul className="space-y-2.5">
               {siteLinks.slice(0, 5).map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="font-body text-sm text-[rgba(245,240,232,0.6)] hover:text-[#C5A55A] transition-colors duration-150"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Guides */}
+          <div>
+            <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.4)] mb-4">
+              Guides
+            </p>
+            <ul className="space-y-2.5">
+              {siteData.footer.guideLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
