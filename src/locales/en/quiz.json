@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Do We Handle Your Case? | Honorary Consulate of Hungary — New England",
+    "description": "Answer three questions and find out exactly which consular service applies to your situation — and whether Sylvia can help you from Derry, NH."
+  },
+  "page": {
+    "eyebrow": "2-Minute Quiz",
+    "headline": "Do We Handle Your Case?",
+    "subheadline": "Answer three questions. Find out which service applies to your situation and how to get started."
+  },
+  "progress": {
+    "label": "Step",
+    "of": "of",
+    "total": "4"
+  },
+  "questions": {
+    "q0": {
+      "question": "What situation brings you here?",
+      "options": [
+        { "value": "authentication", "label": "I need a document notarized", "detail": "For Hungarian authorities or a property deal" },
+        { "value": "citizenship", "label": "Citizenship or passport help", "detail": "Renewing, confirming, or applying for dual status" },
+        { "value": "vital-records", "label": "Registering a life event", "detail": "Birth, marriage, or death in Hungary" },
+        { "value": "legalization", "label": "Apostille or legalization", "detail": "Making a US document valid in Hungary" },
+        { "value": "certificates", "label": "Certificate or background check", "detail": "Good conduct or other official Hungarian certificates" },
+        { "value": "unsure", "label": "I am not sure yet", "detail": "Help me figure out what I need" }
+      ]
+    },
+    "q1": {
+      "question": "How urgent is this for you?",
+      "options": [
+        { "value": "urgent", "label": "I have a deadline", "detail": "Within the next two weeks" },
+        { "value": "soon", "label": "Within a few months", "detail": "Some runway to prepare properly" },
+        { "value": "planning", "label": "Planning ahead", "detail": "No immediate pressure" },
+        { "value": "exploring", "label": "Just exploring", "detail": "No timeline yet" }
+      ]
+    },
+    "q2": {
+      "question": "Which state are you in?",
+      "options": [
+        { "value": "nh", "label": "New Hampshire", "detail": "Sylvia's home base — Derry, NH" },
+        { "value": "ma", "label": "Massachusetts", "detail": "Fully within Sylvia's territory" },
+        { "value": "ne-other", "label": "Maine, Vermont, or Rhode Island", "detail": "Fully within Sylvia's territory" },
+        { "value": "outside", "label": "Connecticut, New York, or beyond", "detail": "Outside the covered region" },
+        { "value": "hungary", "label": "Calling from Hungary", "detail": "On behalf of a New England relative" }
+      ]
+    }
+  },
+  "contact": {
+    "heading": "Almost done — where should we send your result?",
+    "subheading": "Sylvia reviews every submission personally. If your situation needs a direct answer, she will reach out.",
+    "name": "Your name",
+    "email": "Email address",
+    "note": "Brief description of your situation (optional)",
+    "notePlaceholder": "Any details that will help Sylvia understand your case before she follows up",
+    "submit": "See My Result",
+    "submitting": "One moment...",
+    "privacy": "Your information is shared only with Sylvia. It is never sold or distributed.",
+    "emailError": "Please enter a valid email address."
+  },
+  "results": {
+    "authentication": {
+      "eyebrow": "Yes — we handle this",
+      "heading": "Consular Notarization & Authentication",
+      "body": "This is Sylvia's core work. She authenticates signatures and notarizes documents for submission to Hungarian authorities — done in-person on Mondays in Derry, NH. Book your appointment, arrive with your document and valid ID, and leave with an authenticated document ready for Hungary.",
+      "cta": "Book Your Appointment",
+      "secondary": "See All Services"
+    },
+    "citizenship": {
+      "eyebrow": "Yes — we handle this",
+      "heading": "Citizenship & Passport Services",
+      "body": "Sylvia assists with Hungarian citizenship confirmation, dual-citizenship documentation, and passport-related consular services. Some passport renewals go directly through the Embassy — she will tell you which track applies to your situation.",
+      "cta": "Read the Citizenship Guide",
+      "secondary": "Book an Appointment"
+    },
+    "vital-records": {
+      "eyebrow": "Yes — we handle this",
+      "heading": "Vital Records Registration",
+      "body": "Births, marriages, and deaths involving Hungarian citizens need to be registered with Hungarian authorities. Sylvia handles the consular certification of these life events so the record exists in both systems — American and Hungarian.",
+      "cta": "Read the Vital Records Guide",
+      "secondary": "Book an Appointment"
+    },
+    "legalization": {
+      "eyebrow": "Yes — we handle this",
+      "heading": "Diplomatic Legalization & Apostille",
+      "body": "Making a US-issued document legally valid in Hungary requires a specific chain of authentication. Sylvia provides the consular step in that chain and guides you through every other step — so you don't spend money on the wrong process.",
+      "cta": "Read the Legalization Guide",
+      "secondary": "Book an Appointment"
+    },
+    "certificates": {
+      "eyebrow": "Yes — we handle this",
+      "heading": "Certificates of Good Conduct",
+      "body": "Hungarian background checks and certificates of good conduct are commonly needed for employment, residency, or citizenship applications. Sylvia handles the consular certification needed to make these documents official on the American side.",
+      "cta": "Read the Certificates Guide",
+      "secondary": "Book an Appointment"
+    },
+    "scope": {
+      "eyebrow": "Let's figure it out together",
+      "heading": "Not Sure? Start Here.",
+      "body": "If your situation doesn't fit neatly into one category, you're not alone. Sylvia's full scope of services covers a wide range of consular needs. Review the complete list — and if you still have questions, book a Monday appointment to discuss your case in person.",
+      "cta": "See the Full Scope of Services",
+      "secondary": "Book an Appointment"
+    },
+    "outside": {
+      "eyebrow": "Outside our territory",
+      "heading": "Sylvia Covers New England — Connecticut to Canada",
+      "body": "Sylvia's appointment covers Maine, Vermont, New Hampshire, Rhode Island, and Massachusetts. If you're in Connecticut, New York, or further south, the Hungarian Consulate General in New York City is the closest office. If you're willing to travel to Derry, NH, Monday appointments are available.",
+      "cta": "See the Full Scope of Services",
+      "secondary": "Book an Appointment Anyway"
+    }
+  },
+  "nav": {
+    "back": "Back"
+  },
+  "success": {
+    "restartLabel": "Start over",
+    "bookLabel": "Book Your Monday Appointment",
+    "mondayNote": "Monday appointments only · In-person · Derry, NH"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "meta": {
+    "title": "Az Ön Ügyével Foglalkozunk? | Magyarország Tiszteletbeli Konzulátusa — Új-Anglia",
+    "description": "Válaszoljon három kérdésre, és derítse ki, melyik konzuli szolgáltatás vonatkozik az Ön helyzetére — és hogy Sylvia tud-e segíteni Derry, NH-ból."
+  },
+  "page": {
+    "eyebrow": "2 perces kvíz",
+    "headline": "Az Ön Ügyével Foglalkozunk?",
+    "subheadline": "Válaszoljon három kérdésre. Derítse ki, melyik szolgáltatás vonatkozik az Ön helyzetére, és hogyan kezdjen hozzá."
+  },
+  "progress": {
+    "label": "Lépés",
+    "of": "/",
+    "total": "4"
+  },
+  "questions": {
+    "q0": {
+      "question": "Mi hozta ide?",
+      "options": [
+        { "value": "authentication", "label": "Dokumentumot kell hitelesíttetnem", "detail": "Magyar hatóság vagy ingatlanügylet számára" },
+        { "value": "citizenship", "label": "Állampolgárság vagy útlevél", "detail": "Megújítás, megerősítés vagy kettős státusz igénylése" },
+        { "value": "vital-records", "label": "Életeseményt kell anyakönyveztetnem", "detail": "Születés, házasság vagy haláleset Magyarországon" },
+        { "value": "legalization", "label": "Apostille vagy legalizálás", "detail": "Amerikai dokumentum érvényessé tétele Magyarországon" },
+        { "value": "certificates", "label": "Erkölcsi bizonyítvány vagy igazolás", "detail": "Hatósági erkölcsi bizonyítvány vagy egyéb irat" },
+        { "value": "unsure", "label": "Még nem vagyok biztos", "detail": "Segítsen kideríteni, mire van szükségem" }
+      ]
+    },
+    "q1": {
+      "question": "Mennyire sürgős ez az Ön számára?",
+      "options": [
+        { "value": "urgent", "label": "Határidőm van", "detail": "A következő két héten belül" },
+        { "value": "soon", "label": "Néhány hónapon belül", "detail": "Van némi idő a megfelelő előkészítésre" },
+        { "value": "planning", "label": "Előre tervezek", "detail": "Nincs azonnali nyomás" },
+        { "value": "exploring", "label": "Csak tájékozódom", "detail": "Még nincs határidő" }
+      ]
+    },
+    "q2": {
+      "question": "Melyik államban tartózkodik?",
+      "options": [
+        { "value": "nh", "label": "New Hampshire", "detail": "Sylvia bázisa — Derry, NH" },
+        { "value": "ma", "label": "Massachusetts", "detail": "Teljes egészében Sylvia illetékességi területén" },
+        { "value": "ne-other", "label": "Maine, Vermont vagy Rhode Island", "detail": "Teljes egészében Sylvia illetékességi területén" },
+        { "value": "outside", "label": "Connecticut, New York vagy távolabb", "detail": "Az illetékességi területen kívül" },
+        { "value": "hungary", "label": "Magyarországról hívok", "detail": "Egy új-angliai rokon nevében" }
+      ]
+    }
+  },
+  "contact": {
+    "heading": "Már majdnem kész — hová küldjük az eredményt?",
+    "subheading": "Sylvia személyesen átnéz minden beadványt. Ha az Ön helyzete közvetlen választ igényel, felveszi Önnel a kapcsolatot.",
+    "name": "Az Ön neve",
+    "email": "E-mail cím",
+    "note": "Az Ön helyzetének rövid leírása (nem kötelező)",
+    "notePlaceholder": "Minden részlet, amely segít Sylviának megérteni az Ön ügyét, mielőtt visszajelezne",
+    "submit": "Megnézem az eredményt",
+    "submitting": "Egy pillanat...",
+    "privacy": "Az Ön adatait csak Sylvia kapja meg. Soha nem adjuk el és nem továbbítjuk.",
+    "emailError": "Kérjük, adjon meg érvényes e-mail-címet."
+  },
+  "results": {
+    "authentication": {
+      "eyebrow": "Igen — ezzel foglalkozunk",
+      "heading": "Konzuli Hitelesítés és Okirat-tanúsítás",
+      "body": "Ez Sylvia alapszolgáltatása. Aláírásokat hitelesít és okiratokat tanúsít a Magyar hatóságoknak való benyújtáshoz — személyesen, hétfőnként, Derry, NH-ban. Foglaljon időpontot, érkezzen a dokumentumával és érvényes személyazonosítójával, és hitelesített, Magyarország számára kész okirattal távozzon.",
+      "cta": "Időpontot Foglalok",
+      "secondary": "Minden Szolgáltatás"
+    },
+    "citizenship": {
+      "eyebrow": "Igen — ezzel foglalkozunk",
+      "heading": "Állampolgársági és Útlevél-szolgáltatások",
+      "body": "Sylvia segít a magyar állampolgárság megerősítésében, a kettős állampolgársági dokumentációban és az útlevéllel kapcsolatos konzuli ügyekben. Egyes útlevél-megújítások közvetlenül a Nagykövetségen keresztül zajlanak — Sylvia megmondja, melyik eljárás vonatkozik az Ön helyzetére.",
+      "cta": "Olvassa el az Állampolgársági Útmutatót",
+      "secondary": "Időpontot Foglalok"
+    },
+    "vital-records": {
+      "eyebrow": "Igen — ezzel foglalkozunk",
+      "heading": "Anyakönyvi Nyilvántartás",
+      "body": "Magyar állampolgárokat érintő születéseket, házasságokat és haláleseteket anyakönyveztetni kell a Magyar hatóságoknál. Sylvia elvégzi ezeknek az életeseményeknek a konzuli tanúsítását, így a bejegyzés mindkét rendszerben megvan — az amerikaiban és a magyarban.",
+      "cta": "Olvassa el az Anyakönyvi Útmutatót",
+      "secondary": "Időpontot Foglalok"
+    },
+    "legalization": {
+      "eyebrow": "Igen — ezzel foglalkozunk",
+      "heading": "Diplomáciai Legalizálás és Apostille",
+      "body": "Egy amerikai okirat Magyarországon való jogi érvényessé tétele egy meghatározott hitelesítési láncolatot igényel. Sylvia elvégzi ennek a láncolatnak a konzuli lépését, és végigvezeti Önt minden más lépésen — hogy ne költsön pénzt a rossz folyamatra.",
+      "cta": "Olvassa el a Legalizálási Útmutatót",
+      "secondary": "Időpontot Foglalok"
+    },
+    "certificates": {
+      "eyebrow": "Igen — ezzel foglalkozunk",
+      "heading": "Erkölcsi Bizonyítványok és Igazolások",
+      "body": "Magyar hatósági bizonyítványokat és erkölcsi igazolásokat általában munkavállalási, tartózkodási vagy állampolgársági kérelmekhez kérnek. Sylvia elvégzi a szükséges konzuli tanúsítást, hogy ezek az okiratok az amerikai oldalon is hivatkozhatóvá váljanak.",
+      "cta": "Olvassa el az Igazolások Útmutatóját",
+      "secondary": "Időpontot Foglalok"
+    },
+    "scope": {
+      "eyebrow": "Derítsük ki együtt",
+      "heading": "Nem biztos? Kezdje itt.",
+      "body": "Ha az Ön helyzete nem illeszkedik szépen egyetlen kategóriába sem, nem Ön az egyetlen. Sylvia teljes körű szolgáltatási palettája a konzuli igények széles skáláját fedi le. Nézze át a teljes listát — és ha még kérdései vannak, foglaljon hétfői időpontot, hogy személyesen megbeszélhessék az ügyét.",
+      "cta": "Tekintse meg a Teljes Szolgáltatási Kört",
+      "secondary": "Időpontot Foglalok"
+    },
+    "outside": {
+      "eyebrow": "Az illetékességi területen kívül",
+      "heading": "Sylvia Új-Angliát Fedi Le — Connecticut-től Kanadáig",
+      "body": "Sylvia illetékessége Maine-re, Vermontra, New Hampshire-re, Rhode Island-re és Massachusettsre terjed ki. Ha Connecticut-ben, New Yorkban vagy attól délebbre tartózkodik, a legközelebbi iroda a New York-i Magyar Főkonzulátus. Ha hajlandó Derry, NH-ba utazni, hétfői időpontok elérhetők.",
+      "cta": "Tekintse meg a Teljes Szolgáltatási Kört",
+      "secondary": "Mégis Időpontot Foglalok"
+    }
+  },
+  "nav": {
+    "back": "Vissza"
+  },
+  "success": {
+    "restartLabel": "Elölről kezdem",
+    "bookLabel": "Hétfői Időpontot Foglalok",
+    "mondayNote": "Kizárólag hétfői időpontok · Személyesen · Derry, NH"
+  }
+}

@@ -59,7 +59,7 @@ export const siteData = {
     headlineSub: "New England",
     tagline: "Serving Hungarian citizens, dual nationals, and families across Maine, Vermont, New Hampshire, Rhode Island, and Massachusetts.",
     ctaPrimary: { label: "Book Your Monday Appointment", href: "/booking" },
-    ctaSecondary: { label: "See What We Handle", href: "/services/scope" },
+    ctaSecondary: { label: "Find Out If We Can Help", href: "/quiz" },
     trustCopy: "Derry, NH · Monday Appointments · 5 States Served",
     paymentNote: "Cash & Check Only · In-Person · Appointment Required",
   },
