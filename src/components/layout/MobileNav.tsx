@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Button } from "@/components/ui";
+import { Button, LanguageToggle } from "@/components/ui";
 import { siteData } from "@/data/site";
 import { useTranslation } from "@/hooks/useTranslation";
 
@@ -54,7 +54,10 @@ export function MobileNav({ open, onClose }: MobileNavProps) {
           >
             {/* Header row */}
             <div className="flex items-center justify-between px-6 h-[72px] border-b border-[rgba(197,165,90,0.15)]">
-              <span className="font-display text-[#C5A55A] text-sm font-semibold">{t("nav.menu")}</span>
+              <div className="flex items-center gap-4">
+                <span className="font-display text-[#C5A55A] text-sm font-semibold">{t("nav.menu")}</span>
+                <LanguageToggle size="md" />
+              </div>
               <button
                 onClick={onClose}
                 className="w-8 h-8 flex items-center justify-center text-[rgba(245,240,232,0.6)] hover:text-[#F5F0E8] transition-colors"
