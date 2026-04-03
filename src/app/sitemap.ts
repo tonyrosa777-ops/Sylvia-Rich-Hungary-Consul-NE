@@ -35,7 +35,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/serving-boston`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/serving-providence`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/shop`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.65 },
-    { url: `${base}/pricing`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.75 },
     { url: `${base}/quiz`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.8 },
   ];
 }
