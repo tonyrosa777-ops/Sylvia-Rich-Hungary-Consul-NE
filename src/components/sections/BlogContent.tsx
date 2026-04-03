@@ -59,8 +59,13 @@ interface BlogCardProps {
 }
 
 function BlogCard({ post, featured = false }: BlogCardProps) {
-  const { t } = useTranslation("blog");
+  const { t, locale } = useTranslation("blog");
   const categoryLabel = t(CATEGORY_KEY_MAP[post.category]);
+  const formattedDate = new Intl.DateTimeFormat(locale === "hu" ? "hu-HU" : "en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(post.isoDate));
 
   return (
     <Link
@@ -73,7 +78,7 @@ function BlogCard({ post, featured = false }: BlogCardProps) {
           <div className="relative w-full h-full">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={locale === "hu" ? post.titleHu : post.title}
               fill
               sizes={featured ? "(max-width:1024px) 100vw, 50vw" : "(max-width:1024px) 100vw, 33vw"}
               className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
@@ -100,21 +105,21 @@ function BlogCard({ post, featured = false }: BlogCardProps) {
 
         {/* Title */}
         <h2 className={`font-display font-bold text-[#F5F0E8] leading-snug group-hover:text-[#C5A55A] transition-colors duration-150 ${featured ? "text-[1.25rem] lg:text-[1.4rem]" : "text-[1.05rem]"}`}>
-          {post.title}
+          {locale === "hu" ? post.titleHu : post.title}
         </h2>
 
         {/* Excerpt */}
         <p className="font-body text-[14px] leading-[1.75] text-[rgba(245,240,232,0.6)] line-clamp-3">
-          {post.excerpt}
+          {locale === "hu" ? post.excerptHu : post.excerpt}
         </p>
 
         {/* Footer: date + read time */}
         <div className="flex items-center justify-between mt-auto pt-3 border-t border-[rgba(197,165,90,0.1)]">
           <span className="font-mono text-[10px] text-[rgba(245,240,232,0.35)] tracking-[0.06em]">
-            {post.date}
+            {formattedDate}
           </span>
           <span className="font-mono text-[10px] text-[rgba(197,165,90,0.55)] tracking-[0.06em]">
-            {post.readTime}
+            {post.readMinutes} {t("card.minRead")}
           </span>
         </div>
       </div>
@@ -125,7 +130,7 @@ function BlogCard({ post, featured = false }: BlogCardProps) {
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export function BlogContent() {
-  const { t } = useTranslation("blog");
+  const { t, locale } = useTranslation("blog");
   const [activeCategory, setActiveCategory] = useState<BlogCategory | "all">("all");
   const [searchQuery, setSearchQuery] = useState("");
 
@@ -141,7 +146,9 @@ export function BlogContent() {
       result = result.filter(
         (p) =>
           p.title.toLowerCase().includes(q) ||
+          p.titleHu.toLowerCase().includes(q) ||
           p.excerpt.toLowerCase().includes(q) ||
+          p.excerptHu.toLowerCase().includes(q) ||
           p.category.toLowerCase().includes(q)
       );
     }

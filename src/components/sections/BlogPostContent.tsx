@@ -95,8 +95,13 @@ interface BlogPostContentProps {
 }
 
 export function BlogPostContent({ post }: BlogPostContentProps) {
-  const { t } = useTranslation("blog");
+  const { t, locale } = useTranslation("blog");
   const categoryLabel = t(CATEGORY_KEY_MAP[post.category]);
+  const formattedDate = new Intl.DateTimeFormat(locale === "hu" ? "hu-HU" : "en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(new Date(post.isoDate));
 
   return (
     <div className="bg-[#0A1628] min-h-screen">
@@ -131,7 +136,7 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
 
             {/* Title */}
             <h1 className="font-display font-bold text-[clamp(1.75rem,4.5vw,3rem)] text-[#F5F0E8] leading-[1.15] mb-5 max-w-3xl">
-              {post.title}
+              {locale === "hu" ? post.titleHu : post.title}
             </h1>
 
             <GoldRule width="sm" opacity={40} className="mb-5" />
@@ -139,17 +144,17 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
             {/* Date + read time */}
             <div className="flex items-center gap-4 mb-8">
               <span className="font-mono text-[11px] tracking-[0.08em] text-[rgba(245,240,232,0.4)]">
-                {post.date}
+                {formattedDate}
               </span>
               <span className="w-px h-3 bg-[rgba(197,165,90,0.2)]" aria-hidden="true" />
               <span className="font-mono text-[11px] tracking-[0.08em] text-[rgba(197,165,90,0.55)]">
-                {post.readTime}
+                {post.readMinutes} {t("card.minRead")}
               </span>
             </div>
 
             {/* Excerpt as lead paragraph */}
             <p className="font-body text-[17px] leading-[1.8] text-[rgba(245,240,232,0.8)] max-w-2xl font-medium">
-              {post.excerpt}
+              {locale === "hu" ? post.excerptHu : post.excerpt}
             </p>
           </motion.div>
         </div>
@@ -166,7 +171,7 @@ export function BlogPostContent({ post }: BlogPostContentProps) {
           <div className="relative aspect-[21/9] rounded-[3px] overflow-hidden border border-[rgba(197,165,90,0.15)]">
             <Image
               src={post.image}
-              alt={post.title}
+              alt={locale === "hu" ? post.titleHu : post.title}
               fill
               sizes="(max-width: 1024px) 100vw, 1200px"
               className="object-cover"

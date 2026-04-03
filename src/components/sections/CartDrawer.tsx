@@ -110,7 +110,7 @@ export function CartDrawer() {
               <button
                 type="button"
                 onClick={closeCart}
-                aria-label="Close cart"
+                aria-label={t("cart.closeLabel")}
                 className="w-8 h-8 flex items-center justify-center text-[rgba(245,240,232,0.4)] hover:text-[#F5F0E8] transition-colors duration-150"
               >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -220,7 +220,7 @@ export function CartDrawer() {
                               onClick={() =>
                                 updateQuantity(item.id, item.quantity - 1)
                               }
-                              aria-label="Decrease quantity"
+                              aria-label={t("cart.decreaseQty")}
                               className="w-7 h-7 flex items-center justify-center font-mono text-[14px] text-[rgba(245,240,232,0.5)] hover:text-[#C5A55A] hover:bg-[rgba(197,165,90,0.08)] transition-colors"
                             >
                               −
@@ -233,7 +233,7 @@ export function CartDrawer() {
                               onClick={() =>
                                 updateQuantity(item.id, item.quantity + 1)
                               }
-                              aria-label="Increase quantity"
+                              aria-label={t("cart.increaseQty")}
                               className="w-7 h-7 flex items-center justify-center font-mono text-[14px] text-[rgba(245,240,232,0.5)] hover:text-[#C5A55A] hover:bg-[rgba(197,165,90,0.08)] transition-colors"
                             >
                               +

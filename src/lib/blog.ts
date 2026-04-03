@@ -19,10 +19,12 @@ export interface BlogPost {
   id: string;
   slug: string;
   title: string;
+  titleHu: string;
   excerpt: string;
+  excerptHu: string;
   category: BlogCategory;
-  date: string;
-  readTime: string;
+  isoDate: string;
+  readMinutes: number;
   featured: boolean;
   image?: string;
   body: ContentBlock[];
@@ -49,11 +51,14 @@ export const posts: BlogPost[] = [
     id: "what-does-honorary-consul-do",
     slug: "what-does-honorary-consul-do",
     title: "What Does an Honorary Consul Actually Do? A Plain-English Guide",
+    titleHu: "Mit csinál valójában egy tiszteletbeli konzul? Közérthető útmutató",
     excerpt:
       "Most people call the consulate not knowing exactly what an honorary consul can handle — and leave the call wishing someone had explained it clearly. Here it is.",
+    excerptHu:
+      "A legtöbb ember úgy hívja fel a konzulátust, hogy nem tudja pontosan, mivel tud foglalkozni a tiszteletbeli konzul — és a hívás végén azt kívánja, bárcsak valaki érthetően elmagyarázta volna. Tessék, itt az útmutató.",
     category: "Document Authentication",
-    date: "March 10, 2026",
-    readTime: "5 min read",
+    isoDate: "2026-03-10",
+    readMinutes: 5,
     featured: true,
     image: "/images/blog/honorary-consul-role.jpg",
     body: [
@@ -148,11 +153,14 @@ export const posts: BlogPost[] = [
     id: "authentication-vs-apostille",
     slug: "authentication-vs-apostille",
     title: "Authentication vs. Apostille vs. Notarization: Which Do You Need?",
+    titleHu: "Hitelesítés, apostille vagy közjegyzői hitelesítés: melyikre van szüksége?",
     excerpt:
       "These three terms appear on every Hungarian document request — and confuse nearly everyone. Here is a clear breakdown of what each one means and when to use which.",
+    excerptHu:
+      "Ez a három fogalom minden magyar dokumentumkérésnél előfordul — és szinte mindenkit összezavar. Íme a pontos magyarázat arról, hogy mit jelent mindegyik, és mikor melyiket kell alkalmazni.",
     category: "Document Authentication",
-    date: "March 3, 2026",
-    readTime: "7 min read",
+    isoDate: "2026-03-03",
+    readMinutes: 7,
     featured: true,
     image: "/images/blog/authentication-vs-apostille.jpg",
     body: [
@@ -264,11 +272,14 @@ export const posts: BlogPost[] = [
     id: "hungarian-dual-citizenship-new-england",
     slug: "hungarian-dual-citizenship-new-england",
     title: "Hungarian Dual Citizenship in New England: Who Qualifies and How to Apply",
+    titleHu: "Magyar kettős állampolgárság Új-Angliában: ki jogosult rá, és hogyan kell igényelni?",
     excerpt:
       "Tens of thousands of people in New England have Hungarian ancestry. Many of them are already Hungarian citizens and do not know it. Here is what dual citizenship means, who qualifies, and how to start the process from Maine, Vermont, New Hampshire, Rhode Island, or Massachusetts.",
+    excerptHu:
+      "Több tízezer ember él Új-Angliában magyar felmenőkkel. Sokan közülük már most magyar állampolgárok, csak nem tudnak róla. Íme, mit jelent a kettős állampolgárság, ki jogosult rá, és hogyan indítható el az eljárás Maine-ből, Vermontból, New Hampshire-ből, Rhode Island-ről vagy Massachusettsből.",
     category: "Citizenship & Nationality",
-    date: "February 24, 2026",
-    readTime: "8 min read",
+    isoDate: "2026-02-24",
+    readMinutes: 8,
     featured: true,
     image: "/images/blog/dual-citizenship.jpg",
     body: [
@@ -386,11 +397,14 @@ export const posts: BlogPost[] = [
     id: "hungarian-passport-renewal-new-england",
     slug: "hungarian-passport-renewal-new-england",
     title: "Hungarian Passport Renewal in New England: What You Need to Know Before You Apply",
+    titleHu: "Magyar útlevél megújítása Új-Angliában: amit az igénylés előtt tudnia kell",
     excerpt:
       "Hungarian passport renewal cannot be done at this office — but this office can make sure your application to New York is complete, correct, and doesn't come back rejected. Here is the full process for New England residents.",
+    excerptHu:
+      "A magyar útlevél megújítása nem intézhető ennél a hivatalnál — de ez a hivatal gondoskodhat arról, hogy a New Yorkba benyújtott kérelme teljes, hibátlan és visszautasítástól mentes legyen. Íme az Új-Angliában élők számára szóló teljes útmutató.",
     category: "Citizenship & Nationality",
-    date: "February 10, 2026",
-    readTime: "6 min read",
+    isoDate: "2026-02-10",
+    readMinutes: 6,
     featured: false,
     image: "/images/blog/passport-renewal.jpg",
     body: [
@@ -495,11 +509,14 @@ export const posts: BlogPost[] = [
     id: "registering-childs-birth-hungary",
     slug: "registering-childs-birth-hungary",
     title: "Registering Your Child's Birth with Hungary: A Step-by-Step Guide for New England Parents",
+    titleHu: "Gyermeke születésének anyakönyvezése Magyarországon: lépésről lépésre az Új-Angliai szülők számára",
     excerpt:
       "If one parent is a Hungarian citizen, your child born in the US is entitled to Hungarian citizenship. Most parents do not know the process — or that there is a practical reason to register early.",
+    excerptHu:
+      "Ha az egyik szülő magyar állampolgár, az Egyesült Államokban született gyermek jogosult a magyar állampolgárságra. A legtöbb szülő nem ismeri az eljárást — és azt sem tudja, hogy korai anyakönyvezésnek komoly gyakorlati előnyei vannak.",
     category: "Life Events",
-    date: "January 28, 2026",
-    readTime: "8 min read",
+    isoDate: "2026-01-28",
+    readMinutes: 8,
     featured: false,
     image: "/images/blog/birth-registration.jpg",
     body: [
@@ -606,11 +623,14 @@ export const posts: BlogPost[] = [
     id: "life-certificate-hungary-pension",
     slug: "life-certificate-hungary-pension",
     title: "Hungarian Life Certificate for Pension Recipients: What It Is and How to Get One in New England",
+    titleHu: "Magyar életigazolvány nyugdíjasoknak: mi ez, és hogyan szerezhető be Új-Angliában?",
     excerpt:
       "If you receive a Hungarian pension and live in New England, you are required to submit a life certificate — an életigazolás — each year to keep your payments uninterrupted. This office issues them every Monday.",
+    excerptHu:
+      "Ha Ön magyar nyugdíjban részesül és Új-Angliában él, évente életigazolást köteles benyújtani a kifizetések megszakítás nélküli folytatásához. Ez a hivatal minden hétfőn állítja ki azokat.",
     category: "Life Events",
-    date: "January 14, 2026",
-    readTime: "5 min read",
+    isoDate: "2026-01-14",
+    readMinutes: 5,
     featured: false,
     image: "/images/blog/life-certificate.jpg",
     body: [
@@ -695,11 +715,14 @@ export const posts: BlogPost[] = [
     id: "power-of-attorney-hungary-property",
     slug: "power-of-attorney-hungary-property",
     title: "Hungarian Power of Attorney for Property Matters: How to Execute One From New England",
+    titleHu: "Magyar meghatalmazás ingatlanügyekhez: hogyan hitelesíttesse Új-Angliából?",
     excerpt:
       "If you own property in Hungary — or are handling an inheritance from abroad — you need a properly executed Hungarian power of attorney. Here is exactly how to do it from New England without flying to Budapest.",
+    excerptHu:
+      "Ha Önnek ingatlana van Magyarországon — vagy külföldi örökséget intéz —, érvényes magyar meghatalmazásra van szüksége. Íme pontosan, hogyan intézheti ezt Új-Angliából anélkül, hogy Budapestre kellene utaznia.",
     category: "Document Authentication",
-    date: "January 7, 2026",
-    readTime: "7 min read",
+    isoDate: "2026-01-07",
+    readMinutes: 7,
     featured: false,
     image: "/images/blog/power-of-attorney.jpg",
     body: [
@@ -811,11 +834,14 @@ export const posts: BlogPost[] = [
     id: "honorary-consul-vs-consulate-general",
     slug: "honorary-consul-vs-consulate-general",
     title: "Honorary Consul vs. Consulate General: Which Office Handles What?",
+    titleHu: "Tiszteletbeli konzul vs. főkonzulátus: melyik hivatal mit intéz?",
     excerpt:
       "Should you contact the Honorary Consulate in New England or travel to the Hungarian Consulate General in New York? The answer depends on what you need. Here is a clear breakdown.",
+    excerptHu:
+      "Az Új-Angliai Tiszteletbeli Konzulátust kell megkeresnie, vagy el kell utaznia a New York-i Magyar Főkonzulátusra? A válasz attól függ, mire van szüksége. Íme a pontos útmutató.",
     category: "Consular Updates",
-    date: "March 17, 2026",
-    readTime: "5 min read",
+    isoDate: "2026-03-17",
+    readMinutes: 5,
     featured: false,
     image: "/images/blog/consul-vs-consulate.jpg",
     body: [
@@ -904,11 +930,14 @@ export const posts: BlogPost[] = [
     id: "document-checklist-consulate-appointment",
     slug: "document-checklist-consulate-appointment",
     title: "What to Bring to Your Hungarian Consulate Appointment: The Complete Checklist",
+    titleHu: "Mit vigyen magával a konzulátusi időpontjára: a teljes ellenőrzőlista",
     excerpt:
       "Incomplete document packages are the single most common reason consulate appointments fail. Here is a service-by-service checklist so you arrive prepared.",
+    excerptHu:
+      "A hiányos dokumentumcsomag a konzulátusi időpontok meghiúsulásának leggyakoribb oka. Íme egy szolgáltatásonkénti ellenőrzőlista, hogy felkészülten érkezzen.",
     category: "Document Authentication",
-    date: "February 3, 2026",
-    readTime: "6 min read",
+    isoDate: "2026-02-03",
+    readMinutes: 6,
     featured: false,
     image: "/images/blog/document-checklist.jpg",
     body: [
@@ -1042,11 +1071,14 @@ export const posts: BlogPost[] = [
     id: "hungarian-community-new-england",
     slug: "hungarian-community-new-england",
     title: "The Hungarian Community in New England: History, Organizations, and How to Connect",
+    titleHu: "A magyar közösség Új-Angliában: történelem, szervezetek és kapcsolódási lehetőségek",
     excerpt:
       "New England has a deep and active Hungarian-American heritage. From industrial-era immigration waves to contemporary dual nationals, here is the community you belong to — and how to find it.",
+    excerptHu:
+      "Új-Angliában mély gyökerű és élénk magyar-amerikai örökség él. Az ipari korszak bevándorlási hullámaitól a mai kettős állampolgárokig — íme a közösség, amelyhez Ön is tartozik, és ahol megtalálhatja a helyét.",
     category: "Community",
-    date: "March 24, 2026",
-    readTime: "7 min read",
+    isoDate: "2026-03-24",
+    readMinutes: 7,
     featured: false,
     image: "/images/blog/hungarian-community.jpg",
     body: [
@@ -1161,11 +1193,14 @@ export const posts: BlogPost[] = [
     id: "apostille-new-england-guide",
     slug: "apostille-new-england-guide",
     title: "Apostille in New England: When You Need One and Where to Get It",
+    titleHu: "Apostille Új-Angliában: mikor van rá szükség, és hol szerezhető be?",
     excerpt:
       "An apostille is not the same as a consular authentication — and mixing them up costs time and money. Here is exactly when you need each one and who issues them in New England.",
+    excerptHu:
+      "Az apostille nem ugyanaz, mint a konzuli hitelesítés — és a kettő felcserélése időt és pénzt emészt fel. Íme pontosan, mikor melyikre van szükség, és ki állítja ki ezeket Új-Angliában.",
     category: "Document Authentication",
-    date: "March 20, 2026",
-    readTime: "6 min read",
+    isoDate: "2026-03-20",
+    readMinutes: 6,
     featured: true,
     image: "/images/blog/apostille-guide.jpg",
     body: [
@@ -1308,11 +1343,14 @@ export const posts: BlogPost[] = [
     id: "inheriting-property-from-hungary",
     slug: "inheriting-property-from-hungary",
     title: "Inheriting Property from Hungary: A Step-by-Step Guide for Americans",
+    titleHu: "Magyar ingatlan öröklése: lépésről lépésre útmutató amerikaiaknak",
     excerpt:
       "If you have inherited — or expect to inherit — Hungarian real estate or assets from abroad, the paperwork crosses two legal systems. Here is what to expect.",
+    excerptHu:
+      "Ha Ön örökölt — vagy örökölni fog — magyarországi ingatlant vagy vagyont külföldről, a szükséges papírmunka két jogrendszeren ível át. Íme, mire számíthat.",
     category: "Life Events",
-    date: "March 28, 2026",
-    readTime: "7 min read",
+    isoDate: "2026-03-28",
+    readMinutes: 7,
     featured: false,
     image: "/images/blog/hungarian-inheritance.jpg",
     body: [
@@ -1434,11 +1472,14 @@ export const posts: BlogPost[] = [
     id: "us-documents-valid-in-hungary",
     slug: "us-documents-valid-in-hungary",
     title: "Which US Documents Need Authentication to Be Valid in Hungary",
+    titleHu: "Mely amerikai dokumentumoknak kell hitelesítve lenniük ahhoz, hogy Magyarországon érvényesek legyenek?",
     excerpt:
       "Not every American document needs a consular stamp to be accepted in Hungary — but many do. Here is the complete breakdown by document type.",
+    excerptHu:
+      "Nem minden amerikai dokumentumhoz szükséges konzuli pecsét ahhoz, hogy Magyarországon elfogadják — de sok esetben igen. Íme a teljes áttekintés dokumentumtípusonként.",
     category: "Document Authentication",
-    date: "April 2, 2026",
-    readTime: "5 min read",
+    isoDate: "2026-04-02",
+    readMinutes: 5,
     featured: false,
     image: "/images/blog/us-documents-valid-hungary.jpg",
     body: [

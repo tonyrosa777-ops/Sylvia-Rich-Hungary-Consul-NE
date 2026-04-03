@@ -33,7 +33,10 @@
     "checkout": "Checkout",
     "continueShopping": "Continue Shopping",
     "remove": "Remove",
-    "quantity": "Qty"
+    "quantity": "Qty",
+    "closeLabel": "Close cart",
+    "decreaseQty": "Decrease quantity",
+    "increaseQty": "Increase quantity"
   },
   "checkout": {
     "processing": "Processing...",

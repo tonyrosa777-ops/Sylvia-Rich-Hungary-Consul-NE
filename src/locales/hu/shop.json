@@ -33,7 +33,10 @@
     "checkout": "Fizetés",
     "continueShopping": "Vásárlás folytatása",
     "remove": "Eltávolítás",
-    "quantity": "Db"
+    "quantity": "Db",
+    "closeLabel": "Kosár bezárása",
+    "decreaseQty": "Mennyiség csökkentése",
+    "increaseQty": "Mennyiség növelése"
   },
   "checkout": {
     "processing": "Feldolgozás...",
