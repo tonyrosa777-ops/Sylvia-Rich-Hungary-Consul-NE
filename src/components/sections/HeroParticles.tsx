@@ -12,8 +12,12 @@ interface Particle {
   glimmerMaxLife?: number;
 }
 
-const MOTE_COUNT = 160;
-const GLIMMER_INTERVAL = 65; // frames between glimmer spawns
+// Desktop (≥1024px): double density + speed. Mobile: lighter load.
+const DESKTOP_BREAKPOINT = 1024;
+const MOTE_COUNT_MOBILE  = 160;
+const MOTE_COUNT_DESKTOP = 320;
+const GLIMMER_INTERVAL_MOBILE  = 65;
+const GLIMMER_INTERVAL_DESKTOP = 32;
 
 /**
  * Subtle gold particle field — floating motes + brief glints.
@@ -61,9 +65,13 @@ export function HeroParticles() {
       glimmerMaxLife: 40 + Math.random() * 30,
     });
 
+    const isDesktop = () => window.innerWidth >= DESKTOP_BREAKPOINT;
+    const moteCount = () => isDesktop() ? MOTE_COUNT_DESKTOP : MOTE_COUNT_MOBILE;
+    const glimmerInterval = () => isDesktop() ? GLIMMER_INTERVAL_DESKTOP : GLIMMER_INTERVAL_MOBILE;
+
     const init = () => {
       resize();
-      for (let i = 0; i < MOTE_COUNT; i++) {
+      for (let i = 0; i < moteCount(); i++) {
         const p = spawnMote();
         p.y = Math.random() * (canvas.height || 600); // scatter on init
         p.opacity = p.targetOpacity * Math.random();
@@ -109,7 +117,7 @@ export function HeroParticles() {
       frame++;
 
       // Spawn glimmer occasionally
-      if (frame % GLIMMER_INTERVAL === 0) {
+      if (frame % glimmerInterval() === 0) {
         particles.push(spawnGlimmer());
       }
 
