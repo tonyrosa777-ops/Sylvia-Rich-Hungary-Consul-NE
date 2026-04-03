@@ -18,8 +18,8 @@ export const siteData = {
     tagline: "Document Authentication · Notarization · Consular Services",
     domain: "hungaryconsulne.com",
     url: "https://hungaryconsulne.com",
-    email: "TODO_CONFIRM_WITH_SYLVIA@hungaryconsulne.com", // ⚠️ confirm
-    phone: "TODO_CONFIRM_WITH_SYLVIA",                    // ⚠️ confirm
+    email: "hungarianconsulNE@gmail.com",
+    phone: "248-310-0642",
     address: {
       street: "16 Route 111, Suite 5",
       city: "Derry",
