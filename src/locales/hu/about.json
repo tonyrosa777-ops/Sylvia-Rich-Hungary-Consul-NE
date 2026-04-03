@@ -1,26 +1,152 @@
 {
   "header": {
-    "eyebrow": "Bemutatkozás: Sylvia Rich",
-    "headline": "Két Ország Között Született. Mindkettőt Szolgálja.",
-    "description": "A Magyar Nagykövetség által kinevezve. Új-Anglia szolgálatában — hatáskörrel, nyelvtudással és személyes tapasztalattal."
+    "eyebrow": "Saját Szavaival",
+    "headline": "Két hónappal azután születtem, hogy szüleim megérkeztek Amerikába.",
+    "description": "Még mielőtt egyetlen angol szót is megtanultak volna. 1969 október. Anyám húsz éves volt. Apám huszonhat. Ez az a történet, amely miatt ma itt vagyok."
   },
-  "story": {
-    "paragraphs": [
-      "Sylvia Rich egész életében Magyarország és Amerika között navigált — nem átvitt értelemben, hanem szó szerint. Szülei 1969-ben menekültek el a kommunista Magyarországról. Ő Budapesten épített karriert. Évtizedeket töltött mindkét világban, mindkét nyelvet folyékonyan beszéli, mindkét rendszerben otthon van.",
-      "A tiszteletbeli konzuli pozíció nem puszta cím. Ez egy vállalt felelősség — amelyet a Magyar Nagykövetség azért bízott rá, amit ő képvisel: mély magyar kulturális jártasságot, egy öt államon átívelő, orvosi, jogi és kormányzati kapcsolatokat magában foglaló amerikai polgári hálózatot, valamint annak a személynek a gyakorlati tudását, aki személyesen megjárta mindazokat az irodákat, nyomtatványokat és határidőket, amelyekkel ügyfelei most szembesülnek.",
-      "Sylvia nem kap fizetést ezért a munkáért. Kizárólag aktív konzuli feladatok ellátásakor részesül díjazásban. Ez egy önkéntes, közszolgálati pozíció — és pontosan ezért olyan teljes a közösség belé vetett bizalma."
-    ]
+  "intro": {
+    "eyebrow": "Magyarország Tiszteletbeli Konzulja — Új-Anglia",
+    "name": "Sylvia Rich",
+    "title": "Magyarország Tiszteletbeli Konzulja Új-Angliában",
+    "appointedBy": "Kinevezve:"
   },
+  "chapters": [
+    {
+      "number": "01",
+      "label": "Honnan Jöttem",
+      "heading": "1969 Oktober",
+      "paragraphs": [
+        "Két hónappal azután születtem, hogy szüleim megérkeztek Amerikába — vagyis még azelőtt jöttem a világra, hogy egyetlen angol szót is megtanultak volna. Anyám húsz éves volt. Apám huszonhat. Augusztus óta voltak az országban, és ekkor még nem tudtak utcatáblát olvasni, ételt rendelni az étlapon vagy megérteni, amit a banki pénztáros kérdez tőlük. Abba a csendbe érkeztem — abba a különleges csendbe, amely akkor telepszik rá egy háztartásra, amikor két ember olyan nyelven próbál életet építeni, amelyet még nem tud.",
+        "Hadd meséljek el arról, hogyan jutottak el ide — mert ez számít. Mindahhoz számít, amit ma teszek.",
+        "Szüleim Magyarországról jöttek. 1969-ben Magyarország kommunista ország volt — 1945 óta, amikor a Szovjetunió a németek alóli felszabadítás ürügyén bevonult, és egyszerűen ott maradt. 1956-ban, a forradalomban, Magyarországnak tizenkét rendkívüli szabad napja volt. Diákok szervezték, embereket vittek az utcákra, és a Szabad Európa Rádión közvetlenül az Egyesült Államokhoz fordultak: visszavettük az országunkat. Szabadok vagyunk. Kérünk megerősítést. Az Egyesült Államok a Szuezi-csatorna válságával volt elfoglalva. A Szovjetunió visszajött és teljesen leverte a forradalmat.",
+        "Sokan, akik harcoltak — köztük számos tudós és mérnök, akiknek nagy részük a Manhattan-projektben is részt vett, amit a legtöbben nem tudnak — elmenekültek. Apám testvére is ezek közé tartozott. A Westinghouse és a General Electric aktívan toborozta ezeket a magyar elméket. 1969-re apám tizenhárom évet töltött azzal, hogy nézte, hogyan épít életet testvére az Egyesült Államokban, miközben ő kommunista uralom alatt maradt Magyarországon. Huszonhat éves volt. Anyám húsz. Akkor apám azt mondta: Amerikába megyünk."
+      ],
+      "pullQuote": "Abba a csendbe érkeztem — abba a különleges csendbe, amely akkor telepszik rá egy háztartásra, amikor két ember olyan nyelven próbál életet építeni, amelyet még nem tud."
+    },
+    {
+      "number": "02",
+      "label": "A Szökés",
+      "heading": "A Bécsi Buszmegálló",
+      "paragraphs": [
+        "Azokban az időkben Magyarország elhagyásához kormányzati engedélyre volt szükség. Még egy hétvégi kiránduláshoz is engedélyt kellett kérni. Szüleim útlevélkérelmet nyújtottak be — egy bécsi hétvégére, múzeumok megtekintésére. Ausztria és Magyarország szomszédos országok, nagyjából akkora a távolság közöttük, mint New Hampshire és Massachusetts között. A kommunista kormány engedélyezte ezeket a gondosan ellenőrzött kirándulásokat. Hagyták, hogy az emberek azt érezzék, van némi szabadságuk.",
+        "Szüleimnél megvolt az engedély. Felszálltak a buszra. Átkeltek Ausztriába. És amikor a busz megállt és mindenki más a múzeum bejárata felé indult, szüleim a másik irányba mentek.",
+        "Apám előre mindent megszervezett — csendben, óvatosan, hosszú idő alatt. Volt egy kapcsolat. Egy búvóhely. Valaki, aki elrejtette őket, amíg apám szót tudott küldeni az Egyesült Államokban élő testvérének. Levelet írt: Megérkeztünk. Tudnál pénzt küldeni? A pénz a Vöröskereszten keresztül érkezett meg. És 1969 augusztusában szüleim felszálltak egy bécsi repülőre JFK felé, és megérkeztek New Yorkba szinte semmi nélkül, egy úton lévő babával és egyetlen angol szó tudása nélkül.",
+        "Anyám elmondja, hogy ott álltak a repülőtéren, és fogalmuk sem volt, mit mond nekik bárki."
+      ],
+      "pullQuote": "Amikor a busz megállt és mindenki más a múzeum bejárata felé indult, szüleim a másik irányba mentek."
+    },
+    {
+      "number": "03",
+      "label": "Életet Építeni",
+      "heading": "A Sears. A Fodrászat. Az Esti Iskola.",
+      "paragraphs": [
+        "Akkoriban az amerikai szabályok egyértelműek és könyörtelenek voltak. Ha apám nem tudja eltartani a családját, a nagybátyám — aki szponzorálta bejutásukat — pénzügyileg felelős értük. Nem volt segély, nem volt élelmiszerjegy, nem volt nyelvi segítség, nem voltak programok az átmenet megkönnyítésére. Megérkezett az ember, és kitalálta, hogyan boldogul — és elvárták, hogy gyorsan kitalálja.",
+        "Apám képzett mérnök volt. De a mérnöki munka azt igényli, hogy kommunikálni tudjon ügyfelekkel, hogy olvasni tudjon tervrajzokat és szerződéseket — ebből semmi sem volt lehetséges egy olyan nyelven, amelyet még nem tudott. Azt vette észre, hogy a televíziók mindenhol ugyanolyanok a világon. Munkát kapott a Searsnél, ahol televíziókat javított. Olyan amerikai férfiakkal dolgozott, akik megtanították neki az angolt úgy, ahogyan egy nyelvet valójában meg lehet tanulni — minden nap, a valódi munka összefüggéseiben.",
+        "Anyám kozmetikus. Rögtön megértette, hogy a haj is egyetemes. Mindenkinek van haja. Elment dolgozni egy szalonba, és az ottani nők megtették neki azt, amit azok a Sears-es férfiak apámnak — folyton beszéltek hozzá, bevonták, segítettek megérteni. Angolt tanult egy massachusettsi fodrászatban, és azt hiszem, valami szép van ebben.",
+        "Esténként a helyi középiskolába mentek. Tinédzserekkel együtt ültek tantermekben, és megtanulták az amerikai alkotmányt, az állampolgári ismereteket, az amerikai történelmet. Angolul tették le a jogosítványvizsgát — más lehetőség nem volt. Apám később saját orvostechnikai vállalatot alapított. Anyám saját szépségszalont nyitott. Az amerikai álmat pontosan a hirdetett módon teljesítették be — nem könnyen, nem áldozatok nélkül, de teljesen."
+      ],
+      "pullQuote": ""
+    },
+    {
+      "number": "04",
+      "label": "Gyermekkor Két Országban",
+      "heading": "A Nyakamba Akasztott Cédula",
+      "paragraphs": [
+        "Minden júniusban, az utolsó iskolanapon szüleim felültettek egy repülőre Magyarország felé.",
+        "Rájöttek, hogy egy transzatlanti repülőjegy kevesebbe kerül az amerikai nyári napközisnél — ami elárul valamit a hetvenes évek bevándorlásának gazdaságáról, és arról a kreatív problémamegoldásról is, amelyet az első generációs családok szükségből fejlesztenek ki. Nagymamám Magyarországon volt. Nála tölthettem a nyarat, megtanulhattam a nyelvet, megismerhettem gyökereimet, szüleim pedig dolgozhatatták a nyár nyújtotta plusz órákat gyermekfelügyelet nélkül.",
+        "A nyakamba akasztottak egy céduládat — ahogy a légitársaságok szokták a kísérő nélküli gyerekeket szállítani, minden fontos információval arról, hová tart ez a gyerek és ki veszi majd át. Nyolcéves koromtól minden nyáron egyedül repültem át az Atlanti-óceánon. Az egyik végén szüleim ültettek fel a repülőre. A másik végén nagymamám vett át.",
+        "Minden nyaramat nagymamám magyarországi házában töltöttem. Úgy tanultam meg a magyart, ahogyan csak akkor tanul meg az ember egy nyelvet, ha nincs más lehetősége — teljesen, belülről, tankönyv nélkül. Igazi barátságokat kötöttem ott, amelyeket évtizedeken át megőriztem. Amikor augusztusban hazajöttem, ismét amerikai voltam. Amikor júniusban visszamentem, ismét magyar voltam. Tinédzserkoromra valójában már egyik sem voltam tisztán. Valami olyasmi lettem, ami mozog a kettő között — ami, mint kiderült, pontosan az kellett, hogy legyek."
+      ],
+      "pullQuote": "Valami olyasmi lettem, ami mozog a kettő között — ami, mint kiderült, pontosan az kellett, hogy legyek."
+    },
+    {
+      "number": "05",
+      "label": "Budapest, 1991",
+      "heading": "Két Nappal a Diplomaosztó Után",
+      "paragraphs": [
+        "1991-ben végeztem az egyetemen. Ez az az év volt, amikor a Berlini Fal 1989-es leomlásának teljes következményei valóban érezhetővé váltak — a Vasfüggöny felbomlott, a kommunista gazdaságok megnyíltak, és a nyugati vállalatok rendkívüli sebességgel áramlottak Közép-Európába, megragadva azt, amit történelmi lehetőségként értékeltek.",
+        "Egy philadelphiai PR-ügynökségnél voltam gyakornok, amikor valaki belépett az irodába és bejelentette, hogy Budapesten, Prágában és Bécsben nyitnak irodákat. Megkérdezték, hogy valaki beszél-e valamelyik nyelvükön. Felnyújtottam a kezem. Ahogy mondtam, én voltam a gyakornok. Mikor tud menni? A következő héten volt a diplomaosztó. Nagyon szeretném átvenni a diplomámat, mondtam. Rendben. Két nappal a diplomaosztó után felszálltam egy repülőre.",
+        "Huszonegy évesen szálltam le Budapesten, több millió márkás büdzsével — az euró még nem létezett — és olyan ügyfelekkel, amelyek a világ legnagyobb vállalatai közé tartoztak. A Procter & Gamble, a Philip Morris, a Colgate-Palmolive, az Unilever — mindenki gyorsan mozgott a poszt-kommunista Közép-Európában, és mindenki szükségét érezte valakinek, aki megérti a tranzakció mindkét oldalát. Nem volt kézikönyv ahhoz, amit csináltam, mert ez a különleges történelmi pillanat soha nem fordult elő korábban.",
+        "A kedvenc ügyfelem a British American Tobacco volt. A Forma–1 szponzorálása révén pályafutásom egyik legrendkívülibb élményét szerezhette meg. Magyarország volt az egyetlen ország a volt Vasfüggöny mögött, ahol Forma–1-es Nagydíj-versenyt rendeztek. Minden évben Budapestre érkeztek a nemzetközi újságírók és a globális F1-sajtó, és én voltam az, aki vezette ezeket a sajtótájékoztatókat — tolmácsoltam magyar tisztviselők, nemzetközi versenyzők és a világ sajtója között. Huszonkét éves voltam."
+      ],
+      "pullQuote": "Mikor tud menni? Két nappal a diplomaosztó után felszálltam egy repülőre."
+    },
+    {
+      "number": "06",
+      "label": "London. Johannesburg. Michigan.",
+      "heading": "Ahogy a Világ Egyre Nagyobb Lett",
+      "paragraphs": [
+        "Budapest a kilencvenes évek elején egy különleges embertípust vonzott — olyat, akiben van annyi önbizalom, hogy megjelenjen egy olyan helyen, ahol nincsenek bevett szabályok, és kitalálja, hogyan boldogul. A férjem ilyen ember volt. Brit volt, a Saatchi & Saatchi küldte Kelet-Európába irodát nyitni, ugyanazon a területen dolgozott, amelyen én — de a reklám oldaláról. Mindketten azt próbáltuk megérteni, hogyan lehet kommunikálni olyan emberekkel, akik egész életükben olyan rendszerben éltek, ahol a reklám nem létezett. Egymásra találtunk ebben a munkában.",
+        "Három évet éltem Budapesten. Majd a férjemet Londonba helyezték, én is mentem. Aztán Johannesburgba, ahol a lányunk megszületett. Végig dolgoztam a public relations területén — a készségek átvihetők voltak.",
+        "Amikor a gyerekek még kicsik voltak, és több időm volt átgondolni, mit szeretnék ezután, visszamentem az iskolába. A Michigani Egyetemen elvégeztem az angol mint idegen nyelv oktatása szakot. Az ok személyes volt, és ma is az. Emlékszem, ahogy kisgyerekként óvodai osztályteremben ültem — azokban a korai években, mielőtt az angolom elég szilárd lett volna az amerikai iskolai navigáláshoz — és semmit sem értettem abból, amit bárki mondott. Néztem, ahogy a többi gyerek olyan kérdésekre válaszol, amelyeket én nem tudtam értelmezni. Éreztem azt a különleges magányosságot, amely akkor fog el, ha tele van a szoba emberekkel, de egyikükkel sem lehet kommunikálni. Végül megtanultam a nyelvet. De soha nem felejtettem el, milyen volt, mielőtt volt."
+      ],
+      "pullQuote": "Soha nem felejtettem el, milyen volt, mielőtt volt."
+    },
+    {
+      "number": "07",
+      "label": "A Kinevezés",
+      "heading": "Boston. A Magyar Társaság. A Telefonhívás.",
+      "paragraphs": [
+        "Amikor a Boston-környéki területen telepedtünk le, megtaláltam az ottani magyar közösséget. A Bostoni Magyar Társaság igazán figyelemreméltó — van könyvklubjuk, tudományos klubjuk, formális ünnepségeik és szertartásaik, egy szervezeti élet, amely a legtöbb magyaramerikai közösségben nincs meg. Fokozatosan bekapcsolódtam. Rendszeresen részt vettem az eseményeken. Következetesen megjelentem. E részvétel révén megismertem a New York-i Magyar Főkonzult.",
+        "Az idők során kapcsolatot alakítottunk ki. Megértette a hátteremet — a nyelveket, a karriert, az évtizedes tapasztalatot a két ország és a két rendszer között. Új-Anglia magyar születésű szakembereinek sok kiemelkedő tagja volt — sebészek, fizikusok, jogászok, valóban kiváló mérnökök. De a Magyarországon való születés nem ugyanaz, mint az amerikai intézmények belső működésének ismerete. Tudni, hogyan kell eligazodni egy kórházi bürokráciában, hogyan kell felhívni egy polgármester irodáját, hogyan osztja el a hatalmat az amerikai kormányzati rendszer — ezek teljesen idegenek azok számára, akik más rendszerben nőttek fel.",
+        "Egész életemben mindkét lábammal álltam mindkét világban, és pályafutásomat e kettő között hídépítéssel töltöttem. Ezt látta a Főkonzul. Ezért jelölt.",
+        "Az idő múltával a Magyar Kormány Magyarország Tiszteletbeli Konzuljává nevezett ki Új-Angliára. Öt állam. Maine, Vermont, New Hampshire, Rhode Island és Massachusetts. Connecticut és Kanada között nincs más tiszteletbeli konzul."
+      ],
+      "pullQuote": "Amikor a Magyar Nagykövetség éves konferenciájára megyek Washingtonban, a konzulok egy hosszú asztalnál ülnek, előttük az államuk zászlajával. Floridának egy van. Indianának egy van. Nekem öt van. Tudják, melyik szék az enyém, még mielőtt leülnék."
+    },
+    {
+      "number": "08",
+      "label": "A Munka",
+      "heading": "Mit Teszek — és Miért Tartom Titokban a Legtöbbet",
+      "paragraphs": [
+        "A hivatalos leírás egyszerű: aláírásokat hitelesítek. Okiratokat közjegyzőzök. Képviselem a magyar állampolgárok, jogi személyek és nem-kormányzati szervezetek érdekeit Új-Angliában. Én vagyok a Magyar Kormány helyi képviselője ezen a területen. Ez mind igaz. És ez körülbelül a tényleges munka egyharmada.",
+        "A többi a Bécsi Egyezmény azon elvén alapul, miszerint a diszkréció alapvető szakmai kötelezettség. Ezt komolyan veszem. Az emberek, akik hozzám jönnek, vagy akiket a Nagykövetség küld hozzám, sokszor olyan körülmények között érkeznek, amelyek bizalmas kezelést igényelnek.",
+        "Fogadtam Magyarországról érkező szülőket, akik nem beszéltek angolul és kórházban lévő hozzátartozójukhoz kellett eljutni. Koordináltam szociális munkásokkal és pszichiáterekkel olyan helyzetek kezeléséhez, amelyek mind magyar nyelvtudást, mind az amerikai egészségügyi intézmények működésének ismeretét igényelték. Kapcsolatot teremtettem magyar kormányzati tisztviselők és az amerikai helyi önkormányzat között olyan módokon, amelyekhez valakire volt szükség, aki informálisan tud mozogni — egy nagykövetnek megvannak a protokoll-korlátai. Ha a Magyar Nagykövetségnek szüksége van egy találkozóra Boston polgármesterével, megkérhetnek engem, és én megtehetek egy telefonhívást.",
+        "Fenntartok egy hálózatot — orvosokból, jogi kapcsolatokból, kormányzati kapcsolatokból, egyetemi adminisztrátorokból, közösségi szervezetekből — hogy amikor olyan helyzet adódik, amellyel még nem találkoztam, legyen hova fordulnom. Nincs kézikönyv ehhez a munkához, ugyanúgy, ahogy nem volt kézikönyv a poszt-kommunista Budapesten végzett PR-munkához sem 1991-ben. Megjelensz, kitalálod, és gondoskodsz arról, hogy az, aki segítségre szorult, valóban megkapja."
+      ],
+      "pullQuote": ""
+    },
+    {
+      "number": "09",
+      "label": "A Papírmunka",
+      "heading": "Miért Fontosabb, Mint Amilyennek Hangzik",
+      "paragraphs": [
+        "A közjegyzői és hitelesítési munka csendesebb a válságmenedzselésnél, de rendkívül fontos azoknak, akiknek szükségük van rá. Amikor egy Új-Angliában élő magyar állampolgárnak dokumentumot kell benyújtania a Magyar Kormánynak — születési anyakönyvi kivonatot, ingatlan-ügyletet, jogi meghatalmazást, nyugdíjas életigazolást — azt a dokumentumot egy elismert konzuli hatóság által, meghatározott módon kell hitelesíteni. Ha ez nem megfelelően történik, visszautasítják. Az embernek elölről kell kezdenie, miután már jelentős összeget költött ügyvédekre, fordítási szolgáltatásokra és a Budapestre tervezett útra.",
+        "Egyszer segítettem egy nőnek megújítani a nyolcéves fia magyar útlevelét. A fiú kettős állampolgár volt — magyar és amerikai — és szükség volt az apa hitelesített beleegyezésére a megújításhoz. Együtt végigmentünk a dokumentáción. A nő visszarepült Magyarországra. Amikor Budapesten leszállt és benyújtotta a papírokat, az iroda egy probléma nélkül feldolgozta. Később elmondta, hogy a beadványunkat a hirdetőtáblára tűzték ki annak példájaként, pontosan hogyan kell konzuli hitelesítést végezni.",
+        "Ezt a történetet nem azért mondom el, hogy dicsekedjek. Azért mondom el, amit köszönetképpen mondott: Ezeken a repülőjáratokon egész idő alatt reménykedtem, hogy nem követtél el hibát. Ez a munka súlya. Az emberek valami valósat bíznak rám. Egy hiba nem csupán kellemetlenség — elvesztegetett utat, késleltetett útlevelet, utazni nem tudó gyereket, meghiúsuló ingatlanügyletet jelenthet. A pontosság számít. A pontosságot nagyon komolyan veszem."
+      ],
+      "pullQuote": "Ezeken a repülőjáratokon egész idő alatt reménykedtem, hogy nem követtél el hibát."
+    },
+    {
+      "number": "10",
+      "label": "Miért Csinálom",
+      "heading": "Amit Szüleim Adtak Nekem",
+      "paragraphs": [
+        "Apám maradhatott volna Magyarországon. Ez minden közvetlen értelemben könnyebb lett volna. Beszélte a nyelvet. Ismerte a rendszereket. Volt karrierútja, még ha azt be is szorította a kommunista gazdaság. Az elmenés azt jelentette, hogy egy bécsi búvóhelyen bujkáljon, évek óta nem látott testvérétől pénzre várjon, olyan országba érkezzen, ahol senkivel nem tud kommunikálni, és egy televíziókat javító állást vegyen el, holott mérnöknek képezték.",
+        "A nehezebb utat választotta, mert hitte, hogy a nehezebb út valami jobbhoz vezet. És igaza volt. De az igazságnál is fontosabb, hogy mindenét feltette arra, hogy igaza legyen — biztonsági háló nélkül, várandós feleséggel és egy országgal maga mögött, amelybe következmények nélkül nem térhetett vissza.",
+        "Arra a választásra állandóan gondolok. Nem valami drámai érzéssel — szüleim nem hősiesen mesélik, amit tettek. Csak megélték, és most jól élnek, és büszkék arra, amit felépítettek. De minden nap tudatában vagyok annak, hogy az életem — a nyelvek, amelyeket beszélek, a pályafutásom, a pozíció, amelyet betöltök — két ember sorából ered, akik leszálltak egy bécsi buszról és tovább mentek.",
+        "Legalább annyit tehetek, hogy hasznos vagyok azoknak, akik még mindig teszik azt az utat. Az Új-Angliában élő magyaroknak, akik egy olyan rendszert próbálnak megérteni, amelyben nem nőttek fel, akiknek hitelesíteni kell egy dokumentumot, vagy tanút kell állítani egy aláíráshoz, vagy el kell intézni egy telefonhívást, vagy egyszerűen szükségük van valakire, aki megérti mindkét oldalát annak, amit átélnek. Tudom, milyen ez — nem azért, mert valaki elmesélte, hanem mert egész életem ezt éltem."
+      ],
+      "pullQuote": "Legalább annyit tehetek, hogy hasznos vagyok azoknak, akik még mindig teszik azt az utat."
+    }
+  ],
   "credentials": {
-    "eyebrow": "Megbízatás",
+    "eyebrow": "Megbízatás és Hatáskör",
     "headline": "A Cím Mögötti Hatáskör",
     "items": [
       "A Magyar Nagykövetség (Washington DC) által hivatalosan kinevezve",
       "A konzuli kapcsolatokról szóló Bécsi Egyezmény alapján jogosítva",
-      "Illetékességi területe: Maine, Vermont, New Hampshire, Rhode Island és Massachusetts",
-      "Kétnyelvű: angol és magyar",
-      "Kapcsolati hálója orvosi, jogi, pszichológiai és diplomáciai területeket fed le Új-Angliában"
+      "Illetékességi területe: Maine, Vermont, New Hampshire, Rhode Island és Massachusetts — öt állam, Connecticut és Kanada között nincs más tiszteletbeli konzul",
+      "Kétnyelvű: angol és magyar — mindkét nyelvben anyanyelvi szintű",
+      "Kapcsolati hálója orvosi, jogi, pszichológiai és diplomáciai területeket fed le Új-Angliában",
+      "Michigani Egyetem, angol mint idegen nyelv oktatása szak",
+      "Korábbi PR-igazgató, poszt-kommunista Közép-Európában — Budapest, Prága, Bécs (1991–1994)",
+      "A pozíció önkéntes — díjazásban csak aktív konzuli feladatok elvégzésekor részesül"
     ]
+  },
+  "honest": {
+    "heading": "Egy Őszinte Szó",
+    "body": "Nem vagyok bevándorlási ügyvéd. Nem vagyok pénzügyi tanácsadó. Nem vagyok terapeuta vagy egészségügyi szakember — bár ismerek embereket e területeken, és tudok segíteni a megfelelő szakemberek megtalálásában, ha szükség van rájuk. Ami vagyok: a Magyar Kormány hivatalos képviselője ezen a területen. Hitelesíthetek dokumentumokat. Közjegyzőzhetem az aláírásokat. Segíthetek megérteni, melyik eljárás vonatkozik az Ön helyzetére, és kapcsolatba hozhatom a megfelelő emberekkel. Lehetek az a telefonhívás, amelyet akkor tesz, amikor valami rosszra fordult és nem tudja, kit hívjon. Hétfőnként fogadok időpontra érkező ügyfeleket. Az irodám Derry-ben, New Hampshire-ben van. Nem nehéz megtalálni."
   },
   "appointment": {
     "eyebrow": "Az Ön Időpontja",
