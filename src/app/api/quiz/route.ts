@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
   }
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const CONSUL_EMAIL = process.env.CONSUL_EMAIL ?? "sylvia@hungaryconsulne.com";
+  const CONSUL_EMAIL = process.env.CONSUL_EMAIL ?? "sylvia@hungarianconsulne.com";
 
   const answerSummary = Object.entries(answers)
     .map(([k, v]) => `  ${k}: ${v}`)
@@ -38,7 +38,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "quiz@hungaryconsulne.com",
+          from: "quiz@hungarianconsulne.com",
           to: CONSUL_EMAIL,
           subject: `New Quiz Lead: ${name} — matched to ${recommendation}`,
           text: [
@@ -61,7 +61,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "Sylvia Rich <noreply@hungaryconsulne.com>",
+          from: "Sylvia Rich <noreply@hungarianconsulne.com>",
           to: email,
           reply_to: CONSUL_EMAIL,
           subject: `Your consular service recommendation, ${name}`,
@@ -72,11 +72,11 @@ export async function POST(req: NextRequest) {
             ``,
             `I review every submission personally. If your situation calls for a direct answer before you book, I will be in touch.`,
             ``,
-            `To book a Monday appointment in Derry, NH: https://hungaryconsulne.com/booking`,
+            `To book a Monday appointment in Derry, NH: https://hungarianconsulne.com/booking`,
             ``,
             `Sylvia Rich`,
             `Honorary Consul of Hungary — New England`,
-            `hungaryconsulne.com`,
+            `hungarianconsulne.com`,
           ].join("\n"),
         }),
       });

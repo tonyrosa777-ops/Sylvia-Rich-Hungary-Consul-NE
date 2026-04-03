@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 /**
- * Homepage — hungaryconsulne.com
+ * Homepage — hungarianconsulne.com
  * Section order per design-system.md §11 + website-build-template.md Homepage Composition
  *
  * 1. Hero         — hook + primary CTA

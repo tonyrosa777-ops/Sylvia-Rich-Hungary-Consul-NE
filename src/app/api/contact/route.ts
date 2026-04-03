@@ -21,7 +21,7 @@ export async function POST(req: NextRequest) {
   }
 
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  const CONSUL_EMAIL = process.env.CONSUL_EMAIL ?? "sylvia@hungaryconsulne.com";
+  const CONSUL_EMAIL = process.env.CONSUL_EMAIL ?? "sylvia@hungarianconsulne.com";
 
   if (RESEND_API_KEY) {
     try {
@@ -33,7 +33,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "contact@hungaryconsulne.com",
+          from: "contact@hungarianconsulne.com",
           to: CONSUL_EMAIL,
           reply_to: email,
           subject: `Contact Form: ${subject || "General Inquiry"} — ${name}`,
@@ -56,7 +56,7 @@ export async function POST(req: NextRequest) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          from: "Sylvia Rich <noreply@hungaryconsulne.com>",
+          from: "Sylvia Rich <noreply@hungarianconsulne.com>",
           to: email,
           reply_to: CONSUL_EMAIL,
           subject: `Message received — Honorary Consulate of Hungary, New England`,
@@ -66,11 +66,11 @@ export async function POST(req: NextRequest) {
             `Thank you for reaching out. I have received your message and will respond within one business day.`,
             ``,
             `If your matter is time-sensitive, I recommend booking a Monday appointment directly:`,
-            `https://hungaryconsulne.com/booking`,
+            `https://hungarianconsulne.com/booking`,
             ``,
             `Sylvia Rich`,
             `Honorary Consul of Hungary — New England`,
-            `hungaryconsulne.com`,
+            `hungarianconsulne.com`,
           ].join("\n"),
         }),
       });

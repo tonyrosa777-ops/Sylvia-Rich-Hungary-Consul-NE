@@ -89,7 +89,7 @@ export async function POST(req: NextRequest) {
         const addressBlock = formatAddress(shipping);
 
         const emailText = [
-          "New shop order on hungaryconsulne.com!",
+          "New shop order on hungarianconsulne.com!",
           "",
           `Customer: ${customerName} <${customerEmail}>`,
           `Total: $${total}`,
@@ -103,10 +103,10 @@ export async function POST(req: NextRequest) {
         ].join("\n");
 
         const ownerEmail =
-          process.env.OWNER_EMAIL ?? "consul@hungaryconsulne.com";
+          process.env.OWNER_EMAIL ?? "consul@hungarianconsulne.com";
 
         await resend.emails.send({
-          from: "Hungary Consul Shop <orders@hungaryconsulne.com>",
+          from: "Hungary Consul Shop <orders@hungarianconsulne.com>",
           to: ownerEmail,
           subject: "New Order — Honorary Consulate Shop",
           text: emailText,

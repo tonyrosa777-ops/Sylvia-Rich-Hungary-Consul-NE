@@ -1,6 +1,6 @@
 /**
  * site.ts — Honorary Consulate of Hungary — New England
- * hungaryconsulne.com
+ * hungarianconsulne.com
  *
  * ALL copy lives here. Zero hard-coded strings in components.
  * Source: initial-business-data.md + market-intelligence.md
@@ -16,8 +16,8 @@ export const siteData = {
     name: "Honorary Consulate of Hungary — New England",
     nameShort: "Hungary Consul — New England",
     tagline: "Document Authentication · Notarization · Consular Services",
-    domain: "hungaryconsulne.com",
-    url: "https://hungaryconsulne.com",
+    domain: "hungarianconsulne.com",
+    url: "https://hungarianconsulne.com",
     email: "hungarianconsulNE@gmail.com",
     phone: "248-310-0642",
     address: {
