@@ -47,6 +47,7 @@ export const siteData = {
       { label: "About", href: "/about" },
       { label: "Knowledge Base", href: "/blog" },
       { label: "Shop", href: "/shop" },
+      { label: "Pricing", href: "/pricing" },
       { label: "Contact", href: "/contact" },
     ],
     cta: { label: "Book Appointment", href: "/booking" },

@@ -33,6 +33,7 @@ export function SiteHeader() {
     "/about": t("nav.about"),
     "/blog": t("nav.blog"),
     "/shop": t("nav.shop"),
+    "/pricing": t("nav.pricing"),
     "/contact": t("nav.contact"),
   };
 

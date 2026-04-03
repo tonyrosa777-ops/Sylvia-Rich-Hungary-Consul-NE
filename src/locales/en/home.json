@@ -46,6 +46,40 @@
     "paymentNote": "Cash or check only. No credit cards accepted. Make checks payable to Sylvia Rich.",
     "priceUnconfirmed": "⚠ Prices pending client confirmation"
   },
+  "teaser": {
+    "eyebrow": "Explore the Consulate",
+    "headline": "Everything You Need in One Place",
+    "cards": [
+      {
+        "label": "Consular Services",
+        "heading": "Notarization & Authentication",
+        "body": "Document authentication, signature witnessing, apostille guidance, and official consular services for Hungarian citizens and dual nationals across five states.",
+        "cta": "See All Services",
+        "href": "/services"
+      },
+      {
+        "label": "Knowledge Base",
+        "heading": "Guides for the Hungarian-American",
+        "body": "Dual citizenship, document authentication, vital records, inheriting Hungarian property. Answers to the questions you have been searching for.",
+        "cta": "Browse Articles",
+        "href": "/blog"
+      },
+      {
+        "label": "Sylvia's Story",
+        "heading": "Why She Is the Right Person",
+        "body": "Her parents escaped communist Hungary in 1969. She built a career in post-Soviet Budapest at twenty-one. She is not a bureaucrat — she has lived this.",
+        "cta": "Read Her Story",
+        "href": "/about"
+      },
+      {
+        "label": "Community Shop",
+        "heading": "Wear Both Identities",
+        "body": "Hungarian-themed apparel and accessories for those who know exactly where they come from. Navy and gold. Serif and double cross. Made for New England winters.",
+        "cta": "Visit the Shop",
+        "href": "/shop"
+      }
+    ]
+  },
   "finalCTA": {
     "eyebrow": "No Drive to New York Required",
     "headline": "You Don't Have to Drive to New York",

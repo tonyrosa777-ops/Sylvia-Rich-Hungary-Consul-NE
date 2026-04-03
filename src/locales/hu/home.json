@@ -46,6 +46,40 @@
     "paymentNote": "Csak készpénz vagy csekk. Hitelkártya nem fogadható el. A csekket Sylvia Rich nevére kell kiállítani.",
     "priceUnconfirmed": "⚠ Árak megerősítés alatt"
   },
+  "teaser": {
+    "eyebrow": "Fedezze Fel a Konzulátust",
+    "headline": "Minden, Amire Szüksége Van — Egy Helyen",
+    "cards": [
+      {
+        "label": "Konzuli Szolgáltatások",
+        "heading": "Hitelesítés és Konzuli Feladatok",
+        "body": "Okirathitelesítés, aláírás-tanúsítás, apostille-tanácsadás és hivatalos konzuli szolgáltatások magyar állampolgárok és kettős állampolgárok számára öt államban.",
+        "cta": "Minden Szolgáltatás",
+        "href": "/services"
+      },
+      {
+        "label": "Tudástár",
+        "heading": "Útmutatók a Magyar-Amerikainak",
+        "body": "Kettős állampolgárság, okirathitelesítés, anyakönyvi iratok, magyarországi örökség. Válaszok azokra a kérdésekre, amelyeket már régóta keres.",
+        "cta": "Cikkek Böngészése",
+        "href": "/blog"
+      },
+      {
+        "label": "Sylvia Rich Története",
+        "heading": "Miért Ő a Megfelelő Személy",
+        "body": "Szülei 1969-ben menekültek el a kommunista Magyarországról. Huszonegy évesen karriert épített a szovjet uralom alól felszabadult Budapesten. Nem bürokrata — ő maga is megélte mindezt.",
+        "cta": "Olvassa el a Történetét",
+        "href": "/about"
+      },
+      {
+        "label": "Közösségi Bolt",
+        "heading": "Viselje Mindkét Identitását",
+        "body": "Magyar témájú ruházat és kiegészítők azoknak, akik pontosan tudják, honnan jönnek. Tengerészkék és arany. Talpas betűk és kettős kereszt.",
+        "cta": "Látogasson a Boltba",
+        "href": "/shop"
+      }
+    ]
+  },
   "finalCTA": {
     "eyebrow": "New Yorkba Utazás Nem Szükséges",
     "headline": "Nem Kell New Yorkba Mennie",
