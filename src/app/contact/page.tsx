@@ -42,7 +42,7 @@ export default function ContactPage() {
       {/* Info cards */}
       <section className="bg-[#0A1628] py-20 lg:py-28">
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
 
             {/* Location */}
             <FadeUp>
@@ -85,6 +85,29 @@ export default function ContactPage() {
                 <p className="font-body text-[12px] leading-relaxed text-[rgba(245,240,232,0.4)]">
                   {t("cards.payment.checkPayable")}
                 </p>
+              </div>
+            </FadeUp>
+
+            {/* Direct Contact */}
+            <FadeUp delay={0.3}>
+              <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.18)] rounded-[3px] p-7">
+                <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[#C5A55A] mb-4">{t("cards.direct.heading")}</p>
+                <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[rgba(245,240,232,0.4)] mb-1">{t("cards.direct.emailLabel")}</p>
+                <a
+                  href={`mailto:${brand.email}`}
+                  className="font-body text-[15px] text-[#F5F0E8] hover:text-[#C5A55A] transition-colors duration-150 break-all"
+                >
+                  {brand.email}
+                </a>
+                <GoldRule width="sm" opacity={20} className="mt-4 mb-4" />
+                <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[rgba(245,240,232,0.4)] mb-1">{t("cards.direct.phoneLabel")}</p>
+                <a
+                  href={`tel:${brand.phone}`}
+                  className="font-body text-[15px] text-[#F5F0E8] hover:text-[#C5A55A] transition-colors duration-150"
+                >
+                  {brand.phone}
+                </a>
+                <p className="font-body text-[11px] text-[rgba(245,240,232,0.3)] mt-3">{t("cards.direct.responseNote")}</p>
               </div>
             </FadeUp>
           </div>

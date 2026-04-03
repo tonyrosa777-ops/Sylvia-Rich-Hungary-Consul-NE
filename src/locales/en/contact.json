@@ -25,6 +25,12 @@
       "accepted": "Cash or check only",
       "notAccepted": "No credit cards",
       "checkPayable": "Checks payable to: Sylvia Rich"
+    },
+    "direct": {
+      "heading": "Direct Contact",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "responseNote": "Response within one business day"
     }
   },
   "mapLabel": "Office location map",

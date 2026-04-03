@@ -25,6 +25,12 @@
       "accepted": "Csak készpénz vagy csekk",
       "notAccepted": "Hitelkártya nem fogadható el",
       "checkPayable": "A csekket Sylvia Rich nevére kell kiállítani"
+    },
+    "direct": {
+      "heading": "Közvetlen Kapcsolat",
+      "emailLabel": "E-mail",
+      "phoneLabel": "Telefon",
+      "responseNote": "Egy munkanapon belül válaszolunk"
     }
   },
   "mapLabel": "Irodai helyszín térképe",
