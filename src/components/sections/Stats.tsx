@@ -9,7 +9,7 @@ export function Stats() {
 
   const stats = [
     { value: 5,  suffix: "",  label: t("stats.statesServed"),      sub: "ME · VT · NH · RI · MA" },
-    { value: 4,  suffix: "",  label: t("stats.servicesAvailable"),  sub: "Authentication · Notarization · Certification · Life Certificates" },
+    { value: 4,  suffix: "",  label: t("stats.servicesAvailable"),  sub: t("stats.servicesSub") },
     { value: 0,  suffix: "",  label: t("stats.zeroDrive"),          sub: `vs. $80–$300+ ${t("stats.zeroLabel")}` },
   ];
 
@@ -19,7 +19,7 @@ export function Stats() {
 
         <FadeUp className="text-center mb-14">
           <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[rgba(197,165,90,0.6)] mb-3">
-            By the Numbers
+            {t("stats.byTheNumbers")}
           </p>
           <GoldRule width="sm" opacity={30} className="mx-auto" />
         </FadeUp>
@@ -38,7 +38,7 @@ export function Stats() {
                 {i === 2 ? (
                   /* Special case: "Zero" — no drive required */
                   <span className="font-display font-bold italic text-[clamp(1.8rem,4vw,2.8rem)]">
-                    Zero
+                    {t("stats.zeroWord")}
                   </span>
                 ) : (
                   <CountUp end={stat.value} suffix={stat.suffix} duration={2} />

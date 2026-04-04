@@ -13,5 +13,13 @@
     "heading": "Kész az Időpontfoglalásra?",
     "body": "Hétfői időpontok. Derry, NH. Csak készpénz vagy csekk.",
     "button": "Foglaljon Hétfői Időpontot"
+  },
+  "reviewSection": {
+    "languageLabel": "Magyar",
+    "helpText": "Értékelése segít más magyar-amerikaiaknak Új-Angliában megtalálni ezeket a szolgáltatásokat.",
+    "googleLabel": "Google Vélemények",
+    "googleDesc": "Írjon értékelést a Google Térképen — ez a leginkább látható hely azok számára, akik magyar konzuli szolgáltatásokat keresnek Új-Angliában.",
+    "googlePlaceholder": "⚠️ Google Üzleti Profil link — hozzáadva, amikor Sylvia megerősíti",
+    "privacyLabel": "Megjegyzés az adatvédelemről"
   }
 }

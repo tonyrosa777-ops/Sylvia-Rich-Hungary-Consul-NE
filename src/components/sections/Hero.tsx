@@ -106,14 +106,14 @@ export function Hero() {
             {/* Official appointment badge */}
             <div className="mt-8 text-center">
               <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[rgba(245,240,232,0.4)]">
-                Officially Appointed By
+                {t("hero.officiallyAppointed")}
               </p>
               <p className="font-display text-sm text-[rgba(245,240,232,0.65)] mt-1 italic">
-                Embassy of Hungary · Washington DC
+                {t("hero.embassyLine")}
               </p>
               <GoldRule width="md" opacity={25} className="mx-auto mt-3" />
               <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.3)] mt-3">
-                Vienna Convention on Consular Relations
+                {t("hero.viennaConvention")}
               </p>
             </div>
           </div>
@@ -130,7 +130,7 @@ export function Hero() {
         aria-hidden="true"
       >
         <div className="w-px h-12 bg-gradient-to-b from-[rgba(197,165,90,0.4)] to-transparent" />
-        <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-[rgba(197,165,90,0.4)]">Scroll</p>
+        <p className="font-mono text-[9px] uppercase tracking-[0.15em] text-[rgba(197,165,90,0.4)]">{t("hero.scroll")}</p>
       </motion.div>
     </section>
   );

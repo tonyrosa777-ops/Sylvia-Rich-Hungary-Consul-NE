@@ -180,7 +180,9 @@
     "button": "Book Your Appointment"
   },
   "portrait": {
-    "appointedBy": "Appointed by"
+    "appointedBy": "Appointed by",
+    "placeholder": "Portrait pending",
+    "consultTitle": "Honorary Consul · New England"
   },
   "readStory": "Read Sylvia\u2019s Full Story"
 }

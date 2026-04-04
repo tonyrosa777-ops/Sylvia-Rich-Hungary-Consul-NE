@@ -7,7 +7,11 @@
     "ctaPrimary": "Book Your Monday Appointment",
     "ctaSecondary": "Find Out If We Can Help",
     "trustCopy": "Derry, NH · Monday Appointments · 5 States Served",
-    "paymentNote": "Cash & Check Only · In-Person · Appointment Required"
+    "paymentNote": "Cash & Check Only · In-Person · Appointment Required",
+    "officiallyAppointed": "Officially Appointed By",
+    "embassyLine": "Embassy of Hungary · Washington DC",
+    "viennaConvention": "Vienna Convention on Consular Relations",
+    "scroll": "Scroll"
   },
   "challenges": {
     "eyebrow": "Sound Familiar?",
@@ -36,7 +40,10 @@
     "yearsServing": "Years Serving New England",
     "servicesAvailable": "Consular Services Available",
     "zeroDrive": "Miles to Drive to New York",
-    "zeroLabel": "for most services"
+    "zeroLabel": "for most services",
+    "byTheNumbers": "By the Numbers",
+    "zeroWord": "Zero",
+    "servicesSub": "Authentication · Notarization · Certification · Life Certificates"
   },
   "feeTable": {
     "eyebrow": "Transparent Pricing",
@@ -45,6 +52,15 @@
     "savingsNote": "A trip to the Consulate General in New York costs $80–$300+ in transportation alone — plus a full day of travel. The same consular authority, locally.",
     "paymentNote": "Cash or check only. No credit cards accepted. Make checks payable to Sylvia Rich.",
     "priceUnconfirmed": "⚠ Prices pending client confirmation"
+  },
+  "services": {
+    "eyebrow": "Consular Services",
+    "headline": "What We Can Do For You",
+    "description": "In-person appointments only. Monday afternoons, Derry, NH.",
+    "notSure": "Not sure what you need?",
+    "bringWith": "Bring with you",
+    "paymentNote": "Cash or check only · No credit cards · Appointment required",
+    "viewAll": "View all services & requirements →"
   },
   "teaser": {
     "eyebrow": "Explore the Consulate",

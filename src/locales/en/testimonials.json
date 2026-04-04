@@ -13,5 +13,13 @@
     "heading": "Ready to Book Your Appointment?",
     "body": "Monday appointments. Derry, NH. Cash or check only.",
     "button": "Book Your Monday Appointment"
+  },
+  "reviewSection": {
+    "languageLabel": "Hungarian",
+    "helpText": "Your review helps other Hungarian-Americans in New England find these services.",
+    "googleLabel": "Google Reviews",
+    "googleDesc": "Leave a review on Google Maps — the most visible place for others searching for Hungarian consular services in New England.",
+    "googlePlaceholder": "⚠️ Google Business Profile link — added when confirmed with Sylvia",
+    "privacyLabel": "A note on privacy"
   }
 }

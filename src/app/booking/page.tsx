@@ -53,8 +53,8 @@ function BookingContent() {
           ))}
           {prefillNotes && (
             <div className="sm:ml-auto">
-              <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">From Quiz</p>
-              <p className="font-body text-[12px] text-[rgba(245,240,232,0.45)] italic">Your answers will be included in the booking</p>
+              <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-1">{t("fromQuiz.label")}</p>
+              <p className="font-body text-[12px] text-[rgba(245,240,232,0.45)] italic">{t("fromQuiz.note")}</p>
             </div>
           )}
         </div>

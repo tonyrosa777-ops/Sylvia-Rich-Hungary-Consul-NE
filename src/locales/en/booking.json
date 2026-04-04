@@ -15,5 +15,22 @@
     "documents": "Your completed documents (unsigned)",
     "payment": "Exact cash or check (payable to Sylvia Rich)",
     "unsigned": "Any supporting documents from your booking notes"
+  },
+  "fromQuiz": {
+    "label": "From Quiz",
+    "note": "Your answers will be included in the booking"
+  },
+  "calendar": {
+    "dayAbbr": ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+    "mondayLegend": "Monday",
+    "selectedLegend": "Selected",
+    "availableSingular": "Monday available",
+    "availablePlural": "Mondays available",
+    "selectPrompt": "Select a Monday",
+    "promptBody": "All appointments are Monday afternoons. Choose a date to see available times.",
+    "location": "In-person · Derry, NH",
+    "back": "Back",
+    "chooseTime": "Choose a Time",
+    "disclaimer": "Cash or check only. Do not sign documents in advance."
   }
 }

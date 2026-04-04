@@ -43,7 +43,7 @@ export default function TestimonialsPage() {
                     </span>
                     {item.lang === "hu" && (
                       <span className="font-body italic text-[11px] text-[rgba(245,240,232,0.25)]">
-                        Hungarian
+                        {t("reviewSection.languageLabel")}
                       </span>
                     )}
                   </figcaption>
@@ -64,19 +64,19 @@ export default function TestimonialsPage() {
                 {t("googleCTA.text")}
               </h2>
               <p className="font-body text-[15px] leading-relaxed text-[rgba(245,240,232,0.6)]">
-                Your review helps other Hungarian-Americans in New England find these services.
+                {t("reviewSection.helpText")}
               </p>
             </div>
             <div>
               <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.15)] rounded-[3px] p-6">
                 <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.5)] mb-2">
-                  Google Reviews
+                  {t("reviewSection.googleLabel")}
                 </p>
                 <p className="font-body text-[13px] text-[rgba(245,240,232,0.5)] mb-3">
-                  Leave a review on Google Maps — the most visible place for others searching for Hungarian consular services in New England.
+                  {t("reviewSection.googleDesc")}
                 </p>
                 <p className="font-mono text-[10px] text-[rgba(245,240,232,0.2)] italic">
-                  ⚠️ Google Business Profile link — added when confirmed with Sylvia
+                  {t("reviewSection.googlePlaceholder")}
                 </p>
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function TestimonialsPage() {
           <FadeUp>
             <div className="border border-[rgba(197,165,90,0.1)] rounded-[3px] p-6 mb-10">
               <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.4)] mb-2">
-                A note on privacy
+                {t("reviewSection.privacyLabel")}
               </p>
               <p className="font-body text-[13px] leading-relaxed text-[rgba(245,240,232,0.4)]">
                 {t("discretionNote")}

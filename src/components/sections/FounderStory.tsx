@@ -42,7 +42,7 @@ export function FounderStory() {
                     Sylvia Rich
                   </p>
                   <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.4)]">
-                    Portrait pending
+                    {t("portrait.placeholder")}
                   </p>
                 </div>
               </div>
@@ -53,7 +53,7 @@ export function FounderStory() {
                   {siteData.brand.consul.name}
                 </p>
                 <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[#C5A55A] mt-0.5">
-                  Honorary Consul · New England
+                  {t("portrait.consultTitle")}
                 </p>
               </div>
             </div>

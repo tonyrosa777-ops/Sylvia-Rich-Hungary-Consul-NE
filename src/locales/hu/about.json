@@ -180,7 +180,9 @@
     "button": "Időpontot Foglalok"
   },
   "portrait": {
-    "appointedBy": "Kinevezve:"
+    "appointedBy": "Kinevezve:",
+    "placeholder": "Portré készülőben",
+    "consultTitle": "Tiszteletbeli Konzul · Új-Anglia"
   },
   "readStory": "Sylvia Rich Teljes Történetét Olvasom"
 }

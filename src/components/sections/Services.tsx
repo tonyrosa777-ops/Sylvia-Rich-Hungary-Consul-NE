@@ -3,9 +3,11 @@ import { Eyebrow, GoldRule, Button } from "@/components/ui";
 import { FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
 import { motion } from "framer-motion";
 import { siteData } from "@/data/site";
+import { useTranslation } from "@/hooks/useTranslation";
 
 export function Services() {
   const { services } = siteData;
+  const { t } = useTranslation("home");
 
   return (
     <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="services-heading">
@@ -13,18 +15,18 @@ export function Services() {
 
         {/* Header */}
         <FadeUp className="mb-14 max-w-xl">
-          <Eyebrow className="mb-4">Consular Services</Eyebrow>
+          <Eyebrow className="mb-4">{t("services.eyebrow")}</Eyebrow>
           <h2
             id="services-heading"
             className="font-display font-bold text-[clamp(1.8rem,3.5vw,2.75rem)] leading-tight text-[#F5F0E8]"
           >
-            What We Can Do For You
+            {t("services.headline")}
           </h2>
           <GoldRule width="sm" opacity={35} className="mt-5 mb-6" />
           <p className="font-body text-[16px] leading-relaxed text-[rgba(245,240,232,0.6)]">
-            In-person appointments only. Monday afternoons, Derry, NH.{" "}
+            {t("services.description")}{" "}
             <a href="/services/scope" className="text-[#C5A55A] underline underline-offset-4 hover:text-[#D4AF37] transition-colors">
-              Not sure what you need?
+              {t("services.notSure")}
             </a>
           </p>
         </FadeUp>
@@ -77,7 +79,7 @@ export function Services() {
                 {/* What to bring */}
                 <div className="mt-auto">
                   <p className="font-mono text-[9px] uppercase tracking-[0.12em] text-[rgba(245,240,232,0.3)] mb-2">
-                    Bring with you
+                    {t("services.bringWith")}
                   </p>
                   <ul className="space-y-1.5">
                     {service.whatToBring.slice(0, 2).map((item) => (
@@ -97,10 +99,10 @@ export function Services() {
         {/* Footer note */}
         <FadeUp delay={0.3} className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 justify-between">
           <p className="font-mono text-[11px] uppercase tracking-[0.1em] text-[rgba(245,240,232,0.3)]">
-            Cash or check only · No credit cards · Appointment required
+            {t("services.paymentNote")}
           </p>
           <Button href="/services" variant="ghost" size="sm">
-            View all services & requirements →
+            {t("services.viewAll")}
           </Button>
         </FadeUp>
 

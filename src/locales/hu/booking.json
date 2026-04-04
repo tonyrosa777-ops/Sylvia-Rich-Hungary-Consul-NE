@@ -15,5 +15,22 @@
     "documents": "Kitöltött, de alá nem írt iratok",
     "payment": "Pontos összeg készpénzben vagy csekk (Sylvia Rich nevére)",
     "unsigned": "A foglalási megjegyzéseiben hivatkozott mellékiratok"
+  },
+  "fromQuiz": {
+    "label": "Kérdőívből",
+    "note": "Válaszait belefoglaljuk a foglalásba"
+  },
+  "calendar": {
+    "dayAbbr": ["V", "H", "K", "Sz", "Cs", "P", "Sz"],
+    "mondayLegend": "Hétfő",
+    "selectedLegend": "Kiválasztva",
+    "availableSingular": "szabad hétfő",
+    "availablePlural": "szabad hétfő",
+    "selectPrompt": "Válasszon Hétfői Napot",
+    "promptBody": "Minden időpont hétfő délután. Válasszon egy napot az elérhető időpontok megtekintéséhez.",
+    "location": "Személyesen · Derry, NH",
+    "back": "Vissza",
+    "chooseTime": "Válasszon Időpontot",
+    "disclaimer": "Csak készpénz vagy csekk fogadható el. Az iratokat ne írja alá előre."
   }
 }

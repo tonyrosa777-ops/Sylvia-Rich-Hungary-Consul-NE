@@ -9,6 +9,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { CalendlyModal } from "./CalendlyModal";
+import { useTranslation } from "@/hooks/useTranslation";
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -23,8 +24,8 @@ function sameDay(a: Date, b: Date) {
     a.getMonth() === b.getMonth() &&
     a.getDate() === b.getDate();
 }
-function fmtDate(d: Date) {
-  return d.toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric" });
+function fmtDate(d: Date, localeCode: string) {
+  return d.toLocaleDateString(localeCode, { weekday: "long", month: "long", day: "numeric" });
 }
 function isoDate(d: Date) {
   // Local YYYY-MM-DD without UTC shift
@@ -44,7 +45,6 @@ function buildGrid(year: number, month: number): (Date | null)[] {
 
 // Monday afternoon slots — consulate hours
 const TIME_SLOTS = ["1:00 PM", "1:30 PM", "2:00 PM", "2:30 PM", "3:00 PM", "3:30 PM", "4:00 PM", "4:30 PM"];
-const DAY_ABBR = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
 
 // ─── Slide variants ────────────────────────────────────────────────────────────
 const slide = {
@@ -61,6 +61,10 @@ interface ConsulateCalendarProps {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
+  const { t, ta, locale } = useTranslation("booking");
+  const localeCode = locale === "hu" ? "hu-HU" : "en-US";
+  const DAY_ABBR = ta<string[]>("calendar.dayAbbr") ?? ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+
   const today = new Date();
   const [viewYear, setViewYear]   = useState(today.getFullYear());
   const [viewMonth, setViewMonth] = useState(today.getMonth());
@@ -75,7 +79,7 @@ export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
     [grid]
   );
 
-  const monthLabel = new Intl.DateTimeFormat("en-US", { month: "long" }).format(
+  const monthLabel = new Intl.DateTimeFormat(localeCode, { month: "long" }).format(
     new Date(viewYear, viewMonth)
   );
   const canGoPrev = !(viewYear === today.getFullYear() && viewMonth <= today.getMonth());
@@ -190,14 +194,14 @@ export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
             <div className="flex items-center gap-5 mt-5 pt-4 border-t border-[rgba(197,165,90,0.1)]">
               <div className="flex items-center gap-1.5">
                 <span className="w-3 h-3 rounded-[2px] border border-[rgba(197,165,90,0.4)] inline-block" />
-                <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.35)]">Monday</span>
+                <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.35)]">{t("calendar.mondayLegend")}</span>
               </div>
               <div className="flex items-center gap-1.5">
                 <span className="w-3 h-3 rounded-[2px] bg-[#C5A55A] inline-block" />
-                <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.35)]">Selected</span>
+                <span className="font-mono text-[9px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.35)]">{t("calendar.selectedLegend")}</span>
               </div>
               <span className="ml-auto font-mono text-[9px] text-[rgba(197,165,90,0.5)] tracking-[0.06em]">
-                {mondaysThisMonth} Monday{mondaysThisMonth !== 1 ? "s" : ""} available
+                {mondaysThisMonth} {mondaysThisMonth !== 1 ? t("calendar.availablePlural") : t("calendar.availableSingular")}
               </span>
             </div>
           </div>
@@ -225,14 +229,14 @@ export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
                   </div>
                   <div>
                     <p className="font-display font-semibold text-[1rem] text-[#F5F0E8] mb-1">
-                      Select a Monday
+                      {t("calendar.selectPrompt")}
                     </p>
                     <p className="font-body text-[13px] text-[rgba(245,240,232,0.45)] leading-relaxed">
-                      All appointments are Monday afternoons. Choose a date to see available times.
+                      {t("calendar.promptBody")}
                     </p>
                   </div>
                   <p className="font-mono text-[10px] uppercase tracking-[0.1em] text-[rgba(197,165,90,0.5)]">
-                    In-person · Derry, NH
+                    {t("calendar.location")}
                   </p>
                 </motion.div>
               ) : (
@@ -248,14 +252,14 @@ export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.75">
                       <path d="M8 2L3 6l5 4" />
                     </svg>
-                    Back
+                    {t("calendar.back")}
                   </button>
 
                   <p className="font-mono text-[9px] uppercase tracking-[0.14em] text-[#C5A55A] mb-1">
-                    {fmtDate(selected)}
+                    {fmtDate(selected, localeCode)}
                   </p>
                   <p className="font-display font-semibold text-[1rem] text-[#F5F0E8] mb-5">
-                    Choose a Time
+                    {t("calendar.chooseTime")}
                   </p>
 
                   <div className="grid grid-cols-2 gap-2">
@@ -271,7 +275,7 @@ export function ConsulateCalendar({ prefillNotes }: ConsulateCalendarProps) {
                   </div>
 
                   <p className="font-body text-[11px] text-[rgba(245,240,232,0.3)] mt-5 leading-relaxed">
-                    Cash or check only. Do not sign documents in advance.
+                    {t("calendar.disclaimer")}
                   </p>
                 </motion.div>
               )}

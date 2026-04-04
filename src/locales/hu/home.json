@@ -7,7 +7,11 @@
     "ctaPrimary": "Foglaljon Hétfői Időpontot",
     "ctaSecondary": "Tudja meg, tudunk-e segíteni",
     "trustCopy": "Derry, NH · Hétfői Időpontok · 5 Állam",
-    "paymentNote": "Csak Készpénz és Csekk · Személyesen · Előzetes Egyeztetés Szükséges"
+    "paymentNote": "Csak Készpénz és Csekk · Személyesen · Előzetes Egyeztetés Szükséges",
+    "officiallyAppointed": "Hivatalosan Kinevezve",
+    "embassyLine": "Magyar Nagykövetség · Washington DC",
+    "viennaConvention": "Bécsi Egyezmény a Konzuli Kapcsolatokról",
+    "scroll": "Görgessen"
   },
   "challenges": {
     "eyebrow": "Ismerős a Helyzet?",
@@ -36,7 +40,10 @@
     "yearsServing": "Év Új-Angliai Szolgálat",
     "servicesAvailable": "Elérhető Konzuli Szolgáltatás",
     "zeroDrive": "Mérföld New Yorkba",
-    "zeroLabel": "a legtöbb ügyhöz"
+    "zeroLabel": "a legtöbb ügyhöz",
+    "byTheNumbers": "Számokban",
+    "zeroWord": "Nulla",
+    "servicesSub": "Hitelesítés · Közjegyzés · Tanúsítás · Életigazolás"
   },
   "feeTable": {
     "eyebrow": "Átlátható Díjszabás",
@@ -45,6 +52,15 @@
     "savingsNote": "Egy New York-i út a Főkonzulátusra csak utazással $80–$300+ költséget jelent — plusz egy egész nap. Ugyanolyan konzuli hatáskör, helyben.",
     "paymentNote": "Csak készpénz vagy csekk. Hitelkártya nem fogadható el. A csekket Sylvia Rich nevére kell kiállítani.",
     "priceUnconfirmed": "⚠ Árak megerősítés alatt"
+  },
+  "services": {
+    "eyebrow": "Konzuli Szolgáltatások",
+    "headline": "Mivel Tudunk Segíteni",
+    "description": "Kizárólag személyes megjelenéssel. Hétfő délutánonként, Derry, NH.",
+    "notSure": "Nem tudja, mire van szüksége?",
+    "bringWith": "Hozza magával",
+    "paymentNote": "Csak készpénz vagy csekk · Hitelkártya nem fogadható el · Időpontfoglalás szükséges",
+    "viewAll": "Minden szolgáltatás és feltétel →"
   },
   "teaser": {
     "eyebrow": "Fedezze Fel a Konzulátust",
