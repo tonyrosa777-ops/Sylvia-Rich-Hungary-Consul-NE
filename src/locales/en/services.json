@@ -56,6 +56,11 @@
       ]
     }
   },
+  "infoStrip": {
+    "payment": "Payment",
+    "hours": "Hours",
+    "location": "Location"
+  },
   "scopeCallout": {
     "eyebrow": "Not Sure if We Can Help?",
     "headline": "See the full scope of services before you book.",

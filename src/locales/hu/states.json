@@ -11,6 +11,66 @@
     "scopeBody": "Egyes ügyekhez a New York-i Főkonzulátusra van szükség. Az utazás előtt tekintse meg a teljes szolgáltatási kört.",
     "scopeCTA": "Mivel Foglalkozunk vs. New York →",
     "bookCTA": "Foglaljon Hétfői Időpontot",
-    "disclaimer": "A tiszteletbeli konzulok nem rendelkeznek állandó irodai munkakörrel, és nincsenek rögzített munkaidejük vagy munkarendjük. Nem kapnak javadalmazást Magyarországtól kötelességeik teljesítéséért, ezért nem kérhetők számon munkabeosztásukat illetően."
+    "disclaimer": "A tiszteletbeli konzulok nem rendelkeznek állandó irodai munkakörrel, és nincsenek rögzített munkaidejük vagy munkarendjük. Nem kapnak javadalmazást Magyarországtól kötelességeik teljesítéséért, ezért nem kérhetők számon munkabeosztásukat illetően.",
+    "nycNotePrefix": "New York",
+    "nycNoteSuffix": "— plusz parkolás, útdíjak és egy egész napos utazás."
+  },
+  "states": {
+    "massachusetts": {
+      "eyebrow": "Massachusetts Területén",
+      "headline": "Magyar Konzuli Szolgáltatások Massachusettsben",
+      "subheadline": "Nincs szükség New York-i utazásra. Hétfői időpontok Derry-ben, NH — mindössze 80 km-re Bostontól.",
+      "communityEyebrow": "A Massachusettsi Magyar Közösség",
+      "intro": "Massachusetts otthona az Új-Anglia legnagyobb magyar-amerikai közösségének — mintegy 18 100 magyar felmenőkkel rendelkező lakosa él itt, elsősorban Nagy-Boston, Worcester megye és a Pioneer Valley térségében. Évtizedeken át a magyar konzuli ügyintézés egy egész napos manhattani utat igényelt a Főkonzulátusra. A Derry-i (NH) Tiszteletbeli Konzulátus megváltoztatta ezt az egyenletet.",
+      "regionalNote": "A Nagy-Boston térség rendelkezik Új-Anglia legnagyobb magyar-amerikai koncentrációjával. A massachusettsi magyar közösség magában foglalja Newton, Brookline és Wellesley régóta megtelepedett családjait, valamint a nagyvárosi körzet újonnan érkezett tagjait."
+    },
+    "new-hampshire": {
+      "eyebrow": "New Hampshire Területén",
+      "headline": "Magyar Konzuli Szolgáltatások New Hampshire-ben",
+      "subheadline": "Otthon vagyunk. Helyi időpontok, utazás nélkül.",
+      "communityEyebrow": "A New Hampshire-i Magyar Közösség",
+      "intro": "A Magyarország Új-angliai Tiszteletbeli Konzulátusa Derry-ben, New Hampshire-ben található. Ha a Granite State-ben él, Önnek a legrövidebb utat kell megtennie Új-Anglia bármely magyar-amerikaijához a hivatalos konzuli szolgáltatásokhoz. Nincs határátlépés, nincs autópálya-díj, nincs egész napos kötelezettségvállalás.",
+      "regionalNote": "A Dél-New Hampshire-i folyosó — Manchester, Nashua, Derry, Salem — folyamatosan gyarapodó magyar-amerikai közösséggel rendelkezik. A térség sok kettős állampolgára éveken át Manhattanbe ingázott, mielőtt megtudta, hogy Sylvia irodája percnyi távolságra van."
+    },
+    "rhode-island": {
+      "eyebrow": "Rhode Island Területén",
+      "headline": "Magyar Konzuli Szolgáltatások Rhode Islandon",
+      "subheadline": "Providence–Derry: 75 perc — nem 4 óra New Yorkba.",
+      "communityEyebrow": "A Rhode Island-i Magyar Közösség",
+      "intro": "Rhode Island kompakt mérete azt jelenti, hogy az egész állam a Derry-i (NH) konzulátus ésszerű elérési körzetén belül van. A Providence-i, Warwick-i, Newport-i és az Ocean State más részein élő magyar-amerikaiaknak többé nem kell egész napos manhattani utazást tervezniük csupán egy dokumentum hitelesítéséhez.",
+      "regionalNote": "Rhode Island magyar-amerikai közössége mély gyökerekkel rendelkezik a Providence-i térségben, az ipari múlthoz fűződő történelmi kötődéssel és az akadémiai és szakmai csatornákon érkezett újabb bevándorlókkal."
+    },
+    "vermont": {
+      "eyebrow": "Vermont Területén",
+      "headline": "Magyar Konzuli Szolgáltatások Vermontban",
+      "subheadline": "Burlington–Derry: 2 óra. New York: 6 óra.",
+      "communityEyebrow": "A Vermonti Magyar Közösség",
+      "intro": "Vermont magyar-amerikai közössége szétszórtan él a Green Mountain State-ben — az északi Burlington-tól a déli Brattleboro-ig. A Derry-i (NH) Tiszteletbeli Konzulátus Vermont összes lakójának a legközelebbi hivatalos magyar diplomáciai jelenlétként szolgál, az átlagos New York-i utat több mint felére rövidítve.",
+      "regionalNote": "Vermont magyar-amerikai lakossága magában foglalja a bevándorolt családokat és azokat a magyarokat is, akik a Vermonti Egyetem és a Middlebury College akadémiai és szakmai lehetőségei miatt érkeztek."
+    },
+    "maine": {
+      "eyebrow": "Maine Területén",
+      "headline": "Magyar Konzuli Szolgáltatások Maine-ben",
+      "subheadline": "Portland egy órára van Derry-től. New York egy olyan nap, amelyre nem kellene vállalkozni.",
+      "communityEyebrow": "A Maine-i Magyar Közösség",
+      "intro": "Maine magyar-amerikai közössége egy nagy állam területén szétszórva él, de a Dél-Maine-i népesség — Portland, Kennebunk, York, Kittery — egy kényelmes egyórás autóútra van a Derry-i (NH) konzulátusi irodától. Az északabbi közösségek számára a Derry-i út mégis drámaian rövidebb, mint bármely New York-i út.",
+      "regionalNote": "Dél-Maine — különösen a York megye és a Nagy-Portland területe — jól megalapozott magyar-amerikai jelenléttel rendelkezik. A Kennebunk-i és Biddeford Pool-i terület sok lakója nem tudott a helyi konzuli szolgáltatások létezéséről."
+    },
+    "boston": {
+      "eyebrow": "Nagy-Boston Területén",
+      "headline": "Magyar Konzul Bostonban — 80 km-rel Közelebb, Mint New York",
+      "subheadline": "Nagy-Boston magyar-amerikaiaknak többé nem kell manhattani napot tervezniük. Derry, NH alig egy óra.",
+      "communityEyebrow": "A Nagy-Bostoni Magyar Közösség",
+      "intro": "Nagy-Boston Új-Anglia legnagyobb magyar-amerikai koncentrációjának otthona — nagyjából 12 000 fő a nagyvárosi térségben. Évtizedeken át a legközelebbi hivatalos magyar konzuli jelenlét a Midtown Manhattan-i Főkonzulátus volt: 360 km, több mint négy óra, egy egész elvesztegetett nap. A Derry-i (NH) Magyarország Tiszteletbeli Konzulátusa 80 km-re van Downtown Bostontól — alig egy óra az I-93 Észak úton.",
+      "regionalNote": "Newton, Brookline és Cambridge hagyományosan sűrű magyar-amerikai közösségekkel rendelkezik — az 1956 után érkező családokkal, a Harvard és MIT akadémikusaival, és az Egyesült Államok–Magyarország életet navigáló újabb kettős állampolgárokkal. Sokan nem tudtak a helyi konzulátus létezéséről."
+    },
+    "providence": {
+      "eyebrow": "Nagy-Providence Területén",
+      "headline": "Magyar Konzul Providence-ben — 75 Perc Derry-ig, Nem 4 Óra New Yorkba",
+      "subheadline": "Rhode Island magyar-amerikaiainak van egy regionális konzulátusa. Nem kell Manhattanbe vezetni.",
+      "communityEyebrow": "A Nagy-Providence-i Magyar Közösség",
+      "intro": "Providence és a tágabb Rhode Island 120 km-re délre helyezkedik el a Derry-i (NH) Tiszteletbeli Konzulátustól — egy egyszerű I-95-ös autóút, amely körülbelül 80 percet vesz igénybe. Ehhez képest a Manhattan-i Főkonzulátus: több mint 320 km, 3,5+ óra mindkét irányban, egy egész nap vezetéssel, parkolással és városi logisztikával. A Providence-i, Warwick-i, Cranston-i és egyéb helyeken élő magyar-amerikaiak számára a Derry-i lehetőség egyértelmű — ha egyszer tudnak róla.",
+      "regionalNote": "Providence magyar-amerikai közössége a város ipari múltjában gyökerezik, a Barna Egyetemen és a RISD-n keresztül érkező újabb bevándorlókkal. Az északi és nyugati elővárosokban élők közül sokan soha nem hallottak a Derry-i konzulátusról — pontosan ezt a hiányt tölti be ez az oldal."
+    }
   }
 }

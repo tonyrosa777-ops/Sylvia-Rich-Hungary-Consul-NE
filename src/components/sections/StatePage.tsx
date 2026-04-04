@@ -11,6 +11,7 @@ export function StatePage({ stateData }: { stateData: StateData }) {
   const { services, testimonials } = siteData;
   const { t } = useTranslation("states");
   const { t: tCommon } = useTranslation("common");
+  const { t: tSvc } = useTranslation("services");
 
   // Pick one testimonial to feature
   const featuredTestimonial = testimonials[0];
@@ -18,9 +19,9 @@ export function StatePage({ stateData }: { stateData: StateData }) {
   return (
     <>
       <PageHeader
-        eyebrow={stateData.eyebrow}
-        headline={stateData.headline}
-        description={stateData.subheadline}
+        eyebrow={t(`states.${stateData.slug}.eyebrow`)}
+        headline={t(`states.${stateData.slug}.headline`)}
+        description={t(`states.${stateData.slug}.subheadline`)}
       />
 
       {/* Community intro */}
@@ -28,12 +29,12 @@ export function StatePage({ stateData }: { stateData: StateData }) {
         <div className="max-w-5xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
             <FadeUp className="lg:col-span-3">
-              <Eyebrow className="mb-3">The Hungarian Community of {stateData.name}</Eyebrow>
+              <Eyebrow className="mb-3">{t(`states.${stateData.slug}.communityEyebrow`)}</Eyebrow>
               <p className="font-body text-[17px] leading-[1.85] text-[rgba(245,240,232,0.72)] mb-6">
-                {stateData.intro}
+                {t(`states.${stateData.slug}.intro`)}
               </p>
               <p className="font-body text-[15px] leading-relaxed text-[rgba(245,240,232,0.55)]">
-                {stateData.regionalNote}
+                {t(`states.${stateData.slug}.regionalNote`)}
               </p>
             </FadeUp>
 
@@ -60,7 +61,7 @@ export function StatePage({ stateData }: { stateData: StateData }) {
                     <p className="font-mono text-[8px] uppercase tracking-[0.1em] text-[rgba(197,165,90,0.7)]">{t("shared.vs")} NYC</p>
                   </div>
                   <p className="font-body text-[12px] text-[rgba(245,240,232,0.4)]">
-                    New York is {stateData.nycDistance} ({stateData.nycTime}) — plus parking, tolls, and a full day of travel.
+                    {t("shared.nycNotePrefix")} {stateData.nycDistance} ({stateData.nycTime}) {t("shared.nycNoteSuffix")}
                   </p>
                 </div>
               </div>
@@ -86,18 +87,21 @@ export function StatePage({ stateData }: { stateData: StateData }) {
                   className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.15)] rounded-[3px] p-5 hover:border-[rgba(197,165,90,0.3)] transition-colors duration-200"
                 >
                   <div className="flex items-start justify-between gap-2 mb-2">
-                    <div>
-                      <p className="font-display font-bold text-[14px] text-[#F5F0E8]">{svc.name}</p>
-                      {svc.nameHu && (
-                        <p className="font-body italic text-[11px] text-[rgba(245,240,232,0.35)]">{svc.nameHu}</p>
-                      )}
-                    </div>
+                    <p className="font-display font-bold text-[14px] text-[#F5F0E8]">
+                      {tSvc(`services.${svc.slug}.name`)}
+                    </p>
                     <span className="font-mono text-[14px] text-[#C5A55A] shrink-0">{svc.priceDisplay}</span>
                   </div>
-                  <p className="font-body text-[12px] text-[rgba(245,240,232,0.45)]">{svc.tagline}</p>
+                  <p className="font-body text-[12px] text-[rgba(245,240,232,0.45)]">
+                    {tSvc(`services.${svc.slug}.tagline`)}
+                  </p>
                   {svc.badge && (
                     <span className="inline-block mt-2 font-mono text-[8px] uppercase tracking-[0.1em] bg-[#C5A55A] text-[#0A1628] px-2 py-0.5 rounded-[2px]">
-                      {svc.badge === "Free Service" ? tCommon("labels.freeService") : svc.badge}
+                      {(svc.badge as string) === "Free Service"
+                        ? tCommon("labels.freeService")
+                        : (svc.badge as string) === "Most Requested"
+                        ? tCommon("labels.mostRequested")
+                        : (svc.badge as string)}
                     </span>
                   )}
                 </motion.div>

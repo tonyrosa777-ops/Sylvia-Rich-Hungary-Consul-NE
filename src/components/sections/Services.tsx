@@ -8,6 +8,8 @@ import { useTranslation } from "@/hooks/useTranslation";
 export function Services() {
   const { services } = siteData;
   const { t } = useTranslation("home");
+  const { t: tSvc, ta: taSvc } = useTranslation("services");
+  const { t: tCommon } = useTranslation("common");
 
   return (
     <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="services-heading">
@@ -43,19 +45,18 @@ export function Services() {
                 {/* Badge */}
                 {service.badge && (
                   <span className="inline-block font-mono text-[9px] uppercase tracking-[0.14em] text-[#0A1628] bg-[#C5A55A] px-2.5 py-1 rounded-[2px] mb-4 self-start">
-                    {service.badge}
+                    {(service.badge as string) === "Free Service"
+                      ? tCommon("labels.freeService")
+                      : (service.badge as string) === "Most Requested"
+                      ? tCommon("labels.mostRequested")
+                      : (service.badge as string)}
                   </span>
                 )}
 
                 {/* Service name */}
-                <h3 className="font-display font-semibold text-xl text-[#F5F0E8] leading-snug mb-1">
-                  {service.name}
+                <h3 className="font-display font-semibold text-xl text-[#F5F0E8] leading-snug mb-3">
+                  {tSvc(`services.${service.slug}.name`)}
                 </h3>
-                {service.nameHu && (
-                  <p className="font-body italic text-sm text-[rgba(245,240,232,0.35)] mb-3">
-                    {service.nameHu}
-                  </p>
-                )}
 
                 {/* Price */}
                 <div className="flex items-baseline gap-2 mb-4">
@@ -73,7 +74,7 @@ export function Services() {
 
                 {/* Description */}
                 <p className="font-body text-[14px] leading-relaxed text-[rgba(245,240,232,0.6)] mb-5 flex-1">
-                  {service.tagline}
+                  {tSvc(`services.${service.slug}.tagline`)}
                 </p>
 
                 {/* What to bring */}
@@ -82,7 +83,7 @@ export function Services() {
                     {t("services.bringWith")}
                   </p>
                   <ul className="space-y-1.5">
-                    {service.whatToBring.slice(0, 2).map((item) => (
+                    {(taSvc<string[]>(`services.${service.slug}.whatToBring`) ?? service.whatToBring).slice(0, 2).map((item) => (
                       <li key={item} className="flex gap-2 font-body text-[12px] text-[rgba(245,240,232,0.5)]">
                         <span className="text-[#C5A55A] shrink-0 opacity-60">›</span>
                         {item}

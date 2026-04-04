@@ -11,6 +11,66 @@
     "scopeBody": "Some needs require the Consulate General in New York. See the full scope before making the trip.",
     "scopeCTA": "What We Handle vs. New York →",
     "bookCTA": "Book Your Monday Appointment",
-    "disclaimer": "Honorary consuls do not work in a formal office, nor do they have fixed working hours or schedules. They do not receive compensation from Hungary for their duties and therefore cannot be held accountable for their work schedules."
+    "disclaimer": "Honorary consuls do not work in a formal office, nor do they have fixed working hours or schedules. They do not receive compensation from Hungary for their duties and therefore cannot be held accountable for their work schedules.",
+    "nycNotePrefix": "New York is",
+    "nycNoteSuffix": "— plus parking, tolls, and a full day of travel."
+  },
+  "states": {
+    "massachusetts": {
+      "eyebrow": "Serving Massachusetts",
+      "headline": "Hungarian Consular Services for Massachusetts",
+      "subheadline": "No drive to New York. Monday appointments in Derry, NH — just 50 miles from Boston.",
+      "communityEyebrow": "The Hungarian Community of Massachusetts",
+      "intro": "Massachusetts is home to the largest Hungarian-American community in New England — approximately 18,100 residents of Hungarian ancestry, concentrated in Greater Boston, Worcester County, and the Pioneer Valley. For decades, accessing Hungarian consular services meant a full-day trip to the Consulate General in Manhattan. The Honorary Consulate in Derry, NH changes that equation.",
+      "regionalNote": "Greater Boston has the largest concentration of Hungarian-Americans in New England. The Hungarian community in Massachusetts includes long-established families in Newton, Brookline, and Wellesley, as well as newer arrivals in the greater metro area."
+    },
+    "new-hampshire": {
+      "eyebrow": "Serving New Hampshire",
+      "headline": "Hungarian Consular Services in New Hampshire",
+      "subheadline": "Our home state. Local appointments, no travel required.",
+      "communityEyebrow": "The Hungarian Community of New Hampshire",
+      "intro": "The Honorary Consulate of Hungary — New England is based in Derry, New Hampshire. If you live in the Granite State, you have the shortest distance of any New England Hungarian-American to official consular services. No state crossing, no highway tolls, no full-day commitment.",
+      "regionalNote": "The Southern New Hampshire corridor — Manchester, Nashua, Derry, Salem — has seen steady growth in its Hungarian-American community. Many dual nationals in the region commuted to Manhattan for years before learning Sylvia's office was minutes away."
+    },
+    "rhode-island": {
+      "eyebrow": "Serving Rhode Island",
+      "headline": "Hungarian Consular Services for Rhode Island",
+      "subheadline": "Providence to Derry in 75 minutes — not 4 hours to New York.",
+      "communityEyebrow": "The Hungarian Community of Rhode Island",
+      "intro": "Rhode Island's compact geography means that the entire state is within a reasonable drive of the Derry, NH consulate office. Hungarian-Americans in Providence, Warwick, Newport, and across the Ocean State no longer need to calculate a full Manhattan commute just to get a document authenticated.",
+      "regionalNote": "Rhode Island's Hungarian-American community has deep roots in the Providence area, with historical ties to the city's manufacturing past and more recent arrivals through academic and professional channels."
+    },
+    "vermont": {
+      "eyebrow": "Serving Vermont",
+      "headline": "Hungarian Consular Services for Vermont",
+      "subheadline": "Burlington to Derry is 2 hours. New York is 6.",
+      "communityEyebrow": "The Hungarian Community of Vermont",
+      "intro": "Vermont's Hungarian-American community is spread across the Green Mountain State — from Burlington in the north to Brattleboro in the south. The Honorary Consulate in Derry, NH serves as the closest official Hungarian diplomatic presence for all Vermont residents, cutting the typical New York trip by more than half.",
+      "regionalNote": "Vermont's Hungarian-American population includes both established families and Hungarians who came for academic and professional opportunities at University of Vermont and Middlebury College."
+    },
+    "maine": {
+      "eyebrow": "Serving Maine",
+      "headline": "Hungarian Consular Services for Maine",
+      "subheadline": "Portland is an hour from Derry. New York is a day trip you shouldn't have to make.",
+      "communityEyebrow": "The Hungarian Community of Maine",
+      "intro": "Maine's Hungarian-American community is geographically spread across a large state, but the southern Maine population — Portland, Kennebunk, York, Kittery — is within an easy hour of the Derry, NH consulate office. For communities further north, the drive to Derry remains dramatically shorter than any trip to Manhattan.",
+      "regionalNote": "Southern Maine — particularly the York County and Greater Portland areas — has a well-established Hungarian-American presence. Many residents in the Kennebunks and Biddeford pool area did not know local consular services existed."
+    },
+    "boston": {
+      "eyebrow": "Serving Greater Boston",
+      "headline": "Hungarian Consul in Boston — 50 Miles Closer Than New York",
+      "subheadline": "Greater Boston's Hungarian-Americans no longer need a Manhattan day trip. Derry, NH is under an hour.",
+      "communityEyebrow": "The Hungarian Community of Greater Boston",
+      "intro": "Greater Boston is home to the largest concentration of Hungarian-Americans in New England — roughly 12,000 in the metro area alone. For decades, the nearest official Hungarian consular presence was the Consulate General in Midtown Manhattan: 225 miles, four-plus hours, a full day lost. The Honorary Consulate of Hungary in Derry, NH is 50 miles from Downtown Boston — under an hour on I-93 North.",
+      "regionalNote": "Newton, Brookline, and Cambridge have historically dense Hungarian-American communities — families who came after 1956, academics at Harvard and MIT, and newer dual nationals navigating US–Hungarian life. Many did not know a local consulate existed."
+    },
+    "providence": {
+      "eyebrow": "Serving Greater Providence",
+      "headline": "Hungarian Consul in Providence — 75 Minutes to Derry, Not 4 Hours to New York",
+      "subheadline": "Rhode Island's Hungarian-Americans have a regional consulate. You don't need to drive to Manhattan.",
+      "communityEyebrow": "The Hungarian Community of Greater Providence",
+      "intro": "Providence and greater Rhode Island sit 75 miles south of the Honorary Consulate in Derry, NH — a straightforward drive up I-95 that takes roughly 80 minutes. Compare that to the Consulate General in Manhattan: over 200 miles, 3.5+ hours each way, a full day of driving, parking, and city logistics. For Hungarian-Americans in Providence, Warwick, Cranston, and beyond, the Derry option is obvious once you know it exists.",
+      "regionalNote": "Providence's Hungarian-American community has roots in the city's industrial past, with later arrivals through Brown University and RISD. Many residents in the north and west suburbs have never heard of the Derry consulate — which is exactly the gap this page closes."
+    }
   }
 }

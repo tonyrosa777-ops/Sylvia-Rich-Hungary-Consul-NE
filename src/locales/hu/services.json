@@ -56,6 +56,11 @@
       ]
     }
   },
+  "infoStrip": {
+    "payment": "Fizetés",
+    "hours": "Nyitvatartás",
+    "location": "Helyszín"
+  },
   "scopeCallout": {
     "eyebrow": "Nem Biztos Benne, Hogy Tudunk Segíteni?",
     "headline": "A foglalás előtt tekintse meg a teljes szolgáltatási kört.",

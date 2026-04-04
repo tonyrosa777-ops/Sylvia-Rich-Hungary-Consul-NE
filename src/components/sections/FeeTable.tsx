@@ -9,6 +9,7 @@ export function FeeTable() {
   const { services } = siteData;
   const { t } = useTranslation("home");
   const { t: tCommon } = useTranslation("common");
+  const { t: tSvc } = useTranslation("services");
 
   return (
     <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="fees-heading">
@@ -42,13 +43,8 @@ export function FeeTable() {
               >
                 <div>
                   <p className="font-display font-medium text-[#F5F0E8] text-base">
-                    {service.name}
+                    {tSvc(`services.${service.slug}.name`)}
                   </p>
-                  {service.nameHu && (
-                    <p className="font-body italic text-[12px] text-[rgba(245,240,232,0.3)] mt-0.5">
-                      {service.nameHu}
-                    </p>
-                  )}
                   {service.priceUnit && (
                     <p className="font-mono text-[10px] uppercase tracking-[0.08em] text-[rgba(245,240,232,0.3)] mt-1">
                       {service.priceUnit}
