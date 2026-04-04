@@ -392,28 +392,26 @@ export function StStephensCrest() {
             <rect x="108" y="132" width="28" height="6"  rx="1" fill="#FFFFFF" />
           </motion.g>
 
-          {/* Phase 5 — Small gold crown at shield base.
-              Centered at x=100 (where the two halves meet / divider).
-              Width ≈18 units so it spans x=91–109, straddling the divider — it
-              "overlaps the stripe base" (left) and "rests on the green hill" (right).
-              Positioned at y=163–178, just below the cross shaft bottom at y=160. */}
+          {/* Phase 5 — Small gold crown at base of cross.
+              Centered at x=122 (center of right field = (100+144)/2), under the cross shaft.
+              Points peak at y=158, just touching the cross shaft bottom at y=160. */}
           <motion.g
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            style={{ transformOrigin: "100px 171px" }}
+            style={{ transformOrigin: "122px 163px" }}
             transition={{ duration: 0.45, delay: 1.65, type: "spring", bounce: 0.4 }}
           >
             {/* Crown three points */}
             <path
-              d="M91,178 L91,172 L95.5,165 L100,172 L104.5,165 L109,172 L109,178 Z"
+              d="M113,171 L113,165 L117.5,158 L122,165 L126.5,158 L131,165 L131,171 Z"
               fill="#D4AF37"
             />
             {/* Crown band */}
-            <rect x="91" y="173" width="18" height="6" rx="1" fill="#C5A55A" />
+            <rect x="113" y="166" width="18" height="6" rx="1" fill="#C5A55A" />
             {/* Crown gems */}
-            <circle cx="95.5" cy="177" r="1.8" fill="#9B1B30" />
-            <circle cx="100"  cy="177" r="1.8" fill="#1A3A8F" />
-            <circle cx="104.5" cy="177" r="1.8" fill="#9B1B30" />
+            <circle cx="117.5" cy="170" r="1.8" fill="#9B1B30" />
+            <circle cx="122"   cy="170" r="1.8" fill="#1A3A8F" />
+            <circle cx="126.5" cy="170" r="1.8" fill="#9B1B30" />
           </motion.g>
 
         </g>{/* end shield clip */}
