@@ -1,67 +1,79 @@
 "use client";
 import { motion } from "framer-motion";
 
-// ─── Leaf / berry data ────────────────────────────────────────────────────────
+// ─── Leaf / berry data ───────────────────────────────────────────────────────
 interface Leaf { x: number; y: number; r: number; s: number }
 
+// Oak leaf — 3 deep sinusoidal lobes per side, unmistakably different from laurel.
+// At render scale ~1.7px/SVG-unit, the lobes (depth ≈2 units = 3.4px) are clearly
+// visible. Width 11 units vs laurel 8 units makes species distinction obvious.
 const OAK_D =
-  "M0,-7 C1.5,-7.5 4,-6 3.5,-3.5 C5,-3 5.5,-1.5 4.5,-0.5 " +
-  "C5.5,0.5 5,2.5 3.5,3.5 C2.5,4.5 1,5.5 0,7 " +
-  "C-1,5.5 -2.5,4.5 -3.5,3.5 C-5,2.5 -5.5,0.5 -4.5,-0.5 " +
-  "C-5.5,-1.5 -5,-3 -3.5,-3.5 C-4,-6 -1.5,-7.5 0,-7 Z";
+  "M0,-9 C1.5,-9 4,-8 3.5,-6.5 " +      // approach first right lobe from top
+  "C5.5,-5.5 5.5,-4 3.5,-3.5 " +         // first right lobe peak
+  "C5.5,-2.5 5.5,-0.5 3.5,0 " +          // second right lobe peak
+  "C5.5,1 5.5,3.5 3,4.5 " +              // third right lobe peak
+  "C2,6.5 1,8 0,9 " +                    // to leaf tip
+  "C-1,8 -2,6.5 -3,4.5 " +              // from tip, third left lobe
+  "C-5.5,3.5 -5.5,1 -3.5,0 " +           // second left lobe
+  "C-5.5,-0.5 -5.5,-2.5 -3.5,-3.5 " +   // first left lobe
+  "C-5.5,-4 -5.5,-5.5 -3.5,-6.5 " +     // approaching top
+  "C-4,-8 -1.5,-9 0,-9 Z";              // back to top
 
+// Laurel leaf — narrow oval, clearly not oak
 const LAUREL_D =
-  "M0,-7 C2,-7 3.5,-4 3.5,0 C3.5,4 2,7 0,7 C-2,7 -3.5,4 -3.5,0 C-3.5,-4 -2,-7 0,-7 Z";
+  "M0,-8 C2.5,-8 4,-5 4,-1 C4,3 2.5,7 0,8 C-2.5,7 -4,3 -4,-1 C-4,-5 -2.5,-8 0,-8 Z";
 
 const OAK_LEAVES: Leaf[] = [
-  { x:  50, y: 183, r: -22, s: 1.20 },
-  { x:  38, y: 177, r:  15, s: 1.15 },
-  { x:  31, y: 170, r: -32, s: 1.10 },
-  { x:  25, y: 160, r:  22, s: 1.10 },
-  { x:  20, y: 149, r: -28, s: 1.00 },
-  { x:  18, y: 137, r:  20, s: 0.95 },
-  { x:  18, y: 125, r: -25, s: 0.90 },
-  { x:  20, y: 113, r:  20, s: 0.85 },
-  { x:  24, y: 102, r: -22, s: 0.80 },
-  { x:  28, y:  93, r:  15, s: 0.75 },
-  { x:  46, y: 192, r:   8, s: 1.10 },
-  { x:  35, y: 164, r: -12, s: 1.00 },
-  { x:  24, y: 143, r:  12, s: 0.88 },
-  { x:  21, y: 120, r: -10, s: 0.78 },
+  { x:  50, y: 185, r: -22, s: 1.20 },
+  { x:  38, y: 178, r:  15, s: 1.15 },
+  { x:  31, y: 171, r: -32, s: 1.10 },
+  { x:  25, y: 161, r:  22, s: 1.10 },
+  { x:  20, y: 150, r: -28, s: 1.00 },
+  { x:  17, y: 138, r:  20, s: 0.95 },
+  { x:  17, y: 126, r: -25, s: 0.90 },
+  { x:  19, y: 114, r:  20, s: 0.85 },
+  { x:  24, y: 103, r: -22, s: 0.80 },
+  { x:  29, y:  93, r:  15, s: 0.75 },
+  { x:  46, y: 193, r:   8, s: 1.10 },
+  { x:  35, y: 165, r: -12, s: 1.00 },
+  { x:  24, y: 144, r:  12, s: 0.88 },
+  { x:  20, y: 121, r: -10, s: 0.78 },
 ];
 
 const LAUREL_LEAVES: Leaf[] = [
-  { x: 150, y: 183, r:  22, s: 1.20 },
-  { x: 162, y: 177, r: -15, s: 1.15 },
-  { x: 169, y: 170, r:  32, s: 1.10 },
-  { x: 175, y: 160, r: -22, s: 1.10 },
-  { x: 180, y: 149, r:  28, s: 1.00 },
-  { x: 182, y: 137, r: -20, s: 0.95 },
-  { x: 182, y: 125, r:  25, s: 0.90 },
-  { x: 180, y: 113, r: -20, s: 0.85 },
-  { x: 176, y: 102, r:  22, s: 0.80 },
-  { x: 172, y:  93, r: -15, s: 0.75 },
-  { x: 154, y: 192, r:  -8, s: 1.10 },
-  { x: 165, y: 164, r:  12, s: 1.00 },
-  { x: 176, y: 143, r: -12, s: 0.88 },
-  { x: 179, y: 120, r:  10, s: 0.78 },
+  { x: 150, y: 185, r:  22, s: 1.20 },
+  { x: 162, y: 178, r: -15, s: 1.15 },
+  { x: 169, y: 171, r:  32, s: 1.10 },
+  { x: 175, y: 161, r: -22, s: 1.10 },
+  { x: 180, y: 150, r:  28, s: 1.00 },
+  { x: 183, y: 138, r: -20, s: 0.95 },
+  { x: 183, y: 126, r:  25, s: 0.90 },
+  { x: 181, y: 114, r: -20, s: 0.85 },
+  { x: 176, y: 103, r:  22, s: 0.80 },
+  { x: 171, y:  93, r: -15, s: 0.75 },
+  { x: 154, y: 193, r:  -8, s: 1.10 },
+  { x: 165, y: 165, r:  12, s: 1.00 },
+  { x: 176, y: 144, r: -12, s: 0.88 },
+  { x: 180, y: 121, r:  10, s: 0.78 },
 ];
 
 const ACORNS = [
-  { x: 34, y: 168, s: 0.95 },
-  { x: 26, y: 153, s: 0.88 },
-  { x: 21, y: 138, s: 0.82 },
+  { x: 34, y: 169, s: 0.95 },
+  { x: 26, y: 154, s: 0.88 },
+  { x: 21, y: 139, s: 0.82 },
 ];
 
 interface BerryCluster { x: number; y: number; offsets: [number, number][] }
+// Deep crimson berries — r=3, color #990000 to avoid orange-ish misread
 const BERRY_CLUSTERS: BerryCluster[] = [
-  { x: 157, y: 185, offsets: [[-3, 0], [3, -2], [0, -5]] },
-  { x: 168, y: 169, offsets: [[-3, 1], [3, -1], [0, -5], [2, 3]] },
-  { x: 176, y: 154, offsets: [[-3, 0], [3, -2], [0, -5]] },
-  { x: 181, y: 140, offsets: [[-3, 1], [3, -1], [0, -5]] },
+  { x: 157, y: 186, offsets: [[-4, 0], [4, -2], [0, -6], [1, 3]] },
+  { x: 169, y: 170, offsets: [[-4, 1], [4, -1], [0, -6], [2, 3]] },
+  { x: 177, y: 155, offsets: [[-4, 0], [4, -2], [0, -6]] },
+  { x: 182, y: 141, offsets: [[-4, 1], [4, -1], [0, -6]] },
 ];
 
 // ─── Static shield / crown data ──────────────────────────────────────────────
+// Shield: 8 red/white stripes on left half
 const STRIPES = [
   { y:  80, fill: "#C8102E" },
   { y:  95, fill: "#FFFFFF" },
@@ -73,6 +85,7 @@ const STRIPES = [
   { y: 185, fill: "#FFFFFF" },
 ];
 
+// Crown circlet gems: ruby / sapphire / emerald pattern
 const GEMS = [
   { cx:  40, fill: "#9B1B30" },
   { cx:  57, fill: "#1A3A8F" },
@@ -83,6 +96,7 @@ const GEMS = [
   { cx: 160, fill: "#9B1B30" },
 ];
 
+// Byzantine enamel portrait panels on dome surface
 const PANELS = [
   { x:  89, y: 36, w: 22, h: 30, bg: "#1A3A8F", fg: "#2655A0" },
   { x:  66, y: 42, w: 18, h: 24, bg: "#9B1B30", fg: "#B52235" },
@@ -93,6 +107,7 @@ const PANELS = [
   { x: 158, y: 56, w: 12, h: 15, bg: "#9B1B30", fg: "#B52235" },
 ];
 
+// Gemstones set into the crown arches
 const ARCH_GEMS = [
   { cx:  50, cy: 58, fill: "#9B1B30" },
   { cx:  75, cy: 42, fill: "#1B6B3A" },
@@ -101,22 +116,45 @@ const ARCH_GEMS = [
   { cx: 150, cy: 58, fill: "#9B1B30" },
 ];
 
-// Shield clip path (reused in multiple places)
+// Shield clip path — full heater shield shape
 const SHIELD_PATH = "M56,80 H144 V148 C144,178 100,197 100,197 C100,197 56,178 56,148 Z";
 
-// ─── Component ────────────────────────────────────────────────────────────────
+// ─── Pendilia chain data ──────────────────────────────────────────────────────
+// Left pendilia: attach at (28,84), first medallion at (12,112), end at (9,138)
+// Each "link" is a small circle (r=1.8) — visually reads as articulated chain
+const LEFT_CHAIN_1 = [
+  [25.3, 88.7], [22.7, 93.3], [20.0, 98.0], [17.3, 102.7], [14.7, 107.3],
+] as [number, number][];
+const LEFT_CHAIN_2 = [
+  [11.6, 117.2], [11.2, 122.4], [10.8, 127.6], [10.4, 132.8],
+] as [number, number][];
+// Right pendilia (mirror)
+const RIGHT_CHAIN_1 = [
+  [174.7, 88.7], [177.3, 93.3], [180.0, 98.0], [182.7, 102.7], [185.3, 107.3],
+] as [number, number][];
+const RIGHT_CHAIN_2 = [
+  [188.4, 117.2], [188.8, 122.4], [189.2, 127.6], [189.6, 132.8],
+] as [number, number][];
+
+// ─── Component ───────────────────────────────────────────────────────────────
 /**
- * Hungarian Coat of Arms — Full animated SVG v4.
- * ViewBox: 0 0 200 250 (4:5, matches 240×300 container).
- * 16-phase animation sequence including oak wreath, laurel wreath, heraldic
- * shield (stripes + apostolic cross), and Holy Crown of St. Stephen with
- * Byzantine enamel panels, crossing arches, pendilia, and tilted apex cross.
+ * Hungarian Coat of Arms — animated hero crest v5.
+ * ViewBox: 0 0 200 250 (4:5 → 340×425 container).
+ *
+ * Historically accurate details:
+ * - Crown cross tilts LEFT (−10°) — the authentic lean of the Holy Crown of St. Stephen
+ * - Double-barred apostolic cross on shield (upper bar shorter than lower)
+ * - Three-peaked green hill (Zöld-halom) beneath the shield cross
+ * - Small gold crown at shield base straddling the divider
+ * - Oak branch (left, lobed leaves + acorns) vs laurel (right, oval leaves + crimson berries)
+ * - No decorative ring border — not part of official arms
+ * - Articulated chain pendilia hanging from crown band
  */
 export function StStephensCrest() {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
 
-      {/* Phase 16 — Breathing glow (infinite) */}
+      {/* Phase 16 — Breathing glow (infinite, starts after sequence) */}
       <motion.div
         className="absolute inset-0"
         style={{
@@ -127,12 +165,7 @@ export function StStephensCrest() {
         transition={{ duration: 5.5, delay: 1, repeat: Infinity, ease: "easeInOut" }}
         aria-hidden="true"
       />
-
-      {/* Thin gold ring */}
-      <div
-        className="absolute inset-[-10px] rounded-full border border-[rgba(197,165,90,0.12)]"
-        aria-hidden="true"
-      />
+      {/* NOTE: No decorative ring border — not canonical to the official coat of arms */}
 
       <motion.svg
         viewBox="0 0 200 250"
@@ -149,8 +182,7 @@ export function StStephensCrest() {
           <clipPath id="ssc-shield-clip">
             <path d={SHIELD_PATH} />
           </clipPath>
-
-          {/* Gold dome gradient — lighter at top-left, darker at base */}
+          {/* Gold dome gradient — lighter at crown top, darker at band */}
           <linearGradient
             id="ssc-dome-grad"
             x1="28" y1="26" x2="172" y2="80"
@@ -163,8 +195,9 @@ export function StStephensCrest() {
         </defs>
 
         {/* ══════════════════════════════════════════════
-            WREATH — Phases 7–9
-            Rendered before shield so shield sits on top.
+            WREATH — rendered behind shield
+            Left: oak (lobed leaves + acorns)
+            Right: laurel (oval leaves + crimson berries)
         ══════════════════════════════════════════════ */}
 
         {/* Phase 7 — Left oak branch spine */}
@@ -176,7 +209,7 @@ export function StStephensCrest() {
           transition={{ duration: 1.0, delay: 2.1, ease: "easeOut" }}
         />
 
-        {/* Oak leaves — staggered pop-in after branch draws */}
+        {/* Oak leaves — 3-lobed, pop in staggered */}
         {OAK_LEAVES.map((l, i) => (
           <motion.g
             key={`oak-${i}`}
@@ -188,13 +221,13 @@ export function StStephensCrest() {
             <g transform={`translate(${l.x},${l.y}) rotate(${l.r}) scale(${l.s})`}>
               <path d={OAK_D} fill="#3A7D44" stroke="#2A5E32" strokeWidth="0.4" />
               {/* Midrib highlight */}
-              <line x1="0" y1="-5.5" x2="0" y2="5.5"
-                stroke="#4D9A5A" strokeWidth="0.35" opacity="0.65" />
+              <line x1="0" y1="-7" x2="0" y2="7"
+                stroke="#4D9A5A" strokeWidth="0.4" opacity="0.6" />
             </g>
           </motion.g>
         ))}
 
-        {/* Acorns — spring bounce after leaves */}
+        {/* Acorns — spring bounce, positioned along oak branch */}
         {ACORNS.map((a, i) => (
           <motion.g
             key={`acorn-${i}`}
@@ -205,14 +238,14 @@ export function StStephensCrest() {
           >
             <g transform={`translate(${a.x},${a.y}) scale(${a.s})`}>
               {/* Stem */}
-              <line x1="0" y1="-7" x2="0" y2="-5.5" stroke="#4A2C17" strokeWidth="0.8" />
-              {/* Cupule */}
+              <line x1="0" y1="-8" x2="0" y2="-6" stroke="#4A2C17" strokeWidth="0.9" />
+              {/* Cupule (acorn cap) */}
               <path
-                d="M-3.5,-5.5 C-3.5,-6.5 3.5,-6.5 3.5,-5.5 L3,-2.5 C3,-1.5 -3,-1.5 -3.5,-2.5 Z"
+                d="M-3.5,-6 C-3.5,-7.5 3.5,-7.5 3.5,-6 L3,-2.5 C3,-1.5 -3,-1.5 -3.5,-2.5 Z"
                 fill="#6B3A2A"
               />
               {/* Nut */}
-              <ellipse cx="0" cy="1.5" rx="3" ry="4" fill="#C4A265" />
+              <ellipse cx="0" cy="1.5" rx="3" ry="4.5" fill="#C4A265" />
             </g>
           </motion.g>
         ))}
@@ -226,7 +259,7 @@ export function StStephensCrest() {
           transition={{ duration: 1.0, delay: 2.3, ease: "easeOut" }}
         />
 
-        {/* Laurel leaves */}
+        {/* Laurel leaves — narrow ovals, clearly not oak */}
         {LAUREL_LEAVES.map((l, i) => (
           <motion.g
             key={`laurel-${i}`}
@@ -237,29 +270,37 @@ export function StStephensCrest() {
           >
             <g transform={`translate(${l.x},${l.y}) rotate(${l.r}) scale(${l.s})`}>
               <path d={LAUREL_D} fill="#4A8040" stroke="#335C2A" strokeWidth="0.35" />
-              <line x1="0" y1="-6" x2="0" y2="6"
+              <line x1="0" y1="-6.5" x2="0" y2="6.5"
                 stroke="#5A9850" strokeWidth="0.3" opacity="0.6" />
             </g>
           </motion.g>
         ))}
 
-        {/* Red berries — spring pop */}
+        {/* Crimson berries — deep #990000, r=3, spring pop */}
         {BERRY_CLUSTERS.map((bc, ci) =>
           bc.offsets.map(([ox, oy], bi) => (
-            <motion.circle
-              key={`berry-${ci}-${bi}`}
-              cx={bc.x + ox} cy={bc.y + oy} r="2.5"
-              fill="#CC2200"
-              initial={{ scale: 0, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              style={{ transformOrigin: `${bc.x + ox}px ${bc.y + oy}px` }}
-              transition={{
-                duration: 0.25,
-                delay: 3.3 + ci * 0.09 + bi * 0.05,
-                type: "spring",
-                bounce: 0.55,
-              }}
-            />
+            <motion.g key={`berry-${ci}-${bi}`}>
+              {/* Berry body */}
+              <motion.circle
+                cx={bc.x + ox} cy={bc.y + oy} r="3"
+                fill="#990000"
+                initial={{ scale: 0, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                style={{ transformOrigin: `${bc.x + ox}px ${bc.y + oy}px` }}
+                transition={{
+                  duration: 0.25, delay: 3.3 + ci * 0.09 + bi * 0.05,
+                  type: "spring", bounce: 0.55,
+                }}
+              />
+              {/* Tiny specular highlight — makes berries read as 3-D not flat dots */}
+              <motion.circle
+                cx={bc.x + ox - 1} cy={bc.y + oy - 1} r="0.8"
+                fill="rgba(255,180,180,0.45)"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.2, delay: 3.5 + ci * 0.09 + bi * 0.05 }}
+              />
+            </motion.g>
           ))
         )}
 
@@ -288,12 +329,12 @@ export function StStephensCrest() {
             SHIELD — Phases 1–6
         ══════════════════════════════════════════════ */}
 
-        {/* Shield dark base (visible before stripes animate in) */}
+        {/* Shield dark base */}
         <path d={SHIELD_PATH} fill="#0D1A2E" />
 
         <g clipPath="url(#ssc-shield-clip)">
 
-          {/* Phase 1 — 8 red/white stripes, scaleX from left edge, 80ms stagger */}
+          {/* Phase 1 — 8 red/white stripes, left half, scaleX staggered */}
           {STRIPES.map((s, i) => (
             <motion.rect
               key={`stripe-${i}`}
@@ -306,7 +347,7 @@ export function StStephensCrest() {
             />
           ))}
 
-          {/* Phase 2 — Right red field fades in (heraldic: Gules) */}
+          {/* Phase 2 — Right field: RED (Gules) — white cross reads on red */}
           <motion.rect
             x={100} y={80} width={44} height={117}
             fill="#C8102E"
@@ -315,56 +356,69 @@ export function StStephensCrest() {
             transition={{ duration: 0.4, delay: 0.95 }}
           />
 
-          {/* Phase 3 — Three green hills rise from shield bottom (right field only) */}
+          {/* Phase 3 — Zöld-halom: three-peaked green hill at base of right field.
+              Large ry values ensure the tops of the hills are visible high enough
+              in the shield before the clip path narrows toward the bottom point.
+              All three hills are within x=100–144 (right field). The clip handles edges. */}
           <motion.g
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
-            style={{ transformOrigin: "122px 197px" }}
-            transition={{ duration: 0.4, delay: 1.1, ease: "easeOut" }}
+            style={{ transformOrigin: "120px 197px" }}
+            transition={{ duration: 0.45, delay: 1.1, ease: "easeOut" }}
           >
-            <ellipse cx="110" cy="194" rx="10" ry="14" fill="#1E5024" />
-            <ellipse cx="122" cy="189" rx="13" ry="18" fill="#1E5024" />
-            <ellipse cx="134" cy="194" rx="10" ry="14" fill="#1E5024" />
+            {/* Left hill */}
+            <ellipse cx="108" cy="192" rx="12" ry="22" fill="#1E5024" />
+            {/* Center hill — tallest, sits directly under cross */}
+            <ellipse cx="120" cy="185" rx="16" ry="30" fill="#1E5024" />
+            {/* Right hill */}
+            <ellipse cx="132" cy="192" rx="12" ry="22" fill="#1E5024" />
           </motion.g>
 
-          {/* Phase 4 — Apostolic double cross on shield — rises from bottom */}
+          {/* Phase 4 — Apostolic DOUBLE cross on shield.
+              Two horizontal bars: upper shorter, lower longer — the patriarchal cross.
+              Centered at x=122 (center of right field = (100+144)/2).
+              Shaft bottom at y=158; hills top (center) at y=155 — they meet correctly. */}
           <motion.g
             initial={{ scaleY: 0, opacity: 0 }}
             animate={{ scaleY: 1, opacity: 1 }}
-            style={{ transformOrigin: "122px 172px" }}
+            style={{ transformOrigin: "122px 125px" }}
             transition={{ duration: 0.6, delay: 1.3, ease: "easeOut" }}
           >
             {/* Vertical shaft */}
-            <rect x="120" y="92"  width="4"  height="78" rx="1" fill="#FFFFFF" />
-            {/* Upper crossbar (shorter) */}
-            <rect x="111" y="108" width="22" height="4"  rx="1" fill="#FFFFFF" />
-            {/* Lower crossbar (longer) */}
-            <rect x="107" y="126" width="30" height="4"  rx="1" fill="#FFFFFF" />
+            <rect x="120" y="92"  width="4"  height="68" rx="1" fill="#FFFFFF" />
+            {/* Upper crossbar — shorter (patriarchal cross upper arm) */}
+            <rect x="112" y="112" width="20" height="6"  rx="1" fill="#FFFFFF" />
+            {/* Lower crossbar — longer (longer arm of patriarchal cross) */}
+            <rect x="108" y="132" width="28" height="6"  rx="1" fill="#FFFFFF" />
           </motion.g>
 
-          {/* Phase 5 — Small heraldic crown at base of cross, in right field (centered at x=122) */}
+          {/* Phase 5 — Small gold crown at shield base.
+              Centered at x=100 (where the two halves meet / divider).
+              Width ≈18 units so it spans x=91–109, straddling the divider — it
+              "overlaps the stripe base" (left) and "rests on the green hill" (right).
+              Positioned at y=163–178, just below the cross shaft bottom at y=160. */}
           <motion.g
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            style={{ transformOrigin: "122px 186px" }}
+            style={{ transformOrigin: "100px 171px" }}
             transition={{ duration: 0.45, delay: 1.65, type: "spring", bounce: 0.4 }}
           >
-            {/* Crown points */}
+            {/* Crown three points */}
             <path
-              d="M113,192 L113,186 L117.5,180 L122,186 L126.5,180 L131,186 L131,192 Z"
+              d="M91,178 L91,172 L95.5,165 L100,172 L104.5,165 L109,172 L109,178 Z"
               fill="#D4AF37"
             />
             {/* Crown band */}
-            <rect x="113" y="188" width="18" height="5" rx="1" fill="#C5A55A" />
+            <rect x="91" y="173" width="18" height="6" rx="1" fill="#C5A55A" />
             {/* Crown gems */}
-            <circle cx="117.5" cy="191" r="1.8" fill="#9B1B30" />
-            <circle cx="122"   cy="191" r="1.8" fill="#1A3A8F" />
-            <circle cx="126.5" cy="191" r="1.8" fill="#9B1B30" />
+            <circle cx="95.5" cy="177" r="1.8" fill="#9B1B30" />
+            <circle cx="100"  cy="177" r="1.8" fill="#1A3A8F" />
+            <circle cx="104.5" cy="177" r="1.8" fill="#9B1B30" />
           </motion.g>
 
         </g>{/* end shield clip */}
 
-        {/* Center divider between shield halves */}
+        {/* Divider between left (stripes) and right (field) halves */}
         <line
           x1="100" y1="80" x2="100" y2="190"
           stroke="#C5A55A" strokeWidth="1" opacity="0.9"
@@ -381,10 +435,9 @@ export function StStephensCrest() {
 
         {/* ══════════════════════════════════════════════
             CROWN — Phases 10–15
-            Render order: dome → panels → arches → circlet → gems → pendilia → orb → cross
         ══════════════════════════════════════════════ */}
 
-        {/* Phase 12 — Gold dome hemisphere, expands from circlet upward */}
+        {/* Phase 12 — Gold dome hemisphere */}
         <motion.path
           d="M28,80 C28,45 60,26 100,26 C140,26 172,45 172,80 Z"
           fill="url(#ssc-dome-grad)"
@@ -394,7 +447,7 @@ export function StStephensCrest() {
           transition={{ duration: 0.7, delay: 2.8, ease: "easeOut" }}
         />
 
-        {/* Dome equator arc — 3-D surface illusion */}
+        {/* Dome 3-D surface arc */}
         <motion.path
           d="M28,80 C42,52 64,36 100,32 C136,36 158,52 172,80"
           fill="none" stroke="#B8943A" strokeWidth="1.5" opacity="0"
@@ -402,7 +455,7 @@ export function StStephensCrest() {
           transition={{ duration: 0.5, delay: 2.95 }}
         />
 
-        {/* Phase 11 — Byzantine enamel portrait panels, staggered 100ms */}
+        {/* Phase 11 — Byzantine enamel portrait panels, 100ms stagger */}
         {PANELS.map((p, i) => (
           <motion.g
             key={`panel-${i}`}
@@ -410,24 +463,21 @@ export function StStephensCrest() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 3.05 + i * 0.1 }}
           >
-            {/* Panel border */}
             <rect
               x={p.x} y={p.y} width={p.w} height={p.h}
               rx="1.5" fill={p.bg} stroke="#D4AF37" strokeWidth="0.6"
             />
-            {/* Inner field */}
             <rect
-              x={p.x + 2} y={p.y + 2}
-              width={p.w - 4} height={p.h - 4}
+              x={p.x + 2} y={p.y + 2} width={p.w - 4} height={p.h - 4}
               rx="1" fill={p.fg}
             />
-            {/* Figure head (Byzantine gold nimbus) */}
+            {/* Gold nimbus halo */}
             <ellipse
               cx={p.x + p.w / 2} cy={p.y + p.h * 0.28}
               rx={p.w * 0.18} ry={p.h * 0.16}
               fill="#E8B84B" opacity="0.55"
             />
-            {/* Figure body line */}
+            {/* Figure body */}
             <line
               x1={p.x + p.w / 2} y1={p.y + p.h * 0.46}
               x2={p.x + p.w / 2} y2={p.y + p.h * 0.86}
@@ -436,7 +486,7 @@ export function StStephensCrest() {
           </motion.g>
         ))}
 
-        {/* Phase 12b — Two crown arches draw across dome (left-to-right) */}
+        {/* Phase 12b — Crown arches draw across dome */}
         <motion.path
           d="M28,79 C50,50 72,34 100,28 C128,34 150,50 172,79"
           fill="none" stroke="#D4AF37" strokeWidth="2"
@@ -452,7 +502,7 @@ export function StStephensCrest() {
           transition={{ duration: 0.6, delay: 3.55, ease: "easeOut" }}
         />
 
-        {/* Phase 10 — Crown circlet / base band, scaleX from center */}
+        {/* Phase 10 — Crown circlet / base band */}
         <motion.rect
           x={28} y={72} width={144} height={12} rx="2.5"
           fill="#E8B84B"
@@ -461,7 +511,6 @@ export function StStephensCrest() {
           style={{ transformOrigin: "100px 78px" }}
           transition={{ duration: 0.5, delay: 3.0, ease: "easeOut" }}
         />
-        {/* Circlet filigree edge */}
         <motion.line
           x1={28} y1={83} x2={172} y2={83}
           stroke="#C5912A" strokeWidth="0.6" opacity="0"
@@ -469,33 +518,23 @@ export function StStephensCrest() {
           transition={{ duration: 0.4, delay: 3.1 }}
         />
 
-        {/* Phase 15 — Circlet gems sparkle in, 60ms stagger */}
+        {/* Phase 15 — Circlet gems sparkle in */}
         {GEMS.map((g, i) => (
           <motion.g
             key={`gem-${i}`}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             style={{ transformOrigin: `${g.cx}px 78px` }}
-            transition={{
-              duration: 0.35,
-              delay: 4.2 + i * 0.06,
-              type: "spring",
-              bounce: 0.5,
-            }}
+            transition={{ duration: 0.35, delay: 4.2 + i * 0.06, type: "spring", bounce: 0.5 }}
           >
-            <ellipse
-              cx={g.cx} cy={78} rx={4} ry={4.5}
-              fill={g.fill} stroke="#F5F0E8" strokeWidth="0.5"
-            />
-            {/* Gem highlight */}
-            <ellipse
-              cx={g.cx - 1.2} cy={76} rx={1.2} ry={1.5}
-              fill="rgba(255,255,255,0.3)"
-            />
+            <ellipse cx={g.cx} cy={78} rx={4} ry={4.5}
+              fill={g.fill} stroke="#F5F0E8" strokeWidth="0.5" />
+            <ellipse cx={g.cx - 1.2} cy={76} rx={1.2} ry={1.5}
+              fill="rgba(255,255,255,0.3)" />
           </motion.g>
         ))}
 
-        {/* Arch gemstones along the two arches */}
+        {/* Arch gemstones */}
         {ARCH_GEMS.map((g, i) => (
           <motion.circle
             key={`arch-gem-${i}`}
@@ -504,43 +543,81 @@ export function StStephensCrest() {
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             style={{ transformOrigin: `${g.cx}px ${g.cy}px` }}
-            transition={{
-              duration: 0.3,
-              delay: 4.4 + i * 0.06,
-              type: "spring",
-              bounce: 0.5,
-            }}
+            transition={{ duration: 0.3, delay: 4.4 + i * 0.06, type: "spring", bounce: 0.5 }}
           />
         ))}
 
-        {/* Pendilia — left (two-segment articulated chain) */}
+        {/* ── Pendilia — articulated chains with medallions ──
+            Each side: thin spine line + chain links (r=1.8 circles) + two medallions.
+            This replaces the previous single line + two circles which read as
+            "decorative balls floating beside the crown." */}
+
         <motion.g
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 3.2 }}
         >
-          <line x1="28" y1="78" x2="14" y2="107"
-            stroke="#C5A55A" strokeWidth="1.2" opacity="0.85" />
-          <circle cx="13" cy="110" r="4.5"
-            fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
-          <line x1="13" y1="114.5" x2="11" y2="138"
-            stroke="#C5A55A" strokeWidth="1" opacity="0.7" />
-          <circle cx="11" cy="141" r="3.5" fill="#C5A55A" />
+          {/* LEFT — spine line for depth */}
+          <line x1="28" y1="84" x2="12" y2="112"
+            stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
+          <line x1="12" y1="112" x2="9" y2="138"
+            stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
+
+          {/* LEFT — first segment chain links */}
+          {LEFT_CHAIN_1.map(([cx, cy], i) => (
+            <circle key={`lc1-${i}`} cx={cx} cy={cy} r="1.8"
+              fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.35" />
+          ))}
+
+          {/* LEFT — first medallion */}
+          <circle cx="12" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
+          <circle cx="12" cy="112" r="3.5" fill="#1A3A8F" />
+          <circle cx="11" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
+
+          {/* LEFT — second segment chain links */}
+          {LEFT_CHAIN_2.map(([cx, cy], i) => (
+            <circle key={`lc2-${i}`} cx={cx} cy={cy} r="1.8"
+              fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.35" />
+          ))}
+
+          {/* LEFT — end medallion */}
+          <circle cx="9" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
+          <circle cx="9" cy="138" r="2.8" fill="#9B1B30" />
+          <circle cx="8" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
         </motion.g>
 
-        {/* Pendilia — right (mirror) */}
         <motion.g
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 3.25 }}
         >
-          <line x1="172" y1="78" x2="186" y2="107"
-            stroke="#C5A55A" strokeWidth="1.2" opacity="0.85" />
-          <circle cx="187" cy="110" r="4.5"
-            fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
-          <line x1="187" y1="114.5" x2="189" y2="138"
-            stroke="#C5A55A" strokeWidth="1" opacity="0.7" />
-          <circle cx="189" cy="141" r="3.5" fill="#C5A55A" />
+          {/* RIGHT — spine lines */}
+          <line x1="172" y1="84" x2="188" y2="112"
+            stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
+          <line x1="188" y1="112" x2="191" y2="138"
+            stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
+
+          {/* RIGHT — first segment chain links */}
+          {RIGHT_CHAIN_1.map(([cx, cy], i) => (
+            <circle key={`rc1-${i}`} cx={cx} cy={cy} r="1.8"
+              fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.35" />
+          ))}
+
+          {/* RIGHT — first medallion */}
+          <circle cx="188" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
+          <circle cx="188" cy="112" r="3.5" fill="#1A3A8F" />
+          <circle cx="187" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
+
+          {/* RIGHT — second segment chain links */}
+          {RIGHT_CHAIN_2.map(([cx, cy], i) => (
+            <circle key={`rc2-${i}`} cx={cx} cy={cy} r="1.8"
+              fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.35" />
+          ))}
+
+          {/* RIGHT — end medallion */}
+          <circle cx="191" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
+          <circle cx="191" cy="138" r="2.8" fill="#9B1B30" />
+          <circle cx="190" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
         </motion.g>
 
         {/* Phase 13 — Crown orb at arch crossing point */}
@@ -550,28 +627,34 @@ export function StStephensCrest() {
           style={{ transformOrigin: "100px 27px" }}
           transition={{ duration: 0.3, delay: 3.9, type: "spring", bounce: 0.4 }}
         >
-          <circle cx="100" cy="27" r="5"
-            fill="#E8B84B" stroke="#D4AF37" strokeWidth="0.9" />
-          {/* Orb highlight */}
-          <ellipse cx="98.5" cy="25" rx="2" ry="2.5"
-            fill="rgba(255,255,255,0.28)" />
+          <circle cx="100" cy="27" r="5" fill="#E8B84B" stroke="#D4AF37" strokeWidth="0.9" />
+          <ellipse cx="98.5" cy="25" rx="2" ry="2.5" fill="rgba(255,255,255,0.28)" />
         </motion.g>
 
-        {/* Phase 14 — Apostolic cross on crown, tilted ~10° left (historically accurate) */}
-        <motion.g
-          transform="rotate(-10, 100, 27)"
-          initial={{ scaleY: 0, opacity: 0 }}
-          animate={{ scaleY: 1, opacity: 1 }}
-          style={{ transformOrigin: "100px 27px" }}
-          transition={{ duration: 0.5, delay: 4.0, ease: "easeOut" }}
-        >
-          {/* Vertical shaft */}
-          <rect x="98.5" y="3"  width="3"  height="24" rx="0.8" fill="#FFD700" />
-          {/* Upper crossbar — shorter */}
-          <rect x="93.5" y="9"  width="13" height="2.5" rx="0.7" fill="#FFD700" />
-          {/* Lower crossbar — longer */}
-          <rect x="90"   y="15" width="20" height="2.5" rx="0.7" fill="#FFD700" />
-        </motion.g>
+        {/* Phase 14 — Apostolic double cross on crown apex.
+            THE KEY DETAIL: the Holy Crown of St. Stephen's cross tilts LEFT.
+            This is historically authentic — the cross was bent centuries ago and
+            was kept as-is. Every Hungarian recognizes the tilt immediately.
+
+            FIX: the static SVG rotation must be on a PLAIN <g>, not on the
+            <motion.g>. When Framer Motion takes over transforms for scaleY/opacity
+            animation, it replaces the SVG `transform` attribute via CSS transforms,
+            causing the rotation to be ignored. Nesting isolates the two systems. */}
+        <g transform="rotate(-10, 100, 27)">
+          <motion.g
+            initial={{ scaleY: 0, opacity: 0 }}
+            animate={{ scaleY: 1, opacity: 1 }}
+            style={{ transformOrigin: "100px 27px" }}
+            transition={{ duration: 0.5, delay: 4.0, ease: "easeOut" }}
+          >
+            {/* Vertical shaft */}
+            <rect x="98.5" y="3"  width="3"  height="24" rx="0.8" fill="#FFD700" />
+            {/* Upper crossbar — shorter (top arm of patriarchal cross) */}
+            <rect x="93.5" y="9"  width="13" height="2.5" rx="0.7" fill="#FFD700" />
+            {/* Lower crossbar — longer (main arm of patriarchal cross) */}
+            <rect x="90"   y="15" width="20" height="2.5" rx="0.7" fill="#FFD700" />
+          </motion.g>
+        </g>
 
       </motion.svg>
     </div>
