@@ -7,7 +7,5 @@ export { Stats } from "./Stats";
 export { Testimonials } from "./Testimonials";
 export { FeeTable } from "./FeeTable";
 export { FinalCTA } from "./FinalCTA";
-export { ShopContent } from "./ShopContent";
-export { CartDrawer } from "./CartDrawer";
 export { BlogContent } from "./BlogContent";
 export { BlogPostContent } from "./BlogPostContent";

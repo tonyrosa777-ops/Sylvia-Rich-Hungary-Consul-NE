@@ -19,7 +19,6 @@ import enTestimonials from "./en/testimonials.json";
 import enContact from "./en/contact.json";
 import enStates from "./en/states.json";
 import enBlog from "./en/blog.json";
-import enShop from "./en/shop.json";
 import enQuiz from "./en/quiz.json";
 
 import huCommon from "./hu/common.json";
@@ -37,7 +36,6 @@ import huTestimonials from "./hu/testimonials.json";
 import huContact from "./hu/contact.json";
 import huStates from "./hu/states.json";
 import huBlog from "./hu/blog.json";
-import huShop from "./hu/shop.json";
 import huQuiz from "./hu/quiz.json";
 
 const en = {
@@ -56,7 +54,6 @@ const en = {
   contact: enContact,
   states: enStates,
   blog: enBlog,
-  shop: enShop,
   quiz: enQuiz,
 };
 
@@ -76,7 +73,6 @@ const hu = {
   contact: huContact,
   states: huStates,
   blog: huBlog,
-  shop: huShop,
   quiz: huQuiz,
 };
 

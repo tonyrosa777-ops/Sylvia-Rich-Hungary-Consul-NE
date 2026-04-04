@@ -32,7 +32,6 @@ export function SiteHeader() {
     "/services": t("nav.services"),
     "/about": t("nav.about"),
     "/blog": t("nav.blog"),
-    "/shop": t("nav.shop"),
     "/contact": t("nav.contact"),
   };
 

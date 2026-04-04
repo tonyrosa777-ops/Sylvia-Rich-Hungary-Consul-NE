@@ -6,8 +6,13 @@
   },
   "discretionNote": "Names withheld at clients' request. All testimonials reflect genuine service experiences.",
   "googleCTA": {
-    "text": "Read more reviews on Google",
-    "label": "Google Business Profile"
+    "text": "See all reviews",
+    "label": "All Reviews"
+  },
+  "pagination": {
+    "prev": "Previous",
+    "next": "Next",
+    "pageOf": "Page {n} of {total}"
   },
   "bookCTA": {
     "heading": "Ready to Book Your Appointment?",

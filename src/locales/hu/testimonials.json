@@ -6,8 +6,13 @@
   },
   "discretionNote": "A nevek az ügyfelek kérésére ki vannak hagyva. Minden vélemény valódi szolgáltatási tapasztalatot tükröz.",
   "googleCTA": {
-    "text": "Olvassa el a Google-véleményeket",
-    "label": "Google Üzleti Profil"
+    "text": "Összes vélemény megtekintése",
+    "label": "Összes vélemény"
+  },
+  "pagination": {
+    "prev": "Előző",
+    "next": "Következő",
+    "pageOf": "{n}. oldal / {total}"
   },
   "bookCTA": {
     "heading": "Kész az Időpontfoglalásra?",

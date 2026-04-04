@@ -62,7 +62,7 @@ export function Testimonials() {
           ))}
         </StaggerContainer>
 
-        {/* CTA to full page */}
+        {/* CTA to full reviews page */}
         <FadeUp delay={0.3} className="mt-10 text-center">
           <a
             href="/testimonials"
