@@ -9,12 +9,13 @@ type StateData = (typeof siteData.states)[number];
 
 export function StatePage({ stateData }: { stateData: StateData }) {
   const { services, testimonials } = siteData;
-  const { t } = useTranslation("states");
+  const { t, locale } = useTranslation("states");
   const { t: tCommon } = useTranslation("common");
   const { t: tSvc } = useTranslation("services");
 
-  // Pick one testimonial to feature
-  const featuredTestimonial = testimonials[0];
+  // Pick a testimonial whose language matches the current locale
+  const featuredTestimonial =
+    testimonials.find((t) => t.lang === locale) ?? testimonials[0];
 
   return (
     <>
