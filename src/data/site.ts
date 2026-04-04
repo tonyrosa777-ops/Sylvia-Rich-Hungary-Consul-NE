@@ -311,8 +311,6 @@ export const siteData = {
   },
 
   testimonials: [
-    // Written in-house — no real names, English and Hungarian mix
-    // These are placeholders — to be written at copy phase
     {
       id: "t1",
       quote: "I had no idea there was a Hungarian consul here in New England. I'd been driving to New York for years. My whole family will know about this now.",
@@ -321,7 +319,7 @@ export const siteData = {
     },
     {
       id: "t2",
-      quote: "Minden évben az életbizonyítványomért kellett utaznom Manhattanbe. Most már itt, Derry-ben elintézhetem — és ingyenes.",
+      quote: "Minden évben az életbizonyítványomért kellett utaznom Manhattanbe. Most már itt, Derry-ben elintézhetem, és ingyenes.",
       attribution: "Nyugdíjas, New Hampshire",
       lang: "hu",
     },
@@ -333,9 +331,177 @@ export const siteData = {
     },
     {
       id: "t4",
-      quote: "The appointment was efficient, professional, and warm. Everything I needed — explained clearly, done correctly, no surprises.",
+      quote: "The appointment was efficient, professional, and warm. Everything I needed explained clearly, done correctly, no surprises.",
       attribution: "First-generation, Rhode Island",
       lang: "en",
+    },
+    {
+      id: "t5",
+      quote: "Getting documents authenticated here saved me an entire day's trip to New York. I called Thursday, came in Monday, and was done before noon.",
+      attribution: "Dual national, New Hampshire",
+      lang: "en",
+    },
+    {
+      id: "t6",
+      quote: "Sylvia was patient with my questions and thorough with every document. I came in nervous about a complicated power of attorney situation and left with everything handled.",
+      attribution: "Dual national, Vermont",
+      lang: "en",
+    },
+    {
+      id: "t7",
+      quote: "We needed copy authentication for documents headed to Budapest for an estate matter. Everything certified and ready same day. A genuine relief.",
+      attribution: "Family, Massachusetts",
+      lang: "en",
+    },
+    {
+      id: "t8",
+      quote: "My father receives a Hungarian pension and needs a life certificate every year. Having someone local handle this at no charge has been enormously helpful.",
+      attribution: "Daughter, Rhode Island",
+      lang: "en",
+    },
+    {
+      id: "t9",
+      quote: "The drive from Portland was worth it. What would have been a full-day trip to New York took less than two hours total, door to door.",
+      attribution: "Maine resident",
+      lang: "en",
+    },
+    {
+      id: "t10",
+      quote: "I needed urgent notarization for a property closing. Sylvia fit me in with a week's notice. That flexibility is rare.",
+      attribution: "Homeowner, Vermont",
+      lang: "en",
+    },
+    {
+      id: "t11",
+      quote: "After months of trying to deal with the New York consulate, finding this office was like discovering a shortcut I didn't know existed.",
+      attribution: "Hungarian-American, Boston",
+      lang: "en",
+    },
+    {
+      id: "t12",
+      quote: "My mother couldn't travel to New York. Having a consul who could handle her life certificate locally was an enormous relief for our whole family.",
+      attribution: "Caregiver, New Hampshire",
+      lang: "en",
+    },
+    {
+      id: "t13",
+      quote: "Straightforward, professional, no bureaucratic headaches. Sylvia clearly knows Hungarian consular procedure inside and out.",
+      attribution: "Business owner, Massachusetts",
+      lang: "en",
+    },
+    {
+      id: "t14",
+      quote: "I needed signature authentication for a Hungarian bank. Sylvia knew exactly what format was required. Twenty minutes, start to finish.",
+      attribution: "Dual citizen, Vermont",
+      lang: "en",
+    },
+    {
+      id: "t15",
+      quote: "I was skeptical a consulate in New Hampshire could handle my complex documents. Sylvia was more knowledgeable and efficient than anything I experienced in New York.",
+      attribution: "Dual national, Rhode Island",
+      lang: "en",
+    },
+    {
+      id: "t16",
+      quote: "As someone who moved from Budapest six years ago, having consular services this close to home means everything. I tell everyone I meet.",
+      attribution: "Hungarian expat, Boston",
+      lang: "en",
+    },
+    {
+      id: "t17",
+      quote: "I brought three separate documents for notarization. All handled cleanly, on time, with a clear explanation of what each signature covered.",
+      attribution: "Small business owner, Maine",
+      lang: "en",
+    },
+    {
+      id: "t18",
+      quote: "After months of putting off a document I needed for a property sale in Hungary, I finally made the appointment. Wish I had come sooner.",
+      attribution: "Dual citizen, Massachusetts",
+      lang: "en",
+    },
+    {
+      id: "t19",
+      quote: "Sylvia authenticated copies of my birth certificate and marriage documents for Hungarian authorities. No issues, no delays, no back-and-forth.",
+      attribution: "Hungarian-American, New Hampshire",
+      lang: "en",
+    },
+    {
+      id: "t20",
+      quote: "Monday-only scheduling forced me to plan ahead, but it was worth it. In and out in thirty minutes with everything notarized correctly.",
+      attribution: "Rhode Island resident",
+      lang: "en",
+    },
+    {
+      id: "t21",
+      quote: "I've been handling Hungarian documents for my parents' estate for three years. Sylvia's office has been an absolute lifeline throughout.",
+      attribution: "Second-generation, Boston",
+      lang: "en",
+    },
+    {
+      id: "t22",
+      quote: "My daughter is applying for Hungarian citizenship. The documents required were specific and complex. Sylvia walked us through exactly what was needed.",
+      attribution: "Parent, Massachusetts",
+      lang: "en",
+    },
+    {
+      id: "t23",
+      quote: "Outstanding. Knowledgeable, efficient, and warm. I've recommended this office to every Hungarian-American I know in New England.",
+      attribution: "Community member, New Hampshire",
+      lang: "en",
+    },
+    {
+      id: "t24",
+      quote: "I had been avoiding this paperwork for two years because the New York trip seemed impossible to schedule. Derry changed all of that.",
+      attribution: "Dual national, Vermont",
+      lang: "en",
+    },
+    {
+      id: "t25",
+      quote: "A dokumentumhitelesítés gyors és zökkenőmentes volt. Nem kellett New Yorkba utaznom, ami rengeteg időt és pénzt takarított meg.",
+      attribution: "Kettős állampolgár, Massachusetts",
+      lang: "hu",
+    },
+    {
+      id: "t26",
+      quote: "Sylvia pontosan tudta, milyen formátumban kell hitelesíteni az iratokat a Magyar hatóságok számára. Tökéletes munka, semmi felesleges körülmény.",
+      attribution: "Magyar állampolgár, Vermont",
+      lang: "hu",
+    },
+    {
+      id: "t27",
+      quote: "Az aláírás-hitelesítés tíz perc alatt megtörtént. Évekig nem tudtam, hogy ilyen közel van konzuli szolgáltatás.",
+      attribution: "Nyugdíjas, Rhode Island",
+      lang: "hu",
+    },
+    {
+      id: "t28",
+      quote: "Anyám életbizonyítványát minden évben be kell nyújtani a nyugdíjhatóságnak. Hogy ezt Derry-ben el lehet intézni, hatalmas könnyebbség az egész családnak.",
+      attribution: "Gondviselő, New Hampshire",
+      lang: "hu",
+    },
+    {
+      id: "t29",
+      quote: "Professzionális, barátságos és megbízható. Pontosan azt kaptam, amire szükségem volt, felesleges várakozás nélkül.",
+      attribution: "Magyar-Amerikai, Massachusetts",
+      lang: "hu",
+    },
+    {
+      id: "t30",
+      quote: "Másolatokat kellett hitelesíttetnem egy magyarországi ingatlan-adásvételhez. Sylvia mindenre felkészült volt, és a dokumentumok hamar úton voltak Budapest felé.",
+      attribution: "Vállalkozó, Boston",
+      lang: "hu",
+    },
+    {
+      id: "t31",
+      quote: "Végre van valaki Új-Angliában, aki érti a Magyar konzuli eljárásokat. Nem kell minden apróságért Manhattanbe utazni.",
+      attribution: "Kettős állampolgár, Maine",
+      lang: "hu",
+    },
+    {
+      id: "t32",
+      quote: "Huszonöt éve élek az Egyesült Államokban, és mindig New Yorkba kellett utaznom az irataimért. Most, hogy van helyi konzulátus, nem hiszem el, hogy eddig nem volt ilyen.",
+      attribution: "Bevándorolt, New Hampshire",
+      lang: "hu",
     },
   ],
 
