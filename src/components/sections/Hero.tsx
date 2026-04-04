@@ -99,7 +99,7 @@ export function Hero() {
 
           {/* ── Right: St. Stephen's Crown crest ── */}
           <div className="hidden lg:flex flex-col items-center justify-center">
-            <div className="relative w-[240px] h-[300px]">
+            <div className="relative w-[340px] h-[425px]">
               <StStephensCrest />
             </div>
 

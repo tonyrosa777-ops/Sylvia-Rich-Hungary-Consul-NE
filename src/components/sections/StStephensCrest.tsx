@@ -306,25 +306,25 @@ export function StStephensCrest() {
             />
           ))}
 
-          {/* Phase 2 — Right green field fades in */}
+          {/* Phase 2 — Right red field fades in (heraldic: Gules) */}
           <motion.rect
             x={100} y={80} width={44} height={117}
-            fill="#2D6A2D"
+            fill="#C8102E"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 0.95 }}
           />
 
-          {/* Phase 3 — Three green hills rise from shield bottom */}
+          {/* Phase 3 — Three green hills rise from shield bottom (right field only) */}
           <motion.g
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 1 }}
             style={{ transformOrigin: "122px 197px" }}
             transition={{ duration: 0.4, delay: 1.1, ease: "easeOut" }}
           >
-            <ellipse cx="108" cy="192" rx="13" ry="16" fill="#1E5024" />
-            <ellipse cx="122" cy="187" rx="16" ry="20" fill="#1E5024" />
-            <ellipse cx="136" cy="192" rx="13" ry="16" fill="#1E5024" />
+            <ellipse cx="110" cy="194" rx="10" ry="14" fill="#1E5024" />
+            <ellipse cx="122" cy="189" rx="13" ry="18" fill="#1E5024" />
+            <ellipse cx="134" cy="194" rx="10" ry="14" fill="#1E5024" />
           </motion.g>
 
           {/* Phase 4 — Apostolic double cross on shield — rises from bottom */}
@@ -342,24 +342,24 @@ export function StStephensCrest() {
             <rect x="107" y="126" width="30" height="4"  rx="1" fill="#FFFFFF" />
           </motion.g>
 
-          {/* Phase 5 — Small heraldic crown at shield base, centered on divider */}
+          {/* Phase 5 — Small heraldic crown at base of cross, in right field (centered at x=122) */}
           <motion.g
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            style={{ transformOrigin: "100px 186px" }}
+            style={{ transformOrigin: "122px 186px" }}
             transition={{ duration: 0.45, delay: 1.65, type: "spring", bounce: 0.4 }}
           >
             {/* Crown points */}
             <path
-              d="M91,192 L91,186 L95.5,180 L100,186 L104.5,180 L109,186 L109,192 Z"
+              d="M113,192 L113,186 L117.5,180 L122,186 L126.5,180 L131,186 L131,192 Z"
               fill="#D4AF37"
             />
             {/* Crown band */}
-            <rect x="91" y="188" width="18" height="5" rx="1" fill="#C5A55A" />
+            <rect x="113" y="188" width="18" height="5" rx="1" fill="#C5A55A" />
             {/* Crown gems */}
-            <circle cx="95.5" cy="191" r="1.8" fill="#9B1B30" />
-            <circle cx="100"  cy="191" r="1.8" fill="#1A3A8F" />
-            <circle cx="104.5" cy="191" r="1.8" fill="#9B1B30" />
+            <circle cx="117.5" cy="191" r="1.8" fill="#9B1B30" />
+            <circle cx="122"   cy="191" r="1.8" fill="#1A3A8F" />
+            <circle cx="126.5" cy="191" r="1.8" fill="#9B1B30" />
           </motion.g>
 
         </g>{/* end shield clip */}
