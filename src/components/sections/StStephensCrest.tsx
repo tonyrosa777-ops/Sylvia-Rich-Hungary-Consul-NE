@@ -398,20 +398,20 @@ export function StStephensCrest() {
           <motion.g
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
-            style={{ transformOrigin: "122px 163px" }}
+            style={{ transformOrigin: "122px 152px" }}
             transition={{ duration: 0.45, delay: 1.65, type: "spring", bounce: 0.4 }}
           >
             {/* Crown three points */}
             <path
-              d="M113,171 L113,165 L117.5,158 L122,165 L126.5,158 L131,165 L131,171 Z"
+              d="M113,160 L113,154 L117.5,147 L122,154 L126.5,147 L131,154 L131,160 Z"
               fill="#D4AF37"
             />
             {/* Crown band */}
-            <rect x="113" y="166" width="18" height="6" rx="1" fill="#C5A55A" />
+            <rect x="113" y="155" width="18" height="6" rx="1" fill="#C5A55A" />
             {/* Crown gems */}
-            <circle cx="117.5" cy="170" r="1.8" fill="#9B1B30" />
-            <circle cx="122"   cy="170" r="1.8" fill="#1A3A8F" />
-            <circle cx="126.5" cy="170" r="1.8" fill="#9B1B30" />
+            <circle cx="117.5" cy="159" r="1.8" fill="#9B1B30" />
+            <circle cx="122"   cy="159" r="1.8" fill="#1A3A8F" />
+            <circle cx="126.5" cy="159" r="1.8" fill="#9B1B30" />
           </motion.g>
 
         </g>{/* end shield clip */}
