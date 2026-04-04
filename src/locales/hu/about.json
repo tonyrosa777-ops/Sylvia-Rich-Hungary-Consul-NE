@@ -179,6 +179,13 @@
     "body": "Személyesen: 16 Route 111, Suite 5, Derry, NH. Hozza magával iratait, érvényes személyazonosító okmányát és a fizetési összeget készpénzben vagy csekkel.",
     "button": "Időpontot Foglalok"
   },
+  "story": {
+    "paragraphs": [
+      "Sylvia Rich egész életét a két ország — Magyarország és Amerika — határán töltötte, nem metaforikusan, hanem szó szerint. Szülei 1969-ben menekültek el a kommunista Magyarországról. Karrierje Budapesten indult. Évtizedeket töltött mindkét világban, mindkét nyelven anyanyelvi szinten, mindkét rendszerben otthonosan.",
+      "A tiszteletbeli konzuli pozíció nem egy cím, amelyet visel. Ez egy felelősség, amelyet vállalt — és amelyet a Magyar Nagykövetség azért bízott rá, amit ő hoz magával: mély magyar kulturális ismeretek, egy öt államon átívelő amerikai civil kapcsolatrendszer az orvostudomány, a jog és a közigazgatás területén, valamint egy olyan személy gyakorlati tudása, aki személyesen megtapasztalt minden formát, irodát és határidőt, amellyel ügyfelei most szembenéznek.",
+      "Sylvia nem kap fizetést ezért a munkáért. Kizárólag aktív konzuli feladatok ellátásakor részesül díjazásban. Ez egy önkéntes szolgálati pozíció — és pontosan ez az oka annak, hogy közössége bizalma iránta ennyire teljes."
+    ]
+  },
   "portrait": {
     "appointedBy": "Kinevezve:",
     "placeholder": "Portré készülőben",

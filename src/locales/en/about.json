@@ -179,6 +179,13 @@
     "body": "In-person at 16 Route 111, Suite 5, Derry, NH. Bring your documents, valid ID, and payment by cash or check.",
     "button": "Book Your Appointment"
   },
+  "story": {
+    "paragraphs": [
+      "Sylvia Rich grew up navigating the space between Hungary and America — not metaphorically, but literally. Her parents escaped communist Hungary in 1969. She built a career in Budapest. She has spent decades in both worlds, fluent in both languages, at home in both systems.",
+      "The Honorary Consul position is not a title she holds. It's a responsibility she chose — and one the Embassy of Hungary entrusted to her because of what she brings: deep Hungarian cultural fluency, an American civic network spanning medicine, law, and government across five states, and the practical knowledge of someone who has personally navigated every form, office, and deadline that her clients now face.",
+      "Sylvia does not receive a salary for this work. She is compensated only when performing active consular duties. This is a voluntary position of service — which is precisely why her community's trust in her is so complete."
+    ]
+  },
   "portrait": {
     "appointedBy": "Appointed by",
     "placeholder": "Portrait pending",
