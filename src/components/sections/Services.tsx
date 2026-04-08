@@ -38,7 +38,7 @@ export function Services() {
           staggerDelay={0.1}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
         >
-          {services.map((service) => (
+          {services.slice(0, 3).map((service) => (
             <motion.div key={service.slug} variants={staggerItem}>
               <div className="bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] p-7 h-full flex flex-col hover:border-[#C5A55A] hover:shadow-[0_4px_32px_rgba(10,22,40,0.7)] transition-all duration-300 group">
 
