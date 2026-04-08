@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { siteData } from "@/data/site";
 import { PageHeader, Button, GoldRule, Eyebrow } from "@/components/ui";
 import { FadeUp, SlideIn, StaggerContainer, staggerItem } from "@/components/animations";
@@ -42,8 +43,16 @@ export default function AboutPage() {
             {/* Portrait */}
             <SlideIn direction="left">
               <div className="relative max-w-[280px] mx-auto lg:mx-0">
-                <div className="aspect-[3/4] bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] overflow-hidden flex items-end">
-                  <div className="w-full bg-[rgba(10,22,40,0.88)] backdrop-blur-sm p-5 border-t border-[rgba(197,165,90,0.15)]">
+                <div className="relative aspect-[3/4] bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] overflow-hidden">
+                  <Image
+                    src="/images/sylvia-rich-portrait.jpg"
+                    alt={`${brand.consul.name} — ${brand.consul.title}`}
+                    fill
+                    sizes="280px"
+                    className="object-cover object-top"
+                    priority
+                  />
+                  <div className="absolute bottom-0 left-0 right-0 bg-[rgba(10,22,40,0.88)] backdrop-blur-sm p-5 border-t border-[rgba(197,165,90,0.15)]">
                     <p className="font-display font-bold text-[#F5F0E8]">{brand.consul.name}</p>
                     <p className="font-body text-[12px] text-[rgba(245,240,232,0.5)] mt-0.5">{brand.consul.title}</p>
                     <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[#C5A55A] mt-2">

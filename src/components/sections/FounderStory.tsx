@@ -26,25 +26,16 @@ export function FounderStory() {
               <div className="absolute -inset-3 border border-[rgba(197,165,90,0.25)] rounded-[3px]" aria-hidden="true" />
               <div className="absolute -inset-6 border border-[rgba(197,165,90,0.1)] rounded-[3px]" aria-hidden="true" />
 
-              {/* Portrait — placeholder until Sylvia provides photo */}
-              <div className="relative bg-[#1B2A4A] rounded-[3px] aspect-[4/5] flex items-center justify-center overflow-hidden">
-                {/* Atmospheric gradient placeholder */}
-                <div
-                  className="absolute inset-0"
-                  style={{
-                    background:
-                      "radial-gradient(ellipse at 50% 30%, rgba(197,165,90,0.12) 0%, rgba(10,22,40,0.8) 70%)",
-                  }}
-                  aria-hidden="true"
+              {/* Portrait */}
+              <div className="relative bg-[#1B2A4A] rounded-[3px] aspect-[4/5] overflow-hidden">
+                <Image
+                  src="/images/sylvia-rich-portrait.jpg"
+                  alt={`${siteData.brand.consul.name} — ${t("portrait.consultTitle")}`}
+                  fill
+                  sizes="(max-width: 768px) 90vw, 384px"
+                  className="object-cover object-top"
+                  priority
                 />
-                <div className="relative z-10 text-center px-8">
-                  <p className="font-display italic text-[rgba(245,240,232,0.3)] text-lg mb-2">
-                    Sylvia Rich
-                  </p>
-                  <p className="font-mono text-[10px] uppercase tracking-[0.12em] text-[rgba(197,165,90,0.4)]">
-                    {t("portrait.placeholder")}
-                  </p>
-                </div>
               </div>
 
               {/* Name badge overlapping bottom */}
