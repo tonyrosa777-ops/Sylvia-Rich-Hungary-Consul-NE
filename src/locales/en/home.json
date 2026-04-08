@@ -96,6 +96,13 @@
       }
     ]
   },
+  "blogTeaser": {
+    "eyebrow": "Knowledge Base",
+    "headline": "Answers Before Your Appointment",
+    "description": "Consular guides written in plain language — so you arrive informed, prepared, and confident.",
+    "readTime": "min read",
+    "viewAll": "Browse All Articles →"
+  },
   "finalCTA": {
     "eyebrow": "No Drive to New York Required",
     "headline": "You Don't Have to Drive to New York",

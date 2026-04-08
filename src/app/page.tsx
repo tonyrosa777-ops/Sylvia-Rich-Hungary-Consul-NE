@@ -9,6 +9,7 @@ import { Testimonials } from "@/components/sections/Testimonials";
 import { FeeTable } from "@/components/sections/FeeTable";
 import { FinalCTA } from "@/components/sections/FinalCTA";
 import { SiteTeaser } from "@/components/sections/SiteTeaser";
+import { BlogTeaser } from "@/components/sections/BlogTeaser";
 
 export const metadata: Metadata = {
   title: siteData.meta.defaultTitle,
@@ -39,6 +40,7 @@ export default function HomePage() {
       <Services />
       <Stats />
       <Testimonials />
+      <BlogTeaser />
       <FeeTable />
       <FinalCTA />
     </>

@@ -96,6 +96,13 @@
       }
     ]
   },
+  "blogTeaser": {
+    "eyebrow": "Tudástár",
+    "headline": "Válaszok Még az Időpont Előtt",
+    "description": "Konzuli útmutatók közérthető nyelven — hogy tájékozottan, felkészülten és magabiztosan érkezzen.",
+    "readTime": "perc olvasás",
+    "viewAll": "Minden Cikk Böngészése →"
+  },
   "finalCTA": {
     "eyebrow": "New Yorkba Utazás Nem Szükséges",
     "headline": "Nem Kell New Yorkba Mennie",
