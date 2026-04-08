@@ -1,15 +1,12 @@
 "use client";
 import Image from "next/image";
 import { Eyebrow, GoldRule, Button } from "@/components/ui";
-import { SlideIn, FadeUp, StaggerContainer, staggerItem } from "@/components/animations";
-import { motion } from "framer-motion";
+import { SlideIn, FadeUp } from "@/components/animations";
 import { siteData } from "@/data/site";
 import { useTranslation } from "@/hooks/useTranslation";
 
 export function FounderStory() {
-  const { t, ta } = useTranslation("about");
-  const paragraphs = ta<string[]>("story.paragraphs") ?? siteData.about.paragraphs;
-  const credentials = ta<string[]>("credentials.items") ?? siteData.about.credentials;
+  const { t } = useTranslation("about");
 
   return (
     <section
@@ -19,7 +16,7 @@ export function FounderStory() {
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-center">
 
-          {/* ── Left: portrait placeholder ── */}
+          {/* ── Left: portrait ── */}
           <SlideIn direction="left" threshold={0.15}>
             <div className="relative max-w-sm mx-auto lg:mx-0">
               {/* Gold frame border */}
@@ -50,7 +47,7 @@ export function FounderStory() {
             </div>
           </SlideIn>
 
-          {/* ── Right: story copy ── */}
+          {/* ── Right: teaser copy ── */}
           <SlideIn direction="right" threshold={0.15}>
             <div>
               <FadeUp delay={0.15}>
@@ -61,36 +58,16 @@ export function FounderStory() {
                 >
                   {t("header.headline")}
                 </h2>
-                <GoldRule width="sm" opacity={35} className="mb-8" />
+                <GoldRule width="sm" opacity={35} className="mb-6" />
               </FadeUp>
 
-              <div className="space-y-5 mb-8">
-                {paragraphs.map((para, i) => (
-                  <FadeUp key={i} delay={0.2 + i * 0.12}>
-                    <p className="font-body text-[16px] leading-[1.8] text-[rgba(245,240,232,0.75)]">
-                      {para}
-                    </p>
-                  </FadeUp>
-                ))}
-              </div>
+              <FadeUp delay={0.3}>
+                <p className="font-body text-[16px] leading-[1.8] text-[rgba(245,240,232,0.75)] mb-8">
+                  {t("teaser")}
+                </p>
+              </FadeUp>
 
-              {/* Credentials */}
-              <StaggerContainer staggerDelay={0.08} initialDelay={0.5}>
-                <ul className="space-y-2.5 mb-8">
-                  {credentials.map((cred, i) => (
-                    <motion.li
-                      key={i}
-                      variants={staggerItem}
-                      className="flex items-start gap-3 font-body text-[14px] text-[rgba(245,240,232,0.6)]"
-                    >
-                      <span className="text-[#C5A55A] mt-[3px] shrink-0" aria-hidden="true">—</span>
-                      {cred}
-                    </motion.li>
-                  ))}
-                </ul>
-              </StaggerContainer>
-
-              <FadeUp delay={0.8}>
+              <FadeUp delay={0.45}>
                 <Button href="/about" variant="secondary" size="md">
                   {t("readStory")}
                 </Button>
