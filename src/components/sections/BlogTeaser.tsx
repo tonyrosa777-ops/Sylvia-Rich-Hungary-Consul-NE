@@ -23,7 +23,7 @@ export function BlogTeaser() {
   const posts = getFeaturedPosts().slice(0, 3);
 
   return (
-    <section className="bg-[#122040] py-24 lg:py-32" aria-labelledby="blog-teaser-heading">
+    <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="blog-teaser-heading">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
 
         {/* Header */}

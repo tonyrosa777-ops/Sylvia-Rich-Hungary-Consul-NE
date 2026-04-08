@@ -12,7 +12,7 @@ export function FeeTable() {
   const { t: tSvc } = useTranslation("services");
 
   return (
-    <section className="bg-[#0A1628] py-24 lg:py-32" aria-labelledby="fees-heading">
+    <section className="bg-[#122040] py-24 lg:py-32" aria-labelledby="fees-heading">
       <div className="max-w-4xl mx-auto px-6 lg:px-8">
 
         {/* Header */}
