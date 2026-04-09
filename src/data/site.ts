@@ -41,11 +41,8 @@ export const siteData = {
     },
   },
 
-  // ⚠️ Replace with actual Calendly URL once account is set up.
-  // Format: "https://calendly.com/{username}/{event-type}"
-  // The booking page embeds this inline via iframe. No other changes needed.
   booking: {
-    calendlyUrl: "https://calendly.com/PLACEHOLDER/consulate-appointment",
+    calendlyUrl: "https://calendly.com/hungarianconsulne/30min",
   },
 
   nav: {
