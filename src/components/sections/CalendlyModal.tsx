@@ -44,19 +44,16 @@ export function CalendlyModal({ isOpen, onClose, selectedDate, selectedTime, pre
   return (
     <AnimatePresence>
       {isOpen && (
-        <>
-          {/* Backdrop */}
-          <motion.div
-            key="backdrop"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.2 }}
-            className="fixed inset-0 z-50"
-            style={{ background: "rgba(7,16,32,0.82)" }}
-            onClick={onClose}
-          />
-
+        <motion.div
+          key="backdrop"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+          className="fixed inset-0 z-50 flex items-end md:items-center md:justify-center"
+          style={{ background: "rgba(7,16,32,0.82)" }}
+          onClick={onClose}
+        >
           {/* Panel — bottom sheet on mobile, centered modal on md+ */}
           <motion.div
             key="panel"
@@ -64,15 +61,14 @@ export function CalendlyModal({ isOpen, onClose, selectedDate, selectedTime, pre
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: "100%", opacity: 0 }}
             transition={{ duration: 0.32, ease: "easeOut" as const }}
-            className="fixed bottom-0 left-0 right-0 z-50 rounded-t-[6px] overflow-hidden
-                       md:bottom-auto md:top-1/2 md:left-1/2 md:right-auto md:rounded-[4px]"
+            className="relative rounded-t-[6px] md:rounded-[4px] overflow-hidden"
             style={{
               background: "#071020",
               border: "1px solid rgba(197,165,90,0.25)",
               width: "min(100vw, 700px)",
               maxHeight: "92vh",
-              // md+ centering — applied via the translate classes below
             }}
+            onClick={(e: React.MouseEvent) => e.stopPropagation()}
           >
             {/* Header */}
             <div className="flex items-center justify-between px-6 py-4 border-b border-[rgba(197,165,90,0.15)]">
@@ -158,7 +154,7 @@ export function CalendlyModal({ isOpen, onClose, selectedDate, selectedTime, pre
               )}
             </div>
           </motion.div>
-        </>
+        </motion.div>
       )}
     </AnimatePresence>
   );
