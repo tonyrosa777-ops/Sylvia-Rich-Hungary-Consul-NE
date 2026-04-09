@@ -30,7 +30,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative min-h-[100svh] flex items-start lg:items-center overflow-hidden bg-[#0A1628] grain-overlay"
+      className="relative min-h-[100svh] flex items-start overflow-hidden bg-[#0A1628] grain-overlay"
       aria-label="Hero"
     >
       {/* Particle field */}
@@ -42,7 +42,7 @@ export function Hero() {
       <div className="orb orb-3" aria-hidden="true" />
 
       {/* Content grid */}
-      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 w-full pt-20 pb-24 lg:pt-8 lg:pb-20">
+      <div className="relative z-10 max-w-6xl mx-auto px-6 lg:px-8 w-full pt-20 pb-24 lg:pt-28 lg:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-[55fr_45fr] gap-12 lg:gap-16 items-center">
 
           {/* ── Left: copy ── */}
