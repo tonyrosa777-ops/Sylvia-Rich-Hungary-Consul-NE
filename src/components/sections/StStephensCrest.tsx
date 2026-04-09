@@ -87,33 +87,33 @@ const STRIPES = [
 
 // Crown circlet gems: ruby / sapphire / emerald pattern
 const GEMS = [
-  { cx:  40, fill: "#9B1B30" },
-  { cx:  57, fill: "#1A3A8F" },
-  { cx:  74, fill: "#1B6B3A" },
+  { cx:  50, fill: "#9B1B30" },
+  { cx:  64, fill: "#1A3A8F" },
+  { cx:  78, fill: "#1B6B3A" },
   { cx: 100, fill: "#9B1B30" },
-  { cx: 126, fill: "#1A3A8F" },
-  { cx: 143, fill: "#1B6B3A" },
-  { cx: 160, fill: "#9B1B30" },
+  { cx: 122, fill: "#1A3A8F" },
+  { cx: 136, fill: "#1B6B3A" },
+  { cx: 150, fill: "#9B1B30" },
 ];
 
 // Byzantine enamel portrait panels on dome surface
 const PANELS = [
-  { x:  89, y: 36, w: 22, h: 30, bg: "#1A3A8F", fg: "#2655A0" },
-  { x:  66, y: 42, w: 18, h: 24, bg: "#9B1B30", fg: "#B52235" },
-  { x: 116, y: 42, w: 18, h: 24, bg: "#9B1B30", fg: "#B52235" },
-  { x:  46, y: 49, w: 15, h: 19, bg: "#1A3A8F", fg: "#2655A0" },
-  { x: 139, y: 49, w: 15, h: 19, bg: "#1A3A8F", fg: "#2655A0" },
-  { x:  30, y: 56, w: 12, h: 15, bg: "#9B1B30", fg: "#B52235" },
-  { x: 158, y: 56, w: 12, h: 15, bg: "#9B1B30", fg: "#B52235" },
+  { x:  91, y: 36, w: 18, h: 30, bg: "#1A3A8F", fg: "#2655A0" },
+  { x:  72, y: 42, w: 15, h: 24, bg: "#9B1B30", fg: "#B52235" },
+  { x: 113, y: 42, w: 15, h: 24, bg: "#9B1B30", fg: "#B52235" },
+  { x:  55, y: 49, w: 13, h: 19, bg: "#1A3A8F", fg: "#2655A0" },
+  { x: 133, y: 49, w: 13, h: 19, bg: "#1A3A8F", fg: "#2655A0" },
+  { x:  42, y: 56, w: 10, h: 15, bg: "#9B1B30", fg: "#B52235" },
+  { x: 148, y: 56, w: 10, h: 15, bg: "#9B1B30", fg: "#B52235" },
 ];
 
 // Gemstones set into the crown arches
 const ARCH_GEMS = [
-  { cx:  50, cy: 58, fill: "#9B1B30" },
-  { cx:  75, cy: 42, fill: "#1B6B3A" },
+  { cx:  58, cy: 58, fill: "#9B1B30" },
+  { cx:  79, cy: 42, fill: "#1B6B3A" },
   { cx: 100, cy: 36, fill: "#1A3A8F" },
-  { cx: 125, cy: 42, fill: "#1B6B3A" },
-  { cx: 150, cy: 58, fill: "#9B1B30" },
+  { cx: 121, cy: 42, fill: "#1B6B3A" },
+  { cx: 142, cy: 58, fill: "#9B1B30" },
 ];
 
 // Shield clip path — full heater shield shape
@@ -123,17 +123,17 @@ const SHIELD_PATH = "M56,80 H144 V148 C144,178 100,197 100,197 C100,197 56,178 5
 // Left pendilia: attach at (28,84), first medallion at (12,112), end at (9,138)
 // Each "link" is a small circle (r=1.8) — visually reads as articulated chain
 const LEFT_CHAIN_1 = [
-  [25.3, 88.7], [22.7, 93.3], [20.0, 98.0], [17.3, 102.7], [14.7, 107.3],
+  [37.3, 88.7], [34.7, 93.3], [32.0, 98.0], [29.3, 102.7], [26.7, 107.3],
 ] as [number, number][];
 const LEFT_CHAIN_2 = [
-  [11.6, 117.2], [11.2, 122.4], [10.8, 127.6], [10.4, 132.8],
+  [23.6, 117.2], [23.2, 122.4], [22.8, 127.6], [22.4, 132.8],
 ] as [number, number][];
 // Right pendilia (mirror)
 const RIGHT_CHAIN_1 = [
-  [174.7, 88.7], [177.3, 93.3], [180.0, 98.0], [182.7, 102.7], [185.3, 107.3],
+  [162.7, 88.7], [165.3, 93.3], [168.0, 98.0], [170.7, 102.7], [173.3, 107.3],
 ] as [number, number][];
 const RIGHT_CHAIN_2 = [
-  [188.4, 117.2], [188.8, 122.4], [189.2, 127.6], [189.6, 132.8],
+  [176.4, 117.2], [176.8, 122.4], [177.2, 127.6], [177.6, 132.8],
 ] as [number, number][];
 
 // ─── Component ───────────────────────────────────────────────────────────────
@@ -185,7 +185,7 @@ export function StStephensCrest() {
           {/* Gold dome gradient — lighter at crown top, darker at band */}
           <linearGradient
             id="ssc-dome-grad"
-            x1="28" y1="26" x2="172" y2="80"
+            x1="40" y1="26" x2="160" y2="80"
             gradientUnits="userSpaceOnUse"
           >
             <stop offset="0%"   stopColor="#F5D078" />
@@ -437,7 +437,7 @@ export function StStephensCrest() {
 
         {/* Phase 12 — Gold dome hemisphere */}
         <motion.path
-          d="M28,80 C28,45 60,26 100,26 C140,26 172,45 172,80 Z"
+          d="M40,80 C40,45 67,26 100,26 C133,26 160,45 160,80 Z"
           fill="url(#ssc-dome-grad)"
           initial={{ scaleY: 0 }}
           animate={{ scaleY: 1 }}
@@ -447,7 +447,7 @@ export function StStephensCrest() {
 
         {/* Dome 3-D surface arc */}
         <motion.path
-          d="M28,80 C42,52 64,36 100,32 C136,36 158,52 172,80"
+          d="M40,80 C52,52 70,36 100,32 C130,36 148,52 160,80"
           fill="none" stroke="#B8943A" strokeWidth="1.5" opacity="0"
           animate={{ opacity: 0.5 }}
           transition={{ duration: 0.5, delay: 2.95 }}
@@ -486,14 +486,14 @@ export function StStephensCrest() {
 
         {/* Phase 12b — Crown arches draw across dome */}
         <motion.path
-          d="M28,79 C50,50 72,34 100,28 C128,34 150,50 172,79"
+          d="M40,79 C58,50 77,34 100,28 C123,34 142,50 160,79"
           fill="none" stroke="#D4AF37" strokeWidth="2"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
           transition={{ duration: 0.6, delay: 3.5, ease: "easeOut" }}
         />
         <motion.path
-          d="M46,78 C62,50 80,32 100,26 C120,32 138,50 154,78"
+          d="M55,78 C68,50 83,32 100,26 C117,32 132,50 145,78"
           fill="none" stroke="#D4AF37" strokeWidth="1.5" opacity="0.7"
           initial={{ pathLength: 0 }}
           animate={{ pathLength: 1 }}
@@ -502,7 +502,7 @@ export function StStephensCrest() {
 
         {/* Phase 10 — Crown circlet / base band */}
         <motion.rect
-          x={28} y={72} width={144} height={12} rx="2.5"
+          x={40} y={72} width={120} height={12} rx="2.5"
           fill="#E8B84B"
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
@@ -510,7 +510,7 @@ export function StStephensCrest() {
           transition={{ duration: 0.5, delay: 3.0, ease: "easeOut" }}
         />
         <motion.line
-          x1={28} y1={83} x2={172} y2={83}
+          x1={40} y1={83} x2={160} y2={83}
           stroke="#C5912A" strokeWidth="0.6" opacity="0"
           animate={{ opacity: 0.7 }}
           transition={{ duration: 0.4, delay: 3.1 }}
@@ -556,9 +556,9 @@ export function StStephensCrest() {
           transition={{ duration: 0.5, delay: 3.2 }}
         >
           {/* LEFT — spine line for depth */}
-          <line x1="28" y1="84" x2="12" y2="112"
+          <line x1="40" y1="84" x2="24" y2="112"
             stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
-          <line x1="12" y1="112" x2="9" y2="138"
+          <line x1="24" y1="112" x2="21" y2="138"
             stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
 
           {/* LEFT — first segment chain links */}
@@ -568,9 +568,9 @@ export function StStephensCrest() {
           ))}
 
           {/* LEFT — first medallion */}
-          <circle cx="12" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
-          <circle cx="12" cy="112" r="3.5" fill="#1A3A8F" />
-          <circle cx="11" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
+          <circle cx="24" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
+          <circle cx="24" cy="112" r="3.5" fill="#1A3A8F" />
+          <circle cx="23" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
 
           {/* LEFT — second segment chain links */}
           {LEFT_CHAIN_2.map(([cx, cy], i) => (
@@ -579,9 +579,9 @@ export function StStephensCrest() {
           ))}
 
           {/* LEFT — end medallion */}
-          <circle cx="9" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
-          <circle cx="9" cy="138" r="2.8" fill="#9B1B30" />
-          <circle cx="8" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
+          <circle cx="21" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
+          <circle cx="21" cy="138" r="2.8" fill="#9B1B30" />
+          <circle cx="20" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
         </motion.g>
 
         <motion.g
@@ -590,9 +590,9 @@ export function StStephensCrest() {
           transition={{ duration: 0.5, delay: 3.25 }}
         >
           {/* RIGHT — spine lines */}
-          <line x1="172" y1="84" x2="188" y2="112"
+          <line x1="160" y1="84" x2="176" y2="112"
             stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
-          <line x1="188" y1="112" x2="191" y2="138"
+          <line x1="176" y1="112" x2="179" y2="138"
             stroke="#9A7A30" strokeWidth="0.7" opacity="0.5" />
 
           {/* RIGHT — first segment chain links */}
@@ -602,9 +602,9 @@ export function StStephensCrest() {
           ))}
 
           {/* RIGHT — first medallion */}
-          <circle cx="188" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
-          <circle cx="188" cy="112" r="3.5" fill="#1A3A8F" />
-          <circle cx="187" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
+          <circle cx="176" cy="112" r="5.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.7" />
+          <circle cx="176" cy="112" r="3.5" fill="#1A3A8F" />
+          <circle cx="175" cy="111" r="1"   fill="rgba(255,255,255,0.25)" />
 
           {/* RIGHT — second segment chain links */}
           {RIGHT_CHAIN_2.map(([cx, cy], i) => (
@@ -613,9 +613,9 @@ export function StStephensCrest() {
           ))}
 
           {/* RIGHT — end medallion */}
-          <circle cx="191" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
-          <circle cx="191" cy="138" r="2.8" fill="#9B1B30" />
-          <circle cx="190" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
+          <circle cx="179" cy="138" r="4.5" fill="#C5A55A" stroke="#D4AF37" strokeWidth="0.6" />
+          <circle cx="179" cy="138" r="2.8" fill="#9B1B30" />
+          <circle cx="178" cy="137" r="0.9" fill="rgba(255,255,255,0.25)" />
         </motion.g>
 
         {/* Phase 13 — Crown orb at arch crossing point */}
