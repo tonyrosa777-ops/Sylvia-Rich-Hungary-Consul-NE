@@ -97,7 +97,7 @@ export function StStephensCrest() {
       {/* NOTE: No decorative ring border — not canonical to the official coat of arms */}
 
       <motion.svg
-        viewBox="0 0 200 250"
+        viewBox="0 0 200 205"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className="relative z-10 w-full h-full"
