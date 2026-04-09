@@ -99,12 +99,12 @@ export function Hero() {
 
           {/* ── Right: St. Stephen's Crown crest ── */}
           <div className="hidden lg:flex flex-col items-center justify-center">
-            <div className="relative w-[440px] h-[550px]">
+            <div className="relative w-[440px] h-[450px]">
               <StStephensCrest />
             </div>
 
             {/* Official appointment badge */}
-            <div className="mt-3 text-center">
+            <div className="-mt-2 text-center">
               <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[rgba(245,240,232,0.4)]">
                 {t("hero.officiallyAppointed")}
               </p>
