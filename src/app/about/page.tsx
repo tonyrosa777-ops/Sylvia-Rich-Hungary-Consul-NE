@@ -43,7 +43,7 @@ export default function AboutPage() {
             {/* Portrait */}
             <SlideIn direction="left">
               <div className="relative max-w-[280px] mx-auto lg:mx-0">
-                <div className="relative aspect-[3/4] bg-[#1B2A4A] border border-[rgba(197,165,90,0.2)] rounded-[3px] overflow-hidden">
+                <div className="relative aspect-[3/4] bg-[#1B2A4A] border border-b-0 border-[rgba(197,165,90,0.2)] rounded-t-[3px] overflow-hidden">
                   <Image
                     src="/images/sylvia-rich-portrait.jpg"
                     alt={`${brand.consul.name} — ${brand.consul.title}`}
@@ -52,13 +52,13 @@ export default function AboutPage() {
                     className="object-cover object-top"
                     priority
                   />
-                  <div className="absolute bottom-0 left-0 right-0 bg-[rgba(10,22,40,0.88)] backdrop-blur-sm p-5 border-t border-[rgba(197,165,90,0.15)]">
-                    <p className="font-display font-bold text-[#F5F0E8]">{brand.consul.name}</p>
-                    <p className="font-body text-[12px] text-[rgba(245,240,232,0.5)] mt-0.5">{brand.consul.title}</p>
-                    <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[#C5A55A] mt-2">
-                      {t("intro.appointedBy")} {brand.consul.appointedBy}
-                    </p>
-                  </div>
+                </div>
+                <div className="bg-[rgba(10,22,40,0.88)] p-5 border border-[rgba(197,165,90,0.2)] rounded-b-[3px]">
+                  <p className="font-display font-bold text-[#F5F0E8]">{brand.consul.name}</p>
+                  <p className="font-body text-[12px] text-[rgba(245,240,232,0.5)] mt-0.5">{brand.consul.title}</p>
+                  <p className="font-mono text-[9px] uppercase tracking-[0.1em] text-[#C5A55A] mt-2">
+                    {t("intro.appointedBy")} {brand.consul.appointedBy}
+                  </p>
                 </div>
                 <div className="absolute -bottom-3 -right-3 w-12 h-12 border-b-2 border-r-2 border-[rgba(197,165,90,0.3)] rounded-[2px]" />
               </div>
