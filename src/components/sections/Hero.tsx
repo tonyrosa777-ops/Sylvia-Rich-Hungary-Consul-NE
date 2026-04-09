@@ -104,7 +104,7 @@ export function Hero() {
             </div>
 
             {/* Official appointment badge */}
-            <div className="-mt-2 text-center">
+            <div className="mt-3 text-center">
               <p className="font-mono text-[10px] uppercase tracking-[0.15em] text-[rgba(245,240,232,0.4)]">
                 {t("hero.officiallyAppointed")}
               </p>
